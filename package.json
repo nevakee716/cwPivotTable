@@ -1,0 +1,21 @@
+{
+  "name": "PivotTable",
+  "version": "0.0.2",
+  "description": "Allow you to display objet in a Pivot Table",
+  "main": "src/cwPivotTable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevakee716/cwPivotTable.git"
+  },
+  "author": "Mathias Pfauwadel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nevakee716/cwPivotTable/issues"
+  },
+  "homepage": "https://github.com/nevakee716/cwPivotTable/wiki",
+  "wiki": "https://github.com/nevakee716/cwPivotTable/wiki",
+  "evolve-version": "4.2"
+}

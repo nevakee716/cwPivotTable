@@ -1,0 +1,14 @@
+{
+    "Name": "PivotTable",
+    "DisplayName": "Pivot Table",
+    "Description": "Allow you to display your objects in a pivotTable",
+    "JavaScriptClassName": "cwPivotTable",
+    "Options": [
+    {
+        "Id": "JsonConfiguration",
+        "DisplayName": "Json Configuration",
+        "Description": "Check documentation",
+        "Type": 0
+    }
+    ]
+}
