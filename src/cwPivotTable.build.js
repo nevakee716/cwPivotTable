@@ -35,6 +35,7 @@
         }
     };
 
+
     // Building network
     cwPivotTable.prototype.createPivot = function() {
         function addStyleString(str) {
@@ -47,15 +48,14 @@
         var self = this,
             i = 0;
 
-        var derivers = $.pivotUtilities.derivers;
+       var derivers = $.pivotUtilities.derivers;
 
         var renderers = $.extend(
             $.pivotUtilities.renderers,
             $.pivotUtilities.c3_renderers,
             $.pivotUtilities.d3_renderers,
             $.pivotUtilities.export_renderers
-        );
-
+            );
 
         $("#cwPivotTable" + this.nodeID).pivotUI(self.PivotDatas, {
             onRefresh: self.onRefresh.bind(self),
