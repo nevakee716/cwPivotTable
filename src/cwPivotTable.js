@@ -19,25 +19,16 @@
     cwPivotTable.prototype.construct = function(options) {
         
         this.config = JSON.parse(this.options.CustomOptions['JsonConfiguration']);
-        this.config = {
-            complementaryNode : [],
-            hiddenNodes : [],
-            cardinalNodes : [],
-            cols : [],
-            rows : [],
-            rendererName : "Table",
-            hiddenAttributes : [],
-            aggregatorName : "Count"
-        };
 
-        if(config.complementaryNode === undefined)  config.complementaryNode = [];
-        if(config.hiddenNodes === undefined)  config.hiddenNodes = [];
-        if(config.cardinalNodes === undefined)  config.cardinalNodes = [];
-        if(config.cols === undefined)  config.cols = [];
-        if(config.rows === undefined)  config.rows = [];
-        if(config.aggregatorName === undefined)  config.aggregatorName = "Count";
-        if(config.rendererName === undefined)  config.aggregatorName = "Table";
-        if(config.hiddenAttributes === undefined)  config.hiddenAttributes = [];
+
+        if(this.config.complementaryNode === undefined)  this.config.complementaryNode = [];
+        if(this.config.hiddenNodes === undefined)  this.config.hiddenNodes = [];
+        if(this.config.cardinalNodes === undefined)  this.config.cardinalNodes = [];
+        if(this.config.cols === undefined)  this.config.cols = [];
+        if(this.config.rows === undefined)  this.config.rows = [];
+        if(this.config.aggregatorName === undefined)  this.config.aggregatorName = "Count";
+        if(this.config.rendererName === undefined)  this.config.aggregatorName = "Table";
+        if(this.config.hiddenAttributes === undefined)  this.config.hiddenAttributes = [];
 
 
         this.nodes = {};
