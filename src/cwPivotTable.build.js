@@ -23,11 +23,18 @@
         if (cwAPI.isDebugMode() === true) {
             self.createPivot();
         } else {
-            libToLoad = ['modules/pivot/pivot.min.js','modules/pivotC3/pivotC3.min.js','modules/pivotC3render/pivotC3render.min.js','modules/pivotD3render/pivotD3render.min.js','modules/pivotExport/pivotExport.min.js','modules/pivotjqUI/pivotjqUI.min.js'];
+            libToLoad = ['modules/pivot/pivot.min.js','modules/D3/d3.min.js','modules/pivotC3/pivotC3.min.js','modules/pivotjqUI/pivotjqUI.min.js',];
             // AsyncLoad
             cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
                 if (error === null) {
-                    self.createPivot();
+                    libToLoad = ['modules/pivotC3render/pivotC3render.min.js','modules/pivotD3render/pivotD3render.min.js','modules/pivotExport/pivotExport.min.js'];
+                    cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
+                        if (error === null) {
+                            self.createPivot();
+                        } else {
+                            cwAPI.Log.Error(error);
+                        }
+                    });
                 } else {
                     cwAPI.Log.Error(error);
                 }
@@ -50,6 +57,7 @@
 
        var derivers = $.pivotUtilities.derivers;
 
+
         var renderers = $.extend(
             $.pivotUtilities.renderers,
             $.pivotUtilities.c3_renderers,
@@ -65,15 +73,11 @@
                     clickCallback: self.clickCallback.bind(self)
                 }
             },
-            //    derivedAttributes: {
-            //        "Age Bin": derivers.bin("Age", 10),
-            //        "Gender Imbalance": function(mp) {
-            //            return mp["Gender"] == "Male" ? 1 : -1;
-            //        }
-            //    },
-           // cols: ["application"],
-           // rows: ["process"],
-            //    rendererName: "Table Barchart"
+            derivedAttributes: self.dataDerivers(),
+            cols: self.config.cols,
+            rows: self.config.rows,
+            rendererName: self.config.rendererName,
+            hiddenAttributes: self.config.hiddenAttributes
         });
 
 
@@ -101,7 +105,7 @@
                 var lhClone = lh.cloneNode(true);
                 lh.parentNode.replaceChild(lhClone, lh);
 
-                if(self.nodes[nodeName][name]) {
+                if(self.nodes[nodeName] && self.nodes[nodeName][name]) {
                     var scriptname,popOutName,object = {};
                     object.object_id = self.nodes[nodeName][name].id;
                     scriptname = self.nodes[nodeName][name].objectTypeScriptName;
@@ -122,7 +126,7 @@
                 var lhClone = lh.cloneNode(true);
                 lh.parentNode.replaceChild(lhClone, lh);
 
-                if(self.nodes[nodeName][name]) {
+                if(self.nodes[nodeName] && self.nodes[nodeName][name]) {
                     var scriptname,popOutName,object = {};
                     object.object_id = self.nodes[nodeName][name].id;
                     scriptname = self.nodes[nodeName][name].objectTypeScriptName;

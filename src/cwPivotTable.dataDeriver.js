@@ -16,29 +16,25 @@
         };
     }
 
-    cwPivotTable.prototype.construct = function(options) {
+    cwPivotTable.prototype.dataDerivers = function() {
+        var derivedAttributes = {};
+        var view = cwAPI.getCurrentView();
+        if(view) view = view.cwView;
+        else return {}; 
+
+        if(view === "index_processus") {
+            derivedAttributes["Application Mois de Mise en production"] =  $.pivotUtilities.derivers.dateFormat("Application_Date de mise en production", "%m", true);
+            derivedAttributes["Application Année de Mise en production"] =  $.pivotUtilities.derivers.dateFormat("Application_Date de mise en production", "%y", true);
+        }
         
-        this.config = JSON.parse(this.options.CustomOptions['JsonConfiguration']);
-        this.config = {
-            complementaryNode : [],
-            hiddenNodes : [],
-            cardinalNodes : [],
-            cols : [],
-            rows : [],
-            rendererName : "Table",
-            hiddenAttributes : []
-        };
-        this.nodes = {};
-        this.PivotDatas = [];
-        //var nodesObj = {};
-        //this.config.nodes.forEach(function(n) {
-        //    nodesObj[n.nodeID] = n;
-        //});
-//
-        //this.config.nodes = nodesObj;
+
+
+        return derivedAttributes;
     };
 
 
+    // Building network
+   
 
     cwApi.cwLayouts.cwPivotTable = cwPivotTable;
 }(cwAPI, jQuery));
