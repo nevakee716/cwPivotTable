@@ -26,8 +26,20 @@
             cols : [],
             rows : [],
             rendererName : "Table",
-            hiddenAttributes : []
+            hiddenAttributes : [],
+            aggregatorName : "Count"
         };
+
+        if(config.complementaryNode === undefined)  config.complementaryNode = [];
+        if(config.hiddenNodes === undefined)  config.hiddenNodes = [];
+        if(config.cardinalNodes === undefined)  config.cardinalNodes = [];
+        if(config.cols === undefined)  config.cols = [];
+        if(config.rows === undefined)  config.rows = [];
+        if(config.aggregatorName === undefined)  config.aggregatorName = "Count";
+        if(config.rendererName === undefined)  config.aggregatorName = "Table";
+        if(config.hiddenAttributes === undefined)  config.hiddenAttributes = [];
+
+
         this.nodes = {};
         this.PivotDatas = [];
         //var nodesObj = {};
