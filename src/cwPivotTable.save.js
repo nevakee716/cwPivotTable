@@ -214,6 +214,7 @@
                     self.pivotConfiguration.pivots[elem.id] = {};
                     self.pivotConfiguration.pivots[elem.id].obj = newNewObj;
                     self.pivotConfiguration.pivots[elem.id].label = pivotName;
+                    self.pivotConfiguration.pivots[elem.id].configuration = config;
                     self.pivotConfiguration.selected = self.pivotConfiguration.pivots[elem.id];
 
                     var html = '<option id="' + elem.id + '">' + pivotName + '</>';
