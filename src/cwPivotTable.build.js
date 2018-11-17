@@ -23,7 +23,7 @@
         if (cwAPI.isDebugMode() === true) {
             self.createPivot();
         } else {
-            libToLoad = ['modules/pivot/pivot.min.js','modules/D3/d3.min.js','modules/pivotC3/pivotC3.min.js','modules/pivotjqUI/pivotjqUI.min.js',];
+            libToLoad = ['modules/bootstrap/bootstrap.min.js', 'modules/bootstrap-select/bootstrap-select.min.js','modules/pivot/pivot.min.js','modules/D3/d3.min.js','modules/pivotC3/pivotC3.min.js','modules/pivotjqUI/pivotjqUI.min.js',];
             // AsyncLoad
             cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
                 if (error === null) {
@@ -51,14 +51,41 @@
             document.body.appendChild(node);
         }
 
+
+
+        var filterContainer = document.getElementById("cwLayoutPivotFilter" + this.nodeID);
+
         var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
         var self = this,
             i = 0;
-
+        this.pivotContainer = pivotContainer;
        var derivers = $.pivotUtilities.derivers;
 
+        if(this.pivotConfiguration && this.pivotConfiguration.enableEdit) {
+            var configurationFilterObject = document.createElement("div");
+            configurationFilterObject.className = "LayoutPivotfilterGroup";
 
-        var renderers = $.extend(
+            var configurationFilterObjectTitle = document.createElement("div");
+            configurationFilterObjectTitle.innerHTML = "Pivot Table Configuration";
+
+            configurationFilterObject.appendChild(configurationFilterObjectTitle);
+            configurationFilterObject.appendChild(this.getPivotConfigurationFilterObject("selectPivotConfiguration_" + this.nodeID));
+            if(this.canUpdatePivot) {
+                var configurationFilterObjectButton = document.createElement("button");
+                configurationFilterObjectButton.innerHTML = '<i class="fa fa-floppy-o" aria-hidden="true"></i>';
+                configurationFilterObjectButton.id = "pivotConfigurationSaveButton_" + this.nodeID ;
+                configurationFilterObject.appendChild(configurationFilterObjectButton);                
+            }
+            filterContainer.appendChild(configurationFilterObject);
+        }
+
+        $('.selectPivotConfiguration_' + this.nodeID).selectpicker();
+        if (this.pivotConfiguration.enableEdit && this.canCreatePivot) {
+            $('.selectPivotConfiguration_' + this.nodeID)[0].children[1].children[0].appendChild(this.createAddButton());
+        }
+
+
+        this.renderers = $.extend(
             $.pivotUtilities.renderers,
             $.pivotUtilities.c3_renderers,
             $.pivotUtilities.d3_renderers,
@@ -67,7 +94,7 @@
 
         $("#cwPivotTable" + this.nodeID).pivotUI(self.PivotDatas, {
             onRefresh: self.onRefresh.bind(self),
-            renderers: renderers,
+            renderers: self.renderers,
             rendererOptions: {
                 table: {
                     clickCallback: self.clickCallback.bind(self)
@@ -80,6 +107,26 @@
             hiddenAttributes: self.config.hiddenAttributes
         });
 
+        // Event for filter
+        // Load a new network
+        $('select.selectPivotConfiguration_' + this.nodeID).on('changed.bs.select', function(e, clickedIndex, newValue, oldValue) {
+            var changeSet, id, nodeId, i,config;
+            var groupArray = {};
+            if (clickedIndex !== undefined && $(this).context.hasOwnProperty(clickedIndex)) {
+                id = $(this).context[clickedIndex]['id'];
+                if (id != 0) {
+                    config = self.pivotConfiguration.pivots[id].configuration;
+                    self.pivotConfiguration.selected = self.pivotConfiguration.pivots[id];
+                    self.loadCwApiPivot(config);
+                }
+            }
+            if (cwAPI.isDebugMode() === true) console.log("network set");
+        });
+        
+        var saveButton = document.getElementById("pivotConfigurationSaveButton_" + this.nodeID);
+        if (saveButton) {
+            saveButton.addEventListener('click', this.saveIndexPage.bind(this));
+        }
 
     };
 

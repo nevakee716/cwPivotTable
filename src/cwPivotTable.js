@@ -27,18 +27,47 @@
         if(this.config.cols === undefined)  this.config.cols = [];
         if(this.config.rows === undefined)  this.config.rows = [];
         if(this.config.aggregatorName === undefined)  this.config.aggregatorName = "Count";
-        if(this.config.rendererName === undefined)  this.config.aggregatorName = "Table";
+        if(this.config.rendererName === undefined)  this.config.rendererName = "Table";
         if(this.config.hiddenAttributes === undefined)  this.config.hiddenAttributes = [];
 
 
         this.nodes = {};
         this.PivotDatas = [];
-        //var nodesObj = {};
-        //this.config.nodes.forEach(function(n) {
-        //    nodesObj[n.nodeID] = n;
-        //});
-//
-        //this.config.nodes = nodesObj;
+
+        this.definition = {};
+        this.definition.capipivotScriptname = "capipivot";
+        this.definition.capipivotDisplayName = "Pivot Table";
+        this.definition.capipivotLabelScriptname = "label";
+        this.definition.capipivotLabelDisplayName = "Libéllé";
+        this.definition.capipivotToAnyAssociationScriptname = "CAPIPIVOTTOASSOPIVOTANYOBJECTTOANYOBJECT";
+        this.definition.capipivotToAnyAssociationDisplayName = "Present On PivotTable";
+        this.definition.capipivotCreateOnViewScriptname = "createoncwview";
+        this.definition.capipivotConfigurationScriptname = "configuration";
+        this.canCreatePivot = false;
+        this.canUpdatePivot = false;
+        this.pivotConfiguration = {};
+        this.pivotConfiguration.enableEdit = this.options.CustomOptions['enableEdit'];
+        this.pivotConfiguration.pivots = {}; 
+        
+        this.pivotConfiguration.enableEdit = true;
+
+        try {
+            this.definition.capipivotCreateOnViewDisplayName = cwAPI.mm.getProperty(this.definition.capipivotScriptname,this.definition.capipivotCreateOnViewScriptname).name;
+            this.definition.capipivotConfigurationDisplayName = cwAPI.mm.getProperty(this.definition.capipivotScriptname,this.definition.capipivotConfigurationScriptname).name;
+
+            if(cwAPI.cwUser.isCurrentUserSocial() === false && cwAPI.mm.getLookupsOnAccessRights(this.definition.capipivotScriptname,"CanCreate").length > 0) {
+                this.canCreatePivot = true;
+            }
+            if(cwAPI.cwUser.isCurrentUserSocial() === false && cwAPI.mm.getLookupsOnAccessRights(this.definition.capipivotScriptname,"CanUpdate").length > 0) {
+                this.canUpdatePivot = true;
+            }
+        } catch (e) {
+            this.definition.capipivotCreateOnViewDisplayName = "Create on cwView";
+            this.definition.capipivotConfigurationDisplayName = "Configuration";
+            this.canCreatePivot = true;
+            this.canUpdatePivot = true;
+            console.log(e);
+        }
     };
 
 

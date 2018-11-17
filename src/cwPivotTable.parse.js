@@ -78,37 +78,42 @@
             cardinal = true;
             addAtTheEnd = true;
         }
+
         this.parseNode(parent, function(child, associationNodeID) {
-            if(cardinal !== true) newLine = $.extend(true, {}, line);
-            else newLine = line;
-            node = self.viewSchema.NodesByID[associationNodeID];
+            if(child.objectTypeScriptName === self.definition.capipivotScriptname && child.properties.configuration) {
+                self.addPivotTable(child,parent);
+            } else {
+                if(cardinal !== true) newLine = $.extend(true, {}, line);
+                else newLine = line;
+                node = self.viewSchema.NodesByID[associationNodeID];
 
 
-            Object.keys(child.properties).map(function(p, index) {
-                var value = child.properties[p];
-                if (node.PropertiesSelected.indexOf(p.toUpperCase()) !== -1) {
-                    if (p === 'name') {
-                        newLine[node.NodeName] = value;
+                Object.keys(child.properties).map(function(p, index) {
+                    var value = child.properties[p];
+                    if (node.PropertiesSelected.indexOf(p.toUpperCase()) !== -1) {
+                        if (p === 'name') {
+                            newLine[node.NodeName] = value;
 
-                        if (self.nodes[node.NodeName] === undefined) {
-                            self.nodes[node.NodeName] = {};
+                            if (self.nodes[node.NodeName] === undefined) {
+                                self.nodes[node.NodeName] = {};
+                            }
+                            if (self.nodes[node.NodeName][value] === undefined) {
+                                self.nodes[node.NodeName][value] = {};
+                                self.nodes[node.NodeName][value].objectTypeScriptName = child.objectTypeScriptName;
+                                self.nodes[node.NodeName][value].id = child.object_id;
+                            }
+                        } else {
+                            newLine[node.NodeName + "_" + cwAPI.mm.getProperty(child.objectTypeScriptName, p).name] = value;
                         }
-                        if (self.nodes[node.NodeName][value] === undefined) {
-                            self.nodes[node.NodeName][value] = {};
-                            self.nodes[node.NodeName][value].objectTypeScriptName = child.objectTypeScriptName;
-                            self.nodes[node.NodeName][value].id = child.object_id;
-                        }
-                    } else {
-                        newLine[node.NodeName + "_" + cwAPI.mm.getProperty(child.objectTypeScriptName, p).name] = value;
+
                     }
 
+                });
+                hasChildren = true;
+
+                if (self.simplify(child, newLine, cardinal) === false && cardinal !== true) {
+                    self.PivotDatas.push(newLine);
                 }
-
-            });
-            hasChildren = true;
-
-            if (self.simplify(child, newLine, cardinal) === false && cardinal !== true) {
-                self.PivotDatas.push(newLine);
             }
         });
 
@@ -170,6 +175,7 @@
 
         this.JSONobjects = cpyObj;
         this.simplify(this.JSONobjects, {});
+        output.push('<div class="cw-visible bootstrap-iso" id="cwLayoutPivotFilter' + this.nodeID + '"></div>');
         output.push('<div class="cw-visible" id="cwPivotTable' + this.nodeID + '"></div>');
 
     };
