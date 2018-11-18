@@ -46,10 +46,8 @@
         this.canCreatePivot = false;
         this.canUpdatePivot = false;
         this.pivotConfiguration = {};
-        this.pivotConfiguration.enableEdit = this.options.CustomOptions['enableEdit'];
+        this.pivotConfiguration.enableEdit = this.config.enableEdit;
         this.pivotConfiguration.pivots = {}; 
-        
-        this.pivotConfiguration.enableEdit = true;
 
         try {
             this.definition.capipivotCreateOnViewDisplayName = cwAPI.mm.getProperty(this.definition.capipivotScriptname,this.definition.capipivotCreateOnViewScriptname).name;

@@ -1,11 +1,11 @@
 | **Name** | **Pivot Table** | **Version** | 
 | --- | --- | --- |
-| **Updated by** | Mathias PFAUWADEL | 1.0 |
+| **Updated by** | Mathias PFAUWADEL | 2.0 |
 
 
 ## Patch Notes
 
-* 1.0 : 1st version working
+* 2.0 : 1st version working
 
 ## To be Done
 
@@ -27,7 +27,7 @@ The Custom Display String is not compatible yet
 
 ## Node setup
 
-<img src="https://raw.githubusercontent.com/nevakee716/cwGantt/master/screen/2.jpg" alt="Drawing" style="width: 95%;"/>
+<img src="https://raw.githubusercontent.com/nevakee716/cwPivotTable/master/screen/2.jpg" alt="Drawing" style="width: 95%;"/>
 
 ## Options in the evolve Designer
 
@@ -38,16 +38,16 @@ Describe your configuration in a json object, then mimify it on https://www.clea
 Here is an exemple of a json configuration.
 
 ```
-        {
-            complementaryNode : [],
-            hiddenNodes : [],
-            cardinalNodes : [],
-            cols : [],
-            rows : [],
-            rendererName : "Table",
-            hiddenAttributes : [],
-            aggregatorName : "Count"
-        };
+{
+            "complementaryNode" : [],
+            "hiddenNodes" : [],
+            "cardinalNodes" : [],
+            "cols" : [],
+            "rows" : [],
+            "rendererName" : "Table",
+            "hiddenAttributes" : [],
+            "aggregatorName" : "Count"
+}
 ```
 
 
