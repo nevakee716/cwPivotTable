@@ -127,6 +127,17 @@
         if (saveButton) {
             saveButton.addEventListener('click', this.saveIndexPage.bind(this));
         }
+        if(this.config.enableEdit && this.config.loadFirstPivot && this.pivotConfiguration && Object.keys(this.pivotConfiguration.pivots).length > 0) {
+            let startCwApiPivot = this.pivotConfiguration.pivots[Object.keys(this.pivotConfiguration.pivots)[0]];
+            if(startCwApiPivot.configuration) {
+                this.pivotConfiguration.selected = startCwApiPivot;
+                this.loadCwApiPivot(startCwApiPivot.configuration);
+                $('select.selectPivotConfiguration_' + this.nodeID).each(function( index ) { // put values into filters
+                    $(this).selectpicker('val',startCwApiPivot.label ); //init cwAPInetworkfilter
+                });               
+            }
+
+        }
 
     };
 

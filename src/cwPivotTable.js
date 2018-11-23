@@ -43,6 +43,7 @@
         this.definition.capipivotToAnyAssociationDisplayName = "Present On PivotTable";
         this.definition.capipivotCreateOnViewScriptname = "createoncwview";
         this.definition.capipivotConfigurationScriptname = "configuration";
+         
         this.canCreatePivot = false;
         this.canUpdatePivot = false;
         this.pivotConfiguration = {};
