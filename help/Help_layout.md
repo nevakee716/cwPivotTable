@@ -1,10 +1,11 @@
 | **Name** | **Pivot Table** | **Version** | 
 | --- | --- | --- |
-| **Updated by** | Mathias PFAUWADEL | 2.0 |
+| **Updated by** | Mathias PFAUWADEL | 3.0 |
 
 
 ## Patch Notes
 
+* 3.0 : Enable Saving
 * 2.0 : 1st version working
 
 ## To be Done
@@ -96,7 +97,7 @@ Contributor only can save or create a pivot Table.
 When you create a new Pivot Table Analysis, it will create a new object and associate it with the object of your objectPage.
 
 To use this option you need to have your metamodel ready : 
-Create a new objectType : CW API Pivot with 3 properties : Configuration (memoText), Label (string) and Create On View (string)
+Create a new objectType : CW API Pivot with 3 properties : Configuration (memoText), Label (string) and Create On cwView (string)
 Create also an association between CW API Pivot and Any Objects
 Inside C:\Casewise\Evolve\Site\bin\webDesigner\custom\Marketplace\libs\cwPivotTable\src\pivotEdit2.js
 Fill theses variable with the scriptname of your model 
