@@ -30,11 +30,18 @@
       };
     }
 
-    if (view.indexOf("index_processus_pivot") !== -1) {
-      derivedAttributes["Macro Process Count"] = function(record) {
-        var d = new Date(record["Time Entry_Start Date"]);
-        return d.getWeekNumber();
+
+    if (view.indexOf("index_g11_regions") !== -1) {
+      derivedAttributes["Critical solution (%)"] = function(record) {
+        return Math.round(record["Critical solution percentage"]*100) + "%";
       };
+      derivedAttributes["Critical solutions at risk (%)"] = function(record) {
+        return Math.round(record["Critical solutions at risk percentage"]*100) + "%";
+      };
+      derivedAttributes["Date"] = function(record) {
+        return record["Year"] + "/" + record["Month number"] ;
+      };
+
     }
 
     Date.prototype.getWeekNumber = function() {
@@ -48,6 +55,20 @@
     return derivedAttributes;
   };
 
+  cwPivotTable.prototype.getInclusions = function() {
+
+    if(this.config.inclusions === undefined) this.config.inclusions = {};
+
+    if(this.config.currentDateFilter !== undefined) {
+      let d = new Date()
+      for(let i in this.config.currentDateFilter) {
+        this.config.inclusions[this.config.currentDateFilter[i]] = d.getFullYear() + "/" + d.getMonth();
+      }
+    }
+    return this.config.inclusions;
+
+
+  };
   cwPivotTable.prototype.dataAggregator = function() {
     var dataAggregator = {};
     var view = cwAPI.getCurrentView();

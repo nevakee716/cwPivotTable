@@ -48,6 +48,8 @@
       document.body.appendChild(node);
     }
 
+
+
     var filterContainer = document.getElementById("cwLayoutPivotFilter" + this.nodeID);
 
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
@@ -91,16 +93,19 @@
           clickCallback: self.clickCallback.bind(self)
         }
       },
+      hiddenFromDragDrop: self.config.hiddenFromDragDrop,
       derivedAttributes: self.dataDerivers(),
       cols: self.config.cols,
       rows: self.config.rows,
       rendererName: self.config.rendererName,
-      hiddenAttributes: self.config.hiddenAttributes
+      hiddenAttributes: self.config.hiddenAttributes,
+      inclusions: self.getInclusions()
       // aggregators: {
       //    "Adecco Mean" : this.dataAggregator()
       //}
     });
 
+    this.manageButton();
     // Event for filter
     // Load a new network
     $("select.selectPivotConfiguration_" + this.nodeID).on("changed.bs.select", function(e, clickedIndex, newValue, oldValue) {
@@ -135,6 +140,9 @@
   };
 
   cwPivotTable.prototype.onRefresh = function() {
+
+    if(this.config.hideTotals === true) this.hideTotalsResults();
+
     var self = this;
     cwAPI.CwPopout.hide();
     var headers = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtAxisLabel");
@@ -250,5 +258,126 @@
     }
   };
 
+  cwPivotTable.prototype.manageButton = function() {
+    var filterButton = document.getElementById("cwPivotButtonsFilters" + this.nodeID);
+    var self = this;
+
+    var i;
+    var filterButton = document.getElementById("cwPivotButtonsFilters" + this.nodeID);
+    if (this.config.hideFilter === true) {
+      filterButton.classList.remove(selected);
+      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility = "hidden";
+    }
+    filterButton.addEventListener("click", self.manageFilterButton.bind(this));
+
+    var optionButton = document.getElementById("cwPivotButtonsOptions" + this.nodeID);
+    if (this.config.hideColumn === true) {
+      optionButton.classList.remove("selected");
+      this.hideFilters();
+    }
+    optionButton.addEventListener("click", self.manageOptionButton.bind(this));
+
+    var totalButton = document.getElementById("cwPivotButtonsTotals" + this.nodeID);
+    if (this.config.hideTotals === true) {
+      totalButton.classList.remove("selected");
+      setTimeout(this.hideTotalsResults, 3000);
+      
+    }
+    totalButton.addEventListener("click", self.manageTotalButton.bind(this));
+  };
+
+  cwPivotTable.prototype.manageFilterButton = function(event) {
+    if (this.config.hideFilter === true) {
+      this.config.hideFilter = false;
+      event.target.classList.add("selected");
+      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility = "unset";
+    } else {
+      this.config.hideFilter = true;
+      event.target.classList.remove("selected");
+      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility = "hidden";
+    }
+  };
+
+  cwPivotTable.prototype.showFilters = function() {
+    document.querySelector(".pvtAxisContainer.pvtRows").classList.remove("cw-hidden");
+    document.querySelector(".pvtAxisContainer.pvtHorizList").classList.remove("cw-hidden");
+    document.querySelector(".pvtUiCell").classList.remove("cw-hidden");
+    document.querySelector(".pvtVals").classList.remove("cw-hidden");
+  };
+
+  cwPivotTable.prototype.hideFilters = function() {
+    document.querySelector(".pvtAxisContainer.pvtRows").classList.add("cw-hidden");
+    document.querySelector(".pvtAxisContainer.pvtHorizList").classList.add("cw-hidden");
+    document.querySelector(".pvtUiCell").classList.add("cw-hidden");
+    document.querySelector(".pvtVals").classList.add("cw-hidden");
+  };
+
+  cwPivotTable.prototype.manageOptionButton = function(event) {
+    if (this.config.hideColumn === true) {
+      this.config.hideColumn = false;
+      event.target.classList.add("selected");
+      this.showFilters();
+    } else {
+      this.config.hideColumn = true;
+      event.target.classList.remove("selected");
+      this.hideFilters();
+    }
+  };
+
+  cwPivotTable.prototype.showTotalsResults = function() {
+    let p = document.querySelectorAll(".pvtTotal");
+    if (p) {
+      for (i = 0; i < p.length; i++) {
+        p[i].classList.remove("cw-hidden");
+      }
+    }
+    p = document.querySelectorAll(".pvtTotalLabel");
+    if (p) {
+      for (i = 0; i < p.length; i++) {
+        p[i].classList.remove("cw-hidden");
+      }
+    }
+    p = document.querySelectorAll(".pvtGrandTotal");
+    if (p) {
+      for (i = 0; i < p.length; i++) {
+        p[i].classList.remove("cw-hidden");
+      }
+    }
+  };
+
+  cwPivotTable.prototype.hideTotalsResults = function() {
+      let p = document.querySelectorAll(".pvtTotal");
+      if (p) {
+        for (i = 0; i < p.length; i++) {
+          p[i].classList.add("cw-hidden");
+        }
+      }
+      p = document.querySelectorAll(".pvtTotalLabel");
+      if (p) {
+        for (i = 0; i < p.length; i++) {
+          p[i].classList.add("cw-hidden");
+        }
+      }
+      p = document.querySelectorAll(".pvtGrandTotal");
+      if (p) {
+        for (i = 0; i < p.length; i++) {
+          p[i].classList.add("cw-hidden");
+        }
+      }
+
+  };
+
+  cwPivotTable.prototype.manageTotalButton = function(event) {
+    if (this.config.hideTotals === true) {
+      this.config.hideTotals = false;
+      event.target.classList.add("selected");
+      this.showTotalsResults();
+    } else {
+      this.config.hideTotals = true;
+      event.target.classList.remove("selected");
+      this.hideTotalsResults();
+    }
+
+  };
   cwApi.cwLayouts.cwPivotTable = cwPivotTable;
 })(cwAPI, jQuery);
