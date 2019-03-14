@@ -77,3 +77,11 @@ table.pvtTable tbody tr th {
 	border-style: solid;
 	color: #00b09f;
 }
+
+
+.pivotAddButton {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: #76cf76 !important;
+}

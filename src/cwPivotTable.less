@@ -39,16 +39,18 @@
     border-width: 2px;
     border-style: solid;
 }
-.pvtRenderer, .pvtAggregator {
-    padding: 5px;
-    height: 100%;
-    color: @solidColor;
-    font-size: 12px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    outline: none;
+.pvtRenderer,
+.pvtAggregator,
+.pvtAttrDropdown {
+	padding: 5px;
+	height: 100%;
+	color: #5c5d61;
+	font-size: 12px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	outline: none;
 }
 
 .pvtFilterBox button {
@@ -84,3 +86,10 @@ table.pvtTable thead tr th, table.pvtTable tbody tr th {
     border-style: solid;
 	color: @solidColor;
 	}
+
+.pivotAddButton {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: @add-button-green-color !important;
+}
