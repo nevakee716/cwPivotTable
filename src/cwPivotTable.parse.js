@@ -171,14 +171,15 @@
 
     this.JSONobjects = cpyObj;
     this.simplify(this.JSONobjects, {});
-    output.push('<div class="cwPivotToolBox" id="cwPivotToolBox' + this.nodeID + '">');
-    output.push('<div class="cwPivotToolBoxWrapper" id="cwPivotToolBoxWrapper' + this.nodeID + '">');
+
+    output.push('<div class="cwPivotToolBox">');
+    output.push('<div class="cw-visible" id="cwLayoutPivotFilter' + this.nodeID + '"></div>');
+    output.push('<div class="cwPivotToolBoxButton" id="cwPivotToolBox' + this.nodeID + '">');
     output.push('<a class="btn page-action no-text fa fa-filter selected" id="cwPivotButtonsFilters' + this.nodeID + '" title="' + $.i18n.prop("filter") + '"></a>');
     output.push('<a class="btn page-action no-text fa fa-cogs selected" id="cwPivotButtonsOptions' + this.nodeID + '" title="' + $.i18n.prop("option") + '"></i></a>');
     output.push('<a class="btn page-action no-text fa fa-stack-overflow selected" id="cwPivotButtonsTotals' + this.nodeID + '" title="' + $.i18n.prop("totals") + '"></a>');
     output.push("</div></div>");
 
-    output.push('<div class="cw-visible bootstrap-iso" id="cwLayoutPivotFilter' + this.nodeID + '"></div>');
     output.push('<div class="cw-visible" id="cwPivotTable' + this.nodeID + '"></div>');
   };
 

@@ -54,6 +54,12 @@
         var object;
         var id;
 
+
+
+        let wrapperObject = document.createElement("span");
+        wrapperObject.className = "bootstrap-iso";
+
+
         filterObject = document.createElement("select");
         filterObject.setAttribute('data-live-search', 'true');
         filterObject.setAttribute('data-size', '5');
@@ -94,7 +100,8 @@
             filterObject.appendChild(object);
         });
 
-        return filterObject;
+        wrapperObject.appendChild(filterObject);
+        return wrapperObject;
     };
 
     cwPivotTable.prototype.addEventOnSave = function() {
@@ -107,9 +114,9 @@
 
 
     cwPivotTable.prototype.createAddButton = function() {
-        var buttonAdd = document.createElement('button');
+        var buttonAdd = document.createElement('a');
         buttonAdd.addEventListener("click", this.createChangesetWithCreation.bind(this), false);
-        buttonAdd.innerHTML = '<i class="fa fa-plus" aria-hidden="true"></i>';
+        buttonAdd.className = "btn page-action no-text fa fa-plus";
         return buttonAdd;
     };
 

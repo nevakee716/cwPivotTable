@@ -1,26 +1,79 @@
-
-
-.cwPivotToolBox {
-	height: 50px;
+.cwPivotToolBoxButton {
 	z-index: 100;
 	top: 0px;
 	background-color: #ffffff;
-}
-
-.cwPivotToolBoxWrapper {
 	right: -12px;
 	position: absolute;
 }
 
-.cwPivotToolBox .btn.selected {
-	background-color: #00b09f;
-}
-
-.cwPivotToolBox .k-button.selected {
-	background-color: #00b09f;
+.cwPivotToolBox {
+	height: 40px;
 }
 
 
-.cwLayoutNetworkToolBox .btn.selected{
-    background-color: #00b09f;
+.cwPivotToolBoxButton .btn.selected {
+	background-color: #00b09f;
+}
+
+.cwPivotToolBoxButton .k-button.selected {
+	background-color: #00b09f;
+}
+
+.pvtRenderer {
+	display: block;
+}
+
+.pvtAxisContainer,
+.pvtVals {
+	background-color: #ffffff;
+	border-color: #00b09f;
+	border-width: 2px;
+	border-style: solid;
+}
+.pvtRenderer,
+.pvtAggregator,
+.pvtAttrDropdown {
+	padding: 5px;
+	height: 100%;
+	color: #5c5d61;
+	font-size: 12px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	outline: none;
+}
+
+.pvtFilterBox button {
+	-webkit-text-size-adjust: 100%;
+	border: 1px solid #dedede;
+	padding: 2px 5px;
+	white-space: nowrap;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+.pvtAxisContainer li span.pvtAttr {
+	color: #00b09f;
+}
+
+.pvtFilterBox p > button:first-child {
+	color: #fff;
+	border-color: #e45200;
+	background-color: #ff6b18;
+}
+
+.pvtRendererArea {
+	padding: 0px;
+}
+
+table.pvtTable thead tr th,
+table.pvtTable tbody tr th {
+	background-color: #ffffff;
+	border-color: #00b09f;
+	border-width: 2px;
+	border-style: solid;
+	color: #00b09f;
 }
