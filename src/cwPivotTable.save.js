@@ -114,11 +114,17 @@
 
 
     cwPivotTable.prototype.createAddButton = function() {
-        var buttonAdd = document.createElement('a');
-        buttonAdd.addEventListener("click", this.createChangesetWithCreation.bind(this), false);
-        buttonAdd.className = "btn page-action no-text fa fa-plus";
+        var buttonAdd = document.createElement("a");
+        buttonAdd.className = "pivotAddButton fa fa-2x fa-plus-circle"
+        buttonAdd.addEventListener(
+            "click",
+            this.createChangesetWithCreation.bind(this),
+            false
+        );
         return buttonAdd;
     };
+
+
 
 
 
