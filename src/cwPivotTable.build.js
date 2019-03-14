@@ -220,7 +220,7 @@
         if (!selection || selection.rangeCount < 1) return true;
         var range = selection.getRangeAt(0);
         var node = selection.anchorNode;
-        var word_regexp = /^[A-Za-z0-9àâéêèìôùûç' _-]*$/;
+        var word_regexp = /^[\.A-Za-z0-9àâéêèìôùûç' _-]*$/
 
         // Extend the range backward until it matches word beginning
         while (range.startOffset > 0 && range.toString().match(word_regexp)) {
