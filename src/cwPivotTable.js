@@ -15,6 +15,7 @@
   }
 
   cwPivotTable.prototype.construct = function(options) {
+    this.init = false;
     this.config = JSON.parse(this.options.CustomOptions["JsonConfiguration"]);
     if (this.config.hideFilter === undefined) this.config.hideFilter = false;
     if (this.config.hideColumn === undefined) this.config.hideColumn = false;

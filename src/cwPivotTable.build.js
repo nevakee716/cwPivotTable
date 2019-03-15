@@ -17,8 +17,9 @@
   cwPivotTable.prototype.applyJavaScript = function() {
     var self = this;
     var libToLoad = [];
-
-    if (cwAPI.isDebugMode() === true) {
+    if(this.init === false) {
+      this.init = true;
+      if (cwAPI.isDebugMode() === true) {
       self.createPivot();
     } else {
       libToLoad = ["modules/bootstrap/bootstrap.min.js", "modules/bootstrap-select/bootstrap-select.min.js", "modules/pivot/pivot.min.js", "modules/D3/d3.min.js", "modules/pivotC3/pivotC3.min.js", "modules/pivotjqUI/pivotjqUI.min.js"];
@@ -38,6 +39,8 @@
         }
       });
     }
+    }
+    
   };
 
   // Building network
@@ -68,8 +71,8 @@
       configurationFilterObject.appendChild(configurationFilterObjectTitle);
       configurationFilterObject.appendChild(this.getPivotConfigurationFilterObject("selectPivotConfiguration_" + this.nodeID));
       if (this.canUpdatePivot) {
-        var configurationFilterObjectButton = document.createElement("button");
-        configurationFilterObjectButton.innerHTML = '<i class="fa fa-floppy-o" aria-hidden="true"></i>';
+        var configurationFilterObjectButton = document.createElement("a");
+        configurationFilterObjectButton.className = "btn page-action no-text fa fa-floppy-o" ;
         configurationFilterObjectButton.id = "pivotConfigurationSaveButton_" + this.nodeID;
         configurationFilterObject.appendChild(configurationFilterObjectButton);
       }
@@ -144,7 +147,8 @@
     if(this.config.hideTotals === true) this.hideTotalsResults();
 
     var self = this;
-    cwAPI.CwPopout.hide();
+
+    //cwAPI.CwPopout.hide();
     var headers = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtAxisLabel");
     var hDataLine = {};
     var hDataCol = {};
