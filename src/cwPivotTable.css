@@ -10,7 +10,6 @@
 	height: 40px;
 }
 
-
 .cwPivotToolBoxButton .btn.selected {
 	background-color: #00b09f;
 }
@@ -78,10 +77,19 @@ table.pvtTable tbody tr th {
 	color: #00b09f;
 }
 
-
 .pivotAddButton {
-    position: absolute;
-    right: 15px;
-    top: 12px;
-    color: #76cf76 !important;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+	color: #76cf76 !important;
+}
+
+table.pvtTable thead th.pvtAxisLabel {
+	background-color: #00b09f;
+	color: white;
+}
+
+.pvtAxisContainer,
+.pvtVals.pvtUiCell {
+	border-radius: 4px;
 }

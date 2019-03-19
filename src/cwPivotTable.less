@@ -1,13 +1,12 @@
 @import "../../_mixins";
 @import "../../_variables";
 
-
 @solidColor: @cwMenuLeftMainNavigationTextColor;
 
 .cwPivotToolBoxButton {
-	z-index: 100;
-	top: 0px;
-	background-color: @cwBodyBackgroundColor;
+    z-index: 100;
+    top: 0px;
+    background-color: @cwBodyBackgroundColor;
     right: -12px;
     position: absolute;
 }
@@ -18,22 +17,23 @@
 }
 
 .cwPivotToolBox .btn.selected {
-	background-color: @cwTopBarProfileLinkHoverColor;
+    background-color: @cwTopBarProfileLinkHoverColor;
 }
 
 .cwPivotToolBox .k-button.selected {
-	background-color: @cwTopBarProfileLinkHoverColor;
+    background-color: @cwTopBarProfileLinkHoverColor;
 }
 
-.cwPivotToolBox .btn.selected{
+.cwPivotToolBox .btn.selected {
     background-color: @cwTopBarProfileLinkHoverColor;
 }
 
 .pvtRenderer {
-	display: block;
+    display: block;
 }
 
-.pvtAxisContainer , .pvtVals{
+.pvtAxisContainer,
+.pvtVals {
     background-color: @cwBodyBackgroundColor;
     border-color: @solidColor;
     border-width: 2px;
@@ -42,54 +42,64 @@
 .pvtRenderer,
 .pvtAggregator,
 .pvtAttrDropdown {
-	padding: 5px;
-	height: 100%;
-	color: #5c5d61;
-	font-size: 12px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	outline: none;
+    padding: 5px;
+    height: 100%;
+    color: #5c5d61;
+    font-size: 12px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
 }
 
 .pvtFilterBox button {
     -webkit-text-size-adjust: 100%;
-    border: 1px solid #DEDEDE;
+    border: 1px solid #dedede;
     padding: 2px 5px;
     white-space: nowrap;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-        margin: 2px;
+    margin: 2px;
 }
 
 .pvtAxisContainer li span.pvtAttr {
-	color: @solidColor;
+    color: @solidColor;
 }
 
 .pvtFilterBox p > button:first-child {
-	color: @cwBodyBackgroundColor;
+    color: @cwBodyBackgroundColor;
     border-color: #e45200;
     background-color: #ff6b18;
 }
-
 
 .pvtRendererArea {
     padding: 0px;
 }
 
-table.pvtTable thead tr th, table.pvtTable tbody tr th {
+table.pvtTable thead tr th,
+table.pvtTable tbody tr th {
     background-color: @cwBodyBackgroundColor;
     border-color: @solidColor;
     border-width: 2px;
     border-style: solid;
-	color: @solidColor;
-	}
+    color: @solidColor;
+}
 
 .pivotAddButton {
     position: absolute;
     right: 15px;
     top: 12px;
     color: @add-button-green-color !important;
+}
+
+table.pvtTable thead th.pvtAxisLabel {
+    background-color: @solidColor;
+    color: @cwBodyBackgroundColor;
+}
+
+.pvtAxisContainer,
+.pvtVals.pvtUiCell {
+    border-radius: 4px;
 }
