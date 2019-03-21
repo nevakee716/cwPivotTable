@@ -62,7 +62,7 @@
     if(this.config.currentDateFilter !== undefined) {
       let d = new Date()
       for(let i in this.config.currentDateFilter) {
-        this.config.inclusions[this.config.currentDateFilter[i]] = d.getFullYear() + "/" + d.getMonth();
+        this.config.inclusions[this.config.currentDateFilter[i]] = [d.getFullYear() + "/" + d.getMonth()];
       }
     }
     return this.config.inclusions;
