@@ -1,10 +1,11 @@
 | **Name** | **Pivot Table** | **Version** | 
 | --- | --- | --- |
-| **Updated by** | Mathias PFAUWADEL | 3.0 |
+| **Updated by** | Mathias PFAUWADEL | 3.3 |
 
 
 ## Patch Notes
 
+* 3.3 : Update Graphics
 * 3.0 : Enable Saving
 * 2.0 : 1st version working
 
@@ -25,6 +26,12 @@ The layout will scan all of your hierarchy tree, and put it in the pivot table
 ## Custom Display String Enhanced
 
 The Custom Display String is not compatible yet
+
+## Button 
+
+In order to use the button for masking or displaying the different area with IE, you need to install utils 1.3 or more
+https://github.com/ErwinConsultingFrance/evolve-layouts/tree/master/dist/Utils
+
 
 ## Node setup
 
@@ -49,7 +56,13 @@ Here is an exemple of a json configuration.
             "hiddenAttributes" : [],
             "aggregatorName" : "Count",
             "enableEdit" : true,
-            "loadFirstPivot" : true
+            "loadFirstPivot" : true,
+            "currentDate" : {
+            "hiddenFromDragDrop" : [Properties1,Properties2]
+            "hideColumn": true,
+            "hideTotals": true,
+            "hideFilter": true,
+            "currentDateFilter" : [Properties1,Properties2]
 }
 ```
 
@@ -87,6 +100,26 @@ If you want to hide some Attribute put their label in the option
 
 Put the initial aggregator by default it's count
          
+### Hidden From Drag Drop
+
+Allow you to hide some property from the pivot table (these element can still be use for data deriver)
+
+### Current Date Filter
+
+The property selected will automatically have the currentDate selected with this format FullYear/FullMonth
+
+### Hide Column
+
+If true, the drag&drop column will be hidden
+
+### Hide Totals
+
+If true, the totals column and row will be hidden
+
+### Hide Filter
+
+If true, the filter column will be hidden
+
 ## Enable Edit
 
 You can load Pivot Table Analysis (cols,rows, aggregator, filters ...)
@@ -120,6 +153,6 @@ If you check this option, the network layout will load the first capinetwork of 
 ## Data Deriver
 
 You can create some data deriver, if you want for exemple take only the month of a date
-you need to modify the file cwPivotTable.dataDeriver.js
+you need to modify the file cwPivotTable.dataDeriver.js, there are some exemple there on what you can do.
 
-This required some javascript knowledge please ask a consultant
+This required some javascript knowledge please ask a consultant 
