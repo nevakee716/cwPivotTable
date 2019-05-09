@@ -22,25 +22,12 @@
       if (cwAPI.isDebugMode() === true) {
         self.createPivot();
       } else {
-        libToLoad = [
-          "modules/bootstrap/bootstrap.min.js",
-          "modules/bootstrap-select/bootstrap-select.min.js",
-          "modules/pivot/pivot.min.js",
-          "modules/D3/d3.min.js",
-          "modules/pivotC3/pivotC3.min.js",
-          "modules/pivotjqUI/pivotjqUI.min.js"
-        ];
+        libToLoad = ["modules/bootstrap/bootstrap.min.js", "modules/bootstrap-select/bootstrap-select.min.js", "modules/pivot/pivot.min.js", "modules/D3/d3.min.js", "modules/pivotC3/pivotC3.min.js", "modules/pivotjqUI/pivotjqUI.min.js"];
         // AsyncLoad
         cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
           if (error === null) {
-            libToLoad = [
-              "modules/pivotC3render/pivotC3render.min.js",
-              "modules/pivotD3render/pivotD3render.min.js",
-              "modules/pivotExport/pivotExport.min.js"
-            ];
-            cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(
-              error
-            ) {
+            libToLoad = ["modules/pivotC3render/pivotC3render.min.js", "modules/pivotD3render/pivotD3render.min.js", "modules/pivotExport/pivotExport.min.js"];
+            cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
               if (error === null) {
                 self.createPivot();
               } else {
@@ -63,9 +50,7 @@
       document.body.appendChild(node);
     }
 
-    var filterContainer = document.getElementById(
-      "cwLayoutPivotFilter" + this.nodeID
-    );
+    var filterContainer = document.getElementById("cwLayoutPivotFilter" + this.nodeID);
 
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     var self = this,
@@ -81,17 +66,11 @@
       configurationFilterObjectTitle.innerHTML = "Pivot Table Configuration";
 
       configurationFilterObject.appendChild(configurationFilterObjectTitle);
-      configurationFilterObject.appendChild(
-        this.getPivotConfigurationFilterObject(
-          "selectPivotConfiguration_" + this.nodeID
-        )
-      );
+      configurationFilterObject.appendChild(this.getPivotConfigurationFilterObject("selectPivotConfiguration_" + this.nodeID));
       if (this.canUpdatePivot) {
         var configurationFilterObjectButton = document.createElement("a");
-        configurationFilterObjectButton.className =
-          "btn page-action no-text fa fa-floppy-o";
-        configurationFilterObjectButton.id =
-          "pivotConfigurationSaveButton_" + this.nodeID;
+        configurationFilterObjectButton.className = "btn page-action no-text fa fa-floppy-o";
+        configurationFilterObjectButton.id = "pivotConfigurationSaveButton_" + this.nodeID;
         configurationFilterObject.appendChild(configurationFilterObjectButton);
       }
       filterContainer.appendChild(configurationFilterObject);
@@ -99,19 +78,12 @@
 
     $(".selectPivotConfiguration_" + this.nodeID).selectpicker();
     if (this.pivotConfiguration.enableEdit && this.canCreatePivot) {
-      $(
-        ".selectPivotConfiguration_" + this.nodeID
-      )[0].children[1].children[0].appendChild(this.createAddButton());
+      $(".selectPivotConfiguration_" + this.nodeID)[0].children[1].children[0].appendChild(this.createAddButton());
     }
 
     var numberFormat = $.pivotUtilities.numberFormat;
 
-    this.renderers = $.extend(
-      $.pivotUtilities.renderers,
-      $.pivotUtilities.c3_renderers,
-      $.pivotUtilities.d3_renderers,
-      $.pivotUtilities.export_renderers
-    );
+    this.renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.c3_renderers, $.pivotUtilities.d3_renderers, $.pivotUtilities.export_renderers);
 
     $("#cwPivotTable" + this.nodeID).pivotUI(self.PivotDatas, {
       onRefresh: self.onRefresh.bind(self),
@@ -136,48 +108,30 @@
     this.manageButton();
     // Event for filter
     // Load a new network
-    $("select.selectPivotConfiguration_" + this.nodeID).on(
-      "changed.bs.select",
-      function(e, clickedIndex, newValue, oldValue) {
-        var changeSet, id, nodeId, i, config;
-        var groupArray = {};
-        if (
-          clickedIndex !== undefined &&
-          $(this).context.hasOwnProperty(clickedIndex)
-        ) {
-          id = $(this).context[clickedIndex]["id"];
-          if (id != 0) {
-            config = self.pivotConfiguration.pivots[id].configuration;
-            self.pivotConfiguration.selected =
-              self.pivotConfiguration.pivots[id];
-            self.loadCwApiPivot(config);
-          }
+    $("select.selectPivotConfiguration_" + this.nodeID).on("changed.bs.select", function(e, clickedIndex, newValue, oldValue) {
+      var changeSet, id, nodeId, i, config;
+      var groupArray = {};
+      if (clickedIndex !== undefined && $(this).context.hasOwnProperty(clickedIndex)) {
+        id = $(this).context[clickedIndex]["id"];
+        if (id != 0) {
+          config = self.pivotConfiguration.pivots[id].configuration;
+          self.pivotConfiguration.selected = self.pivotConfiguration.pivots[id];
+          self.loadCwApiPivot(config);
         }
-        if (cwAPI.isDebugMode() === true) console.log("pivot is set");
       }
-    );
+      if (cwAPI.isDebugMode() === true) console.log("pivot is set");
+    });
 
-    var saveButton = document.getElementById(
-      "pivotConfigurationSaveButton_" + this.nodeID
-    );
+    var saveButton = document.getElementById("pivotConfigurationSaveButton_" + this.nodeID);
     if (saveButton) {
       saveButton.addEventListener("click", this.saveIndexPage.bind(this));
     }
-    if (
-      this.config.enableEdit &&
-      this.config.loadFirstPivot &&
-      this.pivotConfiguration &&
-      Object.keys(this.pivotConfiguration.pivots).length > 0
-    ) {
-      let startCwApiPivot = this.pivotConfiguration.pivots[
-        Object.keys(this.pivotConfiguration.pivots)[0]
-      ];
+    if (this.config.enableEdit && this.config.loadFirstPivot && this.pivotConfiguration && Object.keys(this.pivotConfiguration.pivots).length > 0) {
+      let startCwApiPivot = this.pivotConfiguration.pivots[Object.keys(this.pivotConfiguration.pivots)[0]];
       if (startCwApiPivot.configuration) {
         this.pivotConfiguration.selected = startCwApiPivot;
         this.loadCwApiPivot(startCwApiPivot.configuration);
-        $("select.selectPivotConfiguration_" + this.nodeID).each(function(
-          index
-        ) {
+        $("select.selectPivotConfiguration_" + this.nodeID).each(function(index) {
           // put values into filters
           $(this).selectpicker("val", startCwApiPivot.label); //init cwAPInetworkfilter
         });
@@ -191,9 +145,7 @@
     var self = this;
 
     //cwAPI.CwPopout.hide();
-    var headers = document.querySelectorAll(
-      "#cwPivotTable" + this.nodeID + " .pvtAxisLabel"
-    );
+    var headers = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtAxisLabel");
     var hDataLine = {};
     var hDataCol = {};
     var self = this;
@@ -205,19 +157,14 @@
       hDataCol[h.offsetTop] = h.innerText;
     }
 
-    var table = document.querySelectorAll(
-      "#cwPivotTable" + this.nodeID + " .pvtTable"
-    )[0];
+    var table = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtTable")[0];
     let offsetright = 0;
 
     if (table) {
       table.addEventListener("click", function(e) {
         hDataLine = {};
         hDataCol = {};
-        if (
-          e.toElement.className === "pvtColLabel" ||
-          e.toElement.className === "pvtRowLabel"
-        ) {
+        if (e.toElement.className === "pvtColLabel" || e.toElement.className === "pvtRowLabel") {
           for (let i = 0; i < headers.length; i++) {
             let h = headers[i];
             hDataLine[h.offsetLeft] = h.innerText;
@@ -237,13 +184,9 @@
                 object = {};
               object.object_id = self.nodes[nodeName][name].id;
               scriptname = self.nodes[nodeName][name].objectTypeScriptName;
-              popOutName =
-                cwApi.replaceSpecialCharacters(scriptname) + "_diagram_popout";
+              popOutName = cwApi.replaceSpecialCharacters(scriptname) + "_diagram_popout";
               if (cwAPI.ViewSchemaManager.pageExists(popOutName) === true) {
-                cwApi.cwDiagramPopoutHelper.openDiagramPopout(
-                  object,
-                  popOutName
-                );
+                cwApi.cwDiagramPopoutHelper.openDiagramPopout(object, popOutName);
               }
             }
           }
@@ -260,13 +203,9 @@
                 object = {};
               object.object_id = self.nodes[nodeName][name].id;
               scriptname = self.nodes[nodeName][name].objectTypeScriptName;
-              popOutName =
-                cwApi.replaceSpecialCharacters(scriptname) + "_diagram_popout";
+              popOutName = cwApi.replaceSpecialCharacters(scriptname) + "_diagram_popout";
               if (cwAPI.ViewSchemaManager.pageExists(popOutName) === true) {
-                cwApi.cwDiagramPopoutHelper.openDiagramPopout(
-                  object,
-                  popOutName
-                );
+                cwApi.cwDiagramPopoutHelper.openDiagramPopout(object, popOutName);
               }
             }
           }
@@ -275,16 +214,8 @@
     }
   };
 
-  cwPivotTable.prototype.clickCallback = function(
-    e,
-    value,
-    filters,
-    pivotData
-  ) {
-    if (
-      pivotData.aggregatorName === "List Unique Values" &&
-      this.nodes.hasOwnProperty(pivotData.valAttrs[0])
-    ) {
+  cwPivotTable.prototype.clickCallback = function(e, value, filters, pivotData) {
+    if (pivotData.aggregatorName === "List Unique Values" && this.nodes.hasOwnProperty(pivotData.valAttrs[0])) {
       if (value.indexOf(",") === -1) {
         str = value;
       } else {
@@ -304,10 +235,7 @@
         }
 
         // Extend the range forward until it matches word ending
-        while (
-          range.endOffset < node.length &&
-          range.toString().match(word_regexp)
-        ) {
+        while (range.endOffset < node.length && range.toString().match(word_regexp)) {
           range.setEnd(node, range.endOffset + 1);
         }
         // Restore the valid word match after overshooting
@@ -324,10 +252,8 @@
           popOutName,
           object = {};
         object.object_id = this.nodes[pivotData.valAttrs[0]][str].id;
-        scriptname = this.nodes[pivotData.valAttrs[0]][str]
-          .objectTypeScriptName;
-        popOutName =
-          cwApi.replaceSpecialCharacters(scriptname) + "_diagram_popout";
+        scriptname = this.nodes[pivotData.valAttrs[0]][str].objectTypeScriptName;
+        popOutName = cwApi.replaceSpecialCharacters(scriptname) + "_diagram_popout";
         if (cwAPI.ViewSchemaManager.pageExists(popOutName) === true) {
           cwApi.cwDiagramPopoutHelper.openDiagramPopout(object, popOutName);
         }
@@ -336,34 +262,25 @@
   };
 
   cwPivotTable.prototype.manageButton = function() {
-    var filterButton = document.getElementById(
-      "cwPivotButtonsFilters" + this.nodeID
-    );
+    var filterButton = document.getElementById("cwPivotButtonsFilters" + this.nodeID);
     var self = this;
 
     var i;
-    var filterButton = document.getElementById(
-      "cwPivotButtonsFilters" + this.nodeID
-    );
+    var filterButton = document.getElementById("cwPivotButtonsFilters" + this.nodeID);
     if (this.config.hideFilter === true) {
       filterButton.classList.remove(selected);
-      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility =
-        "hidden";
+      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility = "hidden";
     }
     filterButton.addEventListener("click", self.manageFilterButton.bind(this));
 
-    var optionButton = document.getElementById(
-      "cwPivotButtonsOptions" + this.nodeID
-    );
+    var optionButton = document.getElementById("cwPivotButtonsOptions" + this.nodeID);
     if (this.config.hideColumn === true) {
       optionButton.classList.remove("selected");
       this.hideFilters();
     }
     optionButton.addEventListener("click", self.manageOptionButton.bind(this));
 
-    var totalButton = document.getElementById(
-      "cwPivotButtonsTotals" + this.nodeID
-    );
+    var totalButton = document.getElementById("cwPivotButtonsTotals" + this.nodeID);
     if (this.config.hideTotals === true) {
       totalButton.classList.remove("selected");
       setTimeout(this.hideTotalsResults, 3000);
@@ -375,34 +292,24 @@
     if (this.config.hideFilter === true) {
       this.config.hideFilter = false;
       event.target.classList.add("selected");
-      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility =
-        "unset";
+      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility = "unset";
     } else {
       this.config.hideFilter = true;
       event.target.classList.remove("selected");
-      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility =
-        "hidden";
+      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility = "hidden";
     }
   };
 
   cwPivotTable.prototype.showFilters = function() {
-    document
-      .querySelector(".pvtAxisContainer.pvtRows")
-      .classList.remove("cw-hidden");
-    document
-      .querySelector(".pvtAxisContainer.pvtHorizList")
-      .classList.remove("cw-hidden");
+    document.querySelector(".pvtAxisContainer.pvtRows").classList.remove("cw-hidden");
+    document.querySelector(".pvtAxisContainer.pvtHorizList").classList.remove("cw-hidden");
     document.querySelector(".pvtUiCell").classList.remove("cw-hidden");
     document.querySelector(".pvtVals").classList.remove("cw-hidden");
   };
 
   cwPivotTable.prototype.hideFilters = function() {
-    document
-      .querySelector(".pvtAxisContainer.pvtRows")
-      .classList.add("cw-hidden");
-    document
-      .querySelector(".pvtAxisContainer.pvtHorizList")
-      .classList.add("cw-hidden");
+    document.querySelector(".pvtAxisContainer.pvtRows").classList.add("cw-hidden");
+    document.querySelector(".pvtAxisContainer.pvtHorizList").classList.add("cw-hidden");
     document.querySelector(".pvtUiCell").classList.add("cw-hidden");
     document.querySelector(".pvtVals").classList.add("cw-hidden");
   };
