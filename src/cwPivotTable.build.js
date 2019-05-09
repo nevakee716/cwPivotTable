@@ -17,29 +17,30 @@
   cwPivotTable.prototype.applyJavaScript = function() {
     var self = this;
     var libToLoad = [];
-    if (this.init === false) {
+    if(this.init === false) {
       this.init = true;
       if (cwAPI.isDebugMode() === true) {
-        self.createPivot();
-      } else {
-        libToLoad = ["modules/bootstrap/bootstrap.min.js", "modules/bootstrap-select/bootstrap-select.min.js", "modules/pivot/pivot.min.js", "modules/D3/d3.min.js", "modules/pivotC3/pivotC3.min.js", "modules/pivotjqUI/pivotjqUI.min.js"];
-        // AsyncLoad
-        cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
-          if (error === null) {
-            libToLoad = ["modules/pivotC3render/pivotC3render.min.js", "modules/pivotD3render/pivotD3render.min.js", "modules/pivotExport/pivotExport.min.js"];
-            cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
-              if (error === null) {
-                self.createPivot();
-              } else {
-                cwAPI.Log.Error(error);
-              }
-            });
-          } else {
-            cwAPI.Log.Error(error);
-          }
-        });
-      }
+      self.createPivot();
+    } else {
+      libToLoad = ["modules/bootstrap/bootstrap.min.js", "modules/bootstrap-select/bootstrap-select.min.js", "modules/pivot/pivot.min.js", "modules/D3/d3.min.js", "modules/pivotC3/pivotC3.min.js", "modules/pivotjqUI/pivotjqUI.min.js"];
+      // AsyncLoad
+      cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
+        if (error === null) {
+          libToLoad = ["modules/pivotC3render/pivotC3render.min.js", "modules/pivotD3render/pivotD3render.min.js", "modules/pivotExport/pivotExport.min.js"];
+          cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
+            if (error === null) {
+              self.createPivot();
+            } else {
+              cwAPI.Log.Error(error);
+            }
+          });
+        } else {
+          cwAPI.Log.Error(error);
+        }
+      });
     }
+    }
+    
   };
 
   // Building network
@@ -49,6 +50,8 @@
       node.innerHTML = str;
       document.body.appendChild(node);
     }
+
+
 
     var filterContainer = document.getElementById("cwLayoutPivotFilter" + this.nodeID);
 
@@ -67,9 +70,9 @@
 
       configurationFilterObject.appendChild(configurationFilterObjectTitle);
       configurationFilterObject.appendChild(this.getPivotConfigurationFilterObject("selectPivotConfiguration_" + this.nodeID));
-      if (this.canUpdatePivot) {
+      if (this.canUpdatePivot && document.getElementById("pivotConfigurationSaveButton_" + this.nodeID) === null) {
         var configurationFilterObjectButton = document.createElement("a");
-        configurationFilterObjectButton.className = "btn page-action no-text fa fa-floppy-o";
+        configurationFilterObjectButton.className = "btn page-action no-text fa fa-floppy-o" ;
         configurationFilterObjectButton.id = "pivotConfigurationSaveButton_" + this.nodeID;
         configurationFilterObject.appendChild(configurationFilterObjectButton);
       }
@@ -140,7 +143,8 @@
   };
 
   cwPivotTable.prototype.onRefresh = function() {
-    if (this.config.hideTotals === true) this.hideTotalsResults();
+
+    if(this.config.hideTotals === true) this.hideTotalsResults();
 
     var self = this;
 
@@ -156,6 +160,7 @@
       hDataLine[h.offsetLeft] = h.innerText;
       hDataCol[h.offsetTop] = h.innerText;
     }
+
 
     var table = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtTable")[0];
     let offsetright = 0;
@@ -223,7 +228,7 @@
         if (!selection || selection.rangeCount < 1) return true;
         var range = selection.getRangeAt(0);
         var node = selection.anchorNode;
-        var word_regexp = /^[\.A-Za-z0-9àâéêèìôùûç' _-]*$/;
+        var word_regexp = /^[\.A-Za-z0-9àâéêèìôùûç' _-]*$/
 
         // Extend the range backward until it matches word beginning
         while (range.startOffset > 0 && range.toString().match(word_regexp)) {
@@ -284,6 +289,7 @@
     if (this.config.hideTotals === true) {
       totalButton.classList.remove("selected");
       setTimeout(this.hideTotalsResults, 3000);
+      
     }
     totalButton.addEventListener("click", self.manageTotalButton.bind(this));
   };
@@ -292,7 +298,7 @@
     if (this.config.hideFilter === true) {
       this.config.hideFilter = false;
       event.target.classList.add("selected");
-      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility = "unset";
+      document.querySelector(".pvtAxisContainer.pvtUnused").style.visibility = "visible";
     } else {
       this.config.hideFilter = true;
       event.target.classList.remove("selected");
@@ -348,24 +354,25 @@
   };
 
   cwPivotTable.prototype.hideTotalsResults = function() {
-    let p = document.querySelectorAll(".pvtTotal");
-    if (p) {
-      for (i = 0; i < p.length; i++) {
-        p[i].classList.add("cw-hidden");
+      let p = document.querySelectorAll(".pvtTotal");
+      if (p) {
+        for (i = 0; i < p.length; i++) {
+          p[i].classList.add("cw-hidden");
+        }
       }
-    }
-    p = document.querySelectorAll(".pvtTotalLabel");
-    if (p) {
-      for (i = 0; i < p.length; i++) {
-        p[i].classList.add("cw-hidden");
+      p = document.querySelectorAll(".pvtTotalLabel");
+      if (p) {
+        for (i = 0; i < p.length; i++) {
+          p[i].classList.add("cw-hidden");
+        }
       }
-    }
-    p = document.querySelectorAll(".pvtGrandTotal");
-    if (p) {
-      for (i = 0; i < p.length; i++) {
-        p[i].classList.add("cw-hidden");
+      p = document.querySelectorAll(".pvtGrandTotal");
+      if (p) {
+        for (i = 0; i < p.length; i++) {
+          p[i].classList.add("cw-hidden");
+        }
       }
-    }
+
   };
 
   cwPivotTable.prototype.manageTotalButton = function(event) {
@@ -378,6 +385,7 @@
       event.target.classList.remove("selected");
       this.hideTotalsResults();
     }
+
   };
   cwApi.cwLayouts.cwPivotTable = cwPivotTable;
 })(cwAPI, jQuery);
