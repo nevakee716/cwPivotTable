@@ -43,7 +43,7 @@
         newItem.targetObjectID = father.object_id;
         newItem.isNew = "false";
         newItem.targetObjectTypeScriptName = father.objectTypeScriptName;
-        if(!cwAPI.isIndexPage()) this.pivotConfiguration.nodes[pivot.object_id].obj.associations[this.nodeID].items.push(newItem);
+        if(!cwAPI.isIndexPage()) this.pivotConfiguration.pivots[pivot.object_id].obj.associations[this.nodeID].items.push(newItem);
         
 
     };
@@ -180,6 +180,29 @@
  
         newObj.properties["name"] = view + "." + this.nodeID + " => " + label;   
 
+
+        if (!cwAPI.isIndexPage()) {
+            if (newObj.associations) {
+                newObj.associations[this.nodeID].items.forEach(function(item) {
+                    newAssoItemsObj[
+                        item.targetObjectID + item.targetObjectTypeScriptName
+                    ] = item;
+                });
+            } else {
+                newAssoItems = [];
+                newObj.associations = {};
+                newObj.associations[this.nodeID] = {};
+            }
+            newObj.associations[this.nodeID].items = [];
+
+            var assoItem = {};
+            assoItem.name = this.originalObject.name;
+            assoItem.intersectionObjectUID = "";
+            assoItem.isNew = "false";
+            assoItem.targetObjectTypeScriptName = this.originalObject.objectTypeScriptName;
+            assoItem.targetObjectID = this.originalObject.object_id;
+            newObj.associations[this.nodeID].items.push(assoItem);
+        }
 
         return config;
 
