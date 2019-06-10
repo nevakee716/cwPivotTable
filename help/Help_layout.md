@@ -132,7 +132,7 @@ When you create a new Pivot Table Analysis, it will create a new object and asso
 To use this option you need to have your metamodel ready : 
 Create a new objectType : CW API Pivot with 3 properties : Configuration (memoText), Label (string) and Create On cwView (string)
 Create also an association between CW API Pivot and Any Objects
-Inside C:\Casewise\Evolve\Site\bin\webDesigner\custom\Marketplace\libs\cwPivotTable\src\pivotEdit2.js
+Inside C:\Casewise\Evolve\Site\bin\webDesigner\custom\Marketplace\libs\cwPivotTable\src\cwPivotTable.js
 Fill theses variable with the scriptname of your model 
 
 <img src="https://raw.githubusercontent.com/nevakee716/cwPivotTable/master/screen/pivotEdit3.jpg" alt="Drawing" style="width: 95%;"/>
