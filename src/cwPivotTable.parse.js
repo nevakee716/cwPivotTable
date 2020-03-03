@@ -100,10 +100,13 @@
                 self.nodes[node.NodeName][value].id = child.object_id;
               }
             } else {
+              let prop = cwAPI.mm.getProperty(child.objectTypeScriptName, p);
               if (node.NodeName === " ") {
-                newLine[cwAPI.mm.getProperty(child.objectTypeScriptName, p).name] = value;
+                if (prop.type === "Lookup") newLine[prop.name + "_abbreviation"] = child.properties[p + "_abbreviation"];
+                newLine[prop.name] = value;
               } else {
-                newLine[node.NodeName + "_" + cwAPI.mm.getProperty(child.objectTypeScriptName, p).name] = value;
+                newLine[node.NodeName + "_" + prop.name] = value;
+                if (prop.type === "Lookup") newLine[node.NodeName + "_" + prop.name + "_abbreviation"] = child.properties[p + "_abbreviation"];
               }
             }
           }
@@ -175,9 +178,11 @@
     output.push('<div class="cwPivotToolBox">');
     output.push('<div class="cw-visible" id="cwLayoutPivotFilter' + this.nodeID + '"></div>');
     output.push('<div class="cwPivotToolBoxButton" id="cwPivotToolBox' + this.nodeID + '">');
-    output.push('<a class="btn page-action no-text fa fa-filter selected" id="cwPivotButtonsFilters' + this.nodeID + '" title="' + $.i18n.prop("filter") + '"></a>');
-    output.push('<a class="btn page-action no-text fa fa-cogs selected" id="cwPivotButtonsOptions' + this.nodeID + '" title="' + $.i18n.prop("option") + '"></i></a>');
-    output.push('<a class="btn page-action no-text fa fa-stack-overflow selected" id="cwPivotButtonsTotals' + this.nodeID + '" title="' + $.i18n.prop("totals") + '"></a>');
+    output.push('<a class="btn page-action no-text fa fa-filter selected" id="cwPivotButtonsFilter' + this.nodeID + '" title="' + $.i18n.prop("filter") + '"></a>');
+    output.push('<a class="btn page-action no-text fa fa-cogs selected" id="cwPivotButtonsOption' + this.nodeID + '" title="' + $.i18n.prop("option") + '"></i></a>');
+    output.push('<a class="btn page-action no-text fa fa-ellipsis-v selected" id="cwPivotButtonsColumn' + this.nodeID + '" title="' + $.i18n.prop("column") + '"></i></a>');
+    output.push('<a class="btn page-action no-text fa fa-ellipsis-h selected" id="cwPivotButtonsRow' + this.nodeID + '" title="' + $.i18n.prop("rows") + '"></i></a>');
+    output.push('<a class="btn page-action no-text fa fa-stack-overflow selected" id="cwPivotButtonsTotal' + this.nodeID + '" title="' + $.i18n.prop("totals") + '"></a>');
     output.push("</div></div>");
 
     output.push('<div class="cw-visible" id="cwPivotTable' + this.nodeID + '"></div>');
