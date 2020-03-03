@@ -26,10 +26,8 @@
 /* MATRIX ADVANCED */
 .cwPivotToolBoxButton {
   z-index: 100;
-  top: 0px;
   background-color: #ffffff;
   right: -12px;
-  position: absolute;
 }
 .cwPivotToolBox {
   height: 50px;
@@ -43,6 +41,7 @@
 }
 .cwPivotToolBox .btn.selected {
   background-color: #03a0ce;
+  color: white;
 }
 .pvtRenderer {
   display: block;
