@@ -52,16 +52,18 @@ Here is an exemple of a json configuration.
             "cardinalNodes" : [],
             "cols" : [],
             "rows" : [],
+            "aggregatorName" : "Count",
+            "vals" : [],
             "rendererName" : "Table",
             "hiddenAttributes" : [],
-            "aggregatorName" : "Count",
             "enableEdit" : true,
             "loadFirstPivot" : true,
-            "currentDate" : {
-            "hiddenFromDragDrop" : [Properties1,Properties2]
-            "hideColumn": true,
-            "hideTotals": true,
-            "hideFilter": true,
+            "hiddenFromDragDrop" : [Properties1,Properties2],
+            "hideFilter : false,
+            "hideOption : false,
+            "hideRow : false,
+            "hideColumn : false,
+            "hideTotals : false,
             "currentDateFilter" : [Properties1,Properties2]
 }
 ```
@@ -99,7 +101,11 @@ If you want to hide some Attribute put their label in the option
 ### Aggregator Name
 
 Put the initial aggregator by default it's count
-         
+      
+### Values (vals)
+
+Values use for the aggregators
+   
 ### Hidden From Drag Drop
 
 Allow you to hide some property from the pivot table (these element can still be use for data deriver)
@@ -112,6 +118,10 @@ The property selected will automatically have the currentDate selected with this
 
 If true, the drag&drop column will be hidden
 
+### Hide Row
+
+If true, the drag&drop rowwill be hidden
+
 ### Hide Totals
 
 If true, the totals column and row will be hidden
@@ -119,6 +129,10 @@ If true, the totals column and row will be hidden
 ### Hide Filter
 
 If true, the filter column will be hidden
+
+### Hide Options
+
+If true, the aggregator and renderer drop down will be hidden
 
 ## Enable Edit
 
