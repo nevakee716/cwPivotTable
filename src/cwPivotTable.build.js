@@ -92,15 +92,30 @@
         table: {
           clickCallback: self.clickCallback.bind(self),
         },
+        c3: {
+          tooltip: {
+            grouped: true,
+            contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
+              var total = d.reduce(function(subTotal, b) {
+                return subTotal + b.value;
+              }, 0);
+              d.push({ value: total, id: "Total", name: "Total", x: d[0].x, index: d[0].index });
+              return this.getTooltipContent(d, defaultTitleFormat, defaultValueFormat, color);
+            },
+          },
+        },
       },
       unusedAttrsVertical: self.config.verticalDisplay === true ? true : false,
       hiddenFromDragDrop: self.config.hiddenFromDragDrop,
       derivedAttributes: self.dataDerivers(),
       cols: self.config.cols,
       rows: self.config.rows,
+      vals: self.config.vals,
+      aggregatorName: self.config.aggregatorName,
       rendererName: self.config.rendererName,
       hiddenAttributes: self.config.hiddenAttributes,
       inclusions: self.getInclusions(),
+
       // aggregators: {
       //    "Adecco Mean" : this.dataAggregator()
       //}
@@ -141,7 +156,7 @@
   };
 
   cwPivotTable.prototype.onRefresh = function() {
-    if (this.config.hideTotals === true) this.hideTotalsResults();
+    if (this.config.hideTotals === true) this.hideTotal();
 
     var self = this;
 
@@ -268,29 +283,29 @@
     var i;
     var filterButton = document.getElementById("cwPivotButtonsFilter" + this.nodeID);
     if (this.config.hideFilter === true) {
-      filterButton.classList.remove(selected);
+      filterButton.classList.remove("selected");
       this.hideFilter();
     }
     filterButton.addEventListener("click", self.manageEventButton.bind(this, "Filter"));
 
     var optionButton = document.getElementById("cwPivotButtonsOption" + this.nodeID);
-    if (this.config.hideColumn === true) {
+    if (this.config.hideOption === true) {
       optionButton.classList.remove("selected");
       this.hideOption();
     }
     optionButton.addEventListener("click", self.manageEventButton.bind(this, "Option"));
 
     var rowButton = document.getElementById("cwPivotButtonsRow" + this.nodeID);
-    if (this.config.hideColumn === true) {
+    if (this.config.hideRow === true) {
       rowButton.classList.remove("selected");
-      this.hideOption();
+      this.hideRow();
     }
     rowButton.addEventListener("click", self.manageEventButton.bind(this, "Row"));
 
     var columnButton = document.getElementById("cwPivotButtonsColumn" + this.nodeID);
     if (this.config.hideColumn === true) {
-      optionButton.classList.remove("selected");
-      this.hideOption();
+      columnButton.classList.remove("selected");
+      this.hideColumn();
     }
     columnButton.addEventListener("click", self.manageEventButton.bind(this, "Column"));
 
@@ -303,14 +318,14 @@
   };
 
   cwPivotTable.prototype.manageEventButton = function(buttonId, event) {
-    if (this.config[buttonId] === true) {
-      this.config[buttonId] = false;
-      event.target.classList.add("selected");
-      this["show" + buttonId]();
-    } else {
-      this.config[buttonId] = true;
+    if (this.config["hide" + buttonId] === false) {
+      this.config["hide" + buttonId] = true;
       event.target.classList.remove("selected");
       this["hide" + buttonId]();
+    } else {
+      this.config["hide" + buttonId] = false;
+      event.target.classList.add("selected");
+      this["show" + buttonId]();
     }
   };
 

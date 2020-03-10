@@ -18,6 +18,8 @@
     this.init = false;
     this.config = JSON.parse(this.options.CustomOptions["JsonConfiguration"]);
     if (this.config.hideFilter === undefined) this.config.hideFilter = false;
+    if (this.config.hideOption === undefined) this.config.hideOption = false;
+    if (this.config.hideRow === undefined) this.config.hideRow = false;
     if (this.config.hideColumn === undefined) this.config.hideColumn = false;
     if (this.config.hideTotals === undefined) this.config.hideTotals = false;
 
@@ -29,6 +31,7 @@
     if (this.config.aggregatorName === undefined) this.config.aggregatorName = "Count";
     if (this.config.rendererName === undefined) this.config.rendererName = "Table";
     if (this.config.hiddenAttributes === undefined) this.config.hiddenAttributes = [];
+    if (this.config.propKPImeasure === undefined) this.config.propKPImeasure = [];
 
     this.nodes = {};
     this.PivotDatas = [];

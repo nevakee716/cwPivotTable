@@ -84,7 +84,7 @@
         if (cardinal !== true) newLine = $.extend(true, {}, line);
         else newLine = line;
         node = self.viewSchema.NodesByID[associationNodeID];
-
+        node = node ? node : child;
         Object.keys(child.properties).map(function(p, index) {
           var value = child.properties[p];
           if (node.PropertiesSelected.indexOf(p.toUpperCase()) !== -1) {
@@ -101,7 +101,21 @@
               }
             } else {
               let prop = cwAPI.mm.getProperty(child.objectTypeScriptName, p);
-              if (node.NodeName === " ") {
+              if (self.config.propKPImeasure.indexOf(p) !== -1) {
+                child.associations["kpi_" + p] = [
+                  {
+                    associations: [],
+                    NodeName: "KPI",
+                    PropertiesSelected: ["VALUE", "NAME"],
+                    objectTypeScriptName: "kpi",
+                    object_id: 42,
+                    properties: {
+                      name: prop.name,
+                      value: value,
+                    },
+                  },
+                ];
+              } else if (node.NodeName === " ") {
                 if (prop.type === "Lookup") newLine[prop.name + "_abbreviation"] = child.properties[p + "_abbreviation"];
                 newLine[prop.name] = value;
               } else {
