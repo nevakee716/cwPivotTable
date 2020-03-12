@@ -22,7 +22,14 @@
       if (cwAPI.isDebugMode() === true) {
         self.createPivot();
       } else {
-        libToLoad = ["modules/bootstrap/bootstrap.min.js", "modules/bootstrap-select/bootstrap-select.min.js", "modules/pivot/pivot.min.js", "modules/D3/d3.min.js", "modules/pivotC3/pivotC3.min.js", "modules/pivotjqUI/pivotjqUI.min.js"];
+        libToLoad = [
+          "modules/bootstrap/bootstrap.min.js",
+          "modules/bootstrap-select/bootstrap-select.min.js",
+          "modules/pivot/pivot.min.js",
+          "modules/D3/d3.min.js",
+          "modules/pivotC3/pivotC3.min.js",
+          "modules/pivotjqUI/pivotjqUI.min.js",
+        ];
         // AsyncLoad
         cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
           if (error === null) {
