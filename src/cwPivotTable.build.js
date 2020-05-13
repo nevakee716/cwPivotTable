@@ -1,20 +1,20 @@
 /* Copyright (c) 2012-2013 Casewise Systems Ltd (UK) - All rights reserved */
 
 /*global cwAPI, jQuery */
-(function(cwApi, $) {
+(function (cwApi, $) {
   "use strict";
   if (cwApi && cwApi.cwLayouts && cwApi.cwLayouts.cwPivotTable) {
     var cwPivotTable = cwApi.cwLayouts.cwPivotTable;
   } else {
     // constructor
-    var cwPivotTable = function(options, viewSchema) {
+    var cwPivotTable = function (options, viewSchema) {
       cwApi.extend(this, cwApi.cwLayouts.CwLayout, options, viewSchema); // heritage
       cwApi.registerLayoutForJSActions(this); // execute le applyJavaScript après drawAssociations
       this.construct(options);
     };
   }
 
-  cwPivotTable.prototype.applyJavaScript = function() {
+  cwPivotTable.prototype.applyJavaScript = function () {
     var self = this;
     var libToLoad = [];
     if (this.init === false) {
@@ -31,10 +31,14 @@
           "modules/pivotjqUI/pivotjqUI.min.js",
         ];
         // AsyncLoad
-        cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
+        cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function (error) {
           if (error === null) {
-            libToLoad = ["modules/pivotC3render/pivotC3render.min.js", "modules/pivotD3render/pivotD3render.min.js", "modules/pivotExport/pivotExport.min.js"];
-            cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function(error) {
+            libToLoad = [
+              "modules/pivotC3render/pivotC3render.min.js",
+              "modules/pivotD3render/pivotD3render.min.js",
+              "modules/pivotExport/pivotExport.min.js",
+            ];
+            cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function (error) {
               if (error === null) {
                 self.createPivot();
               } else {
@@ -50,7 +54,7 @@
   };
 
   // Building network
-  cwPivotTable.prototype.createPivot = function() {
+  cwPivotTable.prototype.createPivot = function () {
     function addStyleString(str) {
       var node = document.createElement("style");
       node.innerHTML = str;
@@ -90,7 +94,12 @@
 
     var numberFormat = $.pivotUtilities.numberFormat;
 
-    this.renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.c3_renderers, $.pivotUtilities.d3_renderers, $.pivotUtilities.export_renderers);
+    this.renderers = $.extend(
+      $.pivotUtilities.renderers,
+      $.pivotUtilities.c3_renderers,
+      $.pivotUtilities.d3_renderers,
+      $.pivotUtilities.export_renderers
+    );
 
     $("#cwPivotTable" + this.nodeID).pivotUI(self.PivotDatas, {
       onRefresh: self.onRefresh.bind(self),
@@ -102,8 +111,8 @@
         c3: {
           tooltip: {
             grouped: true,
-            contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
-              var total = d.reduce(function(subTotal, b) {
+            contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
+              var total = d.reduce(function (subTotal, b) {
                 return subTotal + b.value;
               }, 0);
               d.push({ value: total, id: "Total", name: "Total", x: d[0].x, index: d[0].index });
@@ -131,11 +140,11 @@
     this.manageButton();
     // Event for filter
     // Load a new network
-    $("select.selectPivotConfiguration_" + this.nodeID).on("changed.bs.select", function(e, clickedIndex, newValue, oldValue) {
+    $("select.selectPivotConfiguration_" + this.nodeID).on("changed.bs.select", function (e, clickedIndex, newValue, oldValue) {
       var changeSet, id, nodeId, i, config;
       var groupArray = {};
-      if (clickedIndex !== undefined && $(this).context.hasOwnProperty(clickedIndex)) {
-        id = $(this).context[clickedIndex]["id"];
+      if (clickedIndex !== undefined && $(this).context.children && $(this).context.children[clickedIndex]) {
+        id = $(this).context.children[clickedIndex].id;
         if (id != 0) {
           config = self.pivotConfiguration.pivots[id].configuration;
           self.pivotConfiguration.selected = self.pivotConfiguration.pivots[id];
@@ -154,7 +163,7 @@
       if (startCwApiPivot.configuration) {
         this.pivotConfiguration.selected = startCwApiPivot;
         this.loadCwApiPivot(startCwApiPivot.configuration);
-        $("select.selectPivotConfiguration_" + this.nodeID).each(function(index) {
+        $("select.selectPivotConfiguration_" + this.nodeID).each(function (index) {
           // put values into filters
           $(this).selectpicker("val", startCwApiPivot.label); //init cwAPInetworkfilter
         });
@@ -162,7 +171,7 @@
     }
   };
 
-  cwPivotTable.prototype.onRefresh = function() {
+  cwPivotTable.prototype.onRefresh = function () {
     if (this.config.hideTotals === true) this.hideTotal();
 
     var self = this;
@@ -184,7 +193,7 @@
     let offsetright = 0;
 
     if (table) {
-      table.addEventListener("click", function(e) {
+      table.addEventListener("click", function (e) {
         hDataLine = {};
         hDataCol = {};
         if (e.toElement.className === "pvtColLabel" || e.toElement.className === "pvtRowLabel") {
@@ -237,7 +246,7 @@
     }
   };
 
-  cwPivotTable.prototype.clickCallback = function(e, value, filters, pivotData) {
+  cwPivotTable.prototype.clickCallback = function (e, value, filters, pivotData) {
     if (pivotData.aggregatorName === "List Unique Values" && this.nodes.hasOwnProperty(pivotData.valAttrs[0])) {
       if (value.indexOf(",") === -1) {
         str = value;
@@ -284,7 +293,7 @@
     }
   };
 
-  cwPivotTable.prototype.manageButton = function() {
+  cwPivotTable.prototype.manageButton = function () {
     var self = this;
 
     var i;
@@ -324,7 +333,7 @@
     totalButton.addEventListener("click", self.manageEventButton.bind(this, "Total"));
   };
 
-  cwPivotTable.prototype.manageEventButton = function(buttonId, event) {
+  cwPivotTable.prototype.manageEventButton = function (buttonId, event) {
     if (this.config["hide" + buttonId] === false) {
       this.config["hide" + buttonId] = true;
       event.target.classList.remove("selected");
@@ -336,23 +345,23 @@
     }
   };
 
-  cwPivotTable.prototype.showColumn = function() {
+  cwPivotTable.prototype.showColumn = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtCols").classList.remove("cw-hidden");
   };
 
-  cwPivotTable.prototype.hideColumn = function() {
+  cwPivotTable.prototype.hideColumn = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtCols").classList.add("cw-hidden");
   };
 
-  cwPivotTable.prototype.showRow = function() {
+  cwPivotTable.prototype.showRow = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.remove("cw-hidden");
   };
 
-  cwPivotTable.prototype.hideRow = function() {
+  cwPivotTable.prototype.hideRow = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.add("cw-hidden");
   };
 
-  cwPivotTable.prototype.showFilter = function() {
+  cwPivotTable.prototype.showFilter = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").style.borderWidth = "2px";
     let p = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtUnused li");
     if (p) {
@@ -362,7 +371,7 @@
     }
   };
 
-  cwPivotTable.prototype.hideFilter = function() {
+  cwPivotTable.prototype.hideFilter = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").style.borderWidth = "0px";
     let p = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtUnused li");
     if (p) {
@@ -372,19 +381,19 @@
     }
   };
 
-  cwPivotTable.prototype.showOption = function() {
+  cwPivotTable.prototype.showOption = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRenderer").parentNode.classList.remove("cw-hidden");
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell").classList.remove("cw-hidden");
   };
 
-  cwPivotTable.prototype.hideOption = function() {
+  cwPivotTable.prototype.hideOption = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRenderer").parentNode.classList.add("cw-hidden");
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell").classList.add("cw-hidden");
   };
 
-  cwPivotTable.prototype.showTotal = function() {
+  cwPivotTable.prototype.showTotal = function () {
     var self = this;
-    [" .pvtTotal", " .pvtTotalLabel", " .pvtGrandTotal"].forEach(function(selector) {
+    [" .pvtTotal", " .pvtTotalLabel", " .pvtGrandTotal"].forEach(function (selector) {
       let p = document.querySelectorAll("#cwPivotTable" + self.nodeID + selector);
       if (p) {
         for (i = 0; i < p.length; i++) {
@@ -394,9 +403,9 @@
     });
   };
 
-  cwPivotTable.prototype.hideTotal = function() {
+  cwPivotTable.prototype.hideTotal = function () {
     var self = this;
-    [" .pvtTotal", " .pvtTotalLabel", " .pvtGrandTotal"].forEach(function(selector) {
+    [" .pvtTotal", " .pvtTotalLabel", " .pvtGrandTotal"].forEach(function (selector) {
       let p = document.querySelectorAll("#cwPivotTable" + self.nodeID + selector);
       if (p) {
         for (i = 0; i < p.length; i++) {
