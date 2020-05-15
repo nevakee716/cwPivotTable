@@ -16,16 +16,27 @@
   margin-left: 7px;
 }
 
+.cwPivotToolBox .btn {
+  background-color: @cwColor1Tint;
+  color: white;
+}
 .cwPivotToolBox .btn.selected {
-  background-color: @cwTopBarProfileLinkHoverColor;
+  background-color: @cwColor1;
+  color: white;
 }
 
+.cwPivotToolBox .k-button {
+  background-color: @cwColor1Tint;
+  color: white;
+}
 .cwPivotToolBox .k-button.selected {
-  background-color: @cwTopBarProfileLinkHoverColor;
+  background-color: @cwColor1;
+  color: white;
 }
 
 .cwPivotToolBox .btn.selected {
-  background-color: @cwTopBarProfileLinkHoverColor;
+  background-color: @cwColor1;
+  color: white;
 }
 
 .pvtRenderer {
@@ -81,10 +92,12 @@
 table.pvtTable thead tr th,
 table.pvtTable tbody tr th {
   background-color: @cwBodyBackgroundColor;
-  border-color: @solidColor;
-  border-width: 2px;
   border-style: solid;
   color: @solidColor;
+  border-width: 1px;
+  border-color: #9ba8af;
+  color: #5c5d61;
+  font-weight: normal;
 }
 
 .pivotAddButton {
@@ -102,4 +115,12 @@ table.pvtTable thead th.pvtAxisLabel {
 .pvtAxisContainer,
 .pvtVals.pvtUiCell {
   border-radius: 4px;
+}
+
+/* boites d'analyse des axes et filtre*/
+.pvtAxisContainer,
+.pvtVals {
+  border-color: #9ba8af;
+  border-width: 1px;
+  border-style: dashed;
 }
