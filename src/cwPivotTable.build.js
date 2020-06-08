@@ -63,7 +63,18 @@
 
     var filterContainer = document.getElementById("cwLayoutPivotFilter" + this.nodeID);
 
+    // set height
+    var titleReact = document.querySelector("#cw-top-bar");
+    let topBar = document.querySelector(".page-top");
+    let topBarHeight = 52;
+    let titleReactHeight = 52;
+    if (topBar) topBarHeight = topBar.getBoundingClientRect().height;
+    if (titleReact) titleReactHeight = titleReact.getBoundingClientRect().height;
+
+    this.canvaHeight = window.innerHeight - titleReactHeight - topBarHeight - 100;
+
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
+    pivotContainer.setAttribute("style", "height:" + this.canvaHeight + "px");
     var self = this,
       i = 0;
     this.pivotContainer = pivotContainer;
@@ -169,6 +180,18 @@
     if (this.config.hideTotals === true) this.hideTotal();
 
     var self = this;
+    let pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
+    let t = document.querySelector("#cwPivotTable" + this.nodeID + " table.pvtUi");
+    let col1 = document.querySelector("#cwPivotTable" + this.nodeID + " td.pvtUiCell");
+    let col2 = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell");
+    let col3 = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtAxisContainer.pvtHorizList.pvtCols.pvtUiCell");
+
+    t.style.width = "100%";
+    col3.style.width = pivotContainer.parentElement.offsetWidth - 600 + "px";
+
+    let row3 = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRendererArea");
+    row3.parentElement.style.height = this.canvaHeight - 70 + "px";
+    row3.parentElement.children.forEach((n) => (n.style.height = this.canvaHeight - 70 + "px"));
 
     //cwAPI.CwPopout.hide();
     var headers = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtAxisLabel");
@@ -185,14 +208,6 @@
 
     var table = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtTable")[0];
     let offsetright = 0;
-
-    var plotly = $("#cwPivotTable" + this.nodeID + " .js-plotly-plot");
-    if (plotly) {
-      plotly.on("plotly_click", function (data) {
-        //console.log(data);
-        //pivotData.getAggregator(transpose ? datumKey : traceKey, transpose ? traceKey : datumKey);
-      });
-    }
 
     if (table) {
       table.addEventListener("click", function (e) {

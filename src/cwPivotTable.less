@@ -38,12 +38,44 @@
   background-color: @cwColor1;
   color: white;
 }
+.cw-zone table.pvtUi {
+  table-layout: fixed;
+  height: 100%;
 
+  tbody > tr {
+    height: 27px;
+  }
+
+  .pvtAxisContainer.pvtUnused.pvtUiCell.pvtVertList {
+    overflow: auto;
+  }
+  .pvtAxisContainer.pvtRows.pvtUiCell {
+    overflow: auto;
+  }
+}
+.pvtFilterBox .pvtCheckContainer label {
+  display: flex;
+}
+
+td.pvtRendererArea .valueWrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 100%;
+  .pvtRowLabel {
+    position: sticky;
+  }
+}
 .pvtRenderer {
   display: block;
 }
 
-.pvtAxisContainer,
+.pvtUiCell .pvtRenderer,
+.pvtUiCell .pvtAttrDropdown,
+.pvtUiCell .pvtAggregator {
+  height: initial;
+}
+
+.cwPivotToolBoxButton .pvtAxisContainer,
 .pvtVals {
   background-color: @cwBodyBackgroundColor;
   border-color: @solidColor;

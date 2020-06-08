@@ -110,6 +110,11 @@
               }
             } else {
               let prop = cwAPI.mm.getProperty(child.objectTypeScriptName, p);
+              if (prop.type === "Boolean") {
+                value = value ? $.i18n.prop("global_true") : $.i18n.prop("global_false");
+              }
+              /* value = cwApi.cwPropertiesGroups.getDisplayValue(child.objectTypeScriptName, p, value, child, "properties");
+              value = value.replace(/(\<img).*(\/\>)/, "");*/
               if (prop === undefined) {
                 prop = {
                   name: p,

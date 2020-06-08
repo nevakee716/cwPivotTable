@@ -12,7 +12,6 @@
 /* LIST BOX */
 /* PROPERTIES GROUP */
 /* BUTTONS */
-@cwbuttonselectedbackgroundcolor :darken (#ffffff, 5%);
 /* PAGE ACTIONS */
 /* ACCORDIONS */
 /* DISCUSSIONS */
@@ -57,10 +56,39 @@
   background-color: #03a0ce;
   color: white;
 }
+.cw-zone table.pvtUi {
+  table-layout: fixed;
+  height: 100%;
+}
+.cw-zone table.pvtUi tbody > tr {
+  height: 27px;
+}
+.cw-zone table.pvtUi .pvtAxisContainer.pvtUnused.pvtUiCell.pvtVertList {
+  overflow: auto;
+}
+.cw-zone table.pvtUi .pvtAxisContainer.pvtRows.pvtUiCell {
+  overflow: auto;
+}
+.pvtFilterBox .pvtCheckContainer label {
+  display: flex;
+}
+td.pvtRendererArea .valueWrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 100%;
+}
+td.pvtRendererArea .valueWrapper .pvtRowLabel {
+  position: sticky;
+}
 .pvtRenderer {
   display: block;
 }
-.pvtAxisContainer,
+.pvtUiCell .pvtRenderer,
+.pvtUiCell .pvtAttrDropdown,
+.pvtUiCell .pvtAggregator {
+  height: initial;
+}
+.cwPivotToolBoxButton .pvtAxisContainer,
 .pvtVals {
   background-color: #ffffff;
   border-color: #26276d;
