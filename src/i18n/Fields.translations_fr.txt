@@ -1,0 +1,8 @@
+horizontal_bar_chart = Histogramme Horizontal
+horizontal_stacked_bar_chart = Histogramme Horizontal Empilé
+bar_chart = Histogramme
+stacked_bar_chart = Histogramme Empilé
+line_chart = Courbe
+area_chart = Air
+scatter_chart = Nuage de Points
+piechart = Diagramme Circulaire

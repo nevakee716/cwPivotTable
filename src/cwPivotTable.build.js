@@ -94,34 +94,28 @@
 
     var numberFormat = $.pivotUtilities.numberFormat;
 
-    this.renderers = $.extend(
-      $.pivotUtilities.renderers,
-      $.pivotUtilities.c3_renderers,
-      $.pivotUtilities.d3_renderers,
-      $.pivotUtilities.export_renderers
-    );
+    this.renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.plotly_renderers, $.pivotUtilities.export_renderers);
+    let lang = cwApi.getSelectedLanguage();
+    lang = lang == "fr" || lang == "it" ? lang : "en";
 
-    $("#cwPivotTable" + this.nodeID).pivotUI(self.PivotDatas, {
+    this.pivotUI = $("#cwPivotTable" + this.nodeID).pivotUI(self.PivotDatas, {
       onRefresh: self.onRefresh.bind(self),
       renderers: self.renderers,
       rendererOptions: {
         table: {
           clickCallback: self.clickCallback.bind(self),
         },
-        c3: {
-          tooltip: {
-            grouped: true,
-            contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
-              var total = d.reduce(function (subTotal, b) {
-                return subTotal + b.value;
-              }, 0);
-              d.push({ value: total, id: "Total", name: "Total", x: d[0].x, index: d[0].index });
-              return this.getTooltipContent(d, defaultTitleFormat, defaultValueFormat, color);
-            },
-          },
+        plotly: {
+          yaxis: { fixedrange: true },
+          xaxis: { fixedrange: true },
+        },
+        plotlyConfig: {
+          displaylogo: false,
+          modeBarButtonsToRemove: ["zoom2d", "pan2d", "select2d", "zoomIn2d", "zoomOut2d", "resetScale2d", "toggleSpikelines", "lasso2d"],
+          clickCallback: self.clickOnPlotly.bind(self),
         },
       },
-      unusedAttrsVertical: self.config.verticalDisplay === true ? true : false,
+      unusedAttrsVertical: self.config.verticalDisplay === false ? false : true,
       hiddenFromDragDrop: self.config.hiddenFromDragDrop,
       derivedAttributes: self.dataDerivers(),
       cols: self.config.cols,
@@ -133,7 +127,7 @@
       inclusions: self.getInclusions(),
 
       // aggregators: {
-      //    "Adecco Mean" : this.dataAggregator()
+      //    "Mean" : this.dataAggregator()
       //}
     });
 
@@ -192,6 +186,14 @@
     var table = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtTable")[0];
     let offsetright = 0;
 
+    var plotly = $("#cwPivotTable" + this.nodeID + " .js-plotly-plot");
+    if (plotly) {
+      plotly.on("plotly_click", function (data) {
+        //console.log(data);
+        //pivotData.getAggregator(transpose ? datumKey : traceKey, transpose ? traceKey : datumKey);
+      });
+    }
+
     if (table) {
       table.addEventListener("click", function (e) {
         hDataLine = {};
@@ -246,6 +248,27 @@
     }
   };
 
+  cwPivotTable.prototype.clickOnPlotly = function (pivotData, data) {
+    let objects = [],
+      self = this,
+      otLabel = pivotData.valAttrs[0];
+    if (!data) return;
+
+    data.forEach(function (d) {
+      if (self.nodes[otLabel][d]) {
+        let object = {};
+        object.object_id = self.nodes[otLabel][d].id;
+        object.objectTypeScriptName = self.nodes[otLabel][d].objectTypeScriptName;
+        object.name = d;
+        object.properties = {
+          name: d,
+        };
+        objects.push(object);
+      }
+    });
+
+    cwAPI.customLibs.utils.createPopOutFormultipleObjects(objects);
+  };
   cwPivotTable.prototype.clickCallback = function (e, value, filters, pivotData) {
     if (pivotData.aggregatorName === "List Unique Values" && this.nodes.hasOwnProperty(pivotData.valAttrs[0])) {
       if (value.indexOf(",") === -1) {

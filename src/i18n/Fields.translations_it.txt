@@ -1,0 +1,8 @@
+horizontal_bar_chart = Horizontal Bar Chart
+horizontal_stacked_bar_chart = Horizontal Stacked Bar Chart
+bar_chart = Bar Chart
+stacked_bar_chart = Stacked Bar Chart
+line_chart = Line Chart
+area_chart = Area Chart
+scatter_chart = Scatter Chart
+piechart = Diagramme Circulaire
