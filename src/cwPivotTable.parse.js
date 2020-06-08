@@ -94,6 +94,8 @@
         node = node ? node : child;
         Object.keys(child.properties).map(function (p, index) {
           var value = child.properties[p];
+          value = value === cwApi.getLookupUndefinedValue() ? $.i18n.prop("global_undefined") : value;
+
           if (node.PropertiesSelected.indexOf(p.toUpperCase()) !== -1) {
             if (p === "name") {
               newLine[node.NodeName] = value;
