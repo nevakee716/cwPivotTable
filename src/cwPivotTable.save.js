@@ -334,9 +334,14 @@
         clickCallback: self.clickOnPlotly.bind(self),
       },
     };
+    config.showUI = true;
+    config.unusedAttrsVertical = self.config.verticalDisplay === true ? false : true;
     config.derivedAttributes = self.dataDerivers();
+
     delete config.aggregators;
+
     $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, config, true);
+    this.manageButton(true);
   };
 
   cwApi.cwLayouts.cwPivotTable = cwPivotTable;

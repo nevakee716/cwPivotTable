@@ -70,8 +70,8 @@
     let titleReactHeight = 52;
     if (topBar) topBarHeight = topBar.getBoundingClientRect().height;
     if (titleReact) titleReactHeight = titleReact.getBoundingClientRect().height;
-
-    this.canvaHeight = window.innerHeight - titleReactHeight - topBarHeight - 100;
+    let margin = this.config.enableEdit ? 100 : 50;
+    this.canvaHeight = window.innerHeight - titleReactHeight - topBarHeight - margin;
 
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     pivotContainer.setAttribute("style", "height:" + this.canvaHeight + "px");
@@ -126,7 +126,7 @@
           clickCallback: self.clickOnPlotly.bind(self),
         },
       },
-      unusedAttrsVertical: self.config.verticalDisplay === false ? false : true,
+      unusedAttrsVertical: self.config.verticalDisplay === true ? false : true,
       hiddenFromDragDrop: self.config.hiddenFromDragDrop,
       derivedAttributes: self.dataDerivers(),
       cols: self.config.cols,
@@ -136,7 +136,7 @@
       rendererName: self.config.rendererName,
       hiddenAttributes: self.config.hiddenAttributes,
       inclusions: self.getInclusions(),
-
+      showUI: false,
       // aggregators: {
       //    "Mean" : this.dataAggregator()
       //}
@@ -182,16 +182,27 @@
     var self = this;
     let pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     let t = document.querySelector("#cwPivotTable" + this.nodeID + " table.pvtUi");
-    let col1 = document.querySelector("#cwPivotTable" + this.nodeID + " td.pvtUiCell");
-    let col2 = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell");
-    let col3 = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtAxisContainer.pvtHorizList.pvtCols.pvtUiCell");
+    let renderer = document.querySelector("#cwPivotTable" + this.nodeID + " td.pvtUiCell");
+    let agreg = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell");
+    let rows = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtAxisContainer.pvtCols");
+    let filters = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtAxisContainer.pvtUnused");
+    let pvtRendererArea = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRendererArea");
 
     t.style.width = "100%";
-    col3.style.width = pivotContainer.parentElement.offsetWidth - 600 + "px";
 
-    let row3 = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRendererArea");
-    row3.parentElement.style.height = this.canvaHeight - 70 + "px";
-    row3.parentElement.children.forEach((n) => (n.style.height = this.canvaHeight - 70 + "px"));
+    if (!self.config.verticalDisplay) {
+      let margin = 600;
+      if (this.config.hideRow) margin = margin - 300;
+      if (this.config.hideFilter) margin = margin - 300;
+      renderer.style.width = "300px";
+      agreg.style.width = "300px";
+      pvtRendererArea.parentElement.style.height = this.canvaHeight - 70 + "px";
+    } else {
+      renderer.style.width = "300px";
+      pvtRendererArea.parentElement.style.height = this.canvaHeight - rows.offsetHeight - filters.offsetHeight + "px";
+    }
+
+    //  row3.parentElement.children.forEach((n) => (n.style.height = this.canvaHeight - 70 + "px"));
 
     //cwAPI.CwPopout.hide();
     var headers = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtAxisLabel");
@@ -331,7 +342,7 @@
     }
   };
 
-  cwPivotTable.prototype.manageButton = function () {
+  cwPivotTable.prototype.manageButton = function (noEvent) {
     var self = this;
 
     var i;
@@ -340,35 +351,36 @@
       filterButton.classList.remove("selected");
       this.hideFilter();
     }
-    filterButton.addEventListener("click", self.manageEventButton.bind(this, "Filter"));
+
+    if (!noEvent) filterButton.addEventListener("click", self.manageEventButton.bind(this, "Filter"));
 
     var optionButton = document.getElementById("cwPivotButtonsOption" + this.nodeID);
     if (this.config.hideOption === true) {
       optionButton.classList.remove("selected");
       this.hideOption();
     }
-    optionButton.addEventListener("click", self.manageEventButton.bind(this, "Option"));
+    if (!noEvent) optionButton.addEventListener("click", self.manageEventButton.bind(this, "Option"));
 
     var rowButton = document.getElementById("cwPivotButtonsRow" + this.nodeID);
     if (this.config.hideRow === true) {
       rowButton.classList.remove("selected");
       this.hideRow();
     }
-    rowButton.addEventListener("click", self.manageEventButton.bind(this, "Row"));
+    if (!noEvent) rowButton.addEventListener("click", self.manageEventButton.bind(this, "Row"));
 
     var columnButton = document.getElementById("cwPivotButtonsColumn" + this.nodeID);
     if (this.config.hideColumn === true) {
       columnButton.classList.remove("selected");
       this.hideColumn();
     }
-    columnButton.addEventListener("click", self.manageEventButton.bind(this, "Column"));
+    if (!noEvent) columnButton.addEventListener("click", self.manageEventButton.bind(this, "Column"));
 
     var totalButton = document.getElementById("cwPivotButtonsTotal" + this.nodeID);
     if (this.config.hideTotals === true) {
       totalButton.classList.remove("selected");
       setTimeout(this.hideTotal, 3000);
     }
-    totalButton.addEventListener("click", self.manageEventButton.bind(this, "Total"));
+    if (!noEvent) totalButton.addEventListener("click", self.manageEventButton.bind(this, "Total"));
   };
 
   cwPivotTable.prototype.manageEventButton = function (buttonId, event) {
@@ -384,19 +396,19 @@
   };
 
   cwPivotTable.prototype.showColumn = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtCols").classList.remove("cw-hidden");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtCols").classList.remove("cw-hiddenByVisibility");
   };
 
   cwPivotTable.prototype.hideColumn = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtCols").classList.add("cw-hidden");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtCols").classList.add("cw-hiddenByVisibility");
   };
 
   cwPivotTable.prototype.showRow = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.remove("cw-hidden");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.remove("cw-hiddenByVisibility");
   };
 
   cwPivotTable.prototype.hideRow = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.add("cw-hidden");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.add("cw-hiddenByVisibility");
   };
 
   cwPivotTable.prototype.showFilter = function () {
@@ -420,13 +432,13 @@
   };
 
   cwPivotTable.prototype.showOption = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRenderer").parentNode.classList.remove("cw-hidden");
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell").classList.remove("cw-hidden");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRenderer").parentNode.classList.remove("cw-hiddenByVisibility");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell").classList.remove("cw-hiddenByVisibility");
   };
 
   cwPivotTable.prototype.hideOption = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRenderer").parentNode.classList.add("cw-hidden");
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell").classList.add("cw-hidden");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRenderer").parentNode.classList.add("cw-hiddenByVisibility");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell").classList.add("cw-hiddenByVisibility");
   };
 
   cwPivotTable.prototype.showTotal = function () {

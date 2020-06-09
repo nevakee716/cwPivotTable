@@ -1,20 +1,20 @@
 /* Copyright (c) 2012-2013 Casewise Systems Ltd (UK) - All rights reserved */
 
 /*global cwAPI, jQuery */
-(function(cwApi, $) {
+(function (cwApi, $) {
   "use strict";
   if (cwApi && cwApi.cwLayouts && cwApi.cwLayouts.cwPivotTable) {
     var cwPivotTable = cwApi.cwLayouts.cwPivotTable;
   } else {
     // constructor
-    var cwPivotTable = function(options, viewSchema) {
+    var cwPivotTable = function (options, viewSchema) {
       cwApi.extend(this, cwApi.cwLayouts.CwLayout, options, viewSchema); // heritage
       cwApi.registerLayoutForJSActions(this); // execute le applyJavaScript après drawAssociations
       this.construct(options);
     };
   }
 
-  cwPivotTable.prototype.construct = function(options) {
+  cwPivotTable.prototype.construct = function (options) {
     this.init = false;
     this.config = JSON.parse(this.options.CustomOptions["JsonConfiguration"]);
     if (this.config.hideFilter === undefined) this.config.hideFilter = false;
@@ -32,6 +32,8 @@
     if (this.config.rendererName === undefined) this.config.rendererName = "Table";
     if (this.config.hiddenAttributes === undefined) this.config.hiddenAttributes = [];
     if (this.config.propKPImeasure === undefined) this.config.propKPImeasure = [];
+
+    //this.config.verticalDisplay = true;
 
     this.nodes = {};
     this.PivotDatas = [];
@@ -53,13 +55,25 @@
     this.pivotConfiguration.pivots = {};
 
     try {
-      this.definition.capipivotCreateOnViewDisplayName = cwAPI.mm.getProperty(this.definition.capipivotScriptname, this.definition.capipivotCreateOnViewScriptname).name;
-      this.definition.capipivotConfigurationDisplayName = cwAPI.mm.getProperty(this.definition.capipivotScriptname, this.definition.capipivotConfigurationScriptname).name;
+      this.definition.capipivotCreateOnViewDisplayName = cwAPI.mm.getProperty(
+        this.definition.capipivotScriptname,
+        this.definition.capipivotCreateOnViewScriptname
+      ).name;
+      this.definition.capipivotConfigurationDisplayName = cwAPI.mm.getProperty(
+        this.definition.capipivotScriptname,
+        this.definition.capipivotConfigurationScriptname
+      ).name;
 
-      if (cwAPI.cwUser.isCurrentUserSocial() === false && cwAPI.mm.getLookupsOnAccessRights(this.definition.capipivotScriptname, "CanCreate").length > 0) {
+      if (
+        cwAPI.cwUser.isCurrentUserSocial() === false &&
+        cwAPI.mm.getLookupsOnAccessRights(this.definition.capipivotScriptname, "CanCreate").length > 0
+      ) {
         this.canCreatePivot = true;
       }
-      if (cwAPI.cwUser.isCurrentUserSocial() === false && cwAPI.mm.getLookupsOnAccessRights(this.definition.capipivotScriptname, "CanUpdate").length > 0) {
+      if (
+        cwAPI.cwUser.isCurrentUserSocial() === false &&
+        cwAPI.mm.getLookupsOnAccessRights(this.definition.capipivotScriptname, "CanUpdate").length > 0
+      ) {
         this.canUpdatePivot = true;
       }
     } catch (e) {

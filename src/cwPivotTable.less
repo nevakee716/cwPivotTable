@@ -14,67 +14,70 @@
 .cwPivotToolBox {
   height: 50px;
   margin-left: 7px;
-}
-
-.cwPivotToolBox .btn {
-  background-color: @cwColor1Tint;
-  color: white;
-}
-.cwPivotToolBox .btn.selected {
-  background-color: @cwColor1;
-  color: white;
-}
-
-.cwPivotToolBox .k-button {
-  background-color: @cwColor1Tint;
-  color: white;
-}
-.cwPivotToolBox .k-button.selected {
-  background-color: @cwColor1;
-  color: white;
-}
-
-.cwPivotToolBox .btn.selected {
-  background-color: @cwColor1;
-  color: white;
-}
-.cw-zone table.pvtUi {
-  table-layout: fixed;
-  height: 100%;
-
-  tbody > tr {
-    height: 27px;
+  .btn {
+    background-color: @cwColor1Tint;
+    color: white;
+  }
+  .btn.selected {
+    background-color: @cwColor1;
+    color: white;
   }
 
-  .pvtAxisContainer.pvtUnused.pvtUiCell.pvtVertList {
-    overflow: auto;
+  .k-button {
+    background-color: @cwColor1Tint;
+    color: white;
   }
-  .pvtAxisContainer.pvtRows.pvtUiCell {
-    overflow: auto;
+  .k-button.selected {
+    background-color: @cwColor1;
+    color: white;
+  }
+  .btn.selected {
+    background-color: @cwColor1;
+    color: white;
   }
 }
-.pvtFilterBox .pvtCheckContainer label {
+.cwPivotTable {
+  table.pvtUi {
+    table-layout: fixed;
+    height: 100%;
+
+    tbody > tr {
+      height: 27px;
+    }
+
+    .pvtAxisContainer.pvtUnused.pvtUiCell.pvtVertList {
+      overflow: auto;
+    }
+    .pvtAxisContainer.pvtRows.pvtUiCell {
+      overflow: auto;
+    }
+  }
+  .pvtFilterBox .pvtCheckContainer label {
+    display: flex;
+  }
+
+  td.pvtRendererArea .valueWrapper {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 100%;
+  }
+  .pvtRenderer {
+    display: block;
+  }
+
+  .cw-hiddenByVisibility {
+    visibility: hidden;
+  }
+  .pvtUiCell .pvtRenderer,
+  .pvtUiCell .pvtAttrDropdown,
+  .pvtUiCell .pvtAggregator {
+    height: initial;
+  }
+}
+.cwPivotTable.vertical .pvtAxisContainer.pvtUnused {
   display: flex;
+  flex-wrap: wrap;
 }
-
-td.pvtRendererArea .valueWrapper {
-  overflow-x: auto;
-  overflow-y: auto;
-  height: 100%;
-  .pvtRowLabel {
-    position: sticky;
-  }
-}
-.pvtRenderer {
-  display: block;
-}
-
-.pvtUiCell .pvtRenderer,
-.pvtUiCell .pvtAttrDropdown,
-.pvtUiCell .pvtAggregator {
-  height: initial;
-}
-
 .cwPivotToolBoxButton .pvtAxisContainer,
 .pvtVals {
   background-color: @cwBodyBackgroundColor;

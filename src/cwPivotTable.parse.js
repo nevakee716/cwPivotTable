@@ -208,7 +208,7 @@
 
     this.JSONobjects = cpyObj;
     this.simplify(this.JSONobjects, {});
-
+    let vertical = this.config.verticalDisplay ? "vertical" : "";
     output.push('<div class="cwPivotToolBox">');
     output.push('<div class="cw-visible" id="cwLayoutPivotFilter' + this.nodeID + '"></div>');
     output.push('<div class="cwPivotToolBoxButton" id="cwPivotToolBox' + this.nodeID + '">');
@@ -249,7 +249,7 @@
     );
     output.push("</div></div>");
 
-    output.push('<div class="cw-visible" id="cwPivotTable' + this.nodeID + '"></div>');
+    output.push('<div class="cw-visible cwPivotTable ' + vertical + '" id="cwPivotTable' + this.nodeID + '"></div>');
   };
 
   cwPivotTable.prototype.manageHiddenNodes = function (parent) {
