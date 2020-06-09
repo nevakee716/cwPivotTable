@@ -112,8 +112,8 @@
           clickCallback: self.clickCallback.bind(self),
         },
         plotly: {
-          yaxis: { fixedrange: true },
-          xaxis: { fixedrange: true },
+          yaxis: { fixedrange: true, automargin: true },
+          xaxis: { fixedrange: true, automargin: true },
         },
         plotlyConfig: {
           displaylogo: false,
@@ -121,7 +121,7 @@
           clickCallback: self.clickOnPlotly.bind(self),
         },
       },
-      unusedAttrsVertical: self.config.verticalDisplay === true ? false : true,
+      unusedAttrsVertical: !self.config.verticalDisplay,
       hiddenFromDragDrop: self.config.hiddenFromDragDrop,
       derivedAttributes: self.dataDerivers(),
       cols: self.config.cols,
@@ -131,7 +131,7 @@
       rendererName: self.config.rendererName,
       hiddenAttributes: self.config.hiddenAttributes,
       inclusions: self.getInclusions(),
-      showUI: false,
+      showUI: self.config.ui,
       // aggregators: {
       //    "Mean" : this.dataAggregator()
       //}

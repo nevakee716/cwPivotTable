@@ -325,8 +325,8 @@
         clickCallback: self.clickCallback.bind(self),
       },
       plotly: {
-        yaxis: { fixedrange: true },
-        xaxis: { fixedrange: true },
+        yaxis: { fixedrange: true, automargin: true },
+        xaxis: { fixedrange: true, automargin: true },
       },
       plotlyConfig: {
         displaylogo: false,
@@ -334,8 +334,8 @@
         clickCallback: self.clickOnPlotly.bind(self),
       },
     };
-    config.showUI = true;
-    config.unusedAttrsVertical = self.config.verticalDisplay === true ? false : true;
+    config.showUI = this.config.ui;
+    config.unusedAttrsVertical = !self.config.verticalDisplay;
     config.derivedAttributes = self.dataDerivers();
 
     delete config.aggregators;

@@ -32,8 +32,8 @@
     if (this.config.rendererName === undefined) this.config.rendererName = "Table";
     if (this.config.hiddenAttributes === undefined) this.config.hiddenAttributes = [];
     if (this.config.propKPImeasure === undefined) this.config.propKPImeasure = [];
-
-    //  this.config.verticalDisplay = true;
+    if (this.config.ui === undefined) this.config.ui = true;
+    if (this.config.verticalDisplay === undefined) this.config.verticalDisplay = false;
 
     this.nodes = {};
     this.PivotDatas = [];
