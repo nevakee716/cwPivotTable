@@ -1,10 +1,11 @@
 | **Name** | **Pivot Table** | **Version** | 
 | --- | --- | --- |
-| **Updated by** | Mathias PFAUWADEL | 3.3 |
+| **Updated by** | Mathias PFAUWADEL | 4.0 |
 
 
 ## Patch Notes
 
+* 4.0 : Better managing of scrolling, pie chart, can display list of objects
 * 3.3 : Update Graphics
 * 3.0 : Enable Saving
 * 2.0 : 1st version working
@@ -47,6 +48,8 @@ Here is an exemple of a json configuration.
 
 ```
 {
+            "ui" : true,
+            "verticalDisplay": true,
             "complementaryNode" : [],
             "hiddenNodes" : [],
             "cardinalNodes" : [],
@@ -68,6 +71,13 @@ Here is an exemple of a json configuration.
 }
 ```
 
+### UI
+
+If false, you will not have any interface, just the table or graph
+
+### Vertical Display
+
+If you want the table to be vertical
 
 ### Complementary Node 
 
