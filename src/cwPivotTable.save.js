@@ -341,6 +341,7 @@
     delete config.aggregators;
 
     $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, config, true);
+    $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, config, true);
     this.manageButton(true);
   };
 
