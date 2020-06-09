@@ -26,13 +26,13 @@
           "modules/bootstrap/bootstrap.min.js",
           "modules/bootstrap-select/bootstrap-select.min.js",
           "modules/pivot/pivot.min.js",
-          "modules/pivotPloty/plotlyBasic.min.js",
+          "modules/pivotPloty/pivotPloty.min.js",
           "modules/pivotjqUI/pivotjqUI.min.js",
         ];
         // AsyncLoad
         cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function (error) {
           if (error === null) {
-            libToLoad = ["modules/pivotPlotyrender/plotlyRenderers.min.js", "modules/pivotExport/pivotExport.min.js"];
+            libToLoad = ["modules/pivotPlotyrender/pivotPlotyrender.min.js", "modules/pivotExport/pivotExport.min.js"];
             cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function (error) {
               if (error === null) {
                 self.createPivot();
@@ -357,6 +357,7 @@
     if (!noEvent) optionButton.addEventListener("click", self.manageEventButton.bind(this, "Option"));
 
     var rowButton = document.getElementById("cwPivotButtonsRow" + this.nodeID);
+
     if (this.config.hideRow === true) {
       rowButton.classList.remove("selected");
       this.hideRow();
@@ -399,15 +400,18 @@
   };
 
   cwPivotTable.prototype.showRow = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.remove("cw-hiddenByVisibility");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.remove("cw-hidden");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRendererArea").colSpan = "1";
   };
 
   cwPivotTable.prototype.hideRow = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.add("cw-hiddenByVisibility");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.add("cw-hidden");
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRendererArea").colSpan = "2";
   };
 
   cwPivotTable.prototype.showFilter = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").style.borderWidth = "2px";
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").classList.remove("cw-hiddenByVisibility");
     let p = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtUnused li");
     if (p) {
       for (i = 0; i < p.length; i++) {
@@ -417,6 +421,7 @@
   };
 
   cwPivotTable.prototype.hideFilter = function () {
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").classList.add("cw-hiddenByVisibility");
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").style.borderWidth = "0px";
     let p = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtUnused li");
     if (p) {

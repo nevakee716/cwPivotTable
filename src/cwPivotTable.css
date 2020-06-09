@@ -82,6 +82,8 @@
 }
 .cwPivotTable .cw-hiddenByVisibility {
   visibility: hidden;
+  background-color: transparent;
+  border: none;
 }
 .cwPivotTable .pvtUiCell .pvtRenderer,
 .cwPivotTable .pvtUiCell .pvtAttrDropdown,

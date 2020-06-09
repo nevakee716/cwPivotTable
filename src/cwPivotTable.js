@@ -33,7 +33,7 @@
     if (this.config.hiddenAttributes === undefined) this.config.hiddenAttributes = [];
     if (this.config.propKPImeasure === undefined) this.config.propKPImeasure = [];
 
-    //this.config.verticalDisplay = true;
+    //  this.config.verticalDisplay = true;
 
     this.nodes = {};
     this.PivotDatas = [];
@@ -81,7 +81,7 @@
       this.definition.capipivotConfigurationDisplayName = "Configuration";
       this.canCreatePivot = true;
       this.canUpdatePivot = true;
-      console.log(e);
+      console.debug(e);
     }
   };
 
