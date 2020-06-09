@@ -90,6 +90,9 @@
 .cwPivotTable .pvtUiCell .pvtAggregator {
   height: initial;
 }
+.cwPivotTable .g-gtitle {
+  visibility: hidden;
+}
 .cwPivotTable.vertical .pvtAxisContainer.pvtUnused {
   display: flex;
   flex-wrap: wrap;
