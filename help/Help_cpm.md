@@ -20,7 +20,7 @@
 
   <link crossorigin="anonymous" media="all" integrity="sha512-BmnGTzITfSCD9SKlVfngZdzNq8Fa33lRq00rF1eRsg4zcCH3VtX8QtS6687+5GdeaVj1LzKyLj6+oXJLcswj6w==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-0669c64f32137d2083f522a555f9e065.css" />
   <link crossorigin="anonymous" media="all" integrity="sha512-IX5BoM4/CZcF+rw+yhDLhCjHTA1gz+F8rA3dQU3p7CFWAx1qGb+MVztQXTLG7jyLCn2kDGNZkp3pHjbL9Ac4kw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-217e41a0ce3f099705fabc3eca10cb84.css" />
-    <link crossorigin="anonymous" media="all" integrity="sha512-HLwpPbjGriZxrqP35jpzSDUnScRZWkUrw9j49/HFXvQ4a6KfUA9gbcbCe/WLt3UaTYM+mnP4MtvwCmlvDuisdQ==" rel="stylesheet" href="https://github.githubassets.com/assets/github-1cbc293db8c6ae2671aea3f7e63a7348.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-szNSCYabweiw+5n3FePq60guonNVWfe21Lxl/Bti25Y++yrwVqGCY6FOnYyLAuxaH+eHUIspJ+lDWIFAnZssEw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-b3335209869bc1e8b0fb99f715e3eaeb.css" />
     
     
     
@@ -66,7 +66,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="DEC1:C5F6:49DB427:6A00DCA:5EDF8B72" data-pjax-transient="true"/><meta name="html-safe-nonce" content="3821b8203040f12421df903231c6f293e27358e6" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJERUMxOkM1RjY6NDlEQjQyNzo2QTAwRENBOjVFREY4QjcyIiwidmlzaXRvcl9pZCI6IjI4MDA3OTM3MDYyNjE2MTM0MjYiLCJyZWdpb25fZWRnZSI6ImFtcyIsInJlZ2lvbl9yZW5kZXIiOiJhbXMifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="f2a97c932e2930b35e3145f6fd9b2020843b7e9dd13c1b62ce036ddd0784e7d4" data-pjax-transient="true"/>
+  <meta name="request-id" content="CAEF:2C251:C86B75:1218B0B:5EE0DD5A" data-pjax-transient="true"/><meta name="html-safe-nonce" content="d6d8145a13ec55c765deb186545d9ec7ece4b80a" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJDQUVGOjJDMjUxOkM4NkI3NToxMjE4QjBCOjVFRTBERDVBIiwidmlzaXRvcl9pZCI6Ijg0MTgwNTY1NzM3MDU4Mzc5MTQiLCJyZWdpb25fZWRnZSI6ImFtcyIsInJlZ2lvbl9yZW5kZXIiOiJhbXMifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="0c7f687a13ab468636aea00271c0c5cde61a7dfa89a5327f6fc67c7586c936f7" data-pjax-transient="true"/>
 
 
 
@@ -103,9 +103,9 @@
       <meta name="expected-hostname" content="github.com">
 
 
-    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,JS_CHUNKING">
+    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS">
 
-  <meta http-equiv="x-pjax-version" content="b62c237c2a6ab551f32581f090807d5b">
+  <meta http-equiv="x-pjax-version" content="49e3e229c6c08fb4f9f3cd8222c2c277">
   
 
       <link crossorigin="anonymous" media="all" integrity="sha512-IX5BoM4/CZcF+rw+yhDLhCjHTA1gz+F8rA3dQU3p7CFWAx1qGb+MVztQXTLG7jyLCn2kDGNZkp3pHjbL9Ac4kw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-217e41a0ce3f099705fabc3eca10cb84.css" />
@@ -278,7 +278,7 @@
 
       <div class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left">
           <div class="d-lg-flex mb-3 mb-lg-0">
-            <div class="header-search header-search-current js-header-search-current flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+            <div class="header-search header-search-current js-header-search-current  flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to js-header-search-current-jump-to"
   role="combobox"
   aria-owns="jump-to-results"
   aria-label="Search or jump to"
@@ -304,7 +304,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="mR/rmpvPyuf3WdvpI/zvT7WJvKqpBoGdZ8pRBn323i1dCQFoIpebPJPUKa6nWygHd7vco6E2qd/QdSLhqLe8/A==" />
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="ryAA8ucmYwejcmfBE475LrZYcMbRpJ1bfe0M8l0GW3XkNLKpXnRZQYhFAG2Otzp3BfkDgIIXOT9NUncH9T0/Iw==" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -619,14 +619,14 @@
 
     <script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F3gCVBxykazXTs+i5fvxncSXwyG1CSfcrqmLFw/R/bmFYzprX2A==" type="application/javascript" id="js-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></script>
     <script crossorigin="anonymous" integrity="sha512-Y86V8OBlvF6I/7e56GKOOt80Yg1RTGA09uqFFX18aiBtevLbKGxB7sVpCn79fukppFIBqyBTB/s6l0Bhn0kidQ==" type="application/javascript" src="https://github.githubassets.com/assets/environment-bootstrap-63ce95f0.js"></script>
-    <script crossorigin="anonymous" async="async" integrity="sha512-W/Z2I9q6YKINknRzZ2Zzw02d+fK1asPVyLiNEfmQ+16M7dKnjghpXCTWTZDONLw3Wa1cU68eEFnJex44Wyj/og==" type="application/javascript" src="https://github.githubassets.com/assets/vendor-5bf67623.js"></script>
-    <script crossorigin="anonymous" async="async" integrity="sha512-kuQtl2H1vsQQzQYmzfNRDKBKnqomjaKNZQmGwS6OrUkrvClS2RVeKyy3B88Psl0kaEq+wwaKEf9RbAsNHO7YOw==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-92e42d97.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-h/xCW7vI38G2h1Hr0nLBGFgUq5RSdWzdoUfEqKxVslbsVx9k3vdwkHQPUGRI+2RnIwHiLjWCpkJRm0GyIzIwFA==" type="application/javascript" src="https://github.githubassets.com/assets/vendor-87fc425b.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-YAej83ikXSzOu18Y/10VPeKXMyVIJIFTc8h4ZJO+q0GQYefYQUO3WnyTeevbpNDijefJvDgi87QkGOwKLGJ2YA==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-6007a3f3.js"></script>
     
-    <script crossorigin="anonymous" async="async" integrity="sha512-5CkBpZbYBks/pmGcGjurqVBKdv9PvR7D65HqMwQywMFbZZXqPmbwrxSZUjx9JO/yi+YllEAMEg6fXlTuw/vaQQ==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-e42901a5.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-3VP6/os7WOtZyD3fQG2oXkHPpf6bs8nkCNIescNBRmadnEmMbwz7U9sAQbuogzhzr5eW8JSBLbZXKRNkXzhpFw==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-dd53fafe.js"></script>
     
-        <script crossorigin="anonymous" async="async" integrity="sha512-4GcSWGoe36+BoWho4gtJcByZe8j43w+lt2/PDe3rmBxRVSgD29YipDwuIywe8fvOd2b2CszBqaPGxSznUtE3Xg==" type="application/javascript" data-module-id="./drag-drop.js" data-src="https://github.githubassets.com/assets/drag-drop-e0671258.js"></script>
-        <script crossorigin="anonymous" async="async" integrity="sha512-3Vk1NFIOm+TBUMM6pTA6DCUwwLLnc/QIT8jpENm71InvSU8O4p2plDagpst1tH1l+9jOBnneaXZnAskA9a2b3w==" type="application/javascript" data-module-id="./gist-vendor.js" data-src="https://github.githubassets.com/assets/gist-vendor-dd593534.js"></script>
-        <script crossorigin="anonymous" async="async" integrity="sha512-urN6bhHnHu4C12A+cTH3dOp+CwLaycy2HUXr95hvu5pbYRdF8z6iR+UQcTZutQ6mZG3Njluw2MTZVCNmwcqh8g==" type="application/javascript" data-module-id="./randomColor.js" data-src="https://github.githubassets.com/assets/randomColor-bab37a6e.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-4GcSWGoe36+BoWho4gtJcByZe8j43w+lt2/PDe3rmBxRVSgD29YipDwuIywe8fvOd2b2CszBqaPGxSznUtE3Xg==" type="application/javascript" data-module-id="./drag-drop.js" data-src="https://github.githubassets.com/assets/drag-drop-e0671258.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-3Vk1NFIOm+TBUMM6pTA6DCUwwLLnc/QIT8jpENm71InvSU8O4p2plDagpst1tH1l+9jOBnneaXZnAskA9a2b3w==" type="application/javascript" data-module-id="./gist-vendor.js" data-src="https://github.githubassets.com/assets/gist-vendor-dd593534.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-urN6bhHnHu4C12A+cTH3dOp+CwLaycy2HUXr95hvu5pbYRdF8z6iR+UQcTZutQ6mZG3Njluw2MTZVCNmwcqh8g==" type="application/javascript" data-module-id="./randomColor.js" data-src="https://github.githubassets.com/assets/randomColor-bab37a6e.js"></script>
     
     
   <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
