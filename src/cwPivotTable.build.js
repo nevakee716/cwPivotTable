@@ -200,6 +200,10 @@
     //  row3.parentElement.children.forEach((n) => (n.style.height = this.canvaHeight - 70 + "px"));
 
     //cwAPI.CwPopout.hide();
+
+    $(".pvtColLabel:contains(null)").text("");
+    $(".pvtRowLabel:contains(null)").text("");
+
     var headers = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtAxisLabel");
     var hDataLine = {};
     var hDataCol = {};
