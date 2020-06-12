@@ -337,7 +337,8 @@
     config.showUI = this.config.ui;
     config.unusedAttrsVertical = !self.config.verticalDisplay;
     config.derivedAttributes = self.dataDerivers();
-
+    config.hiddenFromDragDrop = self.config.hiddenFromDragDrop;
+    config.hiddenAttributes = self.config.hiddenAttributes;
     delete config.aggregators;
 
     $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, config, true);
