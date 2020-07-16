@@ -14,6 +14,18 @@
     };
   }
 
+  cwPivotTable.prototype.getCapipivotScriptnames = function () {
+    this.definition = {};
+    this.definition.capipivotScriptname = "capipivot";
+    this.definition.capipivotDisplayName = "Pivot Table";
+    this.definition.capipivotLabelScriptname = "label";
+    this.definition.capipivotLabelDisplayName = "Libéllé";
+    this.definition.capipivotToAnyAssociationScriptname = "CAPIPIVOTTOASSOPIVOTANYOBJECTTOANYOBJECT";
+    this.definition.capipivotToAnyAssociationDisplayName = "Present On PivotTable";
+    this.definition.capipivotCreateOnViewScriptname = "createoncwview";
+    this.definition.capipivotConfigurationScriptname = "configuration";
+  };
+
   cwPivotTable.prototype.construct = function (options) {
     this.init = false;
     this.config = JSON.parse(this.options.CustomOptions["JsonConfiguration"]);
@@ -35,18 +47,21 @@
     if (this.config.ui === undefined) this.config.ui = true;
     if (this.config.verticalDisplay === undefined) this.config.verticalDisplay = false;
 
+    this.getCapipivotScriptnames();
     this.nodes = {};
     this.PivotDatas = [];
 
-    this.definition = {};
-    this.definition.capipivotScriptname = "capipivot";
-    this.definition.capipivotDisplayName = "Pivot Table";
-    this.definition.capipivotLabelScriptname = "label";
-    this.definition.capipivotLabelDisplayName = "Libéllé";
-    this.definition.capipivotToAnyAssociationScriptname = "CAPIPIVOTTOASSOPIVOTANYOBJECTTOANYOBJECT";
-    this.definition.capipivotToAnyAssociationDisplayName = "Present On PivotTable";
-    this.definition.capipivotCreateOnViewScriptname = "createoncwview";
-    this.definition.capipivotConfigurationScriptname = "configuration";
+    if (cwAPI.customLibs.utils && cwAPI.customLibs.utils.getCustomLayoutConfiguration) {
+      this.propConfig = cwAPI.customLibs.utils.getCustomLayoutConfiguration("property");
+      if (this.propConfig && this.propConfig.hardcoded && this.propConfig.hardcoded.length > 0) {
+        let c = this.propConfig.hardcoded;
+        this.propConfig.hardcoded = {};
+        let self = this;
+        c.forEach(function (cc) {
+          self.propConfig.hardcoded[cc.value] = cc;
+        });
+      }
+    }
 
     this.canCreatePivot = false;
     this.canUpdatePivot = false;
@@ -54,6 +69,7 @@
     this.pivotConfiguration.enableEdit = this.config.enableEdit;
     this.pivotConfiguration.pivots = {};
 
+    this.labels = {};
     try {
       this.definition.capipivotCreateOnViewDisplayName = cwAPI.mm.getProperty(
         this.definition.capipivotScriptname,

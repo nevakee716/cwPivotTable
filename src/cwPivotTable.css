@@ -56,6 +56,9 @@
   background-color: #03a0ce;
   color: white;
 }
+.cwPivotTable {
+  margin-bottom: 10px;
+}
 .cwPivotTable table.pvtUi {
   table-layout: fixed;
   height: 100%;

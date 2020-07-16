@@ -102,6 +102,10 @@
 
               if (self.nodes[node.NodeName] === undefined) {
                 self.nodes[node.NodeName] = {};
+                self.labels[node.NodeName] = {
+                  objectTypeScriptName: child.objectTypeScriptName,
+                  property: "name",
+                };
               }
               if (self.nodes[node.NodeName][value] === undefined) {
                 self.nodes[node.NodeName][value] = {};
@@ -113,6 +117,7 @@
               if (prop.type === "Boolean") {
                 value = value ? $.i18n.prop("global_true") : $.i18n.prop("global_false");
               }
+
               /* value = cwApi.cwPropertiesGroups.getDisplayValue(child.objectTypeScriptName, p, value, child, "properties");
               value = value.replace(/(\<img).*(\/\>)/, "");*/
               if (prop === undefined) {
@@ -138,9 +143,21 @@
               } else if (node.NodeName === " ") {
                 if (prop.type === "Lookup") newLine[prop.name + "_abbreviation"] = child.properties[p + "_abbreviation"];
                 newLine[prop.name] = value;
+                if (!self.labels[prop.name]) {
+                  self.labels[prop.name] = {
+                    objectTypeScriptName: child.objectTypeScriptName,
+                    property: prop.scriptName,
+                  };
+                }
               } else {
                 newLine[node.NodeName + "_" + prop.name] = value;
                 if (prop.type === "Lookup") newLine[node.NodeName + "_" + prop.name + "_abbreviation"] = child.properties[p + "_abbreviation"];
+                if (!self.labels[node.NodeName + "_" + prop.name]) {
+                  self.labels[node.NodeName + "_" + prop.name] = {
+                    objectTypeScriptName: child.objectTypeScriptName,
+                    property: prop.scriptName,
+                  };
+                }
               }
             }
           }

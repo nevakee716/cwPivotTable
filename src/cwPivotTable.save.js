@@ -332,6 +332,7 @@
         displaylogo: false,
         modeBarButtonsToRemove: ["zoom2d", "pan2d", "select2d", "zoomIn2d", "zoomOut2d", "resetScale2d", "toggleSpikelines", "lasso2d"],
         clickCallback: self.clickOnPlotly.bind(self),
+        getColor: self.getColor.bind(self),
       },
     };
     config.showUI = this.config.ui;

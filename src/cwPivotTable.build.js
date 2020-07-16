@@ -119,6 +119,7 @@
           displaylogo: false,
           modeBarButtonsToRemove: ["zoom2d", "pan2d", "select2d", "zoomIn2d", "zoomOut2d", "resetScale2d", "toggleSpikelines", "lasso2d"],
           clickCallback: self.clickOnPlotly.bind(self),
+          getColor: self.getColor.bind(self),
         },
       },
       unusedAttrsVertical: !self.config.verticalDisplay,
@@ -270,6 +271,36 @@
           }
         }
       });
+    }
+  };
+
+  cwPivotTable.prototype.getColor = function (object_prop, valueLabel) {
+    let conf;
+    if (!this.propConfig) return;
+    if (!this.labels[object_prop]) {
+      if (this.propConfig.hardcoded && this.propConfig.hardcoded[valueLabel]) {
+        conf = this.propConfig.hardcoded[valueLabel];
+        return conf.iconColor ? conf.iconColor : conf.valueColor;
+      }
+      return;
+    }
+    let objectTypeScriptName = this.labels[object_prop].objectTypeScriptName;
+    let propScriptname = this.labels[object_prop].property;
+    if (this.propConfig[objectTypeScriptName] && this.propConfig[objectTypeScriptName][propScriptname]) {
+      let prop = cwApi.mm.getProperty(objectTypeScriptName, propScriptname);
+      if (!prop) return;
+
+      let lookupId;
+      prop.lookups.forEach(function (l) {
+        if (l.name === valueLabel) lookupId = l.id;
+      });
+      conf = this.propConfig[objectTypeScriptName][propScriptname][lookupId];
+      if (lookupId && conf) {
+        return conf.iconColor ? conf.iconColor : conf.valueColor;
+      }
+    } else if (this.propConfig.hardcoded && this.propConfig.hardcoded[valueLabel]) {
+      conf = this.propConfig.hardcoded[valueLabel];
+      return conf.iconColor ? conf.iconColor : conf.valueColor;
     }
   };
 
