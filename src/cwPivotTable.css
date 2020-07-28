@@ -36,25 +36,15 @@
   height: 50px;
   margin-left: 7px;
 }
-.cwPivotToolBox .btn {
-  background-color: #5c5d61;
-  color: white;
-}
-.cwPivotToolBox .btn.selected {
-  background-color: #03a0ce;
-  color: white;
-}
+.cwPivotToolBox .btn,
 .cwPivotToolBox .k-button {
   background-color: #5c5d61;
-  color: white;
+  color: #ffffff;
 }
+.cwPivotToolBox .btn.selected,
 .cwPivotToolBox .k-button.selected {
   background-color: #03a0ce;
-  color: white;
-}
-.cwPivotToolBox .btn.selected {
-  background-color: #03a0ce;
-  color: white;
+  color: #ffffff;
 }
 .cwPivotTable {
   margin-bottom: 10px;
@@ -131,6 +121,10 @@
   margin: 2px;
 }
 .pvtAxisContainer li span.pvtAttr {
+  color: #26276d;
+  background-color: #ffffff;
+}
+.pvtAxisContainer li span.pvtAttr .pvtTriangle {
   color: #26276d;
 }
 .pvtFilterBox p > button:first-child {

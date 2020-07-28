@@ -14,26 +14,15 @@
 .cwPivotToolBox {
   height: 50px;
   margin-left: 7px;
-  .btn {
-    background-color: @cwColor1Tint;
-    color: white;
-  }
-  .btn.selected {
-    background-color: @cwColor1;
-    color: white;
-  }
-
+  .btn,
   .k-button {
     background-color: @cwColor1Tint;
-    color: white;
+    color: @cwPageActionButtonIconColor;
   }
+  .btn.selected,
   .k-button.selected {
-    background-color: @cwColor1;
-    color: white;
-  }
-  .btn.selected {
-    background-color: @cwColor1;
-    color: white;
+    background-color: @cwPageActionButtonBackgroundColor;
+    color: @cwPageActionButtonIconColor;
   }
 }
 .cwPivotTable {
@@ -118,7 +107,12 @@
 }
 
 .pvtAxisContainer li span.pvtAttr {
-  color: @solidColor;
+  color: @cwMenuLeftMainNavigationTextColor;
+  background-color: @cwMenuLeftMainNavigationBackgroundColor;
+
+  .pvtTriangle {
+    color: @cwMenuLeftMainNavigationTextColor;
+  }
 }
 
 .pvtFilterBox p > button:first-child {
