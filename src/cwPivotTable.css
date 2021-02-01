@@ -28,7 +28,7 @@
 .cwPivotToolBoxButton {
   z-index: 100;
   top: 0px;
-  background-color: #ffffff;
+  background-color: transparent;
   right: -12px;
   position: absolute;
 }
@@ -92,7 +92,7 @@
 }
 .cwPivotToolBoxButton .pvtAxisContainer,
 .pvtVals {
-  background-color: #ffffff;
+  background-color: rgba(55, 131, 154, 0.1);
   border-color: #26276d;
   border-width: 2px;
   border-style: solid;
@@ -128,7 +128,7 @@
   color: #26276d;
 }
 .pvtFilterBox p > button:first-child {
-  color: #ffffff;
+  color: rgba(55, 131, 154, 0.1);
   border-color: #e45200;
   background-color: #ff6b18;
 }
@@ -137,7 +137,7 @@
 }
 table.pvtTable thead tr th,
 table.pvtTable tbody tr th {
-  background-color: #ffffff;
+  background-color: rgba(55, 131, 154, 0.1);
   border-style: solid;
   color: #26276d;
   border-width: 1px;
