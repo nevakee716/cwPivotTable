@@ -66,7 +66,7 @@
     if (topBar) topBarHeight = topBar.getBoundingClientRect().height;
     if (titleReact) titleReactHeight = titleReact.getBoundingClientRect().height;
     let margin = this.config.enableEdit ? 100 : 50;
-    this.canvaHeight = window.innerHeight - titleReactHeight - topBarHeight - margin;
+    this.canvaHeight = window.innerHeight - 95 - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
 
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     pivotContainer.setAttribute("style", "height:" + this.canvaHeight + "px");
