@@ -29,12 +29,12 @@
   z-index: 100;
   top: 0px;
   background-color: transparent;
-  right: -12px;
-  position: absolute;
 }
 .cwPivotToolBox {
   height: 50px;
   margin-left: 7px;
+  display: flex;
+  justify-content: space-between;
 }
 .cwPivotToolBox .btn,
 .cwPivotToolBox .k-button {

@@ -69,7 +69,7 @@
     this.canvaHeight = window.innerHeight - 95 - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
 
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
-    pivotContainer.setAttribute("style", "height:" + this.canvaHeight + "px");
+    pivotContainer.setAttribute("style", "min-height:" + this.canvaHeight + "px");
     var self = this,
       i = 0;
     this.pivotContainer = pivotContainer;
