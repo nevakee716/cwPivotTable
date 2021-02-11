@@ -226,7 +226,9 @@
     this.JSONobjects = cpyObj;
     this.simplify(this.JSONobjects, {});
     let noUI = this.config.ui ? "" : "cw-hidden";
-    output.push('<div class="cwPivotWrapper ' + noUI + '">');
+
+    output.push('<div class="cwPivotWrapper" id="cwPivotWrapper' + this.nodeID + '" ' + noUI + '">');
+
     output.push('<div class="cwPivotToolBox ' + noUI + '">');
     output.push('<div class="cw-visible" id="cwLayoutPivotFilter' + this.nodeID + '"></div>');
     output.push('<div class="cwPivotToolBoxButton" id="cwPivotToolBox' + this.nodeID + '">');

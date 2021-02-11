@@ -61,13 +61,20 @@
     // set height
     var titleReact = document.querySelector("#cw-top-bar");
     let topBar = document.querySelector(".page-top");
+    let wrapper = document.querySelector("#cwPivotWrapper" + this.nodeID);
     let topBarHeight = 52;
     let titleReactHeight = 52;
     if (topBar) topBarHeight = topBar.getBoundingClientRect().height;
     if (titleReact) titleReactHeight = titleReact.getBoundingClientRect().height;
     let margin = this.config.enableEdit ? 100 : 50;
-    this.canvaHeight = window.innerHeight - 95 - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
+    var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
+    let checkIfInaDisplay = document.querySelector(".homePage_evolveView  #cwPivotWrapper" + this.nodeID);
 
+    if (!checkIfInaDisplay) {
+      this.canvaHeight = window.innerHeight - 95 - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
+    } else {
+      this.canvaHeight = wrapper.offsetHeight - 20;
+    }
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     pivotContainer.setAttribute("style", "min-height:" + this.canvaHeight + "px");
     var self = this,
@@ -209,7 +216,6 @@
     var hDataLine = {};
     var hDataCol = {};
     var self = this;
-    let popOutOffset = document.querySelector(".page-content").offsetLeft;
 
     for (let i = 0; i < headers.length; i++) {
       let h = headers[i];
