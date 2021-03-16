@@ -46,7 +46,9 @@
     if (this.config.propKPImeasure === undefined) this.config.propKPImeasure = [];
     if (this.config.ui === undefined) this.config.ui = true;
     if (this.config.verticalDisplay === undefined) this.config.verticalDisplay = false;
-
+    if (this.config.title === undefined) this.config.title = false;
+    if (this.config.fontsize === undefined) this.config.fontsize = false;
+    if (this.config.height === undefined) this.config.height = false;
     this.getCapipivotScriptnames();
     this.nodes = {};
     this.PivotDatas = [];

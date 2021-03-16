@@ -230,6 +230,10 @@
     output.push('<div class="cwPivotWrapper" id="cwPivotWrapper' + this.nodeID + '" ' + noUI + '">');
 
     output.push('<div class="cwPivotToolBox ' + noUI + '">');
+    if (this.config.title && this.config.ui)
+      output.push(
+        '<div class="cw-visible cwPivotTitle" id="cwPivotTitle' + this.nodeID + '">' + this.viewSchema.NodesByID[this.nodeID].NodeName + "</div>"
+      );
     output.push('<div class="cw-visible" id="cwLayoutPivotFilter' + this.nodeID + '"></div>');
     output.push('<div class="cwPivotToolBoxButton" id="cwPivotToolBox' + this.nodeID + '">');
     output.push(
@@ -270,6 +274,10 @@
     output.push("</div></div>");
 
     let vertical = this.config.verticalDisplay ? "vertical" : "";
+    if (this.config.title && !this.config.ui)
+      output.push(
+        '<div class="cw-visible cwPivotTitle" id="cwPivotTitle' + this.nodeID + '">' + this.viewSchema.NodesByID[this.nodeID].NodeName + "</div>"
+      );
     output.push('<div class="cw-visible cwPivotTable ' + vertical + '" id="cwPivotTable' + this.nodeID + '"></div>');
     output.push("</div>");
   };

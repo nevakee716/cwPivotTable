@@ -41,6 +41,12 @@
 .homePage_evolveView .cwPivotWrapper .cwPivotTable table.pvtUi tbody > tr {
   height: 0px;
 }
+.cwPivotTitle {
+  text-align: center;
+  color: #03a0ce;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 .cwPivotHomeTitle {
   display: none;
 }

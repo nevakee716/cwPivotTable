@@ -333,6 +333,9 @@
         modeBarButtonsToRemove: ["zoom2d", "pan2d", "select2d", "zoomIn2d", "zoomOut2d", "resetScale2d", "toggleSpikelines", "lasso2d"],
         clickCallback: self.clickOnPlotly.bind(self),
         getColor: self.getColor.bind(self),
+        nodeID: self.nodeID,
+        ui: self.config.ui,
+        fontsize: self.config.fontsize,
       },
     };
     config.showUI = this.config.ui;
@@ -342,9 +345,11 @@
     config.hiddenAttributes = self.config.hiddenAttributes;
     delete config.aggregators;
 
+    var self = this;
     $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, config, true);
-    $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, config, true);
+
     this.manageButton(true);
+    this.onRefresh();
   };
 
   cwApi.cwLayouts.cwPivotTable = cwPivotTable;

@@ -70,7 +70,9 @@
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     let checkIfInaDisplay = document.querySelector(".homePage_evolveView  #cwPivotWrapper" + this.nodeID);
 
-    if (!checkIfInaDisplay) {
+    if (this.config.height) {
+      this.canvaHeight = this.config.height;
+    } else if (!checkIfInaDisplay) {
       this.canvaHeight = window.innerHeight - 95 - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
     } else {
       this.canvaHeight = wrapper.offsetHeight - 20;
@@ -105,12 +107,9 @@
       $(".selectPivotConfiguration_" + this.nodeID)[0].children[1].children[0].appendChild(this.createAddButton());
     }
 
-    var numberFormat = $.pivotUtilities.numberFormat;
-
     this.renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.plotly_renderers, $.pivotUtilities.export_renderers);
     let lang = cwApi.getSelectedLanguage();
     lang = lang == "fr" || lang == "it" ? lang : "en";
-
     this.pivotUI = $("#cwPivotTable" + this.nodeID).pivotUI(self.PivotDatas, {
       onRefresh: self.onRefresh.bind(self),
       renderers: self.renderers,
@@ -127,6 +126,9 @@
           modeBarButtonsToRemove: ["zoom2d", "pan2d", "select2d", "zoomIn2d", "zoomOut2d", "resetScale2d", "toggleSpikelines", "lasso2d"],
           clickCallback: self.clickOnPlotly.bind(self),
           getColor: self.getColor.bind(self),
+          nodeID: self.nodeID,
+          ui: self.config.ui,
+          fontsize: self.config.fontsize,
         },
       },
       unusedAttrsVertical: !self.config.verticalDisplay,
@@ -145,33 +147,20 @@
       //}
     });
 
-    this.manageButton();
+    self.manageButton();
+    self.onRefresh();
     // Event for filter
     // Load a new network
-    $("select.selectPivotConfiguration_" + this.nodeID).on("changed.bs.select", function (e, clickedIndex, newValue, oldValue) {
-      var changeSet, id, nodeId, i, config;
-      var groupArray = {};
-      if (clickedIndex !== undefined && $(this).context.children && $(this).context.children[clickedIndex]) {
-        id = $(this).context.children[clickedIndex].id;
-        if (id != 0) {
-          config = self.pivotConfiguration.pivots[id].configuration;
-          self.pivotConfiguration.selected = self.pivotConfiguration.pivots[id];
-          self.loadCwApiPivot(config);
-        }
-      }
-      if (cwAPI.isDebugMode() === true) console.log("pivot is set");
-    });
-
-    var saveButton = document.getElementById("pivotConfigurationSaveButton_" + this.nodeID);
+    var saveButton = document.getElementById("pivotConfigurationSaveButton_" + self.nodeID);
     if (saveButton) {
-      saveButton.addEventListener("click", this.saveIndexPage.bind(this));
+      saveButton.addEventListener("click", self.saveIndexPage.bind(self));
     }
-    if (this.config.enableEdit && this.config.loadFirstPivot && this.pivotConfiguration && Object.keys(this.pivotConfiguration.pivots).length > 0) {
-      let startCwApiPivot = this.pivotConfiguration.pivots[Object.keys(this.pivotConfiguration.pivots)[0]];
+    if (self.config.enableEdit && self.config.loadFirstPivot && self.pivotConfiguration && Object.keys(self.pivotConfiguration.pivots).length > 0) {
+      let startCwApiPivot = self.pivotConfiguration.pivots[Object.keys(self.pivotConfiguration.pivots)[0]];
       if (startCwApiPivot.configuration) {
-        this.pivotConfiguration.selected = startCwApiPivot;
-        this.loadCwApiPivot(startCwApiPivot.configuration);
-        $("select.selectPivotConfiguration_" + this.nodeID).each(function (index) {
+        self.pivotConfiguration.selected = startCwApiPivot;
+        self.loadCwApiPivot(startCwApiPivot.configuration);
+        $("select.selectPivotConfiguration_" + self.nodeID).each(function (index) {
           // put values into filters
           $(this).selectpicker("val", startCwApiPivot.label); //init cwAPInetworkfilter
         });
