@@ -349,7 +349,9 @@
     $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, config, true);
 
     this.manageButton(true);
-    this.onRefresh();
+    setTimeout(function () {
+      this.onRefresh();
+    }, 500);
   };
 
   cwApi.cwLayouts.cwPivotTable = cwPivotTable;

@@ -165,6 +165,10 @@
           $(this).selectpicker("val", startCwApiPivot.label); //init cwAPInetworkfilter
         });
       }
+    } else {
+      setTimeout(function () {
+        self.onRefresh();
+      }, 500);
     }
   };
 
