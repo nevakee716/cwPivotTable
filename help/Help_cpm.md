@@ -4,7 +4,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
   <head>
     <meta charset="utf-8">
   <link rel="dns-prefetch" href="https://github.githubassets.com">
@@ -14,36 +14,41 @@
 
 
 
-  <link crossorigin="anonymous" media="all" integrity="sha512-wVeNsheSdKUmxa31H6vwU8Gbr3P8JffSsCMPEwgXdlIM8pFoM9KubRKFGGWZFa4LvtjQHaj1gsRug3KvaOyruA==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-c1578db2179274a526c5adf51fabf053.css" />
-  <link crossorigin="anonymous" media="all" integrity="sha512-8gXKQ2VPpyJMTFhegHWc5WtBtMaDSTarMVgtu4dzRZh9SamHEP1Q4s//0xcsmg5Q1lbf37EIkiJFxWVFgsmUAQ==" rel="stylesheet" href="https://github.githubassets.com/assets/site-f205ca43654fa7224c4c585e80759ce5.css" />
-    <link crossorigin="anonymous" media="all" integrity="sha512-GPtdK/6TF0UhV9Qj1pQhGUseKYv9xo5n8Sq1jjcV9o4Rbl8GyzB1ubRWlwU7FXX8RrWBUHPaPNT0iOH24dF4ZA==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-18fb5d2bfe9317452157d423d6942119.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-7KjiGvJiLLy6LJPGf3m67ejAdgQsgDdnxZYoaI6+Agd0ZxHKTCjoKZgaf3PgUjURCcVceAwySJJJWgitRskDiA==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-eca8e21af2622cbcba2c93c67f79baed.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-jaRxAk/R7Eq6XXtxt2dWYc6UfgT/Jk9zYWYh4UpAt5LFRnYVaWqEM3sPhUFL3fOBmHhHoOcn4wfLkMS21Q1yaw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-8da471024fd1ec4aba5d7b71b7675661.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-opcr5M44JCdVCcV68uXGyFB7dH9DNcqiZX2RbFkmW6oGxoJaTpZOgVrJ0RTxifoOkPUd2/sMz3aU9w8jwbBkUQ==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-a2972be4ce3824275509c57af2e5c6c8.css" />
     
     
     
-    <link crossorigin="anonymous" media="all" integrity="sha512-tSD1afBYU3wIwXyYDGk9XEHpzh9KNUpufc0Eu+s+8cfiP6TVZUUxEiZci/allIvQfThbqi/CJapWsCf0etmWyA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-b520f569f058537c08c17c980c693d5c.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-jwBYUxqprx41tQNH6cHa5hstFU5zfAXqkSV/bH7blW3KatkwF8wTNJMwb+ftMU70DC3FNTixnQ/uUWIiHhCPIQ==" rel="stylesheet" href="https://github.githubassets.com/assets/github-8f0058531aa9af1e35b50347e9c1dae6.css" />
 
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-8K2vvwbW+6H27Nad5ydg8PA2/aMD/LKq+EiK9s0U0hhVZxCI2tWBsYk9beAtisRw2j+Or5k2/F+6dk02nmj/PA==" type="application/javascript" src="https://github.githubassets.com/assets/environment-f0adafbf.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-tvyuzkZ3iIwMQaswGLWWXOIs/gcBhYO8VBfpU3AGmISeDj8LC8hopIOR/XiJ5JIzqxIPimF1NEODaBoMF9Fs3Q==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-b6fcaece.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-fZkql5oygGKJNtU8SUVtnpFjUAzTeMaCA/i8zTkH9nuyMDrLtvsDYDYxlFWegsoftVIciba7HsFSOUJQpb4Y+g==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-7d992a97.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-CzeY4A6TiG4fGZSWZU8FxmzFFmcQFoPpArF0hkH0/J/S7UL4eed/LKEXMQXfTwiG5yEJBI+9BdKG8KQJNbhcIQ==" type="application/javascript" src="https://github.githubassets.com/assets/environment-0b3798e0.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-pgCNLNjfayd4a0w/c+LuAlWGNh1tmzBP461Dsfqziko/GIHqYpjVurCPT9ByFhPHB2S8/kFMw1Nc1qbYU36rcA==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-a6008d2c.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-EYEym3yUb3yPcpRqldUV2Qre2K0A+k6WClEe50zbp8J2pkDMBVM5gWbX2K5x6oTK0Lsg6LjzQs5Dj7UseJK3Bg==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-1181329b.js"></script>
   
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-YdS+aLAwqmZDQaaypcZwxLj192TcKahmPThL7y8D86l6xkUge88aZUh+TBZRr0BhpuW/BDQt93D4abgUYcHXDA==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-61d4be68.js"></script>
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-IboH9NL3+O+Lawukto6QKYpZo9QXcqLTuYSR6qN9HjTXaD7uqCRQAOUJicPMDeNw/1J9CFaTG1FQjHT/00QnSw==" type="application/javascript" src="https://github.githubassets.com/assets/primer-21ba07f4.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-+E3TlHyE/2dNk4PeQshwsw5HC7gQzcLhiA/eevXI3pUvZv3YSF41n+XLahOxH78Dm2c5FQTwyTQWvfZjPKKyZg==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-f84dd394.js"></script>
   
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-MiuFoXnjDmRNVM/xNR9yfPr8Qi8Q6+TKWIrkXp+1QJv9MW8lpBfOy0u7AuVuXQVYKIhsr5DCuCxIs1STWpujLg==" type="application/javascript" data-module-id="./chunk-color-modes.js" data-src="https://github.githubassets.com/assets/chunk-color-modes-322b85a1.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-evfy6RyDyXvLuaEEFaUaIlw9dSRgvKkF3rMeUELkvXq7sGEK/43vTg+3EE6E8nOsjpuPyYQjgS8bxzqkTjlZag==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-7af7f2e9.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-obMR8mPKx8OvqRe34LgnUcxeJ1qujiA4ND3H6UX13ExMlA/WfHLjEzXRmgGRcRvN/8J1nzc+Z+jgz/PLTFy6zg==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-a1b311f2.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-cVnIoXzYnuz2SYwsbnuCpTFzvO17cPoQV2mK82+em//c8i7V2L0VEeInplXGgfbx4d8bQGQuPPx0P0BCRfJ37g==" type="application/javascript" data-module-id="./chunk-edit.js" data-src="https://github.githubassets.com/assets/chunk-edit-7159c8a1.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-TGnbT/6B5dxVwEk7iOlwSY9mfqhfq8m05ec+KjdlfEwoieq73iBeyidClQUSmFa2snukwzF9peY8c7FJf9FARA==" type="application/javascript" data-module-id="./chunk-emoji-picker-element.js" data-src="https://github.githubassets.com/assets/chunk-emoji-picker-element-4c69db4f.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-NwYkwzxETzKUYRXumHDsBIuggkh86KmJ1WrwWZW5wTvVPf047+wOmOHI5b4D65bfdtd3WbXJ7k+3ZWoxpIaqcA==" type="application/javascript" data-module-id="./chunk-insights-graph.js" data-src="https://github.githubassets.com/assets/chunk-insights-graph-370624c3.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-9Z+ebFCyEqZjbSw19ZE2Y5NIfh2NFpIqdIB7LTnANiWCnHRwr6JJONL2XeC8Wn7Xqdi/dTBZYFxu4xz8br/Ipg==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-f59f9e6c.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-S8aUo+fRvLif3bA63pJ03RyoYVNFJ7Q+aOmtVVHabaVFMwV1zMdE4HTEewMkbU0ZK2Ik5Q3Ob9/JE+zrNC5qaw==" type="application/javascript" data-module-id="./chunk-profile-pins-element.js" data-src="https://github.githubassets.com/assets/chunk-profile-pins-element-4bc694a3.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-E+H+wAtjiqutBvn2cnXzDIvmasIhYiS7i7JzOfFUwo+Ej8zT54OrJtP//RhwixnypgOpCF4JvqzYy6zOtORDmg==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-13e1fec0.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-0I8dx3vNtOLTKyQ8rOFj0LfLbcfuSVspknSct5t2ySxbhgaoWv++fVRnuopbvjMlBw00ZSN+t8z0KcQuJBneKQ==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-d08f1dc7.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-cAsQOq53AtF8bCPWtKuMXOB2Jjt2089fKQQXtk1bNk2ZSBjx2yQOdGZWsXDfWG5H8FmjJzZsepBmOhy+wO7uAQ==" type="application/javascript" data-module-id="./chunk-toast.js" data-src="https://github.githubassets.com/assets/chunk-toast-700b103a.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-UuA5tLVQADGCrCof3JghmrleAvt5HdaObRos/XmYnn9gl4dBj9kZB55hK6EtWGuRXCkNB3oxD7AoGbCKmKmDnw==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-52e039b4.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-7uTaKvkjFu7v8DvnLZKugOU4Vqru2XnYu1CaqKTvcMXGw6XvOIOBmhPvgdRunAbaxjKj/aNYokUmTXMk436g0Q==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-eee4da2a.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-tjuNQcwhEIXGvVIG4XM/Aj4z+Od+NBRkbgWNwEMjGL3nsnAmdoBdbzsn/WTvl3hk+TPt1D0BvBLHLBPgiwvT2w==" type="application/javascript" data-module-id="./chunk-animate-on-scroll.js" data-src="https://github.githubassets.com/assets/chunk-animate-on-scroll-b63b8d41.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-+BKEtK9JkmJ52jKSoX6+SBrGV6kJxB8J/iAPkFQ/oeq8YekNcz7IZlJgM5Tddyx1RrkL3+sdG0tAy3YuFbYqfA==" type="application/javascript" data-module-id="./chunk-codemirror.js" data-src="https://github.githubassets.com/assets/chunk-codemirror-f81284b4.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-SXIExRkA78ru95lnVy8pTP36kPC7hzl3VIKYLfpsc5uAPjCGkugvrynH4gHk7/pGQ2PP0930j37F1jkJm19ZFA==" type="application/javascript" data-module-id="./chunk-color-modes.js" data-src="https://github.githubassets.com/assets/chunk-color-modes-497204c5.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-zkYZSjUFqSifB+Lt76jclFMrfqpcPqevT801RZcoBNCZHRTBKcFrW9OyJoPOzKFv+fZVDRnqdqGsuIv5KOIgZg==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-ce46194a.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-6j/oSF+kbW+yetNPvI684VzAu9pzug6Vj2h+3u1LdCuRhR4jnuiHZfeQKls3nxcT/S3H+oIt7FtigE/aeoj+gg==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-ea3fe848.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-N+ziqJjVMfWiqeVHdayDHpNRlG5HsF+cgV+pFnMDoTJuvBzgw+ndsepe4NcKAxIS3WMvzMaQcYmd2vrIaoAJVg==" type="application/javascript" data-module-id="./chunk-edit.js" data-src="https://github.githubassets.com/assets/chunk-edit-37ece2a8.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-aiqMIGGZGo8AQMjcoImKPMTsZVVRl6htCSY7BpRmpGPG/AF+Wq+P/Oj/dthWQOIk9cCNMPEas7O2zAR6oqn0tA==" type="application/javascript" data-module-id="./chunk-emoji-picker-element.js" data-src="https://github.githubassets.com/assets/chunk-emoji-picker-element-6a2a8c20.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-DAk56F8lz8k6kg6vf15oE4tu4MTIPDT9DUo3VwO8SLYyb3ws4QU433BG7eVXOS50wzl7dUuMFRfTP1rHlHi45g==" type="application/javascript" data-module-id="./chunk-filter-input.js" data-src="https://github.githubassets.com/assets/chunk-filter-input-0c0939e8.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-XwuQdORq1W9Z+a/i72pH+NfR1rhwlGdxIlaIBbTciscGc/+McxMNLixGBp8e6Td4W1zzHvQ1Jyryl5gUfEr76g==" type="application/javascript" data-module-id="./chunk-insights-graph.js" data-src="https://github.githubassets.com/assets/chunk-insights-graph-5f0b9074.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-guegRI58Rv3iFAfIPmB7r5EMnJN8YavE7gaPDH1bXf48eRgA4GtM2bgd0Luxu1zmIbSCIiultO3tXizNlApljQ==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-82e7a044.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-supZkxo+OPYLNtLXxI+e1dkCqVySu4FOWX1fiVVFs2ZggygppNsEz4F9wVp4YtH2TjFsZW8r/75uDUhPneO2sA==" type="application/javascript" data-module-id="./chunk-notification-list-focus.js" data-src="https://github.githubassets.com/assets/chunk-notification-list-focus-b2ea5993.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-ma0OOy3nj0c1cqBx0BkcmIFsLqcSZ+MIukQxyEFM/OWTzZpG+QMgOoWPAHZz43M6fyjAUG1jH6c/6LPiiKPCyw==" type="application/javascript" data-module-id="./chunk-profile-pins-element.js" data-src="https://github.githubassets.com/assets/chunk-profile-pins-element-99ad0e3b.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-ZLYfbPLIHR6OTusF09GG1MbJsUXh+0W3ccu0EcIiU9QklF4bCaBaGKC6jOXWk4juJRideyWJ0Y2mkKFdZmkIcQ==" type="application/javascript" data-module-id="./chunk-ref-selector.js" data-src="https://github.githubassets.com/assets/chunk-ref-selector-64b61f6c.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-9yFUsOHjJzYPFPiEllzLQ+moFYxDf4kgPb4JtE6U2HkuQGhk13jLBkjRfFiR21uDHuH+aqLZBHrYN43T1jtWRA==" type="application/javascript" data-module-id="./chunk-responsive-underlinenav.js" data-src="https://github.githubassets.com/assets/chunk-responsive-underlinenav-f72154b0.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-9WNXtB07IyWypiPmkuucspwog4mme9q5GKGMSgd7FI0DPimmg/pEw+aaAofFV1vuWMt9I8H5QpsVtlbHGg1YBA==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-f56357b4.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-fIq9Mn7jY/bHQXnsmh+VejpDnaO+d/FDxsp+4CuZtdNLrLuO+dQCjh+m6Yd8GCYD2Cy6DWbCEyM+mH2dkB2H9A==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-7c8abd32.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-WK8VXw3lfUQ/VRW0zlgKPhcMUqH0uTnB/KzePUPdZhCm/HpxfXXHKTGvj5C0Oex7+zbIM2ECzULbtTCT4ug3yg==" type="application/javascript" data-module-id="./chunk-toast.js" data-src="https://github.githubassets.com/assets/chunk-toast-58af155f.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-vgHJEmEJxNmHucGbVY8bEUoOYo5/ZwpQ69rU8Dld89daWJ54uad9lNptxq32F8pnbHhdngw9lohNEbMbjmj5AQ==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-be01c912.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-FY7FMcys9eIuf8DOFvWbcgMDLddmZgkG0+9EZKoCskrrtia8fteVqoIbEC/I9Ke4do78YHLrZhk3EMrq6fR1KQ==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-158ec531.js"></script>
   
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-5qvETjjhCnh2kxOFb4AltJGqC2VknSiV0d9AnmoYR51GZ8L6mYPqY4pnxAdEEntNNbUv+BKqi6xmPGBwP/OVmw==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-e6abc44e.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-qd2HTR+kiF8preSdLiN5s04iy7ipLFoq5PGFlv5Ji4GkVbaRXFvMUazGI07ruhArqoXjXvzRoi5ntgXCQ4Hzog==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-a9dd874d.js"></script>
 
   <meta name="viewport" content="width=device-width">
   
@@ -88,7 +93,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="EF01:C6EA:1B8374A:1C60580:6050F609" data-pjax-transient="true"/><meta name="html-safe-nonce" content="af06ee5032efadfaabd7c2427d92335206b42af92cdc536f1f64839eee4052c5" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJFRjAxOkM2RUE6MUI4Mzc0QToxQzYwNTgwOjYwNTBGNjA5IiwidmlzaXRvcl9pZCI6IjMyMjY4NDY0NzM0MDk4NTI5MzciLCJyZWdpb25fZWRnZSI6ImZyYSIsInJlZ2lvbl9yZW5kZXIiOiJmcmEifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="743a4b0abbaea66f565b0c639c758fa7181a2025850de8ab6feb94000bc93f5a" data-pjax-transient="true"/>
+  <meta name="request-id" content="D02E:110C9:A00973:A61EBF:607F0406" data-pjax-transient="true"/><meta name="html-safe-nonce" content="9720b7daa0cbe4b9d5cbe9616fbeae24e97fa89df6c084611824cf995299ff76" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJEMDJFOjExMEM5OkEwMDk3MzpBNjFFQkY6NjA3RjA0MDYiLCJ2aXNpdG9yX2lkIjoiNDAzMTExNTYwNjgxMDg4NzE3NCIsInJlZ2lvbl9lZGdlIjoiZnJhIiwicmVnaW9uX3JlbmRlciI6ImZyYSJ9" data-pjax-transient="true"/><meta name="visitor-hmac" content="1509722413e47696a7b864b527d2a257b8005502436e54a7210bffee5528cd2e" data-pjax-transient="true"/>
 
 
 
@@ -123,12 +128,12 @@
       <meta name="expected-hostname" content="github.com">
 
 
-    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,AUTOCOMPLETE_EMOJIS_IN_MARKDOWN_EDITOR">
+    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,AUTOCOMPLETE_EMOJIS_IN_MARKDOWN_EDITOR,ACTIONS_CONCURRENCY_UI">
 
-  <meta http-equiv="x-pjax-version" content="ed76840475a649403ae896f79acf3459dc5c4920ef1e07e361cca1cdad650e97">
+  <meta http-equiv="x-pjax-version" content="8dfbd82e6398161121e44c957b13d7ce312a4e67cb6ee3c14032058048b115bd">
   
 
-      <link crossorigin="anonymous" media="all" integrity="sha512-8gXKQ2VPpyJMTFhegHWc5WtBtMaDSTarMVgtu4dzRZh9SamHEP1Q4s//0xcsmg5Q1lbf37EIkiJFxWVFgsmUAQ==" rel="stylesheet" href="https://github.githubassets.com/assets/site-f205ca43654fa7224c4c585e80759ce5.css" />
+      <link crossorigin="anonymous" media="all" integrity="sha512-jaRxAk/R7Eq6XXtxt2dWYc6UfgT/Jk9zYWYh4UpAt5LFRnYVaWqEM3sPhUFL3fOBmHhHoOcn4wfLkMS21Q1yaw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-8da471024fd1ec4aba5d7b71b7675661.css" />
 
 
 
@@ -145,7 +150,7 @@
   <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
 
 <meta name="theme-color" content="#1e2327">
-
+<meta name="color-scheme" content="light dark" />
 
 
   <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
@@ -333,7 +338,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="7Nob6eVHyWf+zDufjpz46tfKXb3PQrxuLwK3a6EiGE7kdRRbqdbRS8i0dlxfBeL/Ldeh0sgqcCxnNPAE8/PaXg==" />
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="fRUrms+PHFhNn6y2VIg8WlrgFtW1D17W3YmS0Ka73qmaEzkxFRtAJiqiHtEb9lIxZgOGcMOdiN9SAtBf2shyHA==" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -552,7 +557,7 @@
     data-discussion-hovercards-enabled
     data-issue-and-pr-hovercards-enabled
   >
-          <main class="font-mktg">
+        <main class="font-mktg">
   <div class="position-relative" style="z-index: 0; transition: all 0.25s ease-in">
     <div class="position-absolute overflow-hidden width-full top-0 left-0" style="height: 370px">
       <img alt="" class="js-plaxify position-absolute" data-invert="true" data-xrange="0" data-yrange="20" height="415" width="940" style="top: -20px; left: -20px; z-index: 1; width: 110%; height: 425px"
@@ -600,7 +605,6 @@
   <script src="https://github.githubassets.com/_error.js"></script>
 </main>
 
-
   </div>
 
             <footer class="footer mt-6">
@@ -620,7 +624,7 @@
           <li class="lh-condensed mb-3"><a href="/security" data-ga-click="Footer, go to security, text:security" class="Link--secondary">Security</a></li>
           <li class="lh-condensed mb-3"><a href="/team" data-ga-click="Footer, go to team, text:team" class="Link--secondary">Team</a></li>
           <li class="lh-condensed mb-3"><a href="/enterprise" data-ga-click="Footer, go to enterprise, text:enterprise" class="Link--secondary">Enterprise</a></li>
-          <li class="lh-condensed mb-3"><a href="/customer-stories" data-ga-click="Footer, go to customer stories, text:customer stories" class="Link--secondary">Customer stories</a></li>
+          <li class="lh-condensed mb-3"><a href="/customer-stories?type=enterprise" data-ga-click="Footer, go to customer stories, text:customer stories" class="Link--secondary">Customer stories</a></li>
           <li class="lh-condensed mb-3"><a href="/readme" data-ga-click="Footer, go to the readme project, text:the readme project" class="Link--secondary">The ReadME Project</a></li>
           <li class="lh-condensed mb-3"><a href="/pricing" data-ga-click="Footer, go to pricing, text:pricing" class="Link--secondary">Pricing</a></li>
           <li class="lh-condensed mb-3"><a href="https://resources.github.com" data-ga-click="Footer, go to resources, text:resources" class="Link--secondary">Resources</a></li>
@@ -697,8 +701,8 @@
       </ul>
       <ul class="list-style-none d-flex flex-wrap color-text-secondary">
         <li class="mr-3">&copy; 2021 GitHub, Inc.</li>
-        <li class="mr-3"><a href="/site/terms" data-ga-click="Footer, go to terms, text:terms" class="Link--secondary">Terms</a></li>
-        <li class="mr-3"><a href="/site/privacy" data-ga-click="Footer, go to privacy, text:privacy" class="Link--secondary">Privacy</a></li>
+        <li class="mr-3"><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-ga-click="Footer, go to terms, text:terms" class="Link--secondary">Terms</a></li>
+        <li class="mr-3"><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-ga-click="Footer, go to privacy, text:privacy" class="Link--secondary">Privacy</a></li>
         <li class="mr-3"><a href="/site-map" data-ga-click="Footer, go to site map, text:site map" class="Link--secondary">Site Map</a></li>
         <li><a href="/git-guides" data-ga-click="Footer, go to Git Guides, text:What is Git?" class="Link--secondary">What is Git?</a></li>
       </ul>

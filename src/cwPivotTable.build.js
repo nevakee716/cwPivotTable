@@ -168,6 +168,14 @@
     } else {
       setTimeout(function () {
         self.onRefresh();
+        var optionButton = document.getElementById("cwPivotButtonsOption" + self.nodeID);
+        var event = {
+          target: optionButton,
+        };
+        self.manageEventButton("Option", event);
+        setTimeout(function () {
+          self.manageEventButton("Option", event);
+        }, 500);
       }, 500);
     }
   };
