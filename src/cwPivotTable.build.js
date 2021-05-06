@@ -228,6 +228,7 @@
     let offsetright = 0;
 
     if (table) {
+      this.valueReplacer();
       table.addEventListener("click", function (e) {
         hDataLine = {};
         hDataCol = {};
