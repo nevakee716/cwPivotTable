@@ -162,6 +162,38 @@
             }
           }
         });
+
+        if (node.IntersectionSchemaNodeId) {
+          Object.keys(child.iProperties).map(function (p, index) {
+            var value = child.iProperties[p];
+            value = value === cwApi.getLookupUndefinedValue() ? $.i18n.prop("global_undefined") : value;
+            let anode = self.viewSchema.NodesByID[node.IntersectionSchemaNodeId];
+            if (anode.PropertiesSelected.indexOf(p.toUpperCase()) !== -1) {
+              if (p === "name") {
+                newLine[anode.NodeName] = value;
+              } else {
+                let prop = cwAPI.mm.getProperty(child.iObjectTypeScriptName, p);
+                if (prop.type === "Boolean") {
+                  value = value ? $.i18n.prop("global_true") : $.i18n.prop("global_false");
+                }
+
+                if (prop === undefined) {
+                  prop = {
+                    name: p,
+                    type: "string",
+                  };
+                }
+                if (node.NodeName === " ") {
+                  if (prop.type === "Lookup") newLine[prop.name + "_abbreviation"] = child.properties[p + "_abbreviation"];
+                  newLine[prop.name] = value;
+                } else {
+                  newLine[node.NodeName + "_" + prop.name] = value;
+                  if (prop.type === "Lookup") newLine[node.NodeName + "_" + prop.name + "_abbreviation"] = child.properties[p + "_abbreviation"];
+                }
+              }
+            }
+          });
+        }
         hasChildren = true;
 
         if (self.simplify(child, newLine, cardinal) === false && cardinal !== true) {
