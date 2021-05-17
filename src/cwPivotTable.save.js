@@ -350,7 +350,7 @@
 
     this.manageButton(true);
     setTimeout(function () {
-      this.onRefresh();
+      self.onRefresh();
     }, 500);
   };
 
