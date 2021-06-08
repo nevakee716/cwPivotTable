@@ -34,6 +34,9 @@
   padding: 0rem;
   height: 100%;
 }
+.homePage_evolveView .cwPivotWrapper .cwPivotToolBox {
+  display: none;
+}
 .homePage_evolveView .cwPivotWrapper .cwPivotTable {
   height: 100%;
   margin-bottom: 0rem;

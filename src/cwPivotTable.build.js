@@ -66,7 +66,7 @@
     let titleReactHeight = 52;
     if (topBar) topBarHeight = topBar.getBoundingClientRect().height;
     if (titleReact) titleReactHeight = titleReact.getBoundingClientRect().height;
-    let margin = this.config.enableEdit ? 100 : 50;
+    let margin = this.config.enableEdit ? 60 : 10;
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     let checkIfInaDisplay = document.querySelector(".homePage_evolveView  #cwPivotWrapper" + this.nodeID);
 
@@ -75,7 +75,7 @@
     } else if (!checkIfInaDisplay) {
       this.canvaHeight = window.innerHeight - 95 - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
     } else {
-      this.canvaHeight = wrapper.offsetHeight - 20;
+      this.canvaHeight = wrapper.offsetHeight - 5;
     }
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     pivotContainer.setAttribute("style", "min-height:" + this.canvaHeight + "px");
@@ -181,6 +181,7 @@
   };
 
   cwPivotTable.prototype.onRefresh = function () {
+    console.log("refresh");
     if (this.config.hideTotals === true) this.hideTotal();
 
     var self = this;
@@ -198,9 +199,10 @@
       let margin = 600;
       if (this.config.hideRow) margin = margin - 300;
       if (this.config.hideFilter) margin = margin - 300;
+      if (this.config.ui === false) margin = 0;
       renderer.style.width = "300px";
       agreg.style.width = "300px";
-      pvtRendererArea.parentElement.style.height = this.canvaHeight - 70 + "px";
+      pvtRendererArea.parentElement.style.height = this.canvaHeight - margin + "px";
     } else {
       renderer.style.width = "300px";
       pvtRendererArea.parentElement.style.height = this.canvaHeight - rows.offsetHeight - filters.offsetHeight + "px";
