@@ -61,6 +61,7 @@ Here is an exemple of a json configuration.
             "hiddenAttributes" : [],
             "enableEdit" : true,
             "loadFirstPivot" : true,
+            "legend" : true,
             "hiddenFromDragDrop" : [Properties1,Properties2],
             "hideFilter : false,
             "hideOption : false,
@@ -87,6 +88,9 @@ Side way node to add in an objectPage
 
 Make a jump and merge on these node
             
+### Legend : 
+
+If there is a legend for the graph when pivotable is used inside a multi display layout
 
 ### Cardinal Nodes : 
 
