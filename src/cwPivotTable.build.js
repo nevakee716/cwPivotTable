@@ -73,7 +73,7 @@
     if (this.config.height) {
       this.canvaHeight = this.config.height;
     } else if (!checkIfInaDisplay) {
-      this.canvaHeight = window.innerHeight - 95 - 5 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
+      this.canvaHeight = window.innerHeight - 95 - 3.75 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
     } else {
       this.canvaHeight = wrapper.offsetHeight - 5;
     }
@@ -129,6 +129,7 @@
           nodeID: self.nodeID,
           ui: self.config.ui,
           fontsize: self.config.fontsize,
+          legend: self.config.legend,
         },
       },
       unusedAttrsVertical: !self.config.verticalDisplay,
@@ -196,13 +197,9 @@
     t.style.width = "100%";
 
     if (!self.config.verticalDisplay) {
-      let margin = 600;
-      if (this.config.hideRow) margin = margin - 300;
-      if (this.config.hideFilter) margin = margin - 300;
-      if (this.config.ui === false) margin = 0;
       renderer.style.width = "300px";
       agreg.style.width = "300px";
-      pvtRendererArea.parentElement.style.height = this.canvaHeight - margin + "px";
+      pvtRendererArea.parentElement.style.height = this.canvaHeight - agreg.offsetHeight + "px";
     } else {
       renderer.style.width = "300px";
       pvtRendererArea.parentElement.style.height = this.canvaHeight - rows.offsetHeight - filters.offsetHeight + "px";

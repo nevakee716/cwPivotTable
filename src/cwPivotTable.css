@@ -69,9 +69,6 @@
   background-color: #03a0ce;
   color: #ffffff;
 }
-.cwPivotTable {
-  margin-bottom: 1.25rem;
-}
 .cwPivotTable table.pvtUi {
   table-layout: fixed;
   height: 100%;
