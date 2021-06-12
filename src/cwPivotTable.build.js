@@ -231,15 +231,15 @@
       table.addEventListener("click", function (e) {
         hDataLine = {};
         hDataCol = {};
-        if (e.toElement.className === "pvtColLabel" || e.toElement.className === "pvtRowLabel") {
+        if (e.target.className === "pvtColLabel" || e.target.className === "pvtRowLabel") {
           for (let i = 0; i < headers.length; i++) {
             let h = headers[i];
             hDataLine[h.offsetLeft] = h.innerText;
             hDataCol[h.offsetTop] = h.innerText;
           }
         }
-        if (e.toElement.className === "pvtColLabel") {
-          let lh = e.toElement;
+        if (e.target.className === "pvtColLabel") {
+          let lh = e.target;
 
           if (hDataCol[lh.offsetTop]) {
             let nodeName = hDataCol[lh.offsetTop];
@@ -258,8 +258,8 @@
             }
           }
         }
-        if (e.toElement.className === "pvtRowLabel") {
-          let lh = e.toElement;
+        if (e.target.className === "pvtRowLabel") {
+          let lh = e.target;
           if (hDataLine[lh.offsetLeft]) {
             let nodeName = hDataLine[lh.offsetLeft];
             let name = lh.innerText;
