@@ -165,6 +165,29 @@
           }
         });
 
+        //property deriver
+        self.propertyDeriver(child).map(function (p, index) {
+          if (self.config.propKPImeasure.indexOf(p.label) !== -1) {
+            child.associations["kpi_" + p.label] = [
+              {
+                associations: [],
+                NodeName: "KPI",
+                PropertiesSelected: ["VALUE", "NAME"],
+                objectTypeScriptName: "kpi",
+                object_id: 42,
+                properties: {
+                  name: p.label,
+                  Value: p.value,
+                },
+              },
+            ];
+          } else if (node.NodeName === " ") {
+            newLine[p.label] = p.value;
+          } else {
+            newLine[node.NodeName + "_" + p.label] = p.value;
+          }
+        });
+
         if (node.IntersectionSchemaNodeId) {
           Object.keys(child.iProperties).map(function (p, index) {
             var value = child.iProperties[p];

@@ -75,7 +75,7 @@
     } else if (!checkIfInaDisplay) {
       this.canvaHeight = window.innerHeight - 95 - 3.75 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
     } else {
-      this.canvaHeight = wrapper.offsetHeight - 10;
+      this.canvaHeight = wrapper.offsetHeight * 0.9;
     }
     var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     pivotContainer.setAttribute("style", "min-height:" + this.canvaHeight + "px");

@@ -32,6 +32,12 @@
     if (view) view = view.cwView;
     else return {};
 
+    if (view.indexOf("location") !== -1) {
+      derivedAttributes["Date"] = function (record) {
+        return record["Année"] + "/" + record["Nombre du mois"];
+      };
+    }
+
     if (view.indexOf("index_customers_pivot") !== -1) {
       derivedAttributes["Month"] = $.pivotUtilities.derivers.dateFormat("Time Entry_Start Date", "%m", true);
       derivedAttributes["Year"] = $.pivotUtilities.derivers.dateFormat("Time Entry_Start Date", "%y", true);
@@ -77,6 +83,15 @@
     };
 
     return derivedAttributes;
+  };
+
+  cwPivotTable.prototype.propertyDeriver = function (item) {
+    var r = [];
+    /*if(item.properties["nombredesolutioncritique"] !== undefined && item.properties["nombredesolution"] !== undefined ) {
+      let v = item.properties["nombredesolution"] - item.properties["nombredesolutioncritique"]; 
+      r.push({value:v,label:"#Solution non Critique"});
+    }*/
+    return r;
   };
 
   cwPivotTable.prototype.getInclusions = function () {
