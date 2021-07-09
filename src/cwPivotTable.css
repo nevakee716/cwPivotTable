@@ -148,7 +148,7 @@
   color: #26276d;
 }
 .pvtFilterBox p > button:first-child {
-  color: rgba(55, 131, 154, 0.1);
+  color: #fff;
   border-color: #e45200;
   background-color: #ff6b18;
 }
