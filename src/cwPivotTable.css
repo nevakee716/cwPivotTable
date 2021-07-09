@@ -93,6 +93,9 @@
 .cwPivotTable .pvtRenderer {
   display: block;
 }
+.cwPivotTable .noBackground {
+  background-color: transparent;
+}
 .cwPivotTable .cw-hiddenByVisibility {
   visibility: hidden;
   background-color: transparent;

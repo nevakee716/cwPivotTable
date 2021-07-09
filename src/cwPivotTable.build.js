@@ -48,14 +48,8 @@
     }
   };
 
-  // Building network
+  // Building pivot
   cwPivotTable.prototype.createPivot = function () {
-    function addStyleString(str) {
-      var node = document.createElement("style");
-      node.innerHTML = str;
-      document.body.appendChild(node);
-    }
-
     var filterContainer = document.getElementById("cwLayoutPivotFilter" + this.nodeID);
 
     // set height
@@ -73,7 +67,7 @@
     if (this.config.height) {
       this.canvaHeight = this.config.height;
     } else if (!checkIfInaDisplay) {
-      this.canvaHeight = window.innerHeight - 95 - 3.75 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
+      this.canvaHeight = window.innerHeight - 95 - 2 * 3.75 * parseFloat(getComputedStyle(document.documentElement).fontSize) - margin;
     } else {
       this.canvaHeight = wrapper.offsetHeight * 0.9;
     }
@@ -110,12 +104,12 @@
     this.renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.plotly_renderers, $.pivotUtilities.export_renderers);
     let lang = cwApi.getSelectedLanguage();
     lang = lang == "fr" || lang == "it" ? lang : "en";
-    this.pivotUI = $("#cwPivotTable" + this.nodeID).pivotUI(self.PivotDatas, {
-      onRefresh: self.onRefresh.bind(self),
-      renderers: self.renderers,
+    this.pivotCurrentConfiguration = {
+      onRefresh: this.onRefresh.bind(self),
+      renderers: this.renderers,
       rendererOptions: {
         table: {
-          clickCallback: self.clickCallback.bind(self),
+          clickCallback: this.clickCallback.bind(this),
         },
         plotly: {
           yaxis: { fixedrange: true, automargin: true },
@@ -124,56 +118,55 @@
         plotlyConfig: {
           displaylogo: false,
           modeBarButtonsToRemove: ["zoom2d", "pan2d", "select2d", "zoomIn2d", "zoomOut2d", "resetScale2d", "toggleSpikelines", "lasso2d"],
-          clickCallback: self.clickOnPlotly.bind(self),
-          getColor: self.getColor.bind(self),
-          nodeID: self.nodeID,
-          ui: self.config.ui,
-          fontsize: self.config.fontsize,
-          legend: self.config.legend,
+          clickCallback: this.clickOnPlotly.bind(this),
+          getColor: this.getColor.bind(this),
+          nodeID: this.nodeID,
+          ui: this.config.ui,
+          fontsize: this.config.fontsize,
+          legend: this.config.legend,
         },
       },
-      unusedAttrsVertical: !self.config.verticalDisplay,
-      hiddenFromDragDrop: self.config.hiddenFromDragDrop,
-      derivedAttributes: self.dataDerivers(),
-      cols: self.config.cols,
-      rows: self.config.rows,
-      vals: self.config.vals,
-      aggregatorName: self.config.aggregatorName,
-      rendererName: self.config.rendererName,
-      hiddenAttributes: self.config.hiddenAttributes,
-      inclusions: self.getInclusions(),
-      showUI: self.config.ui,
+      unusedAttrsVertical: !this.config.verticalDisplay,
+      hiddenFromDragDrop: this.config.hiddenFromDragDrop,
+      derivedAttributes: this.dataDerivers(),
+      cols: this.config.cols,
+      rows: this.config.rows,
+      vals: this.config.vals,
+      aggregatorName: this.config.aggregatorName,
+      rendererName: this.config.rendererName,
+      hiddenAttributes: this.config.hiddenAttributes,
+      inclusions: this.getInclusions(),
+      showUI: this.config.ui,
       // aggregators: {
       //    "Mean" : this.dataAggregator()
       //}
-    });
+    };
+    this.pivotUI = $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, this.pivotCurrentConfiguration);
 
-    self.manageButton();
-    self.onRefresh();
+    this.manageButton();
     // Event for filter
     // Load a new network
-    var saveButton = document.getElementById("pivotConfigurationSaveButton_" + self.nodeID);
+    var saveButton = document.getElementById("pivotConfigurationSaveButton_" + this.nodeID);
     if (saveButton) {
-      saveButton.addEventListener("click", self.saveIndexPage.bind(self));
+      saveButton.addEventListener("click", this.saveIndexPage.bind(self));
     }
-    if (self.config.enableEdit && self.config.loadFirstPivot && self.pivotConfiguration && Object.keys(self.pivotConfiguration.pivots).length > 0) {
-      let startCwApiPivot = self.pivotConfiguration.pivots[Object.keys(self.pivotConfiguration.pivots)[0]];
+    if (self.config.enableEdit && this.config.loadFirstPivot && this.pivotConfiguration && Object.keys(this.pivotConfiguration.pivots).length > 0) {
+      let startCwApiPivot = this.pivotConfiguration.pivots[Object.keys(this.pivotConfiguration.pivots)[0]];
       if (startCwApiPivot.configuration) {
-        self.pivotConfiguration.selected = startCwApiPivot;
-        self.loadCwApiPivot(startCwApiPivot.configuration);
-        $("select.selectPivotConfiguration_" + self.nodeID).each(function (index) {
+        this.pivotConfiguration.selected = startCwApiPivot;
+        this.loadCwApiPivot(startCwApiPivot.configuration);
+        $("select.selectPivotConfiguration_" + this.nodeID).each(function (index) {
           // put values into filters
           $(this).selectpicker("val", startCwApiPivot.label); //init cwAPInetworkfilter
         });
       }
     } else {
       setTimeout(function () {
-        self.onRefresh();
         var optionButton = document.getElementById("cwPivotButtonsOption" + self.nodeID);
         var event = {
           target: optionButton,
         };
-        self.manageEventButton("Option", event);
+        self.manageEventButton("Option", event, true);
         setTimeout(function () {
           self.manageEventButton("Option", event);
         }, 500);
@@ -182,33 +175,77 @@
   };
 
   cwPivotTable.prototype.onRefresh = function () {
-    console.log("refresh");
+    console.log("refresh " + this.nodeID);
     if (this.config.hideTotals === true) this.hideTotal();
 
     var self = this;
     let pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     let t = document.querySelector("#cwPivotTable" + this.nodeID + " table.pvtUi");
+    let t_thead = document.querySelector("#cwPivotTable" + this.nodeID + " table.pvtUi > thead");
     let renderer = document.querySelector("#cwPivotTable" + this.nodeID + " td.pvtUiCell");
     let agreg = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtVals.pvtUiCell");
-    let rows = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtAxisContainer.pvtCols");
+    let cols = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtAxisContainer.pvtCols");
+    let rows = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtAxisContainer.pvtRows");
     let filters = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtAxisContainer.pvtUnused");
     let pvtRendererArea = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRendererArea");
 
     t.style.width = "100%";
+    if (this.config.ui) {
+      if (this.config.hideColumn) this.hideColumn();
+      else this.showColumn();
 
-    if (!self.config.verticalDisplay) {
-      renderer.style.width = "300px";
-      agreg.style.width = "300px";
-      pvtRendererArea.parentElement.style.height = this.canvaHeight - agreg.offsetHeight + "px";
+      if (this.config.hideRow) this.hideRow();
+      else this.showRow();
+
+      if (this.config.hideFilter) this.hideFilter();
+      else this.showFilter();
+
+      if (this.config.hideOption) {
+        // this.hideOption();
+        agreg.style.visibility = "hidden";
+        renderer.style.visibility = "hidden";
+        agreg.style.height = "0px";
+        renderer.style.height = "0px";
+      } else {
+        //  this.showOption();
+        agreg.style.visibility = "visible";
+        renderer.style.visibility = "visible";
+        agreg.style.height = "unset";
+        renderer.style.height = "unset";
+      }
+
+      var cth = function (thead, width) {
+        var th = document.createElement("th");
+        th.style.width = width;
+        thead.append(th);
+      };
+      var thead = document.createElement("thead");
+
+      if (!self.config.verticalDisplay) {
+        if (this.config.hideOption) {
+          if (this.config.hideFilter) {
+            cth(thead, "0px");
+          } else cth(thead, "250px");
+          if (this.config.hideRow) {
+            cth(thead, "0px");
+          } else cth(thead, "250px");
+        } else {
+          cth(thead, "250px");
+          cth(thead, "250px");
+        }
+        pvtRendererArea.parentElement.style.height = this.canvaHeight - cols.offsetHeight - 80 + "px";
+      } else {
+        if (this.config.hideOption && this.config.hideRow) {
+          cth(thead, "0px");
+        } else cth(thead, "250px");
+        pvtRendererArea.parentElement.style.height = this.canvaHeight - cols.offsetHeight - filters.offsetHeight + "px";
+      }
+
+      if (t_thead) t.removeChild(t_thead);
+      t.insertBefore(thead, t.firstChild);
     } else {
-      renderer.style.width = "300px";
-      pvtRendererArea.parentElement.style.height = this.canvaHeight - rows.offsetHeight - filters.offsetHeight + "px";
+      pvtRendererArea.parentElement.style.height = this.canvaHeight - agreg.offsetHeight + "px";
     }
-
-    //  row3.parentElement.children.forEach((n) => (n.style.height = this.canvaHeight - 70 + "px"));
-
-    //cwAPI.CwPopout.hide();
-
     $(".pvtColLabel:contains(null)").text("");
     $(".pvtRowLabel:contains(null)").text("");
 
@@ -386,7 +423,6 @@
     var filterButton = document.getElementById("cwPivotButtonsFilter" + this.nodeID);
     if (this.config.hideFilter === true) {
       filterButton.classList.remove("selected");
-      this.hideFilter();
     }
 
     if (!noEvent) filterButton.addEventListener("click", self.manageEventButton.bind(this, "Filter"));
@@ -394,22 +430,18 @@
     var optionButton = document.getElementById("cwPivotButtonsOption" + this.nodeID);
     if (this.config.hideOption === true) {
       optionButton.classList.remove("selected");
-      this.hideOption();
     }
     if (!noEvent) optionButton.addEventListener("click", self.manageEventButton.bind(this, "Option"));
 
     var rowButton = document.getElementById("cwPivotButtonsRow" + this.nodeID);
-
     if (this.config.hideRow === true) {
       rowButton.classList.remove("selected");
-      this.hideRow();
     }
     if (!noEvent) rowButton.addEventListener("click", self.manageEventButton.bind(this, "Row"));
 
     var columnButton = document.getElementById("cwPivotButtonsColumn" + this.nodeID);
     if (this.config.hideColumn === true) {
       columnButton.classList.remove("selected");
-      this.hideColumn();
     }
     if (!noEvent) columnButton.addEventListener("click", self.manageEventButton.bind(this, "Column"));
 
@@ -421,18 +453,19 @@
     if (!noEvent) totalButton.addEventListener("click", self.manageEventButton.bind(this, "Total"));
   };
 
-  cwPivotTable.prototype.manageEventButton = function (buttonId, event) {
+  cwPivotTable.prototype.manageEventButton = function (buttonId, event, noRefresh) {
     if (this.config["hide" + buttonId] === false) {
       this.config["hide" + buttonId] = true;
       event.target.classList.remove("selected");
-      this["hide" + buttonId]();
     } else {
       this.config["hide" + buttonId] = false;
       event.target.classList.add("selected");
-      this["show" + buttonId]();
+    }
+    if (!noRefresh) {
+      this.pivotUI = $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, this.pivotCurrentConfiguration);
+      this.onRefresh();
     }
   };
-
   cwPivotTable.prototype.showColumn = function () {
     document.querySelector("#cwPivotTable" + this.nodeID + " .pvtCols").classList.remove("cw-hiddenByVisibility");
   };
@@ -442,18 +475,18 @@
   };
 
   cwPivotTable.prototype.showRow = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.remove("cw-hidden");
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRendererArea").colSpan = "1";
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.remove("cw-hiddenByVisibility");
   };
 
   cwPivotTable.prototype.hideRow = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.add("cw-hidden");
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRendererArea").colSpan = "2";
+    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRows").classList.add("cw-hiddenByVisibility");
   };
 
   cwPivotTable.prototype.showFilter = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").style.borderWidth = "2px";
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").classList.remove("cw-hiddenByVisibility");
+    let f = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused");
+    f.style.borderWidth = "2px";
+    f.style.width = "300px";
+    f.classList.remove("noBackground");
     let p = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtUnused li");
     if (p) {
       for (i = 0; i < p.length; i++) {
@@ -462,9 +495,12 @@
     }
   };
 
-  cwPivotTable.prototype.hideFilter = function () {
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").classList.add("cw-hiddenByVisibility");
-    document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused").style.borderWidth = "0px";
+  cwPivotTable.prototype.hideFilter = function (filters) {
+    let f = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtUnused");
+    f.style.width = "0px";
+    f.style.borderWidth = "0px";
+    //f.style.display = "none";
+    f.classList.add("noBackground");
     let p = document.querySelectorAll("#cwPivotTable" + this.nodeID + " .pvtUnused li");
     if (p) {
       for (i = 0; i < p.length; i++) {
