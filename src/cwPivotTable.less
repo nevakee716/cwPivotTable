@@ -3,6 +3,15 @@
 
 @solidColor: @cwMenuLeftMainNavigationTextColor;
 
+// fix issue with unvisible tab
+.tab-content.visible {
+  margin-left: unset;
+}
+
+.tab-content {
+  margin-left: 100%;
+}
+
 .cwPivotToolBoxButton {
   z-index: 100;
   top: 0px;
