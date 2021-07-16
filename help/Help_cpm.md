@@ -14,25 +14,26 @@
 
 
 
-  <link crossorigin="anonymous" media="all" integrity="sha512-J/5cWm5rrVuxkSgldaK1emf5j30Bs5mRgu0uhuHrG+iwf9mD2LOrkQ32SyN5PADLWzkSDxLS3bW/ScsiM44wzw==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-27fe5c5a6e6bad5bb191282575a2b57a.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-iwdBeEEuDZbd2aAEzZti+bkBYQ2UKC6VEAhVMLKq5cCJnyeWVpgVqtgd3scKeZ63wYQTUQegRZwFGKlWOyr5Ew==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-8b074178412e0d96ddd9a004cd9b62f9.css" />
   
-    <link crossorigin="anonymous" media="all" integrity="sha512-tLF7vl8nbeo3WRDlqIAgYYiEl53NFb2F58kvIEfCYd/Dgq76zXKIhZpEAO9H4wtqaV+0npnvmQF1rjAMq6b1tA==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-b4b17bbe5f276dea375910e5a8802061.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-jO7efoKVVWr0bC2+ExApdfiR6CJG9iyiOv0Nq6i/mCmMXkIoVYN3BmTFzQ6J909ZW029YAtHxEu4eHRDyWGbJQ==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-8ceede7e8295556af46c2dbe13102975.css" />
     
     
     
-    <link crossorigin="anonymous" media="all" integrity="sha512-iiK72fBJnLBFZ4awdLtCnik7g77ABo26q8xMdxoPOQgAKqV+hpf1UhKAooJegxIq8c0QADlUsKd63HVPgtRNYw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-8a22bbd9f0499cb0456786b074bb429e.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-N+FrZheHcGg/atKNKNvDrhjVIlEQBK4Vew6YrigVMSw9GOWj7afR7uLsMNXR9Zpdi4CBY3fD74VzimyAWRkm4w==" rel="stylesheet" href="https://github.githubassets.com/assets/github-37e16b66178770683f6ad28d28dbc3ae.css" />
 
   <script crossorigin="anonymous" defer="defer" integrity="sha512-CzeY4A6TiG4fGZSWZU8FxmzFFmcQFoPpArF0hkH0/J/S7UL4eed/LKEXMQXfTwiG5yEJBI+9BdKG8KQJNbhcIQ==" type="application/javascript" src="https://github.githubassets.com/assets/environment-0b3798e0.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-czQZrI8Ar39Oil36WxqNfOBo7pZqlK1CUHWZ8CF9jMxyawHGQ+lKiPtd25OvoNHZF69LfWPpafuwqxcfiG/iYA==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-733419ac.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-YOzkTPNBhsGBHTWNXcjLCxYM3ANDGkp2gejU1oLAxIG4g8VAZJlFYJX2Eo//GCdStAeiby9Y2FecMxmDQwj+Ow==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-60ece44c.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-US/IQhvG9ej4VfjEAZn++Hu2XUgXKUo/3YypnqjP1kjNCWzxGJyNw6JSFeeTcSI5KCDCi/iDdXbzi7i4TA47SQ==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-512fc842.js"></script>
   
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-U5w2SuNhe024Q+iVhaZ18HiQCUlgfujDoHEjt9JRP0MRtF4TUhuBd/Ur2yIsgVsM0Q1GSS7yDokYo8unl+F3JQ==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-539c364a.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-Nof93xeMudma5NoKgMI6z0Fk9c1wmbaj6MOpEdryrLvrJOIFcqJ8zNtpX1tEZ3ZwMrMZ5uO+MWgYUUHQnft6HA==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-3687fddf.js"></script>
   
     <script crossorigin="anonymous" defer="defer" integrity="sha512-5tWKSr7mhAzSh4Sx5YRFgKftdGxKwHKnOGYw5DlxjHhkQVURYFU3Bk5IMOGMKuAiJTlC3OXYM3xzGcyjzuEFQQ==" type="application/javascript" data-module-id="./chunk-animate-on-scroll.js" data-src="https://github.githubassets.com/assets/chunk-animate-on-scroll-e6d58a4a.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-0MZorw3oXnKy5eeSwQ9xGrKU4hxQeCXxmyxhneIHNhDIqu8vWh8mHss9FlC75Xd/bPWxFDCvdOo57tnTR46nbA==" type="application/javascript" data-module-id="./chunk-codemirror.js" data-src="https://github.githubassets.com/assets/chunk-codemirror-d0c668af.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-M6W/sGLOuJXCIkw+doDl6zl7J9q2DmqdwftQCtyEiZM/UJNGRVQdyKwI/PAMxD12se/wCx3ZcyJs9nz0o0OSVw==" type="application/javascript" data-module-id="./chunk-color-modes.js" data-src="https://github.githubassets.com/assets/chunk-color-modes-33a5bfb0.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-71HZu1T5JWqRNF9wrm2NXZAqYVvzxZ8Dvor5U5l/LuEBbGCBX57Sny60Rj+qUZZAvEBGFlNsz179DEn2HFwgVA==" type="application/javascript" data-module-id="./chunk-confetti.js" data-src="https://github.githubassets.com/assets/chunk-confetti-ef51d9bb.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-P29U0lNmhUj353VrCWp6czdhNpMtF70xVKf4GBGFVKCoqGtxp0sywAM8/46+iC0kdFiRvM13EBvDnq6oyWRwiw==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-3f6f54d2.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-arflMFcVzVAYaP2n7m7gklPChWsVsCDtRPav2Cb6bqLeJf8pgbojWJ3EseKXILCIqfxl/v6arBduZ9SLmpMEZw==" type="application/javascript" data-module-id="./chunk-delayed-loading-element.js" data-src="https://github.githubassets.com/assets/chunk-delayed-loading-element-6ab7e530.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-6j/oSF+kbW+yetNPvI684VzAu9pzug6Vj2h+3u1LdCuRhR4jnuiHZfeQKls3nxcT/S3H+oIt7FtigE/aeoj+gg==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-ea3fe848.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-VSSd+Yzi2iMS+pibY6hD/WdypxAEdob5F2RMKxuKcAHS2EpFYJPeTXoVxt0NXg03tfj2dka2mEtHS+vjpYSaDw==" type="application/javascript" data-module-id="./chunk-edit-hook-secret-element.js" data-src="https://github.githubassets.com/assets/chunk-edit-hook-secret-element-55249df9.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-XObZgIojqwx94ekra728uVPTHs30O37w4+dNCDNUrZXRnGmFRcitdymWoSEm7ztcvhzboxHmXOSP2TeoPSfQ5Q==" type="application/javascript" data-module-id="./chunk-edit.js" data-src="https://github.githubassets.com/assets/chunk-edit-5ce6d980.js"></script>
@@ -40,7 +41,7 @@
     <script crossorigin="anonymous" defer="defer" integrity="sha512-qqRgtYe+VBe9oQvKTYSA9uVb3qCKhEMl3sHdsnP8AbVRfumjSOugTCEN1YLmnniNBMXb77ty2wddblbKSaQE1Q==" type="application/javascript" data-module-id="./chunk-failbot.js" data-src="https://github.githubassets.com/assets/chunk-failbot-aaa460b5.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-YrRWJ3DBTEGQ3kU5vH0Btt+bjUcZHoTj66uIO7wFIfT1LoKJQ0Q2+UTn4rmeKn+PrnMAnQogCNC6Lka17tDncw==" type="application/javascript" data-module-id="./chunk-filter-input.js" data-src="https://github.githubassets.com/assets/chunk-filter-input-62b45627.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-Z1wcyOFQHzyMSPqp5DLKrobr3DN2Q6Dz31cfPtw4b2vPs9PX0PrxyDXHpTbIlcZ9qT1M1BNAypHKKw8Lp6Yx/Q==" type="application/javascript" data-module-id="./chunk-insights-graph.js" data-src="https://github.githubassets.com/assets/chunk-insights-graph-675c1cc8.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-gwtCVvmTqprGdoOWD5qAo64uilYKmDOqEN0XIzMX9KT9u8HabjeF9sk/819qZEcUAZbpzd7gNOU7YW0CDkaEjg==" type="application/javascript" data-module-id="./chunk-insights-query.js" data-src="https://github.githubassets.com/assets/chunk-insights-query-830b4256.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-CqT7DFJm8e7yxvsDEb2AZLpdRHyFS9eqZpu6hvJ4Vkv6ybVThoa5tgTvyNQDZyBWy6V+kWHqxd5x3SkTpHHEGw==" type="application/javascript" data-module-id="./chunk-insights-query.js" data-src="https://github.githubassets.com/assets/chunk-insights-query-0aa4fb0c.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-lmosGyye+/xONUQs9SwGN/a9fQvUSiAFk5HrL8eLHjeuOx9DX9TW5ckRKFD+6FM54vutFf/mBmNFW/0R3KJEBw==" type="application/javascript" data-module-id="./chunk-invitations.js" data-src="https://github.githubassets.com/assets/chunk-invitations-966a2c1b.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-4MxGQhsDODvZgLbu5arO6CapfnNvZ5fXMsZ47FiklUKRmHq4B3h8uTokSIWAOAxsvCMRrZr0DVZ0i0gm3RAnsg==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-e0cc4642.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-VtdawM/OSsu+d6v25ZY6UcQa/GGLAStSESjsqdEwx+ey88GNYGkQ24o+JFFo4lY+7wLMRf7aCrLxkA5SquBoNQ==" type="application/javascript" data-module-id="./chunk-launch-code-element.js" data-src="https://github.githubassets.com/assets/chunk-launch-code-element-56d75ac0.js"></script>
@@ -52,12 +53,13 @@
     <script crossorigin="anonymous" defer="defer" integrity="sha512-/fwTpG2i+GCgHEZc/35F+pXdShv1RfJMxyixcTIxzxDdylOWVJvjIWoumYWEPj7gUqBdrWt4SFf989Szmxleaw==" type="application/javascript" data-module-id="./chunk-ref-selector.js" data-src="https://github.githubassets.com/assets/chunk-ref-selector-fdfc13a4.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-D/MxBjtRPjes6DvnYGi2dEH7AQEnLvSvTODabEkSo+1zP6SSEZpb8oF52kFWERA97t1L19fF/P3bn4pgIsMPuA==" type="application/javascript" data-module-id="./chunk-responsive-underlinenav.js" data-src="https://github.githubassets.com/assets/chunk-responsive-underlinenav-0ff33106.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-SWy36S28Js+/YzsvYgmp+IEdC0qtMcBf6sYhXTEcj1aFPCLPOTOnOKqzFiNyH2oNVDd+u5Qi8eqYINSIu28LFQ==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-496cb7e9.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-FcH835sK5dmHJmGX2K6Vp4tFq7gUEykUvVXTf+7LmdLoLuYjxIGixOfLxBeCQ+1LDTJ/43bSgqmlDlN0qnGTYQ==" type="application/javascript" data-module-id="./chunk-series-table.js" data-src="https://github.githubassets.com/assets/chunk-series-table-15c1fcdf.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-46wqItV5Pi6vzI9QkKDjwgwyI2luPiKlLp+jdWUle1wUAWzUh3BX3+/DmehNua4VT0ZvvcswOISMWcWLOXCOdw==" type="application/javascript" data-module-id="./chunk-series-table.js" data-src="https://github.githubassets.com/assets/chunk-series-table-e3ac2a22.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-tk76eoSLUqXSVZ8ANzPprrOImFIV1zQ/VBV+WzG8ZjZpVPH8cLkMH/ur5HJB1lxx9/yo+V2wjDF96t4qfUwZLA==" type="application/javascript" data-module-id="./chunk-severity-calculator-element.js" data-src="https://github.githubassets.com/assets/chunk-severity-calculator-element-b64efa7a.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-j7Pb1H+2Xt4YIKSrJLLXxl/NNkkpW//5PLTpu58JGD8pqRPODDjJKqjO6YPZd++BB4VJubHPjzvuMXhW/9jcqA==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-8fb3dbd4.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-nKa3UdA2O7Ve4Jn24gaB20yUfJvS7wlnd8Q8C+iWD8i2tXLgaKemDWkLeexeQdrs+an98FCl5fOiy0J+izn+tQ==" type="application/javascript" data-module-id="./chunk-three.module.js" data-src="https://github.githubassets.com/assets/chunk-three.module-9ca6b751.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-WK8VXw3lfUQ/VRW0zlgKPhcMUqH0uTnB/KzePUPdZhCm/HpxfXXHKTGvj5C0Oex7+zbIM2ECzULbtTCT4ug3yg==" type="application/javascript" data-module-id="./chunk-toast.js" data-src="https://github.githubassets.com/assets/chunk-toast-58af155f.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-1vSZvwpr106s8wjSNFNFGVmFT2E4YjI2N8k6JqiSb28GGYMkEJUhveotmvB00Z4bQZM61ZgvWcXax1U3M48gLQ==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-d6f499bf.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-Bfdp/SnnmjBzjVCUmgPLoPD2rJY5zExYOF+BrA1f1p7Nu+XSiOTLynIGofdvypysG2EC6IHMd8ghEaBzDasaAw==" type="application/javascript" data-module-id="./chunk-unveil.js" data-src="https://github.githubassets.com/assets/chunk-unveil-05f769fd.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-UOFNW/xcxynplVfC8Y3fQdFFiasmugYUUHU4N90G8sqBZGL1yR37yjVakxV8/FV5deBALx9OQMBoiba/3OHGDA==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-50e14d5b.js"></script>
     <script crossorigin="anonymous" defer="defer" integrity="sha512-cKu/+X7gT+WVH4sXKt0g3G77bfQfcgwurRObM+dt8XylPm9eEWI+/aWKhVab6VsYuvvuI5BTriKXhXfJwaSXdQ==" type="application/javascript" data-module-id="./chunk-webgl-warp.js" data-src="https://github.githubassets.com/assets/chunk-webgl-warp-70abbff9.js"></script>
   
@@ -106,7 +108,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="D1D8:12110:18F27EF:1AE895D:60EC3E46" data-pjax-transient="true"/><meta name="html-safe-nonce" content="08b509bcbdbf0f27068f80d72dce6674548e9b24d62af07782a9ccc2be902ca8" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJEMUQ4OjEyMTEwOjE4RjI3RUY6MUFFODk1RDo2MEVDM0U0NiIsInZpc2l0b3JfaWQiOiI4NjcwNTM3MDk4MTEzODU5MTQyIiwicmVnaW9uX2VkZ2UiOiJmcmEiLCJyZWdpb25fcmVuZGVyIjoiZnJhIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="8c6d443cae34d62373d6834817e81d40dffe62b419630c85c44f1cac235c39f8" data-pjax-transient="true"/>
+  <meta name="request-id" content="DD9D:3020:3D8C6AE:3F9F26B:60F1A3C1" data-pjax-transient="true"/><meta name="html-safe-nonce" content="ea23957a5f07086dfea1e1ba1996e44d3900a16edb4da6b41a12e56f0cd93287" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJERDlEOjMwMjA6M0Q4QzZBRTozRjlGMjZCOjYwRjFBM0MxIiwidmlzaXRvcl9pZCI6IjEzOTM0NTgwNjE1NjQyODk5ODUiLCJyZWdpb25fZWRnZSI6ImZyYSIsInJlZ2lvbl9yZW5kZXIiOiJmcmEifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="d7bf6220c2aefb397da2f79fe327db996d1d05d1b0b3b5d759dd6c595d55aa8b" data-pjax-transient="true"/>
 
 
 
@@ -143,10 +145,10 @@
 
     <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS">
 
-  <meta http-equiv="x-pjax-version" content="d615b09f435bb40f8e6bb3fac778e2835b87b10380925627c998ee64084910c0">
+  <meta http-equiv="x-pjax-version" content="617dd3cb7881b767fe10f72ad4cc42c1b39ed4f7e877a738c5e5dc80d5ccffef">
   
 
-      <link crossorigin="anonymous" media="all" integrity="sha512-ku388ijMj4VK1ycHjNi3+zQuWDO2Db/qEv1nnNjXaEhFFmvr23uxrUeCxurHY7HcI9th2xXViPf6+j7Q4EIw2A==" rel="stylesheet" href="https://github.githubassets.com/assets/site-92edfcf228cc8f854ad727078cd8b7fb.css" />
+      <link crossorigin="anonymous" media="all" integrity="sha512-kWkimAnYh5GNNNzzKHa63ZSSETEbGUFFhnRwLZeRR5ORsCl8rDO6PMhSpAbXxRwFtlIj3eDiwzun6eYymjo2vg==" rel="stylesheet" href="https://github.githubassets.com/assets/site-9169229809d887918d34dcf32876badd.css" />
 
 
 
@@ -352,7 +354,7 @@
             spellcheck="false"
             autocomplete="off"
           >
-          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="CSxjlaBZkHsAmz0JFv29m4UYJuS5nvTADq3W5yrSwZaFReepxsftNnJy23r54oKscVIvKXvN2NchCkK7hZVtRg==" />
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="b11GzXmBDRDUPd4vbPTz2NdTa3rUdm9m/7v90w80S2rhRWcUpQitEfzeKP+2KGkeaJAyFOMBlyjs7usbrlrsPQ==" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
               <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -517,7 +519,7 @@
   <div style="width: 300px" data-view-component="true" class="Popover-message Box color-text-primary p-4 mt-2 mx-auto text-left color-shadow-large">
     <h4 data-view-component="true" class="color-text-primary mb-2">                Sign in to GitHub
 </h4>
-                    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/session" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="BcRZnBmAmzTFn8kAXv255VYkDYQhw7gML7+5lwDHvayXj57CEKB1CZmRiY0Xqx2Ry0cCrOFRgZYRfoBS/sNjyw==" />  <label for="login_field">
+                    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/session" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="QmaWJq/t4E28/35CYb99n54+eWJNOQrETr1WKLvJu+RRjr+tMiOH1FEDGO/aJ+CJ8qm/fXtlvKtdRvFhHsni/Q==" />  <label for="login_field">
     Username or email address
   </label>
   <input type="text" name="login" id="login_field" class="form-control input-block" autocapitalize="off" autocorrect="off" autocomplete="username" autofocus="autofocus" />
@@ -534,9 +536,9 @@
 <input type="hidden" name="allow_signup" id="allow_signup" class="form-control" />
 <input type="hidden" name="client_id" id="client_id" class="form-control" />
 <input type="hidden" name="integration" id="integration" class="form-control" />
-<input class="form-control" type="text" name="required_field_c06f" hidden="hidden" />
-<input class="form-control" type="hidden" name="timestamp" value="1626095175124" />
-<input class="form-control" type="hidden" name="timestamp_secret" value="7d542beb588ea9b9807a4a8b05905536809cfa170e3f73a81c394aa02be01d80" />
+<input class="form-control" type="text" name="required_field_853f" hidden="hidden" />
+<input class="form-control" type="hidden" name="timestamp" value="1626448833306" />
+<input class="form-control" type="hidden" name="timestamp_secret" value="247ea82421d6f56b91e76f64943d4366f31ddee79564ea9c0fd2b06ce41492e2" />
 
 
     <input type="submit" name="commit" value="Sign in" class="btn btn-primary btn-block" data-disable-with="Signing in…" />
@@ -656,12 +658,12 @@
 
   </div>
 
-            <footer class="footer mt-6 position-relative">
+            <footer class="footer pt-6 position-relative" >
   <div class="container-xl p-responsive">
     <div class="d-flex flex-wrap py-5 mb-5">
       <div class="col-12 col-lg-4 mb-5">
-        <a href="/" data-ga-click="Footer, go to home, text:home" class="color-text-primary" aria-label="Go to GitHub homepage">
-          <img src="https://github.githubassets.com/images/modules/site/icons/footer/github-logo.svg" width="84" height="30" loading="lazy" decoding="async" alt="GitHub">
+        <a href="/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to home&quot;,&quot;label&quot;:&quot;text:home&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c924e95d99d55a2c5563ff29e64b4661021bc212fc63f991f1b674ed5797a5a5" class="color-text-primary" aria-label="Go to GitHub homepage">
+          <img class="footer-logo-mktg" src="https://github.githubassets.com/images/modules/site/icons/footer/github-logo.svg" width="84" height="30" loading="lazy" decoding="async" alt="GitHub">
         </a>
 
 
@@ -669,48 +671,48 @@
       <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-lg-0 pl-lg-4">
         <h2 class="h5 mb-3 text-mono color-text-tertiary text-normal">Product</h2>
         <ul class="list-style-none color-text-secondary f5">
-          <li class="lh-condensed mb-3"><a href="/features" data-ga-click="Footer, go to features, text:features" class="Link--secondary">Features</a></li>
-          <li class="lh-condensed mb-3"><a href="/security" data-ga-click="Footer, go to security, text:security" class="Link--secondary">Security</a></li>
-          <li class="lh-condensed mb-3"><a href="/team" data-ga-click="Footer, go to team, text:team" class="Link--secondary">Team</a></li>
-          <li class="lh-condensed mb-3"><a href="/enterprise" data-ga-click="Footer, go to enterprise, text:enterprise" class="Link--secondary">Enterprise</a></li>
-          <li class="lh-condensed mb-3"><a href="/customer-stories?type=enterprise" data-ga-click="Footer, go to customer stories, text:customer stories" class="Link--secondary">Customer stories</a></li>
-          <li class="lh-condensed mb-3"><a href="/readme" data-ga-click="Footer, go to the readme project, text:the readme project" class="Link--secondary">The ReadME Project</a></li>
-          <li class="lh-condensed mb-3"><a href="/pricing" data-ga-click="Footer, go to pricing, text:pricing" class="Link--secondary">Pricing</a></li>
-          <li class="lh-condensed mb-3"><a href="https://resources.github.com" data-ga-click="Footer, go to resources, text:resources" class="Link--secondary">Resources</a></li>
-          <li class="lh-condensed mb-3"><a href="https://github.com/github/roadmap" data-ga-click="Footer, go to roadmap, text:roadmap" class="Link--secondary">Roadmap</a></li>
+          <li class="lh-condensed mb-3"><a href="/features" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to features&quot;,&quot;label&quot;:&quot;text:features&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7152b4e980d94eba46cb1e604a1db20ee85c59dad4d7b1799f9d7025d245e19e" class="Link--secondary">Features</a></li>
+          <li class="lh-condensed mb-3"><a href="/security" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a1f24cb25dcaf41fb26355a59f0364a17d7da5f146023a095b7770f1e8cec05a" class="Link--secondary">Security</a></li>
+          <li class="lh-condensed mb-3"><a href="/team" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to team&quot;,&quot;label&quot;:&quot;text:team&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0512c7fe9935b3b71603ad95953a252cdef34ad7e440fc384e9131c80e8b08fe" class="Link--secondary">Team</a></li>
+          <li class="lh-condensed mb-3"><a href="/enterprise" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to enterprise&quot;,&quot;label&quot;:&quot;text:enterprise&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="97243bb8ef700d29a11af8521cc920f43e687af9257888951bbb0f3732ae6232" class="Link--secondary">Enterprise</a></li>
+          <li class="lh-condensed mb-3"><a href="/customer-stories?type=enterprise" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to customer stories&quot;,&quot;label&quot;:&quot;text:customer stories&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="dddec57228c9f3f7de7d48a879890eb1735adecca80c474b482662d8ab6622ec" class="Link--secondary">Customer stories</a></li>
+          <li class="lh-condensed mb-3"><a href="/readme" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to the readme project&quot;,&quot;label&quot;:&quot;text:the readme project&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="678725d824e4b55514ab912ceb6e9ebd57e9a49a65ba3a972677405b55bc80b8" class="Link--secondary">The ReadME Project</a></li>
+          <li class="lh-condensed mb-3"><a href="/pricing" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to pricing&quot;,&quot;label&quot;:&quot;text:pricing&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="59bfe13ed0b82fdd22c0aaa0fc930c14a36995423d41756032f570db02e4e079" class="Link--secondary">Pricing</a></li>
+          <li class="lh-condensed mb-3"><a href="https://resources.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to resources&quot;,&quot;label&quot;:&quot;text:resources&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="153b86178903de87fecde646a15149f33c79bfc5bf5ef74055e2b82f6da31d87" class="Link--secondary">Resources</a></li>
+          <li class="lh-condensed mb-3"><a href="https://github.com/github/roadmap" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to roadmap&quot;,&quot;label&quot;:&quot;text:roadmap&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2adf8210735bbdb054726edae696fe5a35ee1b1eadd7a6e81eefe8de10aece91" class="Link--secondary">Roadmap</a></li>
         </ul>
       </div>
       <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
         <h2 class="h5 mb-3 text-mono color-text-tertiary text-normal">Platform</h2>
         <ul class="list-style-none f5">
-          <li class="lh-condensed mb-3"><a href="https://docs.github.com" data-ga-click="Footer, go to api, text:api" class="Link--secondary">Developer API</a></li>
-          <li class="lh-condensed mb-3"><a href="https://partner.github.com/" data-ga-click="Footer, go to partner, text:partner" class="Link--secondary">Partners</a></li>
-          <li class="lh-condensed mb-3"><a href="https://atom.io" data-ga-click="Footer, go to atom, text:atom" class="Link--secondary">Atom</a></li>
-          <li class="lh-condensed mb-3"><a href="https://www.electronjs.org" data-ga-click="Footer, go to electron, text:electron" class="Link--secondary">Electron</a></li>
-          <li class="lh-condensed mb-3"><a href="https://desktop.github.com/" data-ga-click="Footer, go to desktop, text:desktop" class="Link--secondary">GitHub Desktop</a></li>
+          <li class="lh-condensed mb-3"><a href="https://docs.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0c9df01dd15de8924ab3e722db05c450be55478c346e50468f35531f3328466e" class="Link--secondary">Developer API</a></li>
+          <li class="lh-condensed mb-3"><a href="https://partner.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to partner&quot;,&quot;label&quot;:&quot;text:partner&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e30b72bbaa4702241268c974de7cc04d2bea69dc5b643e88fbe37ab3e81d3a15" class="Link--secondary">Partners</a></li>
+          <li class="lh-condensed mb-3"><a href="https://atom.io" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to atom&quot;,&quot;label&quot;:&quot;text:atom&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f7916bd7411a7c40e998773cd6a8625e40a5c546e93f00adb9d1fd8af3f18ebe" class="Link--secondary">Atom</a></li>
+          <li class="lh-condensed mb-3"><a href="https://www.electronjs.org" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to electron&quot;,&quot;label&quot;:&quot;text:electron&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c409f30ad319367932e8d135099dd3b06742017fef6d44cbef1544cdbf6f4aef" class="Link--secondary">Electron</a></li>
+          <li class="lh-condensed mb-3"><a href="https://desktop.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to desktop&quot;,&quot;label&quot;:&quot;text:desktop&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7c5f37bdc0d59db76d10c00236058f5fc486295c9ffbfdbcb73685034f3f184f" class="Link--secondary">GitHub Desktop</a></li>
         </ul>
       </div>
       <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
         <h2 class="h5 mb-3 text-mono color-text-tertiary text-normal">Support</h2>
         <ul class="list-style-none f5">
           <li class="lh-condensed mb-3"><a data-ga-click="Footer, go to help, text:Docs" class="Link--secondary " href="https://docs.github.com">Docs</a></li>
-          <li class="lh-condensed mb-3"><a href="https://github.community" data-ga-click="Footer, go to community, text:community" class="Link--secondary">Community Forum</a></li>
-          <li class="lh-condensed mb-3"><a href="https://services.github.com/" data-ga-click="Footer, go to professional services, text:professional services" class="Link--secondary">Professional Services</a></li>
-          <li class="lh-condensed mb-3"><a href="https://lab.github.com/" data-ga-click="Footer, go to learning lab, text:learning lab" class="Link--secondary">Learning Lab</a></li>
-          <li class="lh-condensed mb-3"><a href="https://www.githubstatus.com/" data-ga-click="Footer, go to status, text:status" class="Link--secondary">Status</a></li>
-          <li class="lh-condensed mb-3"><a href="https://support.github.com" data-ga-click="Footer, go to contact, text:contact" class="Link--secondary">Contact GitHub</a></li>
+          <li class="lh-condensed mb-3"><a href="https://github.community" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;text:community&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="abddac37d8fb3b4875d5c9a8967db4d42afe7dfa050a869834f0db7c7b4a6376" class="Link--secondary">Community Forum</a></li>
+          <li class="lh-condensed mb-3"><a href="https://services.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to professional services&quot;,&quot;label&quot;:&quot;text:professional services&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="482142c0c7a60132e0e3819ca8bccb942bec8ad755ee3891100de408d7599db4" class="Link--secondary">Professional Services</a></li>
+          <li class="lh-condensed mb-3"><a href="https://lab.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to learning lab&quot;,&quot;label&quot;:&quot;text:learning lab&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5c8af5134969eeb49ea4dba5d6d73974d9b43172db63953a8490da18ab3e700c" class="Link--secondary">Learning Lab</a></li>
+          <li class="lh-condensed mb-3"><a href="https://www.githubstatus.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="1b05d3ec8a45353f7da0c2c6196a46a0474d9ac3ff6e3548bc1690fcd845100c" class="Link--secondary">Status</a></li>
+          <li class="lh-condensed mb-3"><a href="https://support.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6c1a11878942618be34c8fc8bce20f5237574cd34051ac78aafb58709d0a4506" class="Link--secondary">Contact GitHub</a></li>
         </ul>
       </div>
       <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
         <h2 class="h5 mb-3 text-mono color-text-tertiary text-normal">Company</h2>
         <ul class="list-style-none f5">
-          <li class="lh-condensed mb-3"><a data-ga-click="Footer, go to about, text:about" class="Link--secondary " href="https://github.com/about">About</a></li>
-          <li class="lh-condensed mb-3"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog" class="Link--secondary">Blog</a></li>
-          <li class="lh-condensed mb-3"><a href="/about/careers" data-ga-click="Footer, go to careers, text:careers" class="Link--secondary">Careers</a></li>
-          <li class="lh-condensed mb-3"><a href="/about/press" data-ga-click="Footer, go to press, text:press" class="Link--secondary">Press</a></li>
-          <li class="lh-condensed mb-3"><a href="/about/diversity" data-ga-click="Footer, go to diversity, text:Inclusion" class="Link--secondary">Inclusion</a></li>
-          <li class="lh-condensed mb-3"><a href="https://socialimpact.github.com/" data-ga-click="Footer, go to social impact, text:social impact" class="Link--secondary">Social Impact</a></li>
-          <li class="lh-condensed mb-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop" class="Link--secondary">Shop</a></li>
+          <li class="lh-condensed mb-3"><a data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to about&quot;,&quot;label&quot;:&quot;text:about&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a0bbf1b0222e0ae3211d0631317348104e8c5c29a499d8818c1a572f44ed0a64" class="Link--secondary" href="https://github.com/about">About</a></li>
+          <li class="lh-condensed mb-3"><a href="https://github.blog" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="18dbed7aacfc728c815877301c71d0f18b7cbce4fe921e86d0d41981bd830b2f" class="Link--secondary">Blog</a></li>
+          <li class="lh-condensed mb-3"><a href="/about/careers" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to careers&quot;,&quot;label&quot;:&quot;text:careers&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="33e7ba857167829ae8bd8f35bb6e206487e6da7896c9863be075e6eb12c2e9b5" class="Link--secondary">Careers</a></li>
+          <li class="lh-condensed mb-3"><a href="/about/press" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to press&quot;,&quot;label&quot;:&quot;text:press&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8981cacc87f43ceefdd045b1b63b9451d671a92155ad4168ac0b65f01d567dcf" class="Link--secondary">Press</a></li>
+          <li class="lh-condensed mb-3"><a href="/about/diversity" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to diversity&quot;,&quot;label&quot;:&quot;text:Inclusion&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a009649afe43a022f27e7fd51ddb76c70380b30bd45d856ebcce5b141bb109d4" class="Link--secondary">Inclusion</a></li>
+          <li class="lh-condensed mb-3"><a href="https://socialimpact.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to social impact&quot;,&quot;label&quot;:&quot;text:social impact&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0569d9046ab39a9b9a554c568cecde7b2c53cd008852b833276c9d0521907e6b" class="Link--secondary">Social Impact</a></li>
+          <li class="lh-condensed mb-3"><a href="https://shop.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to shop&quot;,&quot;label&quot;:&quot;text:shop&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="19efcb008dd53a4a4b384588620c251ccffe88f782572314ffd531ae6d43b702" class="Link--secondary">Shop</a></li>
         </ul>
       </div>
     </div>
@@ -719,31 +721,31 @@
     <div class="container-xl p-responsive f6 py-4 d-sm-flex flex-justify-between flex-row-reverse flex-items-center">
       <ul class="list-style-none d-flex flex-items-center mb-3 mb-sm-0 lh-condensed-ultra">
         <li class="mr-3">
-          <a href="https://twitter.com/github" data-ga-click="Footer, go to Twitter, text:twitter" class="color-gray-4">
+          <a href="https://twitter.com/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Twitter&quot;,&quot;label&quot;:&quot;text:twitter&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c96c9b99c69b683a48fdb0a75adbc6b6d730dba85ae8c9fdf6509e5823b4542d" class="color-gray-4">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/twitter.svg" height="18" class="d-block" loading="lazy" decoding="async" alt="Twitter icon">
             <span class="sr-only">GitHub on Twitter</span>
           </a>
         </li>
         <li class="mr-3">
-          <a href="https://www.facebook.com/GitHub" data-ga-click="Footer, go to Facebook, text:facebook" class="color-gray-4">
+          <a href="https://www.facebook.com/GitHub" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Facebook&quot;,&quot;label&quot;:&quot;text:facebook&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8ca2244fa17028f7f400f317c0c3380ebeb93613410ba6c7812fbfa3444adb77" class="color-gray-4">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/facebook.svg" height="18" class="d-block" loading="lazy" decoding="async" alt="Facebook icon">
             <span class="sr-only">GitHub on Facebook</span>
           </a>
         </li>
         <li class="mr-3">
-          <a href="https://www.youtube.com/github" data-ga-click="Footer, go to YouTube, text:youtube" class="color-gray-4">
+          <a href="https://www.youtube.com/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to YouTube&quot;,&quot;label&quot;:&quot;text:youtube&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="ec14dd0033841966899a84c326f844924bc207f787bd241275464ecd926d9af6" class="color-gray-4">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/youtube.svg" height="16" class="d-block" loading="lazy" decoding="async" alt="YouTube icon">
             <span class="sr-only">GitHub on YouTube</span>
           </a>
         </li>
         <li class="mr-3 flex-self-start">
-          <a href="https://www.linkedin.com/company/github" data-ga-click="Footer, go to Linkedin, text:linkedin" class="color-gray-4">
+          <a href="https://www.linkedin.com/company/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Linkedin&quot;,&quot;label&quot;:&quot;text:linkedin&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="69c16a82e0702bb758ff2470aab3f7a42d4b6141d156db6424543f978cd1b3fc" class="color-gray-4">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/linkedin.svg" height="18" class="d-block" loading="lazy" decoding="async" alt="Linkedin icon">
             <span class="sr-only">GitHub on LinkedIn</span>
           </a>
         </li>
         <li>
-          <a href="https://github.com/github" data-ga-click="Footer, go to github's org, text:github" class="color-gray-4">
+          <a href="https://github.com/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to github&#39;s org&quot;,&quot;label&quot;:&quot;text:github&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2522c01856b4cfe9c8417aa960a0c155769ab4d298583a4a85849216d5279b39" class="color-gray-4">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg" height="20" class="d-block" loading="lazy" decoding="async" alt="GitHub mark">
             <span class="sr-only">GitHub’s organization on GitHub</span>
           </a>
@@ -751,10 +753,10 @@
       </ul>
       <ul class="list-style-none d-flex flex-wrap color-text-secondary">
         <li class="mr-3">&copy; 2021 GitHub, Inc.</li>
-        <li class="mr-3"><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-ga-click="Footer, go to terms, text:terms" class="Link--secondary">Terms</a></li>
-        <li class="mr-3"><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-ga-click="Footer, go to privacy, text:privacy" class="Link--secondary">Privacy</a></li>
-        <li class="mr-3"><a href="/site-map" data-ga-click="Footer, go to site map, text:site map" class="Link--secondary">Site Map</a></li>
-        <li><a href="/git-guides" data-ga-click="Footer, go to Git Guides, text:What is Git?" class="Link--secondary">What is Git?</a></li>
+        <li class="mr-3"><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="44460f02b9afe8225d92aee7a1f04e9842769e6d6e1bffc90d94a21c7cf61501" class="Link--secondary">Terms</a></li>
+        <li class="mr-3"><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5d77b0abb2e1a0a2f7a27b956a42670ccc75f62e478fe97f94d368931e67fe65" class="Link--secondary">Privacy</a></li>
+        <li class="mr-3"><a href="/site-map" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to site map&quot;,&quot;label&quot;:&quot;text:site map&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="01a5fbb34997c19ac2ac4f8851bfb07fdd42d11a1a0ea11d54c221ac8f1b134e" class="Link--secondary">Site Map</a></li>
+        <li><a href="/git-guides" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Git Guides&quot;,&quot;label&quot;:&quot;text:What is Git?&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6f0fdeaffdbb1ef4240bcc75ee1faaadbccf6f0d15691eb9c610811ee03460c2" class="Link--secondary">What is Git?</a></li>
       </ul>
     </div>
   </div>
