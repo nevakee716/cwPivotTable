@@ -14,6 +14,11 @@
     };
   }
 
+  cwPivotTable.prototype.getDefaultColor = function (i) {
+    let d = ["#5DA5DA", "#FAA43A", "#60BD68", "#F15854", "#4D4D4D", "#F17CB0", ",#5ddac5", "#B276B2", "#5d65da", "#ceda5d"];
+    if (i > d.length - 1) return tinycolor.random().toHexString();
+    return i === null ? d : d[i];
+  };
   cwPivotTable.prototype.applyJavaScript = function () {
     var self = this;
     var libToLoad = [];
@@ -318,21 +323,21 @@
     }
   };
 
-  cwPivotTable.prototype.getColor = function (object_prop, valueLabel) {
+  cwPivotTable.prototype.getColor = function (object_prop, i, valueLabel) {
     let conf;
-    if (!this.propConfig) return;
+    if (!this.propConfig) return this.getDefaultColor(i);
     if (!this.labels[object_prop]) {
       if (this.propConfig.hardcoded && this.propConfig.hardcoded[valueLabel]) {
         conf = this.propConfig.hardcoded[valueLabel];
         return conf.iconColor ? conf.iconColor : conf.valueColor;
       }
-      return;
+      return this.getDefaultColor(i);
     }
     let objectTypeScriptName = this.labels[object_prop].objectTypeScriptName;
     let propScriptname = this.labels[object_prop].property;
     if (this.propConfig[objectTypeScriptName] && this.propConfig[objectTypeScriptName][propScriptname]) {
       let prop = cwApi.mm.getProperty(objectTypeScriptName, propScriptname);
-      if (!prop) return;
+      if (!prop) return this.getDefaultColor(i);
 
       let lookupId;
       prop.lookups.forEach(function (l) {
@@ -346,6 +351,7 @@
       conf = this.propConfig.hardcoded[valueLabel];
       return conf.iconColor ? conf.iconColor : conf.valueColor;
     }
+    return this.getDefaultColor(i);
   };
 
   cwPivotTable.prototype.clickOnPlotly = function (pivotData, data) {

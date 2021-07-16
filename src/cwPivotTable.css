@@ -88,6 +88,13 @@
 .cwPivotTable table.pvtUi .pvtAxisContainer.pvtRows.pvtUiCell {
   overflow: auto;
 }
+.cwPivotTable table.pvtUi td.pvtAxisContainer {
+  height: 100%;
+}
+.cwPivotTable table.pvtUi td.pvtAxisContainer .wrapperFiltered {
+  height: 100%;
+  overflow: auto;
+}
 .cwPivotTable .pvtFilterBox .pvtCheckContainer label {
   display: flex;
 }
