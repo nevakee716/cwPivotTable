@@ -203,3 +203,22 @@ table.pvtTable thead th.pvtAxisLabel {
   border-width: 1px;
   border-style: dashed;
 }
+
+//loading
+
+.pivotTableLoadingElement.fa.fa-circle-o-notch.fa-spin {
+  font-size: 44px;
+}
+
+.pivotLoadingElementWrapper {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20000;
+  height: 100%;
+  width:100%;
+  top:-100%;
+  color: @cwLoadingIconColor;
+  background-color: white;
+}

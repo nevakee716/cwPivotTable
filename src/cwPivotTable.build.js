@@ -22,6 +22,8 @@
   cwPivotTable.prototype.applyJavaScript = function () {
     var self = this;
     var libToLoad = [];
+    var pivotWrapper = document.getElementById("cwPivotWrapper" + this.nodeID);
+    this.createLoadingElement(pivotWrapper);
     if (this.init === false) {
       this.init = true;
       if (cwAPI.isDebugMode() === true) {
@@ -106,6 +108,7 @@
       $(".selectPivotConfiguration_" + this.nodeID)[0].children[1].children[0].appendChild(this.createAddButton());
     }
 
+
     this.renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.plotly_renderers, $.pivotUtilities.export_renderers);
     let lang = cwApi.getSelectedLanguage();
     lang = lang == "fr" || lang == "it" ? lang : "en";
@@ -149,6 +152,7 @@
     this.pivotUI = $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, this.pivotCurrentConfiguration);
 
     this.manageButton();
+
     // Event for filter
     // Load a new network
     var saveButton = document.getElementById("pivotConfigurationSaveButton_" + this.nodeID);
@@ -163,8 +167,10 @@
         $("select.selectPivotConfiguration_" + this.nodeID).each(function (index) {
           // put values into filters
           $(this).selectpicker("val", startCwApiPivot.label); //init cwAPInetworkfilter
+          self.hideLoading();
+          self.onRefresh();
         });
-      }
+      } else  self.hideLoading();
     } else {
       setTimeout(function () {
         var optionButton = document.getElementById("cwPivotButtonsOption" + self.nodeID);
@@ -174,9 +180,28 @@
         self.manageEventButton("Option", event, true);
         setTimeout(function () {
           self.manageEventButton("Option", event);
+          self.hideLoading();
         }, 500);
       }, 500);
     }
+
+    // Event for filter
+    $(".selectPivotConfiguration_" + this.nodeID).on("changed.bs.select", function (e, clickedIndex, newValue, oldValue) {
+      var  id,  config;
+      if (clickedIndex !== undefined && $(this).context.children && $(this).context.children[clickedIndex]) {
+        id = $(this).context.children[clickedIndex].id;
+        if (id != 0) {
+          config = self.pivotConfiguration.pivots[id].configuration;
+          self.pivotConfiguration.selected = self.pivotConfiguration.pivots[id];
+          self.loadCwApiPivot(config);
+
+          self.onRefresh();
+        }
+      }
+      if (cwAPI.isDebugMode() === true) console.log("PIVOT set");
+    });
+
+        
   };
 
   cwPivotTable.prototype.onRefresh = function () {
