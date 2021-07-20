@@ -102,6 +102,15 @@
     visibility: hidden;
     background-color: transparent;
     border: none;
+    padding: 0px;
+    select.pvtAggregator {
+      padding: 0px;
+      height: 0px;
+    }
+    li {
+      padding: 0px 0px;
+      height: 0px;
+    }
   }
   .pvtUiCell .pvtRenderer,
   .pvtUiCell .pvtAttrDropdown,
@@ -212,13 +221,13 @@ table.pvtTable thead th.pvtAxisLabel {
 
 .pivotLoadingElementWrapper {
   position: relative;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 20000;
   height: 100%;
-  width:100%;
-  top:-100%;
+  width: 100%;
+  top: -100%;
   color: @cwLoadingIconColor;
   background-color: white;
 }

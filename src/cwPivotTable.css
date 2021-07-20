@@ -113,6 +113,15 @@
   visibility: hidden;
   background-color: transparent;
   border: none;
+  padding: 0px;
+}
+.cwPivotTable .cw-hiddenByVisibility select.pvtAggregator {
+  padding: 0px;
+  height: 0px;
+}
+.cwPivotTable .cw-hiddenByVisibility li {
+  padding: 0px 0px;
+  height: 0px;
 }
 .cwPivotTable .pvtUiCell .pvtRenderer,
 .cwPivotTable .pvtUiCell .pvtAttrDropdown,

@@ -24,6 +24,7 @@
     var libToLoad = [];
     var pivotWrapper = document.getElementById("cwPivotWrapper" + this.nodeID);
     this.createLoadingElement(pivotWrapper);
+    this.displayLoading();
     if (this.init === false) {
       this.init = true;
       if (cwAPI.isDebugMode() === true) {
@@ -108,7 +109,6 @@
       $(".selectPivotConfiguration_" + this.nodeID)[0].children[1].children[0].appendChild(this.createAddButton());
     }
 
-
     this.renderers = $.extend($.pivotUtilities.renderers, $.pivotUtilities.plotly_renderers, $.pivotUtilities.export_renderers);
     let lang = cwApi.getSelectedLanguage();
     lang = lang == "fr" || lang == "it" ? lang : "en";
@@ -170,7 +170,7 @@
           self.hideLoading();
           self.onRefresh();
         });
-      } else  self.hideLoading();
+      } else self.hideLoading();
     } else {
       setTimeout(function () {
         var optionButton = document.getElementById("cwPivotButtonsOption" + self.nodeID);
@@ -187,7 +187,7 @@
 
     // Event for filter
     $(".selectPivotConfiguration_" + this.nodeID).on("changed.bs.select", function (e, clickedIndex, newValue, oldValue) {
-      var  id,  config;
+      var id, config;
       if (clickedIndex !== undefined && $(this).context.children && $(this).context.children[clickedIndex]) {
         id = $(this).context.children[clickedIndex].id;
         if (id != 0) {
@@ -200,8 +200,6 @@
       }
       if (cwAPI.isDebugMode() === true) console.log("PIVOT set");
     });
-
-        
   };
 
   cwPivotTable.prototype.onRefresh = function () {
@@ -219,7 +217,7 @@
     let filters = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtAxisContainer.pvtUnused");
     let pvtRendererArea = document.querySelector("#cwPivotTable" + this.nodeID + " .pvtRendererArea");
 
-    t.style.width = "100%";
+    if (t) t.style.width = "100%";
     if (this.config.ui) {
       if (this.config.hideColumn) this.hideColumn();
       else this.showColumn();
@@ -231,17 +229,9 @@
       else this.showFilter();
 
       if (this.config.hideOption) {
-        // this.hideOption();
-        agreg.style.visibility = "hidden";
-        renderer.style.visibility = "hidden";
-        agreg.style.height = "0px";
-        renderer.style.height = "0px";
+        this.hideOption();
       } else {
-        //  this.showOption();
-        agreg.style.visibility = "visible";
-        renderer.style.visibility = "visible";
-        agreg.style.height = "unset";
-        renderer.style.height = "unset";
+        this.showOption();
       }
 
       var cth = function (thead, width) {
