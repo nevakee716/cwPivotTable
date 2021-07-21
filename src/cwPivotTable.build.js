@@ -28,7 +28,7 @@
     if (this.init === false) {
       this.init = true;
       if (cwAPI.isDebugMode() === true) {
-        self.createPivot();
+        self.loadDisplayLayout();
       } else {
         libToLoad = [
           "modules/bootstrap/bootstrap.min.js",
@@ -43,7 +43,7 @@
             libToLoad = ["modules/pivotPlotyrender/pivotPlotyrender.min.js", "modules/pivotExport/pivotExport.min.js"];
             cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function (error) {
               if (error === null) {
-                self.createPivot();
+                self.loadDisplayLayout();
               } else {
                 cwAPI.Log.Error(error);
               }
@@ -53,6 +53,27 @@
           }
         });
       }
+    }
+  };
+
+  cwPivotTable.prototype.loadDisplayLayout = function () {
+    let self = this;
+    let container = $("#cwPivotWrapper" + this.nodeID);
+    var parentTable = container.parents("div.tab-content");
+    var loaded = false;
+
+    if (parentTable && parentTable.length === 0) {
+      self.createPivot();
+    } else {
+      var tabHidden;
+      setInterval(function () {
+        tabHidden = parentTable.css("visibility") == "hidden";
+        if (!tabHidden && loaded === false) {
+          loaded = true;
+          self.createPivot();
+          console.log("load pivot " + self.nodeID);
+        }
+      }, 200);
     }
   };
 
@@ -203,7 +224,7 @@
   };
 
   cwPivotTable.prototype.onRefresh = function () {
-    console.log("refresh " + this.nodeID);
+    //console.log("refresh " + this.nodeID);
     if (this.config.hideTotals === true) this.hideTotal();
 
     var self = this;

@@ -15,7 +15,7 @@
   }
 
   cwPivotTable.prototype.createLoadingElement = function (container) {
-    console.log("Create loading " + this.nodeID);
+    //.log("Create loading " + this.nodeID);
     var a = document.createElement("a");
     a.id = "pivotLoadingElementWrapper_" + this.nodeID;
     a.className = "pivotLoadingElementWrapper cw-hidden";
@@ -24,13 +24,13 @@
   };
 
   cwPivotTable.prototype.displayLoading = function () {
-    console.log("display loading " + this.nodeID);
+    // console.log("display loading " + this.nodeID);
     let loadingElement = document.getElementById("pivotLoadingElementWrapper_" + this.nodeID);
     if (loadingElement) loadingElement.classList.remove("cw-hidden");
   };
 
   cwPivotTable.prototype.hideLoading = function () {
-    console.log("Hide loading " + this.nodeID);
+    //console.log("Hide loading " + this.nodeID);
     let loadingElement = document.getElementById("pivotLoadingElementWrapper_" + this.nodeID);
     if (loadingElement) loadingElement.classList.add("cw-hidden");
   };
