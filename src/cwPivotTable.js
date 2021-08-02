@@ -40,6 +40,8 @@
     if (this.config.cardinalNodes === undefined) this.config.cardinalNodes = [];
     if (this.config.cols === undefined) this.config.cols = [];
     if (this.config.rows === undefined) this.config.rows = [];
+    if (this.config.exclusions === undefined) this.config.exclusions = [];
+    if (this.config.inclusions === undefined) this.config.inclusions = [];
     if (this.config.aggregatorName === undefined) this.config.aggregatorName = "Count";
     if (this.config.rendererName === undefined) this.config.rendererName = "Table";
     if (this.config.hiddenAttributes === undefined) this.config.hiddenAttributes = [];

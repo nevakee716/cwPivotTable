@@ -155,6 +155,8 @@
           legend: this.config.legend,
         },
       },
+      exclusions: this.config.exclusions,
+      inclusions: this.config.inclusions,
       unusedAttrsVertical: !this.config.verticalDisplay,
       hiddenFromDragDrop: this.config.hiddenFromDragDrop,
       derivedAttributes: this.dataDerivers(),
