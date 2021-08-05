@@ -225,10 +225,19 @@
     });
   };
 
-  cwPivotTable.prototype.onRefresh = function () {
+  cwPivotTable.prototype.onRefresh = function (pivotConfig) {
     //console.log("refresh " + this.nodeID);
     if (this.config.hideTotals === true) this.hideTotal();
+    if (pivotConfig) {
+      this.config.cols = pivotConfig.cols;
+      this.config.rows = pivotConfig.rows;
+      this.config.exclusions = pivotConfig.exclusions;
+      this.config.inclusions = pivotConfig.inclusions;
+      this.config.aggregatorName = pivotConfig.aggregatorName;
+      this.config.rendererName = pivotConfig.rendererName;
+    }
 
+    if (this.apply) this.apply();
     var self = this;
     let pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
     let t = document.querySelector("#cwPivotTable" + this.nodeID + " table.pvtUi");
@@ -495,6 +504,11 @@
       setTimeout(this.hideTotal, 3000);
     }
     if (!noEvent) totalButton.addEventListener("click", self.manageEventButton.bind(this, "Total"));
+
+    var expertModeButton = document.getElementById("cwPivotExpertMode" + this.nodeID);
+    if (expertModeButton) {
+      expertModeButton.addEventListener("click", self.manageExpertModeButton.bind(this));
+    }
   };
 
   cwPivotTable.prototype.manageEventButton = function (buttonId, event, noRefresh) {
@@ -585,6 +599,325 @@
         }
       }
     });
+  };
+
+  // manage Expert Mode
+  cwPivotTable.prototype.manageExpertModeButton = function (event) {
+    var self = this;
+    cwApi.CwAsyncLoader.load("angular", function () {
+      if (self.expertMode === true) {
+        self.expertMode = false;
+        event.target.title = $.i18n.prop("activate_expert_mode");
+        event.target.classList.remove("selected");
+        cwAPI.CwPopout.hide();
+      } else {
+        self.expertMode = true;
+        event.target.title = $.i18n.prop("deactivate_expert_mode");
+        event.target.classList.add("selected");
+        cwApi.CwPopout.showPopout($.i18n.prop("expert_mode"));
+
+        cwApi.CwPopout.setContent(self.createExpertModeElement());
+        self.setEventForExpertMode();
+        self.selectTab("pivotTableNodes");
+        self.selectTab("pivotTableNodes");
+        cwApi.CwPopout.onClose(function () {
+          self.expertMode = false;
+          event.target.title = $.i18n.prop("activate_expert_mode");
+        });
+      }
+    });
+  };
+
+  // manage Expert Mode
+  cwPivotTable.prototype.createExpertModeElement = function () {
+    var self = this;
+    var tab = [];
+    var tabs = ["pivotTableNodes", "PivotTable"]; //, "general"];
+    var expertModeConfig = document.createElement("div");
+    expertModeConfig.className = "cwPivotTableExpertModeConfig";
+    expertModeConfig.id = "cwPivotTableExpertModeConfig" + this.nodeID;
+
+    var cwPivotTableExpertModeContainerTab = document.createElement("div");
+    cwPivotTableExpertModeContainerTab.className = "cwPivotTableExpertModeContainerTab";
+    cwPivotTableExpertModeContainerTab.id = "cwPivotTableExpertModeContainerTab" + this.nodeID;
+    expertModeConfig.appendChild(cwPivotTableExpertModeContainerTab);
+
+    var expertModeContainer = document.createElement("div");
+    expertModeContainer.className = "cwPivotTableExpertModeContainer";
+    expertModeContainer.id = "cwPivotTableExpertModeContainer";
+
+    var treeContainer = document.createElement("div");
+    treeContainer.id = "cwPivotTableExpertModeNodesConfigTree" + this.nodeID;
+    treeContainer.className = "cwPivotTableExpertModeNodesConfigTree";
+
+    expertModeConfig.appendChild(treeContainer);
+    expertModeConfig.appendChild(expertModeContainer);
+
+    tabs.forEach(function (t) {
+      let tab = document.createElement("div");
+      tab.className = "cwPivotTableExpertModeTabs";
+      tab.id = t;
+      tab.innerText = $.i18n.prop(t);
+      cwPivotTableExpertModeContainerTab.appendChild(tab);
+    });
+    let tabElem = document.createElement("div");
+    tabElem.className = "cwPivotTableExpertModeTabs";
+    tabElem.id = "saveconfiguration";
+    tabElem.innerHTML = '<i class="fa fa-floppy-o" aria-hidden="true"></i>';
+    cwPivotTableExpertModeContainerTab.appendChild(tabElem);
+
+    return expertModeConfig;
+  };
+
+  cwPivotTable.prototype.selectTab = function (id) {
+    var self = this,
+      loader = cwApi.CwAngularLoader;
+    loader.setup();
+
+    let treeElem = document.getElementById("cwPivotTableExpertModeNodesConfigTree" + this.nodeID);
+    if (id === "saveconfiguration") {
+      cwAPI.customLibs.utils.copyToClipboard(JSON.stringify(this.config));
+      treeElem.style.display = "none";
+    } else if (id === "PivotTable") {
+      treeElem.style.display = "none";
+    } else {
+      treeElem.style.display = "block";
+    }
+    let templatePath = cwAPI.getCommonContentPath() + "/html/cwPivotTable/" + id + ".ng.html" + "?" + Math.random();
+    this.unselectTabs();
+    let t = document.querySelector("#" + id);
+    t.className += " selected";
+
+    var $container = $("#cwPivotTableExpertModeContainer");
+
+    loader.loadControllerWithTemplate(t.id, $container, templatePath, function ($scope) {
+      $scope.metamodel = cwAPI.mm.getMetaModel();
+      $scope.config = self.config;
+      $scope.cwApi = cwApi;
+
+      $scope.toggle = function (c, e) {
+        if (c.hasOwnProperty(e)) delete c[e];
+        else c[e] = true;
+      };
+
+      $scope.toggleArray = function (c, e) {
+        var i = c.indexOf(e);
+        if (i === -1) c.push(e);
+        else c.splice(i, 1);
+      };
+      $scope.isSelected = function (c, e) {
+        var i = c.indexOf(e);
+        if (i === -1) return "";
+        else return "selected";
+      };
+
+      if (self["controller_" + t.id] && $scope.config) self["controller_" + t.id]($container, templatePath, $scope);
+    });
+  };
+  cwPivotTable.prototype.setEventForExpertMode = function () {
+    var self = this;
+    let matches = document.querySelectorAll(".cwPivotTableExpertModeTabs");
+    for (let i = 0; i < matches.length; i++) {
+      let t = matches[i];
+      t.addEventListener("click", function (event) {
+        self.selectTab(t.id);
+      });
+    }
+  };
+
+  cwPivotTable.prototype.unselectTabs = function (tabs) {
+    let matches = document.querySelectorAll(".cwPivotTableExpertModeTabs");
+    for (let i = 0; i < matches.length; i++) {
+      let t = matches[i];
+      t.className = t.className.replaceAll(" selected", "");
+    }
+  };
+
+  cwPivotTable.prototype.bootstrapFilter = function (id, value) {
+    window.setTimeout(function (params) {
+      $("#" + id).selectpicker();
+      $("#" + id).selectpicker("val", value);
+    }, 1000);
+  };
+
+  cwPivotTable.prototype.nodeIDToFancyTree = function (node, noLoop) {
+    var self = this;
+    var exportNode = {};
+    if (node === undefined) {
+      node = this.viewSchema.NodesByID[this.nodeID];
+    }
+    exportNode.text = node.NodeName;
+    exportNode.NodeID = node.NodeID;
+    exportNode.children = [];
+    exportNode.objectTypeScriptName = node.ObjectTypeScriptName;
+    exportNode.SortedChildren = node.SortedChildren;
+    exportNode.state = {
+      opened: true,
+    };
+
+    if (noLoop !== true) {
+      node.SortedChildren.forEach(function (n) {
+        exportNode.children.push(self.nodeIDToFancyTree(self.viewSchema.NodesByID[n.NodeId]));
+      });
+    }
+
+    return exportNode;
+  };
+
+  cwPivotTable.prototype.stepToFancyTree = function (step, id, parentNode) {
+    let node = {};
+    node.id = id;
+    node.parent = parentNode.NodeName;
+    node.text = step.text;
+    node.type = "file";
+    node.state = {
+      opened: true,
+    };
+    return node;
+  };
+
+  cwPivotTable.prototype.updatePivot = function (step, id, parentNode) {
+    console.log("coucou");
+  };
+
+  cwPivotTable.prototype.controller_pivotTableNodes = function ($container, templatePath, $scope) {
+    var self = this;
+    $scope.ng = {};
+    $scope.treeID = "cwPivotTableExpertModeNodesConfigTree" + this.nodeID;
+    $scope.optionString = {};
+    $scope.updatePivot = this.updatePivot.bind(this);
+    $scope.ng.config = this.config;
+    self.apply = function () {
+      $scope.$apply();
+    };
+    $scope.updateNodeCheck = function (config, nodeId) {
+      let index = self.config[config].indexOf(nodeId);
+      if (index === -1) {
+        self.config[config].push(nodeId);
+      } else {
+        self.config[config].splice(index, 1);
+      }
+    };
+
+    $scope.updateValues = function () {
+      console.log($scope.values);
+      $scope.values = $scope.values.filter(function (v) {
+        return !!v;
+      });
+    };
+
+    var tmpsource = [],
+      source = [],
+      self = this;
+    let q = cwApi.getQueryStringObject();
+    let tab = "tab0";
+
+    if (q.cwtabid) tab = q.cwtabid;
+    if (this.viewSchema.Tab && this.viewSchema.Tab.Tabs) {
+      this.viewSchema.Tab.Tabs.forEach(function (t) {
+        if (t.Id === tab) {
+          t.Nodes.forEach(function (n) {
+            source.push(self.nodeIDToFancyTree(self.viewSchema.NodesByID[n]));
+          });
+        }
+      });
+    } else {
+      self.viewSchema.RootNodesId.forEach(function (n) {
+        source.push(self.nodeIDToFancyTree(self.viewSchema.NodesByID[n]));
+      });
+    }
+
+    if (cwApi.isIndexPage() === false) {
+      tmpsource.push(self.nodeIDToFancyTree(self.viewSchema.NodesByID[self.viewSchema.RootNodesId[0]]));
+      tmpsource[0].children = source;
+      source = tmpsource;
+    }
+
+    $scope.loadtree = function () {
+      // define right click action on the jstree
+      function contextMenu(node) {
+        var items = {};
+        var tree = $("#" + $scope.treeID).jstree(true);
+        if (node.type !== "file") {
+          items.createStep = {
+            label: "Create Step",
+            icon: "fa fa-plus",
+            action: function (questo) {
+              let newNodeID = tree.create_node(
+                node,
+                {
+                  text: "Step",
+                  parent: "node.original.NodeName",
+                  type: "file",
+                  NodeID: node.original.NodeID,
+                  objectTypeScriptName: node.original.objectTypeScriptName,
+                },
+                node.children.length - node.original.SortedChildren.length
+              );
+              if ($scope.config.nodes[node.original.NodeID] === undefined) $scope.config.nodes[node.original.NodeID] = { steps: {} };
+              $scope.config.nodes[node.original.NodeID].steps[newNodeID] = { cds: "{name}" };
+            },
+          };
+        } else {
+          items.renameStep = {
+            label: "Rename Step",
+            icon: "fa fa-pencil",
+            action: function (obj) {
+              tree.edit(node);
+            },
+          };
+          items.deleteStep = {
+            label: "Delete Step",
+            icon: "fa fa-trash",
+            action: function (obj) {
+              tree.delete_node($(node));
+              delete $scope.config.nodes[node.original.NodeID].steps[node.id];
+              self.updateTimeline();
+            },
+          };
+        }
+        return items;
+      }
+
+      $(".cwPivotTableExpertModeNodesConfigTree")
+        // onselect event
+        .on("changed.jstree", function (e, data) {
+          if (data.node && data.node.original) {
+            $scope.ng.nodeID = data.node.original.NodeID;
+            let node = self.viewSchema.NodesByID[$scope.ng.nodeID];
+            $scope.ng.PropertiesSelected = node.PropertiesSelected.map(function (n) {
+              return cwAPI.mm.getProperty(node.ObjectTypeScriptName, n);
+            });
+            if (data.node.type === "default") {
+              $scope.ng.selectedNode = data.node.original;
+              $scope.ng.selectedStep = undefined;
+
+              $scope.$apply();
+            }
+          }
+        })
+        .jstree({
+          core: {
+            data: source,
+            check_callback: true,
+          },
+          types: {
+            default: {
+              valid_children: ["file"],
+            },
+            file: {
+              icon: "fa fa-cube",
+              valid_children: [],
+            },
+          },
+          plugins: ["contextmenu", "types"],
+          contextmenu: {
+            select_node: false,
+            items: contextMenu,
+          },
+        });
+    };
+    $scope.loadtree();
   };
 
   cwApi.cwLayouts.cwPivotTable = cwPivotTable;

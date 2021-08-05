@@ -328,6 +328,11 @@
         $.i18n.prop("totals") +
         '"></a>'
     );
+    if (cwApi.currentUser.PowerLevel === 1) {
+      output.push(
+        '<a class="btn page-action no-text fa fa-tasks " id="cwPivotExpertMode' + this.nodeID + '" title="' + $.i18n.prop("expertMode") + '"></a>'
+      );
+    }
     output.push("</div></div>");
 
     let vertical = this.config.verticalDisplay ? "vertical" : "";

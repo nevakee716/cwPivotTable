@@ -50,7 +50,7 @@
     if (this.config.verticalDisplay === undefined) this.config.verticalDisplay = false;
     if (this.config.title === undefined) this.config.title = false;
     if (this.config.fontsize === undefined) this.config.fontsize = false;
-    if (this.config.height === undefined) this.config.height = false;
+    if (this.config.height === undefined) this.config.height = null;
     this.getCapipivotScriptnames();
     this.nodes = {};
     this.PivotDatas = [];
