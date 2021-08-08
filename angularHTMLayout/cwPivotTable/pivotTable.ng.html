@@ -2,73 +2,51 @@
   <div class="bootstrap-iso rowFlex">
     <div class="row-cell row-cell-label">{{$root.i18n('ui')}} :&nbsp;</div>
     <div class="row-cell row-cell-value">
-      <input ng-model-options="{ debounce: 1000 }" ng-change="updatePivot(step)" type="checkbox" ng-model="ng.config.ui" />
+      <input ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.ui" />
     </div>
   </div>
-
-  <div class="bootstrap-iso rowFlex">
-    <div class="row-cell row-cell-label">{{$root.i18n('title')}} :&nbsp;</div>
-    <div class="row-cell row-cell-value">
-      <input class="largeCell" ng-model-options="{ debounce: 1000 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.title" />
-    </div>
-  </div>
-
   <div class="bootstrap-iso rowFlex">
     <div class="row-cell row-cell-label">{{$root.i18n('height')}} :&nbsp;</div>
     <div class="row-cell row-cell-value">
-      <input ng-model-options="{ debounce: 1000 }" ng-change="updatePivot(step)" ng-model="ng.config.height" />
+      <input ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" ng-model="ng.config.height" />
+    </div>
+  </div>
+  <div class="bootstrap-iso rowFlex">
+    <div class="row-cell row-cell-label">{{$root.i18n('fontsize')}} :&nbsp;</div>
+    <div class="row-cell row-cell-value">
+      <input ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" ng-model="ng.config.fontsize" />
     </div>
   </div>
   <div class="bootstrap-iso rowFlex">
     <div class="row-cell row-cell-label">{{$root.i18n('verticalDisplay')}} :&nbsp;</div>
     <div class="row-cell row-cell-value">
-      <input class="largeCell" ng-model-options="{ debounce: 1000 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.verticalDisplay" />
-    </div>
-  </div>
-  <div class="bootstrap-iso rowFlex">
-    <div class="row-cell row-cell-label">{{$root.i18n('aggregatorName')}} :&nbsp;</div>
-    <div class="row-cell row-cell-value">
-      <span {{ng.config.aggregatorName}}></span>
-    </div>
-  </div>
-  <div class="bootstrap-iso rowFlex">
-    <div class="row-cell row-cell-label">{{$root.i18n('vals')}} :&nbsp;</div>
-    <div class="row-cell row-cell-value">
-      <span {{ng.config.vals}}></span>
-    </div>
-  </div>
-  <div class="bootstrap-iso rowFlex">
-    <div class="row-cell row-cell-label">{{$root.i18n('rendererName')}} :&nbsp;</div>
-    <div class="row-cell row-cell-value">
-      <span {{ng.config.rendererName}}></span>
+      <input class="largeCell" ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.verticalDisplay" />
     </div>
   </div>
   <div class="bootstrap-iso rowFlex">
     <div class="row-cell row-cell-label">{{$root.i18n('legend')}} :&nbsp;</div>
     <div class="row-cell row-cell-value">
-      <input class="largeCell" ng-model-options="{ debounce: 1000 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.legend" />
+      <input class="largeCell" ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.legend" />
     </div>
   </div>
 
   <div ng-repeat="hidePart in ['hideFilter','hideOption','hideRow','hideColumn','hideTotals']" class="bootstrap-iso rowFlex">
     <div class="row-cell row-cell-label">{{$root.i18n(hidePart)}} :&nbsp;</div>
     <div class="row-cell row-cell-value">
-      <input class="largeCell" ng-model-options="{ debounce: 1000 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config[hidePart]" />
+      <input class="largeCell" ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config[hidePart]" />
     </div>
   </div>
 
-  <div class="bootstrap-iso rowFlex">
+  <div ng-if="!ng.cwAPIPivotUnfind" class="bootstrap-iso rowFlex">
     <div class="row-cell row-cell-label">{{$root.i18n('enableEdit')}} :&nbsp;</div>
     <div class="row-cell row-cell-value">
-      <input class="largeCell" ng-model-options="{ debounce: 1000 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.enableEdit" />
+      <input class="largeCell" ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.enableEdit" />
     </div>
   </div>
-  <div class="bootstrap-iso rowFlex">
+  <div ng-if="!ng.cwAPIPivotUnfind" class="bootstrap-iso rowFlex">
     <div class="row-cell row-cell-label">{{$root.i18n('loadFirstPivot')}} :&nbsp;</div>
     <div class="row-cell row-cell-value">
-      <input class="largeCell" ng-model-options="{ debounce: 1000 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.loadFirstPivot" />
+      <input class="largeCell" ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.loadFirstPivot" />
     </div>
   </div>
-
-  <pre>{{ng.config | json}}</pre>
 </div>

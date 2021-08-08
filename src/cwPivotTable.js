@@ -49,8 +49,10 @@
     if (this.config.ui === undefined) this.config.ui = true;
     if (this.config.verticalDisplay === undefined) this.config.verticalDisplay = false;
     if (this.config.title === undefined) this.config.title = false;
-    if (this.config.fontsize === undefined) this.config.fontsize = false;
+    if (this.config.fontsize === undefined) this.config.fontsize = null;
     if (this.config.height === undefined) this.config.height = null;
+    if (this.config.legend === undefined) this.config.legend = true;
+
     this.getCapipivotScriptnames();
     this.nodes = {};
     this.PivotDatas = [];
@@ -97,10 +99,9 @@
         this.canUpdatePivot = true;
       }
     } catch (e) {
-      this.definition.capipivotCreateOnViewDisplayName = "Create on cwView";
-      this.definition.capipivotConfigurationDisplayName = "Configuration";
-      this.canCreatePivot = true;
-      this.canUpdatePivot = true;
+      this.cwAPIPivotUnfind = true;
+      this.definition.capipivotCreateOnViewDisplayName = "";
+      this.definition.capipivotConfigurationDisplayName = "";
       console.debug(e);
     }
   };

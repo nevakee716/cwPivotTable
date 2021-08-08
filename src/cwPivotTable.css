@@ -226,3 +226,172 @@ table.pvtTable thead th.pvtAxisLabel {
   color: #e91527;
   background-color: white;
 }
+.cwPivotTableExpertModeConfig div.cwPivotTableExpertModeContainerTab {
+  display: flex;
+}
+.cwPivotTableExpertModeConfig div.cwPivotTableExpertModeTabs {
+  margin: 5px;
+  transition: box-shadow 0.3s;
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 1rem;
+  box-shadow: inset 0 -2px #000000;
+  cursor: pointer;
+}
+.cwPivotTableExpertModeConfig div.cwPivotTableExpertModeTabs.selected {
+  box-shadow: inset 0 -2px #03a0ce;
+}
+.cwPivotTableExpertModeConfig .cwLayout_expertModeTableSelect {
+  line-height: 0px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex {
+  margin: 5px 0px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell {
+  display: inline-block;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-label {
+  max-width: 400px;
+  vertical-align: top;
+  font-size: large;
+  font-weight: 700;
+  color: #03a0ce;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value-textarea {
+  width: 80%;
+}
+.cwPivotTableExpertModeConfig div.rowFlex .tableTextInput input {
+  width: 100%;
+}
+.cwPivotTableExpertModeConfig div.rowFlex .tableTextInput input {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #cccccc;
+  height: 34px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex .noWhiteSpace {
+  white-space: inherit;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value select {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #cccccc;
+  padding: 0px 5px;
+  height: 30px;
+  background-color: white;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value input {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #cccccc;
+  padding: 0px 5px;
+  height: 30px;
+  background-color: white;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value textarea {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #cccccc;
+  padding: 0px 5px;
+  min-height: 30px;
+  resize: vertical;
+  background-color: white;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width {
+  width: 85%;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width .fullWidthFilterTable {
+  width: 100%;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width .fullWidthFilterTable input {
+  width: 95%;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width .fullWidthFilterTable input.smallCell {
+  width: 70px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width div.cell-content-wrapper {
+  width: 100%;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0px 5px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width div.properties-wrapper {
+  overflow: auto;
+  max-height: 350px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width div.properties-wrapper input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width .filter-wrapper .filter-content {
+  width: 180px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width .filter-wrapper .filter-value {
+  width: 180px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width .filter-wrapper .filter-operator {
+  width: 100px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width .filter-wrapper .filter-cell {
+  margin: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width .filter-wrapper .filter-cell input[type="checkbox"] {
+  margin: 0px;
+}
+.cwPivotTableExpertModeConfig div.rowFlex div.row-cell-value.row-cell-max-width .header-cell {
+  text-align: center;
+  font-weight: bold;
+}
+.cwPivotTableExpertModeConfig div.rowFlex .add-filter-button a.btn-add-filter {
+  height: auto;
+  width: auto;
+  margin: 5px;
+  color: #ffffff;
+}
+.cwPivotTableExpertModeConfig div.cwPropertiesTableContainer {
+  width: 99%;
+}
+.cwPivotTableExpertModeConfig div.cwPropertiesTableContainer td.expertmode_table-buttonlist {
+  white-space: inherit;
+  width: 100%;
+}
+.cwPivotTableExpertModeConfig div.cwPropertiesTableContainer td.expertmode_table-buttonlist div {
+  white-space: inherit;
+  padding-bottom: 2px;
+}
+.cwPivotTableExpertModeConfig div.cwPropertiesTableContainer td.expertmode_table-buttonlist div a {
+  width: 100%;
+  display: inline-block;
+  padding: 6px 2px;
+  margin-bottom: 0;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: inherit;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.cwPivotTableExpertModeConfig div.cwPropertiesTableContainer td.expertmode_table-buttonlist div a.selected {
+  background-color: #03b4e7;
+  border-color: #546e7a;
+}

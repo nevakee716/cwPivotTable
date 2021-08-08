@@ -80,7 +80,18 @@
   // Building pivot
   cwPivotTable.prototype.createPivot = function () {
     var filterContainer = document.getElementById("cwLayoutPivotFilter" + this.nodeID);
+    filterContainer.innerHTML = "";
 
+    var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
+    var parentNode = pivotContainer.parentNode;
+    pivotContainer.parentNode.removeChild(pivotContainer);
+    var pivotContainer = document.createElement("div");
+    let vertical = this.config.verticalDisplay ? "vertical" : "";
+    pivotContainer.className = "cw-visible cwPivotTable " + vertical;
+    pivotContainer.id = "cwPivotTable" + this.nodeID;
+    parentNode.appendChild(pivotContainer);
+
+    $("#parent_div").html('<div id="output"></div>');
     // set height
     var titleReact = document.querySelector("#cw-top-bar");
     let topBar = document.querySelector(".page-top");
@@ -90,7 +101,7 @@
     if (topBar) topBarHeight = topBar.getBoundingClientRect().height;
     if (titleReact) titleReactHeight = titleReact.getBoundingClientRect().height;
     let margin = this.config.enableEdit ? 60 : 10;
-    var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
+
     let checkIfInaDisplay = document.querySelector(".homePage_evolveView  #cwPivotWrapper" + this.nodeID);
 
     if (this.config.height) {
@@ -100,7 +111,7 @@
     } else {
       this.canvaHeight = wrapper.offsetHeight * 0.9;
     }
-    var pivotContainer = document.getElementById("cwPivotTable" + this.nodeID);
+
     pivotContainer.setAttribute("style", "min-height:" + this.canvaHeight + "px");
     var self = this,
       i = 0;
@@ -172,6 +183,7 @@
       //    "Mean" : this.dataAggregator()
       //}
     };
+    console.log(this.config.ui);
     this.pivotUI = $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, this.pivotCurrentConfiguration);
 
     this.manageButton();
@@ -231,6 +243,7 @@
     if (pivotConfig) {
       this.config.cols = pivotConfig.cols;
       this.config.rows = pivotConfig.rows;
+      this.config.vals = pivotConfig.vals;
       this.config.exclusions = pivotConfig.exclusions;
       this.config.inclusions = pivotConfig.inclusions;
       this.config.aggregatorName = pivotConfig.aggregatorName;
@@ -473,40 +486,31 @@
     var self = this;
 
     var i;
-    var filterButton = document.getElementById("cwPivotButtonsFilter" + this.nodeID);
-    if (this.config.hideFilter === true) {
-      filterButton.classList.remove("selected");
-    }
 
-    if (!noEvent) filterButton.addEventListener("click", self.manageEventButton.bind(this, "Filter"));
-
-    var optionButton = document.getElementById("cwPivotButtonsOption" + this.nodeID);
-    if (this.config.hideOption === true) {
-      optionButton.classList.remove("selected");
-    }
-    if (!noEvent) optionButton.addEventListener("click", self.manageEventButton.bind(this, "Option"));
-
-    var rowButton = document.getElementById("cwPivotButtonsRow" + this.nodeID);
-    if (this.config.hideRow === true) {
-      rowButton.classList.remove("selected");
-    }
-    if (!noEvent) rowButton.addEventListener("click", self.manageEventButton.bind(this, "Row"));
-
-    var columnButton = document.getElementById("cwPivotButtonsColumn" + this.nodeID);
-    if (this.config.hideColumn === true) {
-      columnButton.classList.remove("selected");
-    }
-    if (!noEvent) columnButton.addEventListener("click", self.manageEventButton.bind(this, "Column"));
+    ["Filter", "Option", "Row", "Column"].forEach(function (id) {
+      var button = document.getElementById("cwPivotButtons" + id + self.nodeID);
+      if (self.config["hide" + id] === true) {
+        button.classList.remove("selected");
+      }
+      if (!noEvent) {
+        button.removeEventListener("click", self.manageEventButton.bind(self, id));
+        button.addEventListener("click", self.manageEventButton.bind(self, id));
+      }
+    });
 
     var totalButton = document.getElementById("cwPivotButtonsTotal" + this.nodeID);
     if (this.config.hideTotals === true) {
       totalButton.classList.remove("selected");
       setTimeout(this.hideTotal, 3000);
     }
-    if (!noEvent) totalButton.addEventListener("click", self.manageEventButton.bind(this, "Total"));
+    if (!noEvent) {
+      totalButton.removeEventListener("click", self.manageEventButton.bind(this, "Total"));
+      totalButton.addEventListener("click", self.manageEventButton.bind(this, "Total"));
+    }
 
     var expertModeButton = document.getElementById("cwPivotExpertMode" + this.nodeID);
     if (expertModeButton) {
+      expertModeButton.removeEventListener("click", self.manageExpertModeButton.bind(this));
       expertModeButton.addEventListener("click", self.manageExpertModeButton.bind(this));
     }
   };
@@ -711,6 +715,14 @@
         else return "selected";
       };
 
+      $scope.updatePivot = self.updatePivot.bind(self);
+      $scope.ng = {};
+      $scope.ng.config = self.config;
+      $scope.ng.cwAPIPivotUnfind = this.cwAPIPivotUnfind;
+      self.apply = function () {
+        $scope.$apply();
+      };
+
       if (self["controller_" + t.id] && $scope.config) self["controller_" + t.id]($container, templatePath, $scope);
     });
   };
@@ -764,32 +776,15 @@
     return exportNode;
   };
 
-  cwPivotTable.prototype.stepToFancyTree = function (step, id, parentNode) {
-    let node = {};
-    node.id = id;
-    node.parent = parentNode.NodeName;
-    node.text = step.text;
-    node.type = "file";
-    node.state = {
-      opened: true,
-    };
-    return node;
-  };
-
-  cwPivotTable.prototype.updatePivot = function (step, id, parentNode) {
-    console.log("coucou");
+  cwPivotTable.prototype.updatePivot = function () {
+    this.createPivot();
   };
 
   cwPivotTable.prototype.controller_pivotTableNodes = function ($container, templatePath, $scope) {
     var self = this;
-    $scope.ng = {};
     $scope.treeID = "cwPivotTableExpertModeNodesConfigTree" + this.nodeID;
     $scope.optionString = {};
-    $scope.updatePivot = this.updatePivot.bind(this);
-    $scope.ng.config = this.config;
-    self.apply = function () {
-      $scope.$apply();
-    };
+
     $scope.updateNodeCheck = function (config, nodeId) {
       let index = self.config[config].indexOf(nodeId);
       if (index === -1) {
