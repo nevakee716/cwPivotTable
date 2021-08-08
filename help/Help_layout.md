@@ -63,11 +63,11 @@ Here is an exemple of a json configuration.
             "loadFirstPivot" : true,
             "legend" : true,
             "hiddenFromDragDrop" : [Properties1,Properties2],
-            "hideFilter : false,
-            "hideOption : false,
-            "hideRow : false,
-            "hideColumn : false,
-            "hideTotals : false,
+            "hideFilter" : false,
+            "hideOption" : false,
+            "hideRow" : false,
+            "hideColumn" : false,
+            "hideTotals" : false,
             "currentDateFilter" : [Properties1,Properties2]
 }
 ```
