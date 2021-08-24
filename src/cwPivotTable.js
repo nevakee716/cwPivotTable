@@ -46,13 +46,16 @@
     if (this.config.rendererName === undefined) this.config.rendererName = "Table";
     if (this.config.hiddenAttributes === undefined) this.config.hiddenAttributes = [];
     if (this.config.propKPImeasure === undefined) this.config.propKPImeasure = [];
+    if (this.config.kpiLabel === undefined) this.config.kpiLabel = "Kpi";
     if (this.config.ui === undefined) this.config.ui = true;
     if (this.config.verticalDisplay === undefined) this.config.verticalDisplay = false;
     if (this.config.title === undefined) this.config.title = false;
     if (this.config.fontsize === undefined) this.config.fontsize = null;
     if (this.config.height === undefined) this.config.height = null;
     if (this.config.legend === undefined) this.config.legend = true;
+    if (this.config.sorters === undefined) this.config.sorters = [];
 
+    this.propertiesScriptnameList = {};
     this.getCapipivotScriptnames();
     this.nodes = {};
     this.PivotDatas = [];

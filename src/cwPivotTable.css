@@ -246,6 +246,10 @@ table.pvtTable thead th.pvtAxisLabel {
 .cwPivotTableExpertModeConfig .cwLayout_expertModeTableSelect {
   line-height: 0px;
 }
+.cwPivotTableExpertModeConfig .expertModeGroupTable td > input,
+.cwPivotTableExpertModeConfig .expertModeGroupTable textarea {
+  width: 100%;
+}
 .cwPivotTableExpertModeConfig div.rowFlex {
   margin: 5px 0px;
 }

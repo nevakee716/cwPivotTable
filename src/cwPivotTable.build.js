@@ -166,6 +166,7 @@
           legend: this.config.legend,
         },
       },
+      sorters: this.getSorter(),
       exclusions: this.config.exclusions,
       inclusions: this.config.inclusions,
       unusedAttrsVertical: !this.config.verticalDisplay,
@@ -237,6 +238,13 @@
     });
   };
 
+  cwPivotTable.prototype.getSorter = function (pivotConfig) {
+    let r = {};
+    this.config.sorters.forEach(function (sorter) {
+      r[sorter.name] = $.pivotUtilities.sortAs(sorter.array);
+    });
+    return r;
+  };
   cwPivotTable.prototype.onRefresh = function (pivotConfig) {
     //console.log("refresh " + this.nodeID);
     if (this.config.hideTotals === true) this.hideTotal();
@@ -245,7 +253,6 @@
       this.config.rows = pivotConfig.rows;
       this.config.vals = pivotConfig.vals;
       this.config.exclusions = pivotConfig.exclusions;
-      this.config.inclusions = pivotConfig.inclusions;
       this.config.aggregatorName = pivotConfig.aggregatorName;
       this.config.rendererName = pivotConfig.rendererName;
     }
@@ -636,7 +643,7 @@
   cwPivotTable.prototype.createExpertModeElement = function () {
     var self = this;
     var tab = [];
-    var tabs = ["pivotTableNodes", "PivotTable"]; //, "general"];
+    var tabs = ["pivotTableNodes", "PivotTable", "PivotTableSorters"]; //, "general"];
     var expertModeConfig = document.createElement("div");
     expertModeConfig.className = "cwPivotTableExpertModeConfig";
     expertModeConfig.id = "cwPivotTableExpertModeConfig" + this.nodeID;
@@ -680,7 +687,9 @@
 
     let treeElem = document.getElementById("cwPivotTableExpertModeNodesConfigTree" + this.nodeID);
     if (id === "saveconfiguration") {
-      cwAPI.customLibs.utils.copyToClipboard(JSON.stringify(this.config));
+      var cpyConfig = $.extend(true, {}, this.config);
+      cpyConfig.inclusions = undefined;
+      cwAPI.customLibs.utils.copyToClipboard(JSON.stringify(cpyConfig));
       treeElem.style.display = "none";
     } else if (id === "PivotTable") {
       treeElem.style.display = "none";
@@ -716,9 +725,16 @@
       };
 
       $scope.updatePivot = self.updatePivot.bind(self);
+
+      $scope.updateSorter = function (index) {
+        $scope.ng.config.sorters[index].array = $scope.ng.config.sorters[index].arrayString.split(",");
+        $scope.updatePivot();
+      };
+
       $scope.ng = {};
       $scope.ng.config = self.config;
-      $scope.ng.cwAPIPivotUnfind = this.cwAPIPivotUnfind;
+      $scope.ng.cwAPIPivotUnfind = self.cwAPIPivotUnfind;
+      $scope.ng.propertiesScriptnameList = self.propertiesScriptnameList;
       self.apply = function () {
         $scope.$apply();
       };
@@ -777,6 +793,22 @@
   };
 
   cwPivotTable.prototype.updatePivot = function () {
+    let o = $.extend(true, {}, this.originalObject);
+    var assoNode = {};
+    // keep the node of the layout
+    assoNode[this.mmNode.NodeID] = o.associations[this.mmNode.NodeID];
+    // complementary node
+    this.config.complementaryNode.forEach(function (nodeID) {
+      if (o.associations[nodeID]) {
+        assoNode[nodeID] = o.associations[nodeID];
+      }
+    });
+    this.PivotDatas = [];
+    o.associations = assoNode;
+    this.manageHiddenNodes(o);
+    this.JSONobjects = o;
+
+    this.simplify(this.JSONobjects, {});
     this.createPivot();
   };
 
@@ -792,6 +824,7 @@
       } else {
         self.config[config].splice(index, 1);
       }
+      self.updatePivot();
     };
 
     $scope.updateValues = function () {

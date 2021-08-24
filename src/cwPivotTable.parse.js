@@ -96,6 +96,10 @@
           var value = child.properties[p];
           value = value === cwApi.getLookupUndefinedValue() ? $.i18n.prop("global_undefined") : value;
 
+          node.PropertiesSelected.forEach(function (s) {
+            self.propertiesScriptnameList[s.toLowerCase()] = s.toLowerCase();
+          });
+
           if (node.PropertiesSelected.indexOf(p.toUpperCase()) !== -1) {
             if (p === "name") {
               newLine[node.NodeName] = value;
@@ -132,7 +136,7 @@
                 child.associations["kpi_" + p] = [
                   {
                     associations: [],
-                    NodeName: "KPI",
+                    NodeName: self.config.kpiLabel,
                     PropertiesSelected: ["VALUE", "NAME"],
                     objectTypeScriptName: "kpi",
                     object_id: 42,
@@ -171,7 +175,7 @@
             child.associations["kpi_" + p.label] = [
               {
                 associations: [],
-                NodeName: "KPI",
+                NodeName: self.config.kpiLabel,
                 PropertiesSelected: ["VALUE", "NAME"],
                 objectTypeScriptName: "kpi",
                 object_id: 42,
@@ -257,16 +261,11 @@
 
   // obligatoire appeler par le system
   cwPivotTable.prototype.drawAssociations = function (output, associationTitleText, object) {
-    var cpyObj = $.extend({}, object);
+    var cpyObj = $.extend(true, {}, object);
+    this.originalObject = $.extend(true, {}, object);
     var assoNode = {};
-
-    this.originalObject = $.extend({}, object);
-    var simplifyObject,
-      i,
-      assoNode = {},
-      isData = false;
     // keep the node of the layout
-    assoNode[this.mmNode.NodeID] = object.associations[this.mmNode.NodeID];
+    assoNode[this.mmNode.NodeID] = cpyObj.associations[this.mmNode.NodeID];
 
     // complementary node
     this.config.complementaryNode.forEach(function (nodeID) {
@@ -281,6 +280,7 @@
     this.manageHiddenNodes(cpyObj);
 
     this.JSONobjects = cpyObj;
+
     this.simplify(this.JSONobjects, {});
     let noUI = this.config.ui ? "" : "cw-hidden";
 

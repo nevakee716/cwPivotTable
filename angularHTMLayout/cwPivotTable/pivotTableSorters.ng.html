@@ -1,0 +1,18 @@
+<div ng-controller="expertModeGroupTable" class="cw-visible view-container">
+    <div class="cwPropertiesTableContainer">
+  
+      <div class="cwPropertiesTableHeader CwPropertiesLayoutTableHeader"> Sorters </div>
+      <table class="cwPropertiesTable">
+        <tr class="cwLayout_expertModeTableSelect" ng-init="sorter.arrayString = sorter.array.join(',')" ng-repeat="sorter in ng.config.sorters">
+            <td style="width:50px" class="cw-edit-property-value" ><input ng-change="updatePivot()" ng-model-options="{ debounce: 2000 }" ng-model="sorter.name"></input> </td>
+            <td class="cw-edit-property-value" ><textarea ng-change="updateSorter($index)" ng-model-options="{ debounce: 2000 }" ng-model="sorter.arrayString"></textarea></td>
+            <td style="width:10px"><button class="k-grid k-button" ng-click="ng.config.sorters.splice($index,1)"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+        </tr>
+        <tr>
+          <td colspan="2" ><button class="k-grid k-button" ng-click="ng.config.sorters.push({name:'',array:[]})"><i class="fa fa-plus" aria-hidden="true"></i></button></td>
+      </tr>
+      </table>
+     </div>
+</div>
+</div>
+
