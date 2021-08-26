@@ -23,6 +23,7 @@
     var self = this;
     var libToLoad = [];
     var pivotWrapper = document.getElementById("cwPivotWrapper" + this.nodeID);
+    if (!pivotWrapper) return;
     this.createLoadingElement(pivotWrapper);
     this.displayLoading();
     if (this.init === false) {
