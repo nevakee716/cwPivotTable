@@ -17,66 +17,87 @@
 
 
 
-  <link crossorigin="anonymous" media="all" integrity="sha512-+LlYCzoIINFSwdPG8+vqo6w8TBMZRoJRBASiCU48bzL3w5EvYcA2sb9hCNg0CTnuvvQrruwwAIfQVjZPw2dqGg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-f8b9580b3a0820d152c1d3c6f3ebeaa3.css" />
-  
-    <link crossorigin="anonymous" media="all" integrity="sha512-MeYJigyKwnyPNkPVHRAstj/DPhyHwdMSnaxGFCPxgvNaeNeYVZtWGonYjSa/f8F7q/9BB/KZek6Ke1JDtNq+NQ==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-31e6098a0c8ac27c8f3643d51d102cb6.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-gTJi5qrypRHWpLXsMZQXoL53mXDuVqfZc7AfuiFXreLhf7Pk1RMvXJMWJsiS8dpkFDfq/7t6bFZK+3xS1Ak+Lg==" rel="stylesheet" href="https://github.githubassets.com/assets/light-813262e6aaf2a511d6a4b5ec319417a0.css" /><link crossorigin="anonymous" media="all" integrity="sha512-CMdm0es1Ti46ZuFcKKz+jobtyuFMFz3OIWxrFfOGbsHzri6ehzY0MqUHRn9C23aqIUH6HrnhiqjxF6EcdWJ/ZQ==" rel="stylesheet" href="https://github.githubassets.com/assets/dark-08c766d1eb354e2e3a66e15c28acfe8e.css" /><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" integrity="sha512-BuSuxJq/eJKvBSkc628ZMPWYFuRDuvjx9zYd9qvSlTzLeLPieLQN5xSCf5M9r+FcFXjKM6QZZlXtL6E3cmGUIQ==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-06e4aec49abf7892af05291ceb6f1930.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-hwUXTdeaR7CvyPs0A1D/6JPfPL8Kw5ROLomzsKt1kWikHyxJlF2BpNoeNTBvId3UfSAvs7aN7sFHuuvxyQIOJQ==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-8705174dd79a47b0afc8fb340350ffe8.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" integrity="sha512-uWIIE9NeQoOg9WxtV8wRqBongxd0Gq2FU5z338xK5CKnkJ5N9oIA/eRb3VrwDrC8JjkY6cXbyQxlDGb0aycO4g==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-b9620813d35e4283a0f56c6d57cc11a8.css" /><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" integrity="sha512-ytMK66Cuij41v31Kuiae888Pc07/HqRHHpLnyxwbjPJ1dK0xMqvj57VwCf/yTTR0EvxIaCZDYDapJhDq9pwHDA==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-cad30aeba0ae8a3e35bf7d4aba269ef3.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-MvLtV2/OWa5ePOOP/DyEwPyGgv8FMeqZy6Qvwi84YTueEwn/k5wEHExDl9kEMHBcwpKn1bne96DY0vFUDnuABg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-32f2ed576fce59ae5e3ce38ffc3c84c0.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-Qh23gUQIFuCwgMSYYlcFp+p2Eoll1aoAvhVpTFxWoEGBNBhsg++XLbKVQH2ExracaioZHBa50vz70lD2tsvnPQ==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-421db781440816e0b080c498625705a7.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-MCJFYfbQoT4EXC6aWx5Wghs8FC/jslHEeN2iWXphliccmede2dQlhIBTAUCBq9Yu5poltu4askungzvyCsycGg==" rel="stylesheet" href="https://github.githubassets.com/assets/tab-size-fix-30224561f6d0a13e045c2e9a5b1e5682.css" />
     
     
     
-    <link crossorigin="anonymous" media="all" integrity="sha512-owG/3j352A71kc/vjMa88xUOO9A3nSkfzqC/AS3AAy9MyhdtJR9CFQlm80OOgZz/UDZxl6SQbzAUkphh0GUsUw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-a301bfde3df9d80ef591cfef8cc6bcf3.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-qRZXNzipxvtgjvL3aOguJ2wmKSN3A9hBN2AK8UvO79Ss2UiUtAjZ2tTSQljbs4Fw9iN63kdXTuROvJEHVVsGFw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-a916573738a9c6fb608ef2f768e82e27.css" />
 
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-DHpNa+QkQaUCk1eji+SQGDsKa8B63teT5nbKT3/TQ38T2hEDfT9B9OddmUKcMnQ8GaECHElNcJkpGhIThksyXA==" type="application/javascript" src="https://github.githubassets.com/assets/environment-0c7a4d6b.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-Yj+GQgNz7KtbN4T31GXUcAwqQEyFjxui4i+K0IRzEVf6q/LGflPOcDeUfSynXZY5An2BwN9LZjyJCv6d60VJNQ==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-623f8642.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-FVF65mHM2YFptEQy7M1jb/b/nUGKMPy7DTaKEX27387NLyYBDba3/N0lmPi5rtj3LXLMYUfoW+Zp4UBO9IoGwg==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-15517ae6.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-K/kjAAGVhlckApEbskyYOB+ASq3m0GKyJk3y0JoEafwknEbUpmilodEuQQJG09c0v1eCRlX7mSQp+GLGtXmWQg==" type="application/javascript" src="https://github.githubassets.com/assets/environment-2bf92300.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-oBDjsGOOnyhlA5UdJdsqQzoij+eSWL6RSaWwVH1rDeFBEF4uXgY2qvYkGz7GGEXL43PMXoO+HJk3pOOTnW7Snw==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-frameworks-a010e3b0.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-0V9Fd8M3m9Oyyf9rHecTlZSRgbXXBHpY/Ah7zt+gaahbB9q3KX4TghmHg+2Gxlxabiu7HsrhyHEWFMJ88Oukpw==" type="application/javascript" src="https://github.githubassets.com/assets/chunk-vendor-d15f4577.js"></script>
   
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-9s0o9HusjaKciUh3VkWjfLedaVnLoWrUgCB0HERc6sLtYrXOGqzj68/jjphqCawbexLaVDHv08CTTciAvxPFtg==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-f6cd28f4.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-8o3sa/Y4xbxGQ0ZOLCzG3m3Fw0XSFLzQo6UN9A/tChbGdTU84Gvh3CqBDr34677NtkERq8gC6XgSV9YRBhT8sA==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-f28dec6b.js"></script>
   
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-BUDbrXZbK9QorUrf0KoEbZAJhTnz+BqMm10bqZCK6w5Hwy7YaORQ4F4DXhLkAVTvaJhNhxxeXgmgJLP0TB7TOw==" type="application/javascript" data-module-id="./chunk-advanced.js" data-src="https://github.githubassets.com/assets/chunk-advanced-0540dbad.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-5tWKSr7mhAzSh4Sx5YRFgKftdGxKwHKnOGYw5DlxjHhkQVURYFU3Bk5IMOGMKuAiJTlC3OXYM3xzGcyjzuEFQQ==" type="application/javascript" data-module-id="./chunk-animate-on-scroll.js" data-src="https://github.githubassets.com/assets/chunk-animate-on-scroll-e6d58a4a.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-0MZorw3oXnKy5eeSwQ9xGrKU4hxQeCXxmyxhneIHNhDIqu8vWh8mHss9FlC75Xd/bPWxFDCvdOo57tnTR46nbA==" type="application/javascript" data-module-id="./chunk-codemirror.js" data-src="https://github.githubassets.com/assets/chunk-codemirror-d0c668af.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-M6W/sGLOuJXCIkw+doDl6zl7J9q2DmqdwftQCtyEiZM/UJNGRVQdyKwI/PAMxD12se/wCx3ZcyJs9nz0o0OSVw==" type="application/javascript" data-module-id="./chunk-color-modes.js" data-src="https://github.githubassets.com/assets/chunk-color-modes-33a5bfb0.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-71HZu1T5JWqRNF9wrm2NXZAqYVvzxZ8Dvor5U5l/LuEBbGCBX57Sny60Rj+qUZZAvEBGFlNsz179DEn2HFwgVA==" type="application/javascript" data-module-id="./chunk-confetti.js" data-src="https://github.githubassets.com/assets/chunk-confetti-ef51d9bb.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-P29U0lNmhUj353VrCWp6czdhNpMtF70xVKf4GBGFVKCoqGtxp0sywAM8/46+iC0kdFiRvM13EBvDnq6oyWRwiw==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-3f6f54d2.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-arflMFcVzVAYaP2n7m7gklPChWsVsCDtRPav2Cb6bqLeJf8pgbojWJ3EseKXILCIqfxl/v6arBduZ9SLmpMEZw==" type="application/javascript" data-module-id="./chunk-delayed-loading-element.js" data-src="https://github.githubassets.com/assets/chunk-delayed-loading-element-6ab7e530.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-6j/oSF+kbW+yetNPvI684VzAu9pzug6Vj2h+3u1LdCuRhR4jnuiHZfeQKls3nxcT/S3H+oIt7FtigE/aeoj+gg==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-ea3fe848.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-VSSd+Yzi2iMS+pibY6hD/WdypxAEdob5F2RMKxuKcAHS2EpFYJPeTXoVxt0NXg03tfj2dka2mEtHS+vjpYSaDw==" type="application/javascript" data-module-id="./chunk-edit-hook-secret-element.js" data-src="https://github.githubassets.com/assets/chunk-edit-hook-secret-element-55249df9.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-ErqZFlIt7zIbLoZHvwfq9Zjo5zo+Y1A410nePDGvK+WVTVP10iNTfoqdOOSZNSy1gtLKIWDIIiOV30lr6zUJCA==" type="application/javascript" data-module-id="./chunk-edit.js" data-src="https://github.githubassets.com/assets/chunk-edit-12ba9916.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-aiqMIGGZGo8AQMjcoImKPMTsZVVRl6htCSY7BpRmpGPG/AF+Wq+P/Oj/dthWQOIk9cCNMPEas7O2zAR6oqn0tA==" type="application/javascript" data-module-id="./chunk-emoji-picker-element.js" data-src="https://github.githubassets.com/assets/chunk-emoji-picker-element-6a2a8c20.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-pyMtBe0iN5jUu1XXnpodO2HUF6HtgHFSW7xU1hiqWn0IrSun5a14jZWjqfSQNbj7lAyY9xBA3dNsyydapPhobg==" type="application/javascript" data-module-id="./chunk-failbot.js" data-src="https://github.githubassets.com/assets/chunk-failbot-a7232d05.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-sy0KBzl3Hruew+orJ1/E4cyuUixtV0uS03SSHpYRzhAepWejugyPs3AwHpQ+Em5HaMfd1MPz/M4+xEaFbQc5gA==" type="application/javascript" data-module-id="./chunk-feature-callout-element.js" data-src="https://github.githubassets.com/assets/chunk-feature-callout-element-b32d0a07.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-h8LRqLfdvdK2/kSKj8JYy6jyBdlTywxL4lqwV6OVOd3SCPRgUJ4/r3KHFQZPuYw0G7AWWhJY/IoitYLvAWFe5Q==" type="application/javascript" data-module-id="./chunk-filter-input.js" data-src="https://github.githubassets.com/assets/chunk-filter-input-87c2d1a8.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-ZDEs2KxFQg2a+jrEHbGKTNtzB+AQK3msBhv/KXLFiX9sV8vJaa9+9lpIW/kWd9JKtpJ63vTC/wuOJo7QJTbKKg==" type="application/javascript" data-module-id="./chunk-get-repo-element.js" data-src="https://github.githubassets.com/assets/chunk-get-repo-element-64312cd8.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-hDiTAZNldjiUNPk5eNthz6zUVY57FFqFU+n2D7WRYygzCxbDtwO9ODKDsEXxYb8kAMI7gTC8/QR3dXtHVCVgcA==" type="application/javascript" data-module-id="./chunk-insights-query.js" data-src="https://github.githubassets.com/assets/chunk-insights-query-84389301.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-SBLYXQ5tCZ/pcd1gcxrF4aTurb6Pi6aXi+k8JwE7zDNc0RmTnAPUdQ0a4/c9kt8sIhRmc8UyY/dDz+3r1os5MA==" type="application/javascript" data-module-id="./chunk-invitations.js" data-src="https://github.githubassets.com/assets/chunk-invitations-4812d85d.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-kHBm6CHcorsoWgbEfXx9ONevjreBpcPig/6CwUA1AEDHRHq5fuqHSKAFVbS+ri41o89ud/eW9mdT8gdg7bvEyQ==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-907066e8.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-VtdawM/OSsu+d6v25ZY6UcQa/GGLAStSESjsqdEwx+ey88GNYGkQ24o+JFFo4lY+7wLMRf7aCrLxkA5SquBoNQ==" type="application/javascript" data-module-id="./chunk-launch-code-element.js" data-src="https://github.githubassets.com/assets/chunk-launch-code-element-56d75ac0.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-RR5Uk+KE9M/CsqLcmgReChS7ZDjm8gxcOnDYWWkMdeTsrpW/xDlJHQEgUfuEC6HJXfyPNcW+oBTHqMnucNYGTQ==" type="application/javascript" data-module-id="./chunk-line-chart.js" data-src="https://github.githubassets.com/assets/chunk-line-chart-451e5493.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-RduaLAviB2ygvRK/eX5iwzYO43ie7svrJ0rYJs06x7XqpRl/IK8PPBscBWM9Moo5Z86DK2iRLE2+aR7TJ5Uc2Q==" type="application/javascript" data-module-id="./chunk-metric-selection-element.js" data-src="https://github.githubassets.com/assets/chunk-metric-selection-element-45db9a2c.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-7hZ031ngiF36wGsfcoyyCWTqwYxjX+qeTLtCV7CJ+IO+wzkzCm1RoR3WzWczfWmwLNqr+Hu3kQOgkBaGn4ntWQ==" type="application/javascript" data-module-id="./chunk-notification-list-focus.js" data-src="https://github.githubassets.com/assets/chunk-notification-list-focus-ee1674df.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-GntjGfOwMXsNQc5gxmzT306dC63LK08Oq5HrYuzBerIW2O/B/z8qHbjDImFUB4Zzu8kvKV1xU9BmU7CaLLeNeg==" type="application/javascript" data-module-id="./chunk-premium-runners.js" data-src="https://github.githubassets.com/assets/chunk-premium-runners-1a7b6319.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-oaK5DHO3+lQ/luphbKbJlYucI+1wdb1ckzLGh1p3HjnhMptUGr7FmMNwVBUGLpkHyIbve+fYuX9Ct1wzKH+6ag==" type="application/javascript" data-module-id="./chunk-presence-avatars.js" data-src="https://github.githubassets.com/assets/chunk-presence-avatars-a1a2b90c.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-ma0OOy3nj0c1cqBx0BkcmIFsLqcSZ+MIukQxyEFM/OWTzZpG+QMgOoWPAHZz43M6fyjAUG1jH6c/6LPiiKPCyw==" type="application/javascript" data-module-id="./chunk-profile-pins-element.js" data-src="https://github.githubassets.com/assets/chunk-profile-pins-element-99ad0e3b.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-hgoSKLTlL8I3IWr/TLONCU+N4kdCtdrHCrrud4NKhgRlLrTw0XUPhqBaDdZUiFSzDQRw/nFQ1kw2VeTm0g9+lA==" type="application/javascript" data-module-id="./chunk-profile.js" data-src="https://github.githubassets.com/assets/chunk-profile-860a1228.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-W/CGm7ARGkQrOSmTAUvHx6XJH3sPfyUEY2kRDWT84K5WU9i2fNXvLxdipvaaMTQbR6AjSSxrQOBj6lR1kzgB0Q==" type="application/javascript" data-module-id="./chunk-readme-toc-element.js" data-src="https://github.githubassets.com/assets/chunk-readme-toc-element-5bf0869b.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-DzzdRhToySuRxHkYlTIW4fLX3/yY6VlVkg+er2yKynUSbiLqTRji+tl29UFifcFSVbkWNtqU+PzJ5bQA4VagMg==" type="application/javascript" data-module-id="./chunk-ref-selector.js" data-src="https://github.githubassets.com/assets/chunk-ref-selector-0f3cdd46.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-I7iI902D1A6s8umCD2hbF4o0hKW1lrpNfRJ2H7uw6fdMVR/8Jdtn19b3G/DDIT4lpXOUToZXTmbYnFQAYc5gag==" type="application/javascript" data-module-id="./chunk-responsive-underlinenav.js" data-src="https://github.githubassets.com/assets/chunk-responsive-underlinenav-23b888f7.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-SWy36S28Js+/YzsvYgmp+IEdC0qtMcBf6sYhXTEcj1aFPCLPOTOnOKqzFiNyH2oNVDd+u5Qi8eqYINSIu28LFQ==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-496cb7e9.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-SVdK0K69PnQ4FChdpl650OR+vplYWXqddxNkEGKhQf6tkehqvKkFEg5LQSZgCVKt2tfc9CnWJlmKCwbTTipEjg==" type="application/javascript" data-module-id="./chunk-series-table.js" data-src="https://github.githubassets.com/assets/chunk-series-table-49574ad0.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-tk76eoSLUqXSVZ8ANzPprrOImFIV1zQ/VBV+WzG8ZjZpVPH8cLkMH/ur5HJB1lxx9/yo+V2wjDF96t4qfUwZLA==" type="application/javascript" data-module-id="./chunk-severity-calculator-element.js" data-src="https://github.githubassets.com/assets/chunk-severity-calculator-element-b64efa7a.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-j7Pb1H+2Xt4YIKSrJLLXxl/NNkkpW//5PLTpu58JGD8pqRPODDjJKqjO6YPZd++BB4VJubHPjzvuMXhW/9jcqA==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-8fb3dbd4.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-nKa3UdA2O7Ve4Jn24gaB20yUfJvS7wlnd8Q8C+iWD8i2tXLgaKemDWkLeexeQdrs+an98FCl5fOiy0J+izn+tQ==" type="application/javascript" data-module-id="./chunk-three.module.js" data-src="https://github.githubassets.com/assets/chunk-three.module-9ca6b751.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-WK8VXw3lfUQ/VRW0zlgKPhcMUqH0uTnB/KzePUPdZhCm/HpxfXXHKTGvj5C0Oex7+zbIM2ECzULbtTCT4ug3yg==" type="application/javascript" data-module-id="./chunk-toast.js" data-src="https://github.githubassets.com/assets/chunk-toast-58af155f.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-1vSZvwpr106s8wjSNFNFGVmFT2E4YjI2N8k6JqiSb28GGYMkEJUhveotmvB00Z4bQZM61ZgvWcXax1U3M48gLQ==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-d6f499bf.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-fvcOOYapCxPkDRQWz2WQzrqL6rRhX88yHWF87fb9Xny2Fq4lri0ONaVFL7XDSTiTyu4OTp+8WoyfMVpgGUaaVg==" type="application/javascript" data-module-id="./chunk-unveil.js" data-src="https://github.githubassets.com/assets/chunk-unveil-7ef70e39.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-V1S2L90J/leeVmnOy/FbkG/OQV4USnz5ZyX6DdCbkdljoIDtBFoxUohUQokpegatnFHQmch34+humD9mitEyeg==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-5754b62f.js"></script>
-    <script crossorigin="anonymous" defer="defer" integrity="sha512-cKu/+X7gT+WVH4sXKt0g3G77bfQfcgwurRObM+dt8XylPm9eEWI+/aWKhVab6VsYuvvuI5BTriKXhXfJwaSXdQ==" type="application/javascript" data-module-id="./chunk-webgl-warp.js" data-src="https://github.githubassets.com/assets/chunk-webgl-warp-70abbff9.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-ODZJzCJpaOfusrIka5QVZQcPiO9LBGyrrMYjhhJWSLuCN5WbZ5xiEiiOPOKVu71dqygyRdB2TY7AKPA1J5hqdg==" type="application/javascript" data-module-id="./chunk-unveil.js" data-src="https://github.githubassets.com/assets/chunk-unveil-383649cc.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-emPgUbSwW9ezLCgRnTE7n4fbbfc/MqEEDHmnkmG61dTyjWKHTYKN4wN3OPS7SY0fwmSJ8mB5+gng2nZw4/HsUg==" type="application/javascript" data-module-id="./chunk-animate-on-scroll.js" data-src="https://github.githubassets.com/assets/chunk-animate-on-scroll-7a63e051.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-x6L94lNXrnj4GyXhVug6j63GettxBVe/yQmgJU42IbfJet6sW2RBDG4tbZVkLbOCiYrNy+1Zwvoc1gA6uzSPow==" type="application/javascript" data-module-id="./chunk-input-demux.js" data-src="https://github.githubassets.com/assets/chunk-input-demux-c7a2fde2.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-d9zLk770daEV3pV4uNV22h2h49h/QxYstihxVyOEMetKZVhZcWW9bbqXOp2e1I7sIpuIj3xcpUSdlZKJxdl3tw==" type="application/javascript" data-module-id="./chunk-ref-selector.js" data-src="https://github.githubassets.com/assets/chunk-ref-selector-77dccb93.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-qD/5tz/GcwW3JIAEWlYOhr1tAQARpth6oFJ4ZpDWSpBgCiX4yh9FyUAGwuJtpPpMdp09fAjM6yh6r98Tw4/iRw==" type="application/javascript" data-module-id="./chunk-filter-input.js" data-src="https://github.githubassets.com/assets/chunk-filter-input-a83ff9b7.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-ynV5nM8UuCr4KZ/msFeRxRL6LnG+XUKzIfh6LNIzQ21ecjLVPvm53ghTE54aIuSUaHJWHnsYg8FRzycZIcRHiA==" type="application/javascript" data-module-id="./chunk-edit.js" data-src="https://github.githubassets.com/assets/chunk-edit-ca75799c.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-GhqHDMwaAgqUsjVyltYVhaaLYy2G887rPRXXNbsdaI+Xm3dh0fbaHLhZns70EjFAEpXBgCAYFYdnlG1IQFmz1A==" type="application/javascript" data-module-id="./chunk-responsive-underlinenav.js" data-src="https://github.githubassets.com/assets/chunk-responsive-underlinenav-1a1a870c.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-gmw7obKL/JEHWPp6zWFh+ynbXUFOidj1DN2aPiTDwP8Gair0moVuDmA340LD84A29I3ZPak19CEiumG+oIiseg==" type="application/javascript" data-module-id="./chunk-tag-input.js" data-src="https://github.githubassets.com/assets/chunk-tag-input-826c3ba1.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-Ao9llFIlj54ApuKf2QLboXukbu2h7MHfMmtYHrrsVe1lprKNLiA0usVcRpvruKhfT5STDuWm/GGmyx8ox27hWQ==" type="application/javascript" data-module-id="./chunk-notification-list-focus.js" data-src="https://github.githubassets.com/assets/chunk-notification-list-focus-028f6594.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-SPWd3rzrxmU6xW6vy1JPWCd+3uWFWmnd0MVGpmw/TpHWUAdLWDqL8kWyC/sBIZJmda4mTtUO1DHJQzAXRSrC+g==" type="application/javascript" data-module-id="./chunk-cookies.js" data-src="https://github.githubassets.com/assets/chunk-cookies-48f59dde.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-4vVRplWFI7P4m3RHQ0QAhkq6eZUdtIE8PBhsKYJRwDkhQw9iK/U1st1/fM1tQZFuBFwGMyqaZblbWtQ+2ejcqQ==" type="application/javascript" data-module-id="./chunk-slug.js" data-src="https://github.githubassets.com/assets/chunk-slug-e2f551a6.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-MK53GXbb2BPV+ADlEbJbkrvg34WPcAd5RC2nBJhUH1tR/Mjr9xrsf56ptBajfWcIWKRKbqqRtLktgr0wAbB3zw==" type="application/javascript" data-module-id="./chunk-async-export.js" data-src="https://github.githubassets.com/assets/chunk-async-export-30ae7719.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-tw9SApiMkftVBYeb6/VGhEwGNw8tlyBhXc9RVXH4UbCD6u+48uuCMvXf3bxvBdOld0OoYg83SnD2mgJWhdaTiQ==" type="application/javascript" data-module-id="./chunk-premium-runners.js" data-src="https://github.githubassets.com/assets/chunk-premium-runners-b70f5202.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-D576CjzS9sbDqFBJdq0Y6+KVMHXkO6mLFO/GRL1NtoE8jgXjAvmdjoZ4nNMWyDwqbtBHspvupORzE9L+YoBLYQ==" type="application/javascript" data-module-id="./chunk-get-repo-element.js" data-src="https://github.githubassets.com/assets/chunk-get-repo-element-0f9efa0a.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-xhSAO0KtnFAlRqAK+mg8BPj/J334ccvnCmmjmBQBCgZcsoO9teHJSS6oAn3XOWYFsWPU2JehwG7S3OVEbLwdUg==" type="application/javascript" data-module-id="./chunk-color-modes.js" data-src="https://github.githubassets.com/assets/chunk-color-modes-c614803b.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-jitxouuFY6SUcDZV5W3jhadVEIfFBfCQZxfPV3kxNnsWEBzbxMJFp0ccLb7+OlBjSs1zU/MNtuOV6T9Ay7lx4w==" type="application/javascript" data-module-id="./chunk-copy.js" data-src="https://github.githubassets.com/assets/chunk-copy-8e2b71a2.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-sAeL7y7Tbq5g07u3/0pJIS9IegVGfOVwfX7LQfKPna4UYzOQtcjfAJnwXSHWbAG7jSy4jQKtsukdRuQLX8JrGQ==" type="application/javascript" data-module-id="./chunk-voting.js" data-src="https://github.githubassets.com/assets/chunk-voting-b0078bef.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-HDsLJf6gAN+WDFaJneJwmIY82XkZKWqeX7tStBLRh1XM53K8vMV6JZvjq/UQXszaNVWxWcuYtgYTG6ZWo8+QSw==" type="application/javascript" data-module-id="./chunk-confetti.js" data-src="https://github.githubassets.com/assets/chunk-confetti-1c3b0b25.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-Jm91haHZxrhZUNUTJjxVpQdGcJwkbXkupgnVWT/GunQM8NN7k9a48rWrF3rf9/ElJ9sOmP54OzFXiPy82TjCgg==" type="application/javascript" data-module-id="./chunk-codemirror.js" data-src="https://github.githubassets.com/assets/chunk-codemirror-266f7585.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-Gr3ZcJt5t73JeBM3NwOEziKyDZ3HpHwzqZL/c1pgTUfo+6QC5f88XXRw/RT6X2diwqvaa3OVFh0oWsZ9ZxhtdQ==" type="application/javascript" data-module-id="./chunk-tip.js" data-src="https://github.githubassets.com/assets/chunk-tip-1abdd970.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-EdQvlnI4Pu5Q6K0HCvp+mi0Vw9ZuwaEuhbnCbmFKX+c0xwiUWY0L3n9P0F6doLhaHhfpvW3718+miL11WG4BeA==" type="application/javascript" data-module-id="./chunk-line.js" data-src="https://github.githubassets.com/assets/chunk-line-11d42f96.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-4zSHP2sQXPKoN9jFy8q2ThHsQNej8s4qhubSR4g0/2dTexAEnoTG+RbaffdIhmjfghGjpS/DlE0cdSTFEOcipQ==" type="application/javascript" data-module-id="./chunk-array.js" data-src="https://github.githubassets.com/assets/chunk-array-e334873f.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-g8fb6U7h9SkWgiK69nfNMn4aN5D2YBYPZUbCIuLpemWoOw8NOaZY8Z0hPq4RUVs4+bYdCFR6K719k8lwFeUijg==" type="application/javascript" data-module-id="./chunk-band.js" data-src="https://github.githubassets.com/assets/chunk-band-83c7dbe9.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-6oWCu7ltWLHlroIRg8mR6RloC1wqKS9aK9e5THWgzaE2GNPAdoC+MLZEYD/TdIiZxsQRev0RInyonsXGBK0aMw==" type="application/javascript" data-module-id="./chunk-toast.js" data-src="https://github.githubassets.com/assets/chunk-toast-ea8582bb.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-miaiZ1xkDsWBUsURHOmeYtbgVKQGnm1octCo/lDXUmPzDyjtubnHULRVw1AK+sttwdwyB0+LOyhIVAWCNSGx+A==" type="application/javascript" data-module-id="./chunk-delayed-loading-element.js" data-src="https://github.githubassets.com/assets/chunk-delayed-loading-element-9a26a267.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-GD25CNhMGDMzEmeFhUT0FILBupAkx5/CHohnYXOP1togy40O0iu/lASaSp3gV8ue0nwscalJVQqR5gKDRHHDVg==" type="application/javascript" data-module-id="./chunk-three.module.js" data-src="https://github.githubassets.com/assets/chunk-three.module-183db908.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-Ofk7ddnMsJ6F9d2vCuPQav+FG9Rg8i6WRG2KmbzwT01S9H4y58Fl42zYxDh/lJjOWeSyOB9KJyfIkdpCCTYG9A==" type="application/javascript" data-module-id="./chunk-invitations.js" data-src="https://github.githubassets.com/assets/chunk-invitations-39f93b75.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-vFR+IqThljOLrAWmjhOL/kiQrjgZZg95uPovX0J7kRH5p7Y049LDRZaXLMDijfeqqk71d3MMn9XP5bUcH+lB9w==" type="application/javascript" data-module-id="./chunk-profile.js" data-src="https://github.githubassets.com/assets/chunk-profile-bc547e22.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-FeRujRzXPfs03roBR3mnHvWukfFpu27XbyZPQri9jcCY0AdUWSM5R4drHTJUDQ62Pz/aX0rSS5xORvTu7NsjlQ==" type="application/javascript" data-module-id="./chunk-overview.js" data-src="https://github.githubassets.com/assets/chunk-overview-15e46e8d.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-xqw233932eUGcGURAPuwUWZpC5Km/9Btq7/2Jnkt1rSWnPSVfMl+JKpr9eLtCoQmrpgP8vaghEuX8bWAS8fzTg==" type="application/javascript" data-module-id="./chunk-advanced.js" data-src="https://github.githubassets.com/assets/chunk-advanced-c6ac36df.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-6Rmd0BBAsJ9ouvb/pgrkToMPs5ogcqi8rcQ7R3GDPPHIjlu0NZ0Bx6HUn/aOruMCECETHm4Exfs5gjYdHs66RQ==" type="application/javascript" data-module-id="./chunk-runner-groups.js" data-src="https://github.githubassets.com/assets/chunk-runner-groups-e9199dd0.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-5H5N/3G/20nmVKntphXb9z0H9q3URFDmHSccLhFkMSA8ILAA9mYlRKCWAWoDcl/W437jtGw1tIxjWStfInvidw==" type="application/javascript" data-module-id="./chunk-profile-pins-element.js" data-src="https://github.githubassets.com/assets/chunk-profile-pins-element-e47e4dff.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-LrD2kFGlUY4JxKVeN3dgYfuhfq0akTPGHtqW0gxkM2sDqVY6pauK2k57tmMHw4TQdcUrs+RQnBc1HPD+ou+ZfQ==" type="application/javascript" data-module-id="./chunk-emoji-picker-element.js" data-src="https://github.githubassets.com/assets/chunk-emoji-picker-element-2eb0f690.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-EvJ2Fip59DXgARNuwTWgjdVqoCjhXQL73SP9yexijlWStKq92sfbKeGK5R4wIP0QOr39WsnW/Kaw3Wpl1QPfog==" type="application/javascript" data-module-id="./chunk-edit-hook-secret-element.js" data-src="https://github.githubassets.com/assets/chunk-edit-hook-secret-element-12f27616.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-W0EihGBOA1mE3orR7s2squ9xVaLXrwd2bOYY9SSslfZHrovrS6KenJU+XXn+CaykddON6/aFEd/FbuQ/FltI9Q==" type="application/javascript" data-module-id="./chunk-insights-query.js" data-src="https://github.githubassets.com/assets/chunk-insights-query-5b412284.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-D/5Ad6jlKQNRPSHbVN5ShlFXOTyRsKbT7O0cWbVHwtOZ/UrwOC5bHKaQFHTq46qeMBbFKyDG+oIdtm5G8NifDA==" type="application/javascript" data-module-id="./chunk-remote-clipboard-copy.js" data-src="https://github.githubassets.com/assets/chunk-remote-clipboard-copy-0ffe4077.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-SUjF5sI77QngAIQUwKJRgZuIM4qggFBMtOZJ3EFS7ecv4uq4BQQJivDVxNBG9api9/rWrpw0d6RzvTCz2GrbdA==" type="application/javascript" data-module-id="./chunk-series-table.js" data-src="https://github.githubassets.com/assets/chunk-series-table-4948c5e6.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-nrfktuuo7BZhPpJxM4fVi62vPbZu6VJZ7ykfarxBExTTDnchXEalCJOq2O3GrVdfWu9cdn9kR/J8+oeTAjdHlA==" type="application/javascript" data-module-id="./chunk-line-chart.js" data-src="https://github.githubassets.com/assets/chunk-line-chart-9eb7e4b6.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-IOMGagwchKC7UeWHK/bV/rO1F1/RZAH0fNNouWV2boLOtE1a9LUbesoRsYK7sz6aFXslPC8fLfow+yWpT1eZzQ==" type="application/javascript" data-module-id="./chunk-stacked-area-chart.js" data-src="https://github.githubassets.com/assets/chunk-stacked-area-chart-20e3066a.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-GohDpVrxfHqlavb8Zabvj+y/s6CHegYwyGpQxKtzR2MkQsynBC98LdLongRFMHI+TKAECLavp200Lsy9JbV5TQ==" type="application/javascript" data-module-id="./chunk-presence-avatars.js" data-src="https://github.githubassets.com/assets/chunk-presence-avatars-1a8843a5.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-TpHTIXhA/2bI21CVmFL1oS3dv+8zveJVZLOVVAZwXNAAI94Hy70L9vT3Q1Vvkyu4Z2gi2iFdy1a53pfYlEDgnQ==" type="application/javascript" data-module-id="./chunk-pulse-authors-graph-element.js" data-src="https://github.githubassets.com/assets/chunk-pulse-authors-graph-element-4e91d321.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-aNAcFMlIdG1ocY5LnZylnN/6KXiJxyPvKg7y1Jnai732wdnrjXazcvNiQkRnj5FY8WP6JRa3K4doCReA4nhj7w==" type="application/javascript" data-module-id="./chunk-stacks-input-config-view.js" data-src="https://github.githubassets.com/assets/chunk-stacks-input-config-view-68d01c14.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-MXXdKvrDUhz9jfXB1/McrPebK8VbV5haYcxcNt5WXgbUym55dZattmCIAK2pJFAD2h4aBUFHo7CzpjmDYf7EkQ==" type="application/javascript" data-module-id="./chunk-community-contributions.js" data-src="https://github.githubassets.com/assets/chunk-community-contributions-3175dd2a.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-cet9hnkE+vaMPz2lGw4InoQD4ZuVWd+S0JRTspISoRSd2xj9qYD2E7Fnpne5Ic3z6vutruWIuZlzF30ecrFVew==" type="application/javascript" data-module-id="./chunk-discussion-page-views.js" data-src="https://github.githubassets.com/assets/chunk-discussion-page-views-71eb7d86.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-5+v3VN/rhJv/1iAOVphuCGs1FM9eUlSB43CJLw1txGMLvuPNNz/xHQbzTOIW+t2NKFpTnptRvKbuicQ3Jp28UQ==" type="application/javascript" data-module-id="./chunk-discussions-daily-contributors.js" data-src="https://github.githubassets.com/assets/chunk-discussions-daily-contributors-e7ebf754.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-/PSS3erY5t+SZL9B5T6Edgzy2pLD3jx7G/ZqQE+UCPhaaMEEc8Qrhv5XTREOOX0e3DquvxVDDM/KVa6SK/BPcA==" type="application/javascript" data-module-id="./chunk-discussions-new-contributors.js" data-src="https://github.githubassets.com/assets/chunk-discussions-new-contributors-fcf492dd.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-cFe9WuBCDrJOiGiTm4+TEi7fPqhRTxRZbqng2GxfPrENGiyxllCL2NDjwgANC1PTe8UU6ATCFnK9JAgcph2rtA==" type="application/javascript" data-module-id="./chunk-tweetsodium.js" data-src="https://github.githubassets.com/assets/chunk-tweetsodium-7057bd5a.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-AVKfqEKBF/JCvS2PoakItu304k6gGt9oSMBW2R/eEfGsGuTmC9QeiQw//IJJKFRQdrzpha/FoC/cws9v6dsujQ==" type="application/javascript" data-module-id="./chunk-jump-to.js" data-src="https://github.githubassets.com/assets/chunk-jump-to-01529fa8.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-rgB4C/XatEIjEvdEJWsKRyOYwe2rj4WTWtCzlKT6jA8fR4xgjPnpcl4/QeQOprsfPE7R2BycawtlzHzh/xG0JQ==" type="application/javascript" data-module-id="./chunk-user-status-submit.js" data-src="https://github.githubassets.com/assets/chunk-user-status-submit-ae00780b.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-4xtjUJAtGhsZOLk+SHoir8MWF0vKHoR4tGlR36xsg1kGrE9ftN4BHe21k2TT5jSkqz5x8z7BfZKj/eUuwcZMEQ==" type="application/javascript" data-module-id="./chunk-launch-code-element.js" data-src="https://github.githubassets.com/assets/chunk-launch-code-element-e31b6350.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-NilVxyBbQNJ61v85EVcC3VjOsz5tz+bOlaR1h1R+jIFXNT8VhoalRgPXREht+R3JIZF5fiqkkHZy3+01pX4ZDg==" type="application/javascript" data-module-id="./chunk-metric-selection-element.js" data-src="https://github.githubassets.com/assets/chunk-metric-selection-element-362955c7.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-VtwQp1HbSSWXOsB5a8wzpRH8Bl7/vD0jgBgXsp2K2CTYkhfq/LAWps52SnVQjcRPoB2svCVaJV20hyFuCbGL3w==" type="application/javascript" data-module-id="./chunk-severity-calculator-element.js" data-src="https://github.githubassets.com/assets/chunk-severity-calculator-element-56dc10a7.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-yXHkwiNZgB6O0iSDKE8jrZzTtTyF8YdFFXHcemhWEPuN3sWs1PQrSwEh0Gw4/B9TIzUfvogbqlJ71yLLuqyM+Q==" type="application/javascript" data-module-id="./chunk-readme-toc-element.js" data-src="https://github.githubassets.com/assets/chunk-readme-toc-element-c971e4c2.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-WtxFYpyZyznX2bQr5Za6UNxUXn7RheDqolsoKRcOTvUA3hxrMym/nWB3FiaNxjI4ZH7ZeF5e2l/PM3Yaj8f1Sg==" type="application/javascript" data-module-id="./chunk-feature-callout-element.js" data-src="https://github.githubassets.com/assets/chunk-feature-callout-element-5adc4562.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-yxNOcJg4rvGRpQr6+SEa/h1pLruduSOJbs4dgMMJwtOzVsB7rnUjUmWA38lXw8UpWPzudIIdESY0SgO0HVFiAA==" type="application/javascript" data-module-id="./chunk-action-list-element.js" data-src="https://github.githubassets.com/assets/chunk-action-list-element-cb134e70.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-Pvx3rTrXcH5VI/XimZxFgsSzMLnRTMXnFd4laAZYre6JAI7349Swv+B1vh+YwFgR1LbZweTCKV1XBovUHhxc/A==" type="application/javascript" data-module-id="./chunk-sortable-behavior.js" data-src="https://github.githubassets.com/assets/chunk-sortable-behavior-3efc77ad.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-6JUQHgkTqBaCCdDugMcO4fQ8YxUHk+m6rwVp2Wxa4FMVz6BbBMPOzGluT4wBq8NTUcFv6DnXSOnt5e85jNgpGg==" type="application/javascript" data-module-id="./chunk-drag-drop.js" data-src="https://github.githubassets.com/assets/chunk-drag-drop-e895101e.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-28pipPJZvizfcYYETJWBBeDHsrDEz7A06d7Y5swgY/OWmsX0ZJW6mkZVFRO7Z/xZh1D1qFbPHGNixfCd1YpBnA==" type="application/javascript" data-module-id="./chunk-contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/chunk-contributions-spider-graph-dbca62a4.js"></script>
+    <script crossorigin="anonymous" defer="defer" integrity="sha512-y0yuiXfWuIeCCcUBT1jacp25vWnFCJWgwLM5G1VM4tmCHdoQbiVjvW/vuSuEXUjtS8WwdioTD5hVv9UULiUlww==" type="application/javascript" data-module-id="./chunk-webgl-warp.js" data-src="https://github.githubassets.com/assets/chunk-webgl-warp-cb4cae89.js"></script>
   
-  <script crossorigin="anonymous" defer="defer" integrity="sha512-VJ7p+8dAFyB3OfeLNwYIQpDHaVf8hYKz/3XBfcGwQjDRbBvZtk2wIf+jA5s9qhXg8CM1CdwSmhlVGnw7fO7H3A==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-549ee9fb.js"></script>
+  <script crossorigin="anonymous" defer="defer" integrity="sha512-sIzPbFNg+f+72jvT/uWwVCXW0jlK7OzkdRue6Gu6NvYsVXqK2k23f6ELnh7rSlj427/DG3Jxs+jHrjXuG751Mw==" type="application/javascript" src="https://github.githubassets.com/assets/diffs-b08ccf6c.js"></script>
 
   <meta name="viewport" content="width=device-width">
   
   <title>Page not found · GitHub · GitHub</title>
-    <meta name="description" content="GitHub is where people build software. More than 65 million people use GitHub to discover, fork, and contribute to over 200 million projects.">
+    <meta name="description" content="GitHub is where people build software. More than 73 million people use GitHub to discover, fork, and contribute to over 200 million projects.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
@@ -84,7 +105,7 @@
     <meta property="og:url" content="https://github.com">
     <meta property="og:site_name" content="GitHub">
     <meta property="og:title" content="Build software better, together">
-    <meta property="og:description" content="GitHub is where people build software. More than 65 million people use GitHub to discover, fork, and contribute to over 200 million projects.">
+    <meta property="og:description" content="GitHub is where people build software. More than 73 million people use GitHub to discover, fork, and contribute to over 200 million projects.">
     <meta property="og:image" content="https://github.githubassets.com/images/modules/open_graph/github-logo.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
@@ -104,7 +125,7 @@
     <meta property="twitter:creator:id" content="13334762">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="GitHub">
-    <meta property="twitter:description" content="GitHub is where people build software. More than 65 million people use GitHub to discover, fork, and contribute to over 200 million projects.">
+    <meta property="twitter:description" content="GitHub is where people build software. More than 73 million people use GitHub to discover, fork, and contribute to over 200 million projects.">
     <meta property="twitter:image:src" content="https://github.githubassets.com/images/modules/open_graph/github-logo.png">
     <meta property="twitter:image:width" content="1200">
     <meta property="twitter:image:height" content="1200">
@@ -116,7 +137,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="9BDD:0FC4:1471CF3:1531B4A:6127AB60" data-pjax-transient="true"/><meta name="html-safe-nonce" content="a1eb69ffa63e9695b0eb89a0d933d265900022dcd5de760a000d466650438b17" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiI5QkREOjBGQzQ6MTQ3MUNGMzoxNTMxQjRBOjYxMjdBQjYwIiwidmlzaXRvcl9pZCI6IjI1MzgwODU3NTIzOTc4Njc4NzIiLCJyZWdpb25fZWRnZSI6ImZyYSIsInJlZ2lvbl9yZW5kZXIiOiJmcmEifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="c0df101d730a7c723a858b95f220c9752810947d8d4a8ac835940eb4d496e46f" data-pjax-transient="true"/>
+  <meta name="request-id" content="D69F:4B43:67E5BF:75A068:6197DB84" data-pjax-transient="true"/><meta name="html-safe-nonce" content="1560a34b4d2519bc0856e6985139ec970b4efc5c70a88be9fd4a4ab345737300" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJENjlGOjRCNDM6NjdFNUJGOjc1QTA2ODo2MTk3REI4NCIsInZpc2l0b3JfaWQiOiIxNDA2ODU4MzU1MjQzNzM1OTQwIiwicmVnaW9uX2VkZ2UiOiJmcmEiLCJyZWdpb25fcmVuZGVyIjoiZnJhIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="b49ddd7f7bfad2730fba02d1afc0ba5ae63c63980a0a303ec162c6aeff2c5b5f" data-pjax-transient="true"/>
 
 
 
@@ -131,7 +152,7 @@
   <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-url" content="https://collector.githubapp.com/github/collect" />
+<meta name="octolytics-url" content="https://collector.githubapp.com/github/collect" />
 
   
 
@@ -151,12 +172,15 @@
       <meta name="expected-hostname" content="github.com">
 
 
-    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,DEPRECATE_PJAX_PARAM_JS">
+    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,FILE_UPLOAD_CURSOR_POSITION">
 
-  <meta http-equiv="x-pjax-version" content="2d175152db8f4f17b88561fbc83cc60f3d2a2821b0bc8ac30e1eea0480c0de39">
+  <meta http-equiv="x-pjax-version" content="8a52ad152db1d33ac53b1726559694ddf110d9924256d88c6a5af565236b730c">
+  <meta http-equiv="x-pjax-csp-version" content="2961869ef171e90c8991818e57dbe138c0fb830bb3b52e0ab0e81ccb4709c345">
+  <meta http-equiv="x-pjax-css-version" content="99f6de1fa47d637284edf6166a05b328d732695d9689d4adf221a5aab4928f8e">
+  <meta http-equiv="x-pjax-js-version" content="59fc84afd383f86f05cde6c0b40f03d4a1eb7bdedf9071387a7c9e54dc11667f">
   
 
-      <link crossorigin="anonymous" media="all" integrity="sha512-dSzb2hiq16fDO7aMwU0UQhHO2TK2nActn34N8s8laRUfH5rz5rWI6rrmBhjoYqne9nAcYHd7HsEHt/9vjRi9sA==" rel="stylesheet" href="https://github.githubassets.com/assets/site-752cdbda18aad7a7c33bb68cc14d1442.css" />
+      <link crossorigin="anonymous" media="all" integrity="sha512-g2gLKxKBtN25FOqKlt4Wof04EYc6hBLgsyQKbek5MapQ0Zl9KdK/n+0QXGEu9+i/EHWlmj2bC5WWjeosf1Fgnw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-83680b2b1281b4ddb914ea8a96de16a1.css" />
   <link rel="preload" href="https://github.githubassets.com/static/fonts/alliance/Alliance-No-1-ExtraBold.woff2" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="https://github.githubassets.com/static/fonts/alliance/Alliance-No-1-Regular.woff2" as="font" type="font/woff" crossorigin>
 
@@ -180,159 +204,259 @@
 
   <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
 
-<meta name="enabled-homepage-translation-languages" content="">
-
   </head>
 
   <body class="logged-out env-production page-responsive min-height-full d-flex flex-column" style="word-wrap: break-word;">
     
 
     <div class="position-relative js-header-wrapper ">
-      <a href="#start-of-content" class="px-2 py-4 color-bg-info-inverse color-text-white show-on-focus js-skip-to-content">Skip to content</a>
+      <a href="#start-of-content" class="px-2 py-4 color-bg-accent-emphasis color-text-white show-on-focus js-skip-to-content">Skip to content</a>
       <span data-view-component="true" class="progress-pjax-loader js-pjax-loader-bar Progress position-fixed width-full">
-    <span style="background-color: #79b8ff;width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar"></span>
+    <span style="width: 0%;" data-view-component="true" class="Progress-item progress-pjax-loader-bar color-bg-info-inverse"></span>
 </span>      
       
 
 
         
-            
-<header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
+
+            <header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
   <div class="container-xl d-lg-flex flex-items-center p-responsive">
     <div class="d-flex flex-justify-between flex-items-center">
-        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
-          <svg height="32" class="octicon octicon-mark-github color-text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-        </a>
+      <a class="mr-4 color-fg-inherit" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github">
+    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+      </a>
 
-          <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
-            
+        <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
+          
 
-          </div>
-
-        <div class="d-flex flex-items-center">
-              <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2Fnevakee716%2Fcpm%2Fwiki%2FHome.md&amp;source=header"
-                class="d-inline-block d-lg-none f5 color-text-white no-underline border color-border-tertiary rounded-2 px-2 py-1 mr-3 mr-sm-5"
-                data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="033e29bd449e02b8c846ef39f8f8fb87e0795024539efd26ab13d207439909f8"
-              >
-                Sign&nbsp;up
-              </a>
-
-          <button class="btn-link d-lg-none mt-1 js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
-            <svg height="24" class="octicon octicon-three-bars color-text-white" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
-          </button>
         </div>
+
+      <div class="d-flex flex-items-center">
+            <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2Fnevakee716%2Fcpm%2Fwiki%2FHome.md&amp;source=header"
+              class="d-inline-block d-lg-none f5 no-underline border color-border-default rounded-2 px-2 py-1 mr-3 mr-sm-5 color-fg-inherit"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="033e29bd449e02b8c846ef39f8f8fb87e0795024539efd26ab13d207439909f8"
+            >
+              Sign&nbsp;up
+            </a>
+
+        <button aria-label="Toggle navigation" aria-expanded="false" type="button" data-view-component="true" class="js-details-target btn-link d-lg-none mt-1 color-fg-inherit">
+  
+  
+          <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-three-bars">
+    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+</svg>
+
+  
+
+</button>      </div>
     </div>
 
     <div class="HeaderMenu HeaderMenu--logged-out position-fixed top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto">
-      <div class="d-flex d-lg-none flex-justify-end border-bottom color-bg-secondary p-3">
-        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
-          <svg height="24" class="octicon octicon-x color-text-secondary" viewBox="0 0 24 24" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path></svg>
-        </button>
-      </div>
+      <div class="d-flex d-lg-none flex-justify-end border-bottom color-bg-subtle p-3">
+        <button aria-label="Toggle navigation" aria-expanded="false" type="button" data-view-component="true" class="js-details-target btn-link">
+  
+  
+          <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-x color-fg-muted">
+    <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
+</svg>
+
+  
+
+</button>      </div>
 
         <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
           <ul class="d-lg-flex list-style-none">
-              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
-                <details class="HeaderMenu-details details-overlay details-reset width-full">
-                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
-                    Why GitHub?
-                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
-                      <path d="M1,1l6.2,6L13,1"></path>
-                    </svg>
-                  </summary>
-                  <div class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
-                    <a href="/features" class="py-2 lh-condensed-ultra d-block Link--primary no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a>
-                    <ul class="list-style-none f5 pb-3">
+              <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <details class="HeaderMenu-details details-overlay details-reset width-full">
+      <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+        Why GitHub?
+        <svg x="0" y="0" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative"><path d="M1,1l6.2,6L13,1"></path></svg>
+      </summary>
+      <div class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+        <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--primary text-bold py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Features&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Features;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7961c30475ac29060253acedb232eb308a4ab113c2901f2c99aabdb17b49d52e" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Features&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Features;&quot;}" href="/features">
+      Features <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Mobile&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Mobile;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="31cc0aca15f873b651d2a0affd9fbba61f694338d41314a62173855c6d67a908" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Mobile&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Mobile;&quot;}" href="/mobile">
+      Mobile <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Actions&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Actions;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e9b96a67a79ab2d1a6b724529f86ace39645cf829cb2fcbef1e197f4404c7632" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Actions&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Actions;&quot;}" href="/features/actions">
+      Actions <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Codespaces&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Codespaces;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="bc7c3c706b5ae7d7966699ea41870f5931b9127b6f945c5b346cf8d5279a852e" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Codespaces&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Codespaces;&quot;}" href="/features/codespaces">
+      Codespaces <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Packages&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Packages;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="3aae44a5e92db619e4cf9f1d57972b78feeb31803cf75ecb7d097d539fe0b3c4" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Packages&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Packages;&quot;}" href="/features/packages">
+      Packages <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Security&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Security;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a299afcd038c9afba4c6f8ae465695e1c8f96cee3f70ab46e8633b9840c37fbc" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Security&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Security;&quot;}" href="/features/security">
+      Security <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Code review&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Code review;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="1bb2a8af8eb5ce288a9e2f9510732ffdb2aab82f65d74527793ef4bf79c73358" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Code review&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Code review;&quot;}" href="/features/code-review">
+      Code review <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Issues&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Issues;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="af836ec5bcd04c7a5ccff5e38fb901a72d57ae066814667280e8d9d3e5a65d76" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Issues&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Issues;&quot;}" href="/features/issues">
+      Issues <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Integrations&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Integrations;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2dd81c3a3ab81be5da623d9151ec7565b585ae5f01df11c67c14f6790327d0d8" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Integrations&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Integrations;&quot;}" href="/features/integrations">
+      Integrations <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--primary text-bold border-top pt-4 pb-2 mt-3" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to GitHub Sponsors&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:GitHub Sponsors;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="b0c5694d3a863b543ad93962758423cdc3fb38d3a8c9c5c428746a73575f0d56" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to GitHub Sponsors&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:GitHub Sponsors;&quot;}" href="/sponsors">
+      GitHub Sponsors <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--primary text-bold py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Customer stories&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Customer stories;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6da8891af554cade51c2edb1c42496e6c56c081b718e4055c55dd397090866de" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Why GitHub?&quot;,&quot;action&quot;:&quot;click to go to Customer stories&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Customer stories;&quot;}" href="/customer-stories">
+      Customer stories <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
 
 
-                          <li class="edge-item-fix"><a href="/mobile" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover">Mobile <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                          <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover">Actions <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                          <li class="edge-item-fix"><a href="/features/codespaces" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover">Codespaces <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                          <li class="edge-item-fix"><a href="/features/packages" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover">Packages <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                          <li class="edge-item-fix"><a href="/features/security" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover">Security <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                          <li class="edge-item-fix"><a href="/features/code-review/" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover">Code review <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                          <li class="edge-item-fix"><a href="/features/issues/" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover">Issues <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                          <li class="edge-item-fix"><a href="/features/integrations" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover">Integrations <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
+              <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Team&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Team;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0b581649aedd16221662307f506584e4260c65513be7937277f952456f800f98" data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Team&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Team;&quot;}" href="/team">Team</a>
+</li>
+
+              <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Enterprise&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Enterprise;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="b39d03a9e954ba6652f210f473923d0c84989924a0e94960ffc6bba88228b4b6" data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Enterprise&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Enterprise;&quot;}" href="/enterprise">Enterprise</a>
+</li>
 
 
-                    </ul>
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <details class="HeaderMenu-details details-overlay details-reset width-full">
+      <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+        Explore
+        <svg x="0" y="0" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative"><path d="M1,1l6.2,6L13,1"></path></svg>
+      </summary>
+      <div class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+        <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--primary text-bold py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Explore GitHub&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Explore GitHub;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="57bd3da8f79d36d2ac6ea93ab0fa7212ff27c25ac4480b143a3c96c389978d4d" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Explore GitHub&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Explore GitHub;&quot;}" href="/explore">
+      Explore GitHub <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
 
-                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
-                      <li class="edge-item-fix"><a href="/sponsors" class="py-2 lh-condensed-ultra d-block no-underline Link--primary no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Sponsors">GitHub Sponsors <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="/customer-stories" class="py-2 lh-condensed-ultra d-block no-underline Link--primary no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories">Customer stories<span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                    </ul>
-                  </div>
-                </details>
-              </li>
-              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
-                <a href="/team" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Team">Team</a>
-              </li>
-              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
-                <a href="/enterprise" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise">Enterprise</a>
-              </li>
+              <li class="color-fg-muted text-normal f6 text-mono mb-1 border-top pt-3 mt-3 mb-1">Learn and contribute</li>
 
-              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
-                <details class="HeaderMenu-details details-overlay details-reset width-full">
-                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
-                    Explore
-                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
-                      <path d="M1,1l6.2,6L13,1"></path>
-                    </svg>
-                  </summary>
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Topics&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Topics;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="b52c18abb9d315008b105c6c80a4238d974d65ca692ed1d0a90fbff0ff8c9362" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Topics&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Topics;&quot;}" href="/topics">
+      Topics <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
 
-                  <div class="dropdown-menu flex-auto rounded px-0 pt-2 pb-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
-                    <ul class="list-style-none mb-3">
-                      <li class="edge-item-fix"><a href="/explore" class="py-2 lh-condensed-ultra d-block Link--primary no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                    </ul>
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Collections&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Collections;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="55328f380240ea4e6965d5cb204f281391b9ab3223936a42e379cbc2f6b138fa" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Collections&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Collections;&quot;}" href="/collections">
+      Collections <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
 
-                    <h4 class="color-text-tertiary text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Learn and contribute</h4>
-                    <ul class="list-style-none mb-3">
-                      <li class="edge-item-fix"><a href="/topics" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Topics">Topics <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                        <li class="edge-item-fix"><a href="/collections" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Collections">Collections <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="/trending" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Trending">Trending <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://opensource.guide" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                    </ul>
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Trending&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Trending;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="cf364a2c61a838232df1ceb29aeaeb883d385796fd4725c5f7b507fb5971f473" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Trending&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Trending;&quot;}" href="/trending">
+      Trending <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
 
-                    <h4 class="color-text-tertiary text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Connect with others</h4>
-                    <ul class="list-style-none mb-0">
-                      <li class="edge-item-fix"><a href="https://github.com/readme" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover">The ReadME Project <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://github.com/events" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Events">Events <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://github.community" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Community forum">Community forum <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://stars.github.com" class="py-2 pb-0 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to GitHub Stars Program">GitHub Stars program <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                    </ul>
-                  </div>
-                </details>
-              </li>
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Learning Lab&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Learning Lab;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="fae06962390594039690a14ec7f5c6bb38152765c0be6f775e86077c470ab7cf" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Learning Lab&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Learning Lab;&quot;}" href="https://lab.github.com/">
+      Learning Lab <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
 
-              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
-                <a href="/marketplace" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
-              </li>
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Open source guides&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Open source guides;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8e99b053362bf08b21057b4c8c8a489d01d96c4ab0a1444da04d5fb6116f7a36" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Open source guides&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Open source guides;&quot;}" href="https://opensource.guide">
+      Open source guides <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
 
-              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
-                <details class="HeaderMenu-details details-overlay details-reset width-full">
-                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
-                    Pricing
-                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
-                       <path d="M1,1l6.2,6L13,1"></path>
-                    </svg>
-                  </summary>
+              <li class="color-fg-muted text-normal f6 text-mono mb-1 border-top pt-3 mt-3 mb-1">Connect with others</li>
 
-                  <div class="dropdown-menu flex-auto rounded px-0 pt-2 pb-4 mt-0 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
-                    <a href="/pricing" class="pb-2 lh-condensed-ultra d-block Link--primary no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a>
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to The ReadME Project&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:The ReadME Project;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="4a4d5a22ce30517a89514950e262f3d5bde08efb207a1a177914e3728470f41b" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to The ReadME Project&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:The ReadME Project;&quot;}" href="/readme">
+      The ReadME Project <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
 
-                    <ul class="list-style-none mb-3">
-                      <li class="edge-item-fix"><a href="/pricing#feature-comparison" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Compare plans">Compare plans <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block Link--secondary no-underline f5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Contact Sales">Contact Sales <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                    </ul>
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Events&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Events;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a9d4d161efcb955e0c6898a9e414b2d19e2cd109152d209180f7e784d5c8bf30" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Events&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Events;&quot;}" href="/events">
+      Events <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
 
-                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
-                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block no-underline Link--primary no-underline h5 Bump-link--hover"  data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal color-text-tertiary pr-3">&rarr;</span></a></li>
-                    </ul>
-                  </div>
-                </details>
-              </li>
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Community forum&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Community forum;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2ea39f55a5b5842e74c617a0872d884537c04ece73cf7d48879a320c3fe7de85" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to Community forum&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Community forum;&quot;}" href="https://github.community">
+      Community forum <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to GitHub Education&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:GitHub Education;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="d83ab3c9d4d70ebc5c00afc1959035541054f879a8f61cbdbe584b5ae1a8073a" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to GitHub Education&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:GitHub Education;&quot;}" href="https://education.github.com">
+      GitHub Education <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to GitHub Stars program&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:GitHub Stars program;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f051ea6c0df7714c548945fcb942cdf51e4034db4c116235752f791700b0a49b" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Explore&quot;,&quot;action&quot;:&quot;click to go to GitHub Stars program&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:GitHub Stars program;&quot;}" href="https://stars.github.com">
+      GitHub Stars program <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Marketplace&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Marketplace;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="d97784f78fba4948fd6902579a68a3b50e6192e7518b9ef7724a5243f9094e1f" data-analytics-event="{&quot;category&quot;:&quot;Header menu top item (logged out)&quot;,&quot;action&quot;:&quot;click to go to Marketplace&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Marketplace;&quot;}" href="/marketplace">Marketplace</a>
+</li>
+
+
+            <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+    <details class="HeaderMenu-details details-overlay details-reset width-full">
+      <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+        Pricing
+        <svg x="0" y="0" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative"><path d="M1,1l6.2,6L13,1"></path></svg>
+      </summary>
+      <div class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+        <ul class="list-style-none f5 pb-1">
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--primary text-bold py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Plans&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Plans;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="32b1978c15859518ec98ebea24faedface557566066c26c9a4a7a2d14a557926" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Plans&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Plans;&quot;}" href="/pricing">
+      Plans <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Compare plans&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Compare plans;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c1e2eb8760c98872689d9f4cfedb2533f6c6a7106a5615a34efa7f61389570eb" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Compare plans&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Compare plans;&quot;}" href="/pricing#compare-features">
+      Compare plans <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--secondary py-2" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Contact Sales&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Contact Sales;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="08d8a17249a12f15685148896f4be0055212096299b3688ba519748e04be78e1" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Contact Sales&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Contact Sales;&quot;}" href="https://github.com/enterprise/contact">
+      Contact Sales <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+              <li>
+    <a class="lh-condensed-ultra d-block no-underline Bump-link--hover position-relative Link--primary text-bold border-top pt-4 pb-2 mt-3" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Education&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Education;&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="692f99c9b37ee86abd8454acc63ffcf90ab9dda9bef4a5a0c697fa9567bfef41" data-analytics-event="{&quot;category&quot;:&quot;Header dropdown (logged out), Pricing&quot;,&quot;action&quot;:&quot;click to go to Education&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Education;&quot;}" href="https://education.github.com">
+      Education <span class="Bump-link-symbol position-absolute right-0 text-normal color-fg-muted pr-3">&rarr;</span>
+</a>  </li>
+
+        </ul>
+      </div>
+    </details>
+</li>
+
           </ul>
         </nav>
 
@@ -366,7 +490,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="6Rd06vmyK02ljZaSpUy40nv+tNGw6r3r41FjdHa2AycH03s8wB+TMb9e1CsqoLcyUXUk2IeWjS6ZsWggnBLtaw==" />
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="fnuPVh/zgEDD8+1KgnWGWp7bLfyYNf+sUbvdWjC4RWp3Sgmkj2F2gNgWrTlNfztS41RULBv/i++NAG5pJvnS5Q==" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -379,9 +503,15 @@
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="suggestion">
     <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
     </div>
 
     <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
@@ -389,7 +519,7 @@
     <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
     </div>
 
-    <div class="border rounded-1 flex-shrink-0 color-bg-tertiary px-1 color-text-tertiary ml-1 f6 d-none js-jump-to-badge-search">
+    <div class="border rounded-1 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
       <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this user">
         In this user
       </span>
@@ -399,7 +529,7 @@
       <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
     </div>
 
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 color-bg-tertiary px-1 color-text-tertiary ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
       Jump to
       <span class="d-inline-block ml-1 v-align-middle">↵</span>
     </div>
@@ -410,7 +540,7 @@
 
 <ul class="d-none js-jump-to-no-results-template-container">
   <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
-    <span class="color-text-secondary">No suggested jump to results</span>
+    <span class="color-fg-muted">No suggested jump to results</span>
   </li>
 </ul>
 
@@ -420,9 +550,15 @@
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="scoped_search">
     <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
     </div>
 
     <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
@@ -430,7 +566,7 @@
     <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
     </div>
 
-    <div class="border rounded-1 flex-shrink-0 color-bg-tertiary px-1 color-text-tertiary ml-1 f6 d-none js-jump-to-badge-search">
+    <div class="border rounded-1 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
       <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this user">
         In this user
       </span>
@@ -440,7 +576,7 @@
       <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
     </div>
 
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 color-bg-tertiary px-1 color-text-tertiary ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
       Jump to
       <span class="d-inline-block ml-1 v-align-middle">↵</span>
     </div>
@@ -452,9 +588,15 @@
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-owner-scoped-search d-none" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="owner_scoped_search">
     <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
     </div>
 
     <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
@@ -462,7 +604,7 @@
     <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
     </div>
 
-    <div class="border rounded-1 flex-shrink-0 color-bg-tertiary px-1 color-text-tertiary ml-1 f6 d-none js-jump-to-badge-search">
+    <div class="border rounded-1 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
       <span class="js-jump-to-badge-search-text-default d-none" aria-label="in all of GitHub">
         Search
       </span>
@@ -472,7 +614,7 @@
       <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
     </div>
 
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 color-bg-tertiary px-1 color-text-tertiary ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
       Jump to
       <span class="d-inline-block ml-1 v-align-middle">↵</span>
     </div>
@@ -484,9 +626,15 @@
 <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
   <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="" data-item-type="global_search">
     <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+      <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+      <svg title="Project" aria-label="Project" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-project js-jump-to-octicon-project d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path>
+</svg>
+      <svg title="Search" aria-label="Search" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-search js-jump-to-octicon-search d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
+</svg>
     </div>
 
     <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
@@ -494,7 +642,7 @@
     <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
     </div>
 
-    <div class="border rounded-1 flex-shrink-0 color-bg-tertiary px-1 color-text-tertiary ml-1 f6 d-none js-jump-to-badge-search">
+    <div class="border rounded-1 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none js-jump-to-badge-search">
       <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this user">
         In this user
       </span>
@@ -504,7 +652,7 @@
       <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
     </div>
 
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 color-bg-tertiary px-1 color-text-tertiary ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 color-bg-subtle px-1 color-fg-muted ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
       Jump to
       <span class="d-inline-block ml-1 v-align-middle">↵</span>
     </div>
@@ -521,7 +669,7 @@
 
           </div>
 
-        <div class="position-relative mr-3 d-inline-block">
+        <div class="position-relative mr-3 mb-4 mb-lg-0 d-inline-block">
           <a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fnevakee716%2Fcpm%2Fwiki%2FHome.md"
             class="HeaderMenu-link flex-shrink-0 no-underline"
             data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e8d293696e0b917264bdaee05b89f881fdd7ec01caeeda53777ff4d0619a752f"
@@ -532,30 +680,30 @@
   <div style="width: 300px" data-view-component="true" class="Popover-message Box Popover-message--top-right color-text-primary p-4 mt-2 mx-auto text-left color-shadow-large">
     <h4 data-view-component="true" class="color-text-primary mb-2">                Sign in to GitHub
 </h4>
-                    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/session" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="kyh2U8j1YDyMv2hlkz/pDWI3vH7avtIxZ5Tz77JoFchcL46noWMWMUOozhJT6HvA4GdjGsf0oXYC1uY/qXFbtQ==" />  <label for="login_field">
+                    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/session" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="JUwgMJ4n0nHOnxXbQP8PDOL6P5gQXgKZZSas29t5mp9xjn6a+uegRQP8M4vQRp85+mLoLopO9h8mS4t/W3GsVg==" />  <label for="login_field">
     Username or email address
   </label>
-  <input type="text" name="login" id="login_field" class="form-control input-block" autocapitalize="off" autocorrect="off" autocomplete="username" autofocus="autofocus" />
+  <input type="text" name="login" id="login_field" class="form-control input-block js-login-field" autocapitalize="off" autocorrect="off" autocomplete="username" autofocus="autofocus" />
 
   <div class="position-relative">
     <label for="password">
       Password
     </label>
-    <input type="password" name="password" id="password" class="form-control form-control input-block" autocomplete="current-password" />
-    <input type="hidden" name="trusted_device" id="trusted_device" class="form-control" />
+    <input type="password" name="password" id="password" class="form-control form-control input-block js-password-field" autocomplete="current-password" />
+    <input type="hidden" name="trusted_device" id="trusted_device" autocomplete="off" class="form-control" />
     
 <input type="hidden" class="js-webauthn-support" name="webauthn-support" value="unknown">
 <input type="hidden" class="js-webauthn-iuvpaa-support" name="webauthn-iuvpaa-support" value="unknown">
-<input type="hidden" name="return_to" id="return_to" value="https://github.com/nevakee716/cpm/wiki/Home.md" class="form-control" />
-<input type="hidden" name="allow_signup" id="allow_signup" class="form-control" />
-<input type="hidden" name="client_id" id="client_id" class="form-control" />
-<input type="hidden" name="integration" id="integration" class="form-control" />
-<input class="form-control" type="text" name="required_field_ed1a" hidden="hidden" />
-<input class="form-control" type="hidden" name="timestamp" value="1629989728987" />
-<input class="form-control" type="hidden" name="timestamp_secret" value="81cf9a93577f66657eaee7b5fe964b9ed9d3139410eb8fc1b07070a805cfbed2" />
+<input type="hidden" name="return_to" id="return_to" value="https://github.com/nevakee716/cpm/wiki/Home.md" autocomplete="off" class="form-control" />
+<input type="hidden" name="allow_signup" id="allow_signup" autocomplete="off" class="form-control" />
+<input type="hidden" name="client_id" id="client_id" autocomplete="off" class="form-control" />
+<input type="hidden" name="integration" id="integration" autocomplete="off" class="form-control" />
+<input class="form-control" type="text" name="required_field_314e" hidden="hidden" />
+<input class="form-control" type="hidden" name="timestamp" value="1637342084359" />
+<input class="form-control" type="hidden" name="timestamp_secret" value="737aae9f408ff98ac62cc65cc44639edeb2f6a935a13b4618bec5dafdeed0fac" />
 
 
-    <input type="submit" name="commit" value="Sign in" class="btn btn-primary btn-block" data-disable-with="Signing in…" />
+    <input type="submit" name="commit" value="Sign in" class="btn btn-primary btn-block js-sign-in-button" data-disable-with="Signing in…" data-signin-label="Sign in" data-sso-label="Sign in with your identity provider" />
 
     <a class="label-link position-absolute top-0 right-0" tabindex="0" href="/password_reset">Forgot password?</a>
   </div>
@@ -563,13 +711,13 @@
 
 </div></div>        </div>
 
-            <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2Fnevakee716%2Fcpm%2Fwiki%2FHome.md&amp;source=header"
-              class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-border-tertiary rounded px-2 py-1"
-              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e8d293696e0b917264bdaee05b89f881fdd7ec01caeeda53777ff4d0619a752f"
-              data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Sign up;ref_loc:header logged out&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8fbd4fbbec74c80cded6679df877042821dfd90adbf08b303e0006d3cbe2ad75"
-            >
-              Sign up
-            </a>
+          <a href="/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2Fnevakee716%2Fcpm%2Fwiki%2FHome.md&amp;source=header"
+            class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-border-default rounded px-2 py-1"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e8d293696e0b917264bdaee05b89f881fdd7ec01caeeda53777ff4d0619a752f"
+            data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Sign up;ref_loc:header logged out&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8fbd4fbbec74c80cded6679df877042821dfd90adbf08b303e0006d3cbe2ad75" data-analytics-event="{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/nevakee716/cpm/wiki/Home.md;ref_cta:Sign up;ref_loc:header logged out&quot;}"
+          >
+            Sign up
+          </a>
       </div>
     </div>
   </div>
@@ -607,6 +755,7 @@
     
 
   <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
 
 
 
@@ -651,7 +800,7 @@
 
 <div class="container-lg mt-5 px-3">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form role="search" action="/search" accept-charset="UTF-8" method="get">
-    <label for="not-found-search" class="d-block text-normal color-text-secondary mb-1 f4">Find code, projects, and people on GitHub:</label>
+    <label for="not-found-search" class="d-block text-normal color-fg-muted mb-1 f4">Find code, projects, and people on GitHub:</label>
     <div class="d-flex flex-items-center">
       <input type="text" name="q" id="not-found-search" class="flex-auto input-lg form-control mr-2">
       <button type="submit" data-view-component="true" class="btn">
@@ -662,8 +811,8 @@
 </button>
     </div>
 </form>
-    <div class="mt-5 color-text-tertiary text-center">
-      <a href="https://support.github.com/contact" class="Link--secondary">Contact Support</a> &mdash;
+    <div class="mt-5 color-fg-muted text-center">
+      <a href="https://support.github.com/contact?tags=dotcom-404" class="Link--secondary">Contact Support</a> &mdash;
       <a href="https://githubstatus.com" class="Link--secondary">GitHub Status</a> &mdash;
       <a href="https://twitter.com/githubstatus" class="Link--secondary">@githubstatus</a>
     </div>
@@ -678,101 +827,187 @@
   <div class="container-xl p-responsive">
     <div class="d-flex flex-wrap py-5 mb-5">
       <div class="col-12 col-lg-4 mb-5">
-        <a href="/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to home&quot;,&quot;label&quot;:&quot;text:home&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c924e95d99d55a2c5563ff29e64b4661021bc212fc63f991f1b674ed5797a5a5" class="color-text-primary" aria-label="Go to GitHub homepage">
+        <a href="/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to home&quot;,&quot;label&quot;:&quot;text:home&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c924e95d99d55a2c5563ff29e64b4661021bc212fc63f991f1b674ed5797a5a5" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to home&quot;,&quot;label&quot;:&quot;text:home&quot;}" class="color-fg-default" aria-label="Go to GitHub homepage">
           <img class="footer-logo-mktg" src="https://github.githubassets.com/images/modules/site/icons/footer/github-logo.svg" width="84" height="30" loading="lazy" decoding="async" alt="GitHub">
         </a>
 
 
       </div>
+
       <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-lg-0 pl-lg-4">
-        <h2 class="h5 mb-3 text-mono color-text-tertiary text-normal">Product</h2>
-        <ul class="list-style-none color-text-secondary f5">
-          <li class="lh-condensed mb-3"><a href="/features" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to features&quot;,&quot;label&quot;:&quot;text:features&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7152b4e980d94eba46cb1e604a1db20ee85c59dad4d7b1799f9d7025d245e19e" class="Link--secondary">Features</a></li>
-          <li class="lh-condensed mb-3"><a href="/security" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a1f24cb25dcaf41fb26355a59f0364a17d7da5f146023a095b7770f1e8cec05a" class="Link--secondary">Security</a></li>
-          <li class="lh-condensed mb-3"><a href="/team" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to team&quot;,&quot;label&quot;:&quot;text:team&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0512c7fe9935b3b71603ad95953a252cdef34ad7e440fc384e9131c80e8b08fe" class="Link--secondary">Team</a></li>
-          <li class="lh-condensed mb-3"><a href="/enterprise" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to enterprise&quot;,&quot;label&quot;:&quot;text:enterprise&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="97243bb8ef700d29a11af8521cc920f43e687af9257888951bbb0f3732ae6232" class="Link--secondary">Enterprise</a></li>
-          <li class="lh-condensed mb-3"><a href="/customer-stories?type=enterprise" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to customer stories&quot;,&quot;label&quot;:&quot;text:customer stories&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="dddec57228c9f3f7de7d48a879890eb1735adecca80c474b482662d8ab6622ec" class="Link--secondary">Customer stories</a></li>
-          <li class="lh-condensed mb-3"><a href="/readme" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to the readme project&quot;,&quot;label&quot;:&quot;text:the readme project&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="678725d824e4b55514ab912ceb6e9ebd57e9a49a65ba3a972677405b55bc80b8" class="Link--secondary">The ReadME Project</a></li>
-          <li class="lh-condensed mb-3"><a href="/pricing" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to pricing&quot;,&quot;label&quot;:&quot;text:pricing&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="59bfe13ed0b82fdd22c0aaa0fc930c14a36995423d41756032f570db02e4e079" class="Link--secondary">Pricing</a></li>
-          <li class="lh-condensed mb-3"><a href="https://resources.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to resources&quot;,&quot;label&quot;:&quot;text:resources&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="153b86178903de87fecde646a15149f33c79bfc5bf5ef74055e2b82f6da31d87" class="Link--secondary">Resources</a></li>
-          <li class="lh-condensed mb-3"><a href="https://github.com/github/roadmap" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to roadmap&quot;,&quot;label&quot;:&quot;text:roadmap&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2adf8210735bbdb054726edae696fe5a35ee1b1eadd7a6e81eefe8de10aece91" class="Link--secondary">Roadmap</a></li>
+        <h2 class="h5 mb-3 text-mono color-fg-muted text-normal">
+          Product
+        </h2>
+
+        <ul class="list-style-none color-fg-muted f5">
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to features&quot;,&quot;label&quot;:&quot;text:features&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7152b4e980d94eba46cb1e604a1db20ee85c59dad4d7b1799f9d7025d245e19e" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to features&quot;,&quot;label&quot;:&quot;text:features&quot;}" href="/features">Features</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a1f24cb25dcaf41fb26355a59f0364a17d7da5f146023a095b7770f1e8cec05a" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="/security">Security</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to team&quot;,&quot;label&quot;:&quot;text:team&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0512c7fe9935b3b71603ad95953a252cdef34ad7e440fc384e9131c80e8b08fe" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to team&quot;,&quot;label&quot;:&quot;text:team&quot;}" href="/team">Team</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to enterprise&quot;,&quot;label&quot;:&quot;text:enterprise&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="97243bb8ef700d29a11af8521cc920f43e687af9257888951bbb0f3732ae6232" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to enterprise&quot;,&quot;label&quot;:&quot;text:enterprise&quot;}" href="/enterprise">Enterprise</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to customer stories&quot;,&quot;label&quot;:&quot;text:customer stories&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="dddec57228c9f3f7de7d48a879890eb1735adecca80c474b482662d8ab6622ec" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to customer stories&quot;,&quot;label&quot;:&quot;text:customer stories&quot;}" href="/customer-stories?type=enterprise">Customer stories</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to the readme project&quot;,&quot;label&quot;:&quot;text:the readme project&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="678725d824e4b55514ab912ceb6e9ebd57e9a49a65ba3a972677405b55bc80b8" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to the readme project&quot;,&quot;label&quot;:&quot;text:the readme project&quot;}" href="/readme">The ReadME Project</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to pricing&quot;,&quot;label&quot;:&quot;text:pricing&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="59bfe13ed0b82fdd22c0aaa0fc930c14a36995423d41756032f570db02e4e079" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to pricing&quot;,&quot;label&quot;:&quot;text:pricing&quot;}" href="/pricing">Pricing</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to resources&quot;,&quot;label&quot;:&quot;text:resources&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="153b86178903de87fecde646a15149f33c79bfc5bf5ef74055e2b82f6da31d87" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to resources&quot;,&quot;label&quot;:&quot;text:resources&quot;}" href="https://resources.github.com">Resources</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to roadmap&quot;,&quot;label&quot;:&quot;text:roadmap&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2adf8210735bbdb054726edae696fe5a35ee1b1eadd7a6e81eefe8de10aece91" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to roadmap&quot;,&quot;label&quot;:&quot;text:roadmap&quot;}" href="https://github.com/github/roadmap">Roadmap</a>
+          </li>
         </ul>
       </div>
+
       <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
-        <h2 class="h5 mb-3 text-mono color-text-tertiary text-normal">Platform</h2>
+        <h2 class="h5 mb-3 text-mono color-fg-muted text-normal">
+          Platform
+        </h2>
+
         <ul class="list-style-none f5">
-          <li class="lh-condensed mb-3"><a href="https://docs.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0c9df01dd15de8924ab3e722db05c450be55478c346e50468f35531f3328466e" class="Link--secondary">Developer API</a></li>
-          <li class="lh-condensed mb-3"><a href="https://partner.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to partner&quot;,&quot;label&quot;:&quot;text:partner&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e30b72bbaa4702241268c974de7cc04d2bea69dc5b643e88fbe37ab3e81d3a15" class="Link--secondary">Partners</a></li>
-          <li class="lh-condensed mb-3"><a href="https://atom.io" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to atom&quot;,&quot;label&quot;:&quot;text:atom&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f7916bd7411a7c40e998773cd6a8625e40a5c546e93f00adb9d1fd8af3f18ebe" class="Link--secondary">Atom</a></li>
-          <li class="lh-condensed mb-3"><a href="https://www.electronjs.org" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to electron&quot;,&quot;label&quot;:&quot;text:electron&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c409f30ad319367932e8d135099dd3b06742017fef6d44cbef1544cdbf6f4aef" class="Link--secondary">Electron</a></li>
-          <li class="lh-condensed mb-3"><a href="https://desktop.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to desktop&quot;,&quot;label&quot;:&quot;text:desktop&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7c5f37bdc0d59db76d10c00236058f5fc486295c9ffbfdbcb73685034f3f184f" class="Link--secondary">GitHub Desktop</a></li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0c9df01dd15de8924ab3e722db05c450be55478c346e50468f35531f3328466e" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to api&quot;,&quot;label&quot;:&quot;text:api&quot;}" href="https://docs.github.com">Developer API</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to partner&quot;,&quot;label&quot;:&quot;text:partner&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e30b72bbaa4702241268c974de7cc04d2bea69dc5b643e88fbe37ab3e81d3a15" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to partner&quot;,&quot;label&quot;:&quot;text:partner&quot;}" href="https://partner.github.com">Partners</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to atom&quot;,&quot;label&quot;:&quot;text:atom&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f7916bd7411a7c40e998773cd6a8625e40a5c546e93f00adb9d1fd8af3f18ebe" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to atom&quot;,&quot;label&quot;:&quot;text:atom&quot;}" href="https://atom.io">Atom</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to electron&quot;,&quot;label&quot;:&quot;text:electron&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c409f30ad319367932e8d135099dd3b06742017fef6d44cbef1544cdbf6f4aef" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to electron&quot;,&quot;label&quot;:&quot;text:electron&quot;}" href="https://www.electronjs.org">Electron</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to desktop&quot;,&quot;label&quot;:&quot;text:desktop&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7c5f37bdc0d59db76d10c00236058f5fc486295c9ffbfdbcb73685034f3f184f" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to desktop&quot;,&quot;label&quot;:&quot;text:desktop&quot;}" href="https://desktop.github.com/">GitHub Desktop</a>
+          </li>
         </ul>
       </div>
+
       <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
-        <h2 class="h5 mb-3 text-mono color-text-tertiary text-normal">Support</h2>
+        <h2 class="h5 mb-3 text-mono color-fg-muted text-normal">
+          Support
+        </h2>
+
         <ul class="list-style-none f5">
-          <li class="lh-condensed mb-3"><a data-ga-click="Footer, go to help, text:Docs" class="Link--secondary " href="https://docs.github.com">Docs</a></li>
-          <li class="lh-condensed mb-3"><a href="https://github.community" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;text:community&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="abddac37d8fb3b4875d5c9a8967db4d42afe7dfa050a869834f0db7c7b4a6376" class="Link--secondary">Community Forum</a></li>
-          <li class="lh-condensed mb-3"><a href="https://services.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to professional services&quot;,&quot;label&quot;:&quot;text:professional services&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="482142c0c7a60132e0e3819ca8bccb942bec8ad755ee3891100de408d7599db4" class="Link--secondary">Professional Services</a></li>
-          <li class="lh-condensed mb-3"><a href="https://lab.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to learning lab&quot;,&quot;label&quot;:&quot;text:learning lab&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5c8af5134969eeb49ea4dba5d6d73974d9b43172db63953a8490da18ab3e700c" class="Link--secondary">Learning Lab</a></li>
-          <li class="lh-condensed mb-3"><a href="https://www.githubstatus.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="1b05d3ec8a45353f7da0c2c6196a46a0474d9ac3ff6e3548bc1690fcd845100c" class="Link--secondary">Status</a></li>
-          <li class="lh-condensed mb-3"><a href="https://support.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6c1a11878942618be34c8fc8bce20f5237574cd34051ac78aafb58709d0a4506" class="Link--secondary">Contact GitHub</a></li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to help&quot;,&quot;label&quot;:&quot;text:Docs&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="ab742fddae95e8e28a5d3c7bc8f1ab5bf0e93200c485e1c935a0578e4e1e13af" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to help&quot;,&quot;label&quot;:&quot;text:Docs&quot;}" href="https://docs.github.com">Docs</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;text:community&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="abddac37d8fb3b4875d5c9a8967db4d42afe7dfa050a869834f0db7c7b4a6376" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to community&quot;,&quot;label&quot;:&quot;text:community&quot;}" href="https://github.community">Community Forum</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to professional services&quot;,&quot;label&quot;:&quot;text:professional services&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="482142c0c7a60132e0e3819ca8bccb942bec8ad755ee3891100de408d7599db4" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to professional services&quot;,&quot;label&quot;:&quot;text:professional services&quot;}" href="https://services.github.com/">Professional Services</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to learning lab&quot;,&quot;label&quot;:&quot;text:learning lab&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5c8af5134969eeb49ea4dba5d6d73974d9b43172db63953a8490da18ab3e700c" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to learning lab&quot;,&quot;label&quot;:&quot;text:learning lab&quot;}" href="https://lab.github.com/">Learning Lab</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="1b05d3ec8a45353f7da0c2c6196a46a0474d9ac3ff6e3548bc1690fcd845100c" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}" href="https://www.githubstatus.com/">Status</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6c1a11878942618be34c8fc8bce20f5237574cd34051ac78aafb58709d0a4506" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}" href="https://support.github.com?tags=dotcom-footer">Contact GitHub</a>
+          </li>
         </ul>
       </div>
+
       <div class="col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
-        <h2 class="h5 mb-3 text-mono color-text-tertiary text-normal">Company</h2>
+        <h2 class="h5 mb-3 text-mono color-fg-muted text-normal">
+          Company
+        </h2>
+
         <ul class="list-style-none f5">
-          <li class="lh-condensed mb-3"><a data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to about&quot;,&quot;label&quot;:&quot;text:about&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a0bbf1b0222e0ae3211d0631317348104e8c5c29a499d8818c1a572f44ed0a64" class="Link--secondary" href="https://github.com/about">About</a></li>
-          <li class="lh-condensed mb-3"><a href="https://github.blog" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="18dbed7aacfc728c815877301c71d0f18b7cbce4fe921e86d0d41981bd830b2f" class="Link--secondary">Blog</a></li>
-          <li class="lh-condensed mb-3"><a href="/about/careers" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to careers&quot;,&quot;label&quot;:&quot;text:careers&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="33e7ba857167829ae8bd8f35bb6e206487e6da7896c9863be075e6eb12c2e9b5" class="Link--secondary">Careers</a></li>
-          <li class="lh-condensed mb-3"><a href="/about/press" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to press&quot;,&quot;label&quot;:&quot;text:press&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8981cacc87f43ceefdd045b1b63b9451d671a92155ad4168ac0b65f01d567dcf" class="Link--secondary">Press</a></li>
-          <li class="lh-condensed mb-3"><a href="/about/diversity" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to diversity&quot;,&quot;label&quot;:&quot;text:Inclusion&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a009649afe43a022f27e7fd51ddb76c70380b30bd45d856ebcce5b141bb109d4" class="Link--secondary">Inclusion</a></li>
-          <li class="lh-condensed mb-3"><a href="https://socialimpact.github.com/" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to social impact&quot;,&quot;label&quot;:&quot;text:social impact&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0569d9046ab39a9b9a554c568cecde7b2c53cd008852b833276c9d0521907e6b" class="Link--secondary">Social Impact</a></li>
-          <li class="lh-condensed mb-3"><a href="https://shop.github.com" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to shop&quot;,&quot;label&quot;:&quot;text:shop&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="19efcb008dd53a4a4b384588620c251ccffe88f782572314ffd531ae6d43b702" class="Link--secondary">Shop</a></li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to about&quot;,&quot;label&quot;:&quot;text:about&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a0bbf1b0222e0ae3211d0631317348104e8c5c29a499d8818c1a572f44ed0a64" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to about&quot;,&quot;label&quot;:&quot;text:about&quot;}" href="https://github.com/about">About</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="18dbed7aacfc728c815877301c71d0f18b7cbce4fe921e86d0d41981bd830b2f" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to blog&quot;,&quot;label&quot;:&quot;text:blog&quot;}" href="https://github.blog">Blog</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to careers&quot;,&quot;label&quot;:&quot;text:careers&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="33e7ba857167829ae8bd8f35bb6e206487e6da7896c9863be075e6eb12c2e9b5" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to careers&quot;,&quot;label&quot;:&quot;text:careers&quot;}" href="/about/careers">Careers</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to press&quot;,&quot;label&quot;:&quot;text:press&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8981cacc87f43ceefdd045b1b63b9451d671a92155ad4168ac0b65f01d567dcf" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to press&quot;,&quot;label&quot;:&quot;text:press&quot;}" href="/about/press">Press</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to diversity&quot;,&quot;label&quot;:&quot;text:Inclusion&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a009649afe43a022f27e7fd51ddb76c70380b30bd45d856ebcce5b141bb109d4" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to diversity&quot;,&quot;label&quot;:&quot;text:Inclusion&quot;}" href="/about/diversity">Inclusion</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to social impact&quot;,&quot;label&quot;:&quot;text:social impact&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0569d9046ab39a9b9a554c568cecde7b2c53cd008852b833276c9d0521907e6b" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to social impact&quot;,&quot;label&quot;:&quot;text:social impact&quot;}" href="https://socialimpact.github.com/">Social Impact</a>
+          </li>
+          <li class="lh-condensed mb-3">
+            <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to shop&quot;,&quot;label&quot;:&quot;text:shop&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="19efcb008dd53a4a4b384588620c251ccffe88f782572314ffd531ae6d43b702" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to shop&quot;,&quot;label&quot;:&quot;text:shop&quot;}" href="https://shop.github.com">Shop</a>
+          </li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="color-bg-secondary">
+
+  <div class="color-bg-subtle">
     <div class="container-xl p-responsive f6 py-4 d-sm-flex flex-justify-between flex-row-reverse flex-items-center">
       <ul class="list-style-none d-flex flex-items-center mb-3 mb-sm-0 lh-condensed-ultra">
         <li class="mr-3">
-          <a href="https://twitter.com/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Twitter&quot;,&quot;label&quot;:&quot;text:twitter&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c96c9b99c69b683a48fdb0a75adbc6b6d730dba85ae8c9fdf6509e5823b4542d" class="color-gray-4">
+          <a href="https://twitter.com/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Twitter&quot;,&quot;label&quot;:&quot;text:twitter&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c96c9b99c69b683a48fdb0a75adbc6b6d730dba85ae8c9fdf6509e5823b4542d" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Twitter&quot;,&quot;label&quot;:&quot;text:twitter&quot;}" class="color-fg-subtle">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/twitter.svg" height="18" width="22"  class="d-block" loading="lazy" decoding="async" alt="Twitter icon">
             <span class="sr-only">GitHub on Twitter</span>
           </a>
         </li>
         <li class="mr-3">
-          <a href="https://www.facebook.com/GitHub" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Facebook&quot;,&quot;label&quot;:&quot;text:facebook&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8ca2244fa17028f7f400f317c0c3380ebeb93613410ba6c7812fbfa3444adb77" class="color-gray-4">
+          <a href="https://www.facebook.com/GitHub" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Facebook&quot;,&quot;label&quot;:&quot;text:facebook&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8ca2244fa17028f7f400f317c0c3380ebeb93613410ba6c7812fbfa3444adb77" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Facebook&quot;,&quot;label&quot;:&quot;text:facebook&quot;}" class="color-fg-subtle">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/facebook.svg" width="18" height="18"  class="d-block" loading="lazy" decoding="async" alt="Facebook icon">
             <span class="sr-only">GitHub on Facebook</span>
           </a>
         </li>
         <li class="mr-3">
-          <a href="https://www.youtube.com/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to YouTube&quot;,&quot;label&quot;:&quot;text:youtube&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="ec14dd0033841966899a84c326f844924bc207f787bd241275464ecd926d9af6" class="color-gray-4">
+          <a href="https://www.youtube.com/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to YouTube&quot;,&quot;label&quot;:&quot;text:youtube&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="ec14dd0033841966899a84c326f844924bc207f787bd241275464ecd926d9af6" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to YouTube&quot;,&quot;label&quot;:&quot;text:youtube&quot;}" class="color-fg-subtle">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/youtube.svg" width="23" height="16"  class="d-block" loading="lazy" decoding="async" alt="YouTube icon">
             <span class="sr-only">GitHub on YouTube</span>
           </a>
         </li>
         <li class="mr-3 flex-self-start">
-          <a href="https://www.linkedin.com/company/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Linkedin&quot;,&quot;label&quot;:&quot;text:linkedin&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="69c16a82e0702bb758ff2470aab3f7a42d4b6141d156db6424543f978cd1b3fc" class="color-gray-4">
+          <a href="https://www.linkedin.com/company/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Linkedin&quot;,&quot;label&quot;:&quot;text:linkedin&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="69c16a82e0702bb758ff2470aab3f7a42d4b6141d156db6424543f978cd1b3fc" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Linkedin&quot;,&quot;label&quot;:&quot;text:linkedin&quot;}" class="color-fg-subtle">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/linkedin.svg" width="19" height="18" class="d-block" loading="lazy" decoding="async" alt="Linkedin icon">
             <span class="sr-only">GitHub on LinkedIn</span>
           </a>
         </li>
         <li>
-          <a href="https://github.com/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to github&#39;s org&quot;,&quot;label&quot;:&quot;text:github&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2522c01856b4cfe9c8417aa960a0c155769ab4d298583a4a85849216d5279b39" class="color-gray-4">
+          <a href="https://github.com/github" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to github&#39;s org&quot;,&quot;label&quot;:&quot;text:github&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="2522c01856b4cfe9c8417aa960a0c155769ab4d298583a4a85849216d5279b39" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to github&#39;s org&quot;,&quot;label&quot;:&quot;text:github&quot;}" class="color-fg-subtle">
             <img src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg" width="20" height="20" class="d-block" loading="lazy" decoding="async" alt="GitHub mark">
             <span class="sr-only">GitHub’s organization on GitHub</span>
           </a>
         </li>
       </ul>
-      <ul class="list-style-none d-flex flex-wrap color-text-secondary">
-        <li class="mr-3">&copy; 2021 GitHub, Inc.</li>
-        <li class="mr-3"><a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="44460f02b9afe8225d92aee7a1f04e9842769e6d6e1bffc90d94a21c7cf61501" class="Link--secondary">Terms</a></li>
-        <li class="mr-3"><a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5d77b0abb2e1a0a2f7a27b956a42670ccc75f62e478fe97f94d368931e67fe65" class="Link--secondary">Privacy</a></li>
-        <li class="mr-3"><a href="/site-map" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to site map&quot;,&quot;label&quot;:&quot;text:site map&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="01a5fbb34997c19ac2ac4f8851bfb07fdd42d11a1a0ea11d54c221ac8f1b134e" class="Link--secondary">Site Map</a></li>
-        <li><a href="/git-guides" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Git Guides&quot;,&quot;label&quot;:&quot;text:What is Git?&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6f0fdeaffdbb1ef4240bcc75ee1faaadbccf6f0d15691eb9c610811ee03460c2" class="Link--secondary">What is Git?</a></li>
+
+      <ul class="list-style-none d-flex flex-wrap color-fg-muted">
+        <li class="mr-3">
+          &copy; 2021 GitHub, Inc.
+        </li>
+
+        <li class="mr-3">
+          <a href="https://docs.github.com/en/github/site-policy/github-terms-of-service" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="44460f02b9afe8225d92aee7a1f04e9842769e6d6e1bffc90d94a21c7cf61501" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}" class="Link--secondary">Terms</a>
+        </li>
+
+        <li class="mr-3">
+          <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5d77b0abb2e1a0a2f7a27b956a42670ccc75f62e478fe97f94d368931e67fe65" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" class="Link--secondary">Privacy</a>
+        </li>
+
+        <li class="mr-3">
+          <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to site map&quot;,&quot;label&quot;:&quot;text:site map&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="01a5fbb34997c19ac2ac4f8851bfb07fdd42d11a1a0ea11d54c221ac8f1b134e" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to site map&quot;,&quot;label&quot;:&quot;text:site map&quot;}" href="/site-map">Site Map</a>
+        </li>
+
+        <li>
+          <a class="Link--secondary" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Git Guides&quot;,&quot;label&quot;:&quot;text:What is Git?&quot;,&quot;originating_url&quot;:&quot;https://github.com/nevakee716/cpm/wiki/Home.md&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6f0fdeaffdbb1ef4240bcc75ee1faaadbccf6f0d15691eb9c610811ee03460c2" data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Git Guides&quot;,&quot;label&quot;:&quot;text:What is Git?&quot;}" href="/git-guides">What is Git?</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -802,7 +1037,7 @@
     <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
   </div>
     <template id="site-details-dialog">
-  <details class="details-reset details-overlay details-overlay-dark lh-default color-text-primary hx_rsm" open>
+  <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default hx_rsm" open>
     <summary role="button" aria-label="Close dialog"></summary>
     <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
       <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
@@ -823,10 +1058,10 @@
     <template id="snippet-clipboard-copy-button">
   <div class="zeroclipboard-container position-absolute right-0 top-0">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-paste js-clipboard-clippy-icon m-2">
-    <path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+    <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
 </svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-text-success d-none m-2">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
     <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
 </svg>
     </clipboard-copy>
