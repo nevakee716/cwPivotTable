@@ -43,6 +43,18 @@
             />
           </td>
         </tr>
+        <tr>
+          <th>Contextual Node:</th>
+          <td class="cw-edit-property-value">
+            <input
+              class="cw-edit-attr"
+              ng-model="ng.config.contextualNodes[ng.selectedNode.NodeID]"
+              ng-model-options="{ debounce: 100 }" 
+              ng-change="updatePivot()"
+              type="text"
+            />
+          </td>
+        </tr>
       </table>
     </div>
   </div>

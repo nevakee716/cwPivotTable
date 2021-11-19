@@ -794,6 +794,7 @@
   };
 
   cwPivotTable.prototype.updatePivot = function () {
+    var self = this;
     let o = $.extend(true, {}, this.originalObject);
     var assoNode = {};
     // keep the node of the layout
@@ -807,6 +808,12 @@
     this.PivotDatas = [];
     o.associations = assoNode;
     this.manageHiddenNodes(o);
+    // Contextual node
+    if (this.config.contextualNodes) {
+      Object.keys(this.config.contextualNodes).forEach(function (n) {
+        cwAPI.customLibs.utils.manageContextualNodes(o.associations, [self.config.contextualNodes[n]], n);
+      });
+    }
     this.JSONobjects = o;
 
     this.simplify(this.JSONobjects, {});

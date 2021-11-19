@@ -264,6 +264,7 @@
     var cpyObj = $.extend(true, {}, object);
     this.originalObject = $.extend(true, {}, object);
     var assoNode = {};
+    var self = this;
     // keep the node of the layout
     assoNode[this.mmNode.NodeID] = cpyObj.associations[this.mmNode.NodeID];
 
@@ -279,6 +280,12 @@
     // hidden node
     this.manageHiddenNodes(cpyObj);
 
+    // Contextual node
+    if (this.config.contextualNodes) {
+      Object.keys(this.config.contextualNodes).forEach(function (n) {
+        cwAPI.customLibs.utils.manageContextualNodes(cpyObj.associations, [self.config.contextualNodes[n]], n);
+      });
+    }
     this.JSONobjects = cpyObj;
 
     this.simplify(this.JSONobjects, {});
