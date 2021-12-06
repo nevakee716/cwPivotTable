@@ -37,6 +37,7 @@
           "modules/pivot/pivot.min.js",
           "modules/pivotPloty/pivotPloty.min.js",
           "modules/pivotjqUI/pivotjqUI.min.js",
+          "modules/jstree/jstree.min.js",
         ];
         // AsyncLoad
         cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function (error) {
