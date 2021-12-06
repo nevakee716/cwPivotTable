@@ -502,8 +502,8 @@
         button.classList.remove("selected");
       }
       if (!noEvent) {
-        button.removeEventListener("click", self.manageEventButton.bind(self, id));
-        button.addEventListener("click", self.manageEventButton.bind(self, id));
+        button.onclick = null;
+        button.onclick = self.manageEventButton.bind(self, id);
       }
     });
 
@@ -513,14 +513,14 @@
       setTimeout(this.hideTotal, 3000);
     }
     if (!noEvent) {
-      totalButton.removeEventListener("click", self.manageEventButton.bind(this, "Total"));
-      totalButton.addEventListener("click", self.manageEventButton.bind(this, "Total"));
+      totalButton.onclick = null;
+      totalButton.onclick = self.manageEventButton.bind(this, "Total");
     }
 
     var expertModeButton = document.getElementById("cwPivotExpertMode" + this.nodeID);
     if (expertModeButton) {
-      expertModeButton.removeEventListener("click", self.manageExpertModeButton.bind(this));
-      expertModeButton.addEventListener("click", self.manageExpertModeButton.bind(this));
+      expertModeButton.onclick = null;
+      expertModeButton.onclick = self.manageExpertModeButton.bind(this);
     }
   };
 
