@@ -1,6 +1,6 @@
 {
   "name": "PivotTable",
-  "version": "6.0.2",
+  "version": "6.0.3",
   "description": "Allow you to display objet in a Pivot Table",
   "main": "src/cwPivotTable.js",
   "scripts": {
