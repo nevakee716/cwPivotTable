@@ -421,3 +421,60 @@ table.pvtTable thead th.pvtAxisLabel {
     }
   }
 }
+
+li[evolutionCount] {
+  display: inline-block;
+  width: 33.3333%;
+  .evolutionCount {
+    border-right: 1px solid #ddd;
+
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .evolutionCountTitle {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      color: #5e514d;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 50px;
+    }
+    .evolutionCountNumber {
+      font-size: 42px;
+    }
+
+    .evolutionCountProp {
+      font-weight: bolder;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+
+      .evolutionCountUp {
+        color: green;
+        display: flex;
+        align-items: center;
+        .fa {
+          margin-left: 0.2rem;
+        }
+      }
+      .evolutionCountDown {
+        margin-left: 0.2rem;
+        color: rgb(122, 0, 0);
+        display: flex;
+        align-items: center;
+        .fa {
+          margin-left: 0.2rem;
+        }
+      }
+    }
+  }
+}
+ul[class*="full"] li[evolutionCount] {
+  width: 12.5%;
+}
+
+.homePage_display_content .homePage_evolveView .cw-list li:last-child .evolutionCount {
+  border-right: none;
+}
