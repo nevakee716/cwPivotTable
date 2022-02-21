@@ -400,8 +400,8 @@ table.pvtTable thead th.pvtAxisLabel {
   border-color: #546e7a;
 }
 li[evolutionCount] {
-  display: inline-block;
-  width: 33.3333%;
+  display: flex;
+  justify-content: space-between;
 }
 li[evolutionCount] .evolutionCount {
   border-right: 1px solid #ddd;
