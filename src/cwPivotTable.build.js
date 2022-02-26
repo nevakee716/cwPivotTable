@@ -442,7 +442,20 @@
       }
     });
 
-    cwAPI.customLibs.utils.createPopOutFormultipleObjects(objects);
+    // check for context
+    let context;
+    var isInDisplay = document.querySelector(".homePage_evolveView") ? true : false;
+    if (isInDisplay) {
+      let displayId = document.querySelector("#cwPivotWrapper" + self.nodeID).parentElement.parentElement.parentElement.id;
+      context = cwApi.customLibs.utils.sendIndexContext(
+        displayId,
+        objects.map(function (o) {
+          return o.object_id;
+        })
+      );
+    }
+    // use regular popout if no context
+    if (!context) cwAPI.customLibs.utils.createPopOutFormultipleObjects(objects);
   };
   cwPivotTable.prototype.clickCallback = function (e, value, filters, pivotData) {
     if (pivotData.aggregatorName === "List Unique Values" && this.nodes.hasOwnProperty(pivotData.valAttrs[0])) {
