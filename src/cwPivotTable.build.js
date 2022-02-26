@@ -186,7 +186,6 @@
       //    "Mean" : this.dataAggregator()
       //}
     };
-    console.log(this.config.ui);
     this.pivotUI = $("#cwPivotTable" + this.nodeID).pivotUI(this.PivotDatas, this.pivotCurrentConfiguration);
 
     this.manageButton();
