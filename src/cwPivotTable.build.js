@@ -409,10 +409,10 @@
 
       let lookupId;
       prop.lookups.forEach(function (l) {
-        if (l.name === valueLabel) lookupId = l.id;
+        if (l.name === valueLabel || (l.name == "__|UndefinedValue|__" && $.i18n.prop("global_undefined") == valueLabel)) lookupId = l.id;
       });
       conf = this.propConfig[objectTypeScriptName][propScriptname][lookupId];
-      if (lookupId && conf) {
+      if (lookupId !== undefined && conf) {
         return conf.iconColor ? conf.iconColor : conf.valueColor;
       }
     } else if (this.propConfig.hardcoded && this.propConfig.hardcoded[valueLabel]) {
