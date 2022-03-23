@@ -28,8 +28,10 @@
     height: 100%;
     margin-bottom: 0rem;
   }
+}
+.homePage_evolveView .cwPivotWrapper.noUi {
   .cwPivotTable table.pvtUi tbody > tr {
-    height: 0px;
+    height: 1px;
   }
 }
 
@@ -425,9 +427,10 @@ table.pvtTable thead th.pvtAxisLabel {
 li[evolutionCount] {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   .evolutionCount {
     border-right: 1px solid #ddd;
-
+    width: 250px;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -453,6 +456,15 @@ li[evolutionCount] {
 
       .evolutionCountUp {
         color: green;
+        display: flex;
+        align-items: center;
+        .fa {
+          margin-left: 0.2rem;
+        }
+      }
+      .evolutionCountStable {
+        margin-left: 0.2rem;
+        color: rgb(122, 122, 122);
         display: flex;
         align-items: center;
         .fa {

@@ -128,6 +128,10 @@
                 };
               }
 
+              if (prop.type === "Date") {
+                value = value.replace(/T[0-9]+\:[0-9]+\:[0-9]+/, "");
+              }
+
               if (prop.type === "Boolean") {
                 value = value ? $.i18n.prop("global_true") : $.i18n.prop("global_false");
               }
@@ -291,7 +295,7 @@
     this.simplify(this.JSONobjects, {});
     let noUI = this.config.ui ? "" : "cw-hidden";
 
-    output.push('<div class="cwPivotWrapper" id="cwPivotWrapper' + this.nodeID + '" ' + noUI + '">');
+    output.push('<div class="cwPivotWrapper ' + (this.config.ui ? "" : "noUi") + ' " id="cwPivotWrapper' + this.nodeID + '" ' + noUI + '">');
 
     output.push('<div class="cwPivotToolBox ' + noUI + '">');
     if (this.config.title && this.config.ui)
