@@ -28,9 +28,32 @@
 
   cwPivotTable.prototype.dataDerivers = function () {
     var derivedAttributes = {};
+
     var view = cwAPI.getCurrentView();
     if (view) view = view.cwView;
     else return {};
+
+    if (view.indexOf("exemple top values") !== -1) {
+      var self = this;
+      const numberOfValues = 5;
+      const labelProp = "Localisation";
+      const labelNotInTop5Prop = "Other";
+      var topValue = {};
+      this.JSONobjects.associations.application_582902365.forEach((app) => {
+        app.associations.localisation_20242_764367716.forEach((o) => {
+          if (!topValue[o.name]) topValue[o.name] = 0;
+          topValue[o.name] += 1;
+        });
+      });
+      let maxs = Object.values(topValue)
+        .sort((a, b) => b - a)
+        .slice(0, numberOfValues);
+      let topValues = Object.keys(topValue).filter((v) => topValue[v] >= maxs[numberOfValues - 1]);
+
+      derivedAttributes[labelProp + "top5"] = function (record) {
+        return topValues.indexOf(record[labelProp]) !== -1 ? record[labelProp] : labelNotInTop5Prop;
+      };
+    }
 
     if (view.indexOf("location") !== -1) {
       derivedAttributes["Date"] = function (record) {
