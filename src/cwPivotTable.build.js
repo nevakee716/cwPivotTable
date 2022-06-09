@@ -166,6 +166,7 @@
           ui: this.config.ui,
           fontsize: this.config.fontsize,
           legend: this.config.legend,
+          displayPercent: this.config.displayPercent,
         },
       },
       sorters: this.getSorter(),

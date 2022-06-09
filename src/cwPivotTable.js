@@ -53,6 +53,8 @@
     if (this.config.fontsize === undefined) this.config.fontsize = null;
     if (this.config.height === undefined) this.config.height = null;
     if (this.config.legend === undefined) this.config.legend = true;
+    if (this.config.displayPercent === undefined) this.config.displayPercent = true;
+
     if (this.config.sorters === undefined) this.config.sorters = [];
 
     this.propertiesScriptnameList = {};

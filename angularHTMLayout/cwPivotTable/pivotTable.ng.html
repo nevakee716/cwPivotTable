@@ -29,6 +29,12 @@
       <input class="largeCell" ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.legend" />
     </div>
   </div>
+  <div class="bootstrap-iso rowFlex">
+    <div class="row-cell row-cell-label">{{$root.i18n('displaypercent')}} :&nbsp;</div>
+    <div class="row-cell row-cell-value">
+      <input class="largeCell" ng-model-options="{ debounce: 100 }" ng-change="updatePivot()" type="checkbox" ng-model="ng.config.displayPercent" />
+    </div>
+  </div>
 
   <div ng-repeat="hidePart in ['hideFilter','hideOption','hideRow','hideColumn','hideTotals']" class="bootstrap-iso rowFlex">
     <div class="row-cell row-cell-label">{{$root.i18n(hidePart)}} :&nbsp;</div>
