@@ -102,7 +102,7 @@
 
           if (node.PropertiesSelected.indexOf(p.toUpperCase()) !== -1) {
             if (p === "name") {
-              newLine[node.NodeName] = value;
+              newLine[node.NodeName] = cwApi.customLibs.utils.getCustomDisplayStringWithOutHTML(node.LayoutOptions.DisplayPropertyScriptName, child);
 
               if (self.nodes[node.NodeName] === undefined) {
                 self.nodes[node.NodeName] = {};
