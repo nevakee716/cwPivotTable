@@ -102,8 +102,14 @@
 
           if (node.PropertiesSelected.indexOf(p.toUpperCase()) !== -1) {
             if (p === "name") {
-              newLine[node.NodeName] = cwApi.customLibs.utils.getCustomDisplayStringWithOutHTML(node.LayoutOptions.DisplayPropertyScriptName, child);
-
+              try {
+                newLine[node.NodeName] = cwApi.customLibs.utils.getCustomDisplayStringWithOutHTML(
+                  node.LayoutOptions.DisplayPropertyScriptName,
+                  child
+                );
+              } catch (e) {
+                newLine[node.NodeName] = value;
+              }
               if (self.nodes[node.NodeName] === undefined) {
                 self.nodes[node.NodeName] = {};
                 self.labels[node.NodeName] = {
