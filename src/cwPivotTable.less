@@ -18,20 +18,32 @@
   background-color: transparent;
 }
 
-.homePage_evolveView .cwPivotWrapper {
-  padding: 0rem;
-  height: 100%;
-  .cwPivotToolBox {
-    display: none;
-  }
-  .cwPivotTable {
-    height: 100%;
-    margin-bottom: 0rem;
+.display_pivotFilter {
+  .LayoutPivotfilterGroup {
+    margin-right: 2rem;
+    div,
+    a {
+      display: none;
+    }
   }
 }
-.homePage_evolveView .cwPivotWrapper.noUi {
-  .cwPivotTable table.pvtUi tbody > tr {
-    height: 1px;
+.homePage_evolveView {
+  .cwPivotWrapper {
+    padding: 0rem;
+    height: 100%;
+    .cwPivotToolBox {
+      display: none;
+    }
+    .cwPivotTable {
+      height: 100%;
+      margin-bottom: 0rem;
+    }
+  }
+
+  .cwPivotWrapper.noUi {
+    .cwPivotTable table.pvtUi tbody > tr {
+      height: 1px;
+    }
   }
 }
 

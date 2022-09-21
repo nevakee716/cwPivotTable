@@ -136,6 +136,10 @@
         configurationFilterObject.appendChild(configurationFilterObjectButton);
       }
       filterContainer.appendChild(configurationFilterObject);
+      if (document.querySelector(".homePage_evolveView")) {
+        let pivotInDisplayContainer = document.querySelector(`.${this.viewSchema.ViewName}.display_pivotFilter`);
+        pivotInDisplayContainer.appendChild(filterContainer);
+      }
     }
 
     $(".selectPivotConfiguration_" + this.nodeID).selectpicker();
@@ -445,6 +449,7 @@
     // check for context
     let context;
     var isInDisplay = document.querySelector(".homePage_evolveView") ? true : false;
+    this.isInDisplay = isInDisplay;
     if (isInDisplay) {
       let displayId = document.querySelector("#cwPivotWrapper" + self.nodeID).parentElement.parentElement.parentElement.id;
       context = cwApi.customLibs.utils.sendIndexContext(

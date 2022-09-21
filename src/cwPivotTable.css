@@ -36,6 +36,13 @@
   top: 0px;
   background-color: transparent;
 }
+.display_pivotFilter .LayoutPivotfilterGroup {
+  margin-right: 2rem;
+}
+.display_pivotFilter .LayoutPivotfilterGroup div,
+.display_pivotFilter .LayoutPivotfilterGroup a {
+  display: none;
+}
 .homePage_evolveView .cwPivotWrapper {
   padding: 0rem;
   height: 100%;

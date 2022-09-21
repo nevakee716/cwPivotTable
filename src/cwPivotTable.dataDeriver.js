@@ -110,10 +110,9 @@
 
   cwPivotTable.prototype.propertyDeriver = function (item) {
     var r = [];
-    /*if(item.properties["nombredesolutioncritique"] !== undefined && item.properties["nombredesolution"] !== undefined ) {
-      let v = item.properties["nombredesolution"] - item.properties["nombredesolutioncritique"]; 
-      r.push({value:v,label:"#Solution non Critique"});
-    }*/
+    if (item.properties["compliance"] !== undefined) {
+      r.push({ value: item.properties["compliance"] + "%", label: "Compliance" });
+    }
     return r;
   };
 
