@@ -230,8 +230,8 @@
     // Event for filter
     $(".selectPivotConfiguration_" + this.nodeID).on("changed.bs.select", function (e, clickedIndex, newValue, oldValue) {
       var id, config;
-      if (clickedIndex !== undefined && $(this).context.children && $(this).context.children[clickedIndex]) {
-        id = $(this).context.children[clickedIndex].id;
+      if (clickedIndex !== undefined && $(this).children()&& $(this).children()[clickedIndex] ) {
+        id = $(this).children()[clickedIndex].id;
         if (id != 0) {
           config = self.pivotConfiguration.pivots[id].configuration;
           self.pivotConfiguration.selected = self.pivotConfiguration.pivots[id];
