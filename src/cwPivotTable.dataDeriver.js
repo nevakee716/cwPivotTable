@@ -57,7 +57,11 @@
 
     if (view.indexOf("location") !== -1) {
       derivedAttributes["Date"] = function (record) {
-        return record["Année"] + "/" + record["Nombre du mois"];
+        return (
+          (record["Année"] != undefined ? record["Année"] : record["Year"]) +
+          "/" +
+          (record["Nombre du mois"] != undefined ? record["Nombre du mois"] : record["Month Number"])
+        );
       };
     }
 
