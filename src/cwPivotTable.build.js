@@ -31,14 +31,23 @@
       if (cwAPI.isDebugMode() === true) {
         self.loadDisplayLayout();
       } else {
-        libToLoad = [
-          "modules/bootstrap/bootstrap.min.js",
-          "modules/bootstrap-select/bootstrap-select.min.js",
-          "modules/pivot/pivot.min.js",
-          "modules/pivotPloty/pivotPloty.min.js",
-          "modules/pivotjqUI/pivotjqUI.min.js",
-          "modules/jstree/jstree.min.js",
-        ];
+        libToLoad =
+          cwAPI.cwConfigs.EnabledVersion.indexOf("v2022") !== -1
+            ? [
+                "modules/pivot/pivot.min.js",
+                "modules/pivotPloty/pivotPloty.min.js",
+                "modules/pivotjqUI/pivotjqUI.min.js",
+                "modules/jstree/jstree.min.js",
+              ]
+            : [
+                "modules/bootstrap/bootstrap.min.js",
+                "modules/bootstrap-select/bootstrap-select.min.js",
+                "modules/pivot/pivot.min.js",
+                "modules/pivotPloty/pivotPloty.min.js",
+                "modules/pivotjqUI/pivotjqUI.min.js",
+                "modules/jstree/jstree.min.js",
+              ];
+
         // AsyncLoad
         cwApi.customLibs.aSyncLayoutLoader.loadUrls(libToLoad, function (error) {
           if (error === null) {
@@ -230,7 +239,7 @@
     // Event for filter
     $(".selectPivotConfiguration_" + this.nodeID).on("changed.bs.select", function (e, clickedIndex, newValue, oldValue) {
       var id, config;
-      if (clickedIndex !== undefined && $(this).children()&& $(this).children()[clickedIndex] ) {
+      if (clickedIndex !== undefined && $(this).children() && $(this).children()[clickedIndex]) {
         id = $(this).children()[clickedIndex].id;
         if (id != 0) {
           config = self.pivotConfiguration.pivots[id].configuration;
